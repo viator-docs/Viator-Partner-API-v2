@@ -3,6 +3,7 @@ required:
   - productCode
   - start
   - count
+  - provider
 properties:
   productCode:
     type: string
