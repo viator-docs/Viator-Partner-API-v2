@@ -1,0 +1,102 @@
+type: object
+required:
+  - category
+properties:
+  category:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: >
+      Machine-interpretable value encoding the category of this product feature;
+      one of:
+
+        - `"EQUIPMENT"` 
+        - `"FOOD_AND_DRINK"`
+        - `"TRANSPORT_AMENITIES"`
+        - `"FEES_AND_TAXES"`
+        - `"SOUVENIRS"`
+        - `"OTHER"`
+
+
+        For information on mapping, see: [Appendices – Inclusions and exclusions](../../../../papiv2/appendices/inclusions-and-exclusions)
+  categoryDescription:
+    type: string
+    description: >
+      Description of this product feature
+
+      - **Note**: This field contains natural language suitable for display to
+      the user; content will be translated (if necessary) into the language
+      specified in the Accept-Language header parameter
+  type:
+    type: string
+    description: >
+      Machine-interpretable value encoding the type/category of this product
+      feature; one of:
+
+        - `"FUEL_SURCHARGE"`
+        - `"LANDING_AND_FACILITY_FEES"`
+        - `"AIRPORT_AND_DEPARTURE_TAX"`
+        - `"GST"`
+        - `"GRATUITIES"`
+        - `"PARKING_FEES"`
+        - `"ALL_FEES_AND_TAXES"`
+        - `"USE_OF_BICYCLE"`
+        - `"USE_OF_SCUBA_EQUIPMENT"`
+        - `"USE_OF_SNORKELING_EQUIPMENT"`
+        - `"USE_OF_TRIKKE"`
+        - `"USE_OF_SEGWAY"`
+        - `"USE_OF_OTHER_EQUIPMENT"`
+        - `"USE_OF_COOKING_UTENSILS"`
+        - `"ALL_INGREDIENTS"`
+        - `"BREAKFAST"`
+        - `"LUNCH"`
+        - `"DINNER"`
+        - `"SNACKS"`
+        - `"BOTTLED_WATER"`
+        - `"COFFEE_AND_TEA"`
+        - `"SODA_POP"`
+        - `"ALCOHOLIC_BEVERAGES"`
+        - `"REFRESHMENTS"`
+        - `"AIR_CONDITIONED_VEHICLE"`
+        - `"RESTROOM_ON_BOARD"`
+        - `"PRIVATE_TRANSPORTATION"`
+        - `"WIFI_ONBOARD"`
+        - `"CERTIFICATE"`
+        - `"RECIPE_BOOKLET"`
+        - `"OTHER"`
+
+
+        For information on mapping, see: [Appendices – Inclusions and exclusions](../../../../papiv2/appendices/inclusions-and-exclusions)
+  typeDescription:
+    type: string
+    description: >
+      Description of this product feature type 
+
+      - **Note**: This field contains natural language suitable for display to
+      the user; content will be translated (if necessary) into the language
+      specified in the Accept-Language header parameter
+  otherDescription:
+    type: string
+    description: >
+      Description of this product feature when `type` is `"OTHER"`
+
+      - **Note**: This field contains natural language suitable for display to
+      the user; content will be translated (if necessary) into the language
+      specified in the Accept-Language header parameter
+  quantity:
+    type: integer
+    description: >
+      Quantity of this type of inclusion or exclusion in the case that the
+      product is a multi-day tour or activity. For example, a three-day tour
+      might include three inclusions of type `"LUNCH"` - one for each day of the
+      tour.
+
+
+      **Note**: This field will be only be present when `quantity` > 1
+  description:
+    type: string
+    description: >
+      Description of the item
+
+      - **Note**: This field contains natural language suitable for display to
+      the user; content will be translated (if necessary) into the language
+      specified in the Accept-Language header parameter

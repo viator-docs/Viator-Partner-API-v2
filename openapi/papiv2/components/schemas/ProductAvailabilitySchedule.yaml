@@ -1,0 +1,22 @@
+type: object
+required:
+  - productCode
+  - bookableItems
+  - currency
+  - summary
+properties:
+  productCode:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: Unique identifier for this product
+  bookableItems:
+    description: Bookable items for this product
+    type: array
+    items:
+      $ref: ./ProductBookableItemSchedule.yaml
+  currency:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: Three letter currency code for all pricing information in this response
+  summary:
+    $ref: ./AvailabilityScheduleSummary.yaml

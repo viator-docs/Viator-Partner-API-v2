@@ -1,0 +1,17 @@
+type: object
+description: Information about whether the text in this response was machine-translated
+required:
+  - containsMachineTranslatedText
+properties:
+  containsMachineTranslatedText:
+    type: boolean
+    description: >-
+      Indicates whether this product description utilizes machine-translated
+      text in any of its natural langauge fields
+  translationAttributions:
+    type: string
+    description: |
+      Value specifying the machine-translation service vendor
+
+
+        - **Example**: `"GOOGLE"`

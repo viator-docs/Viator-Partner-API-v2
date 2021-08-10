@@ -1,0 +1,102 @@
+post:
+  tags:
+    - Availability
+  summary: /availability/check
+  description: |
+    Check real-time availability for a product
+
+    **Note**: This service should only be used to determine the availability of a product immediately prior to booking. Bulk operations pertaining to product availability; e.g., generating a calendar of availability for a product, should use the [availability schedule endpoints](../../../../papiv2/key-concepts/content-ingestion-endpoints).
+
+    (Response sample generated on: 2021-04-06)
+  operationId: availabilityCheck
+  parameters:
+    - $ref: ../components/parameters/accept.yaml
+  requestBody:
+    content:
+      application/json;version=2.0:
+        schema:
+          $ref: ../components/schemas/CheckAvailabilityRequest.yaml
+        examples:
+          5010SYDNEY:
+            value:
+              productCode: 5010SYDNEY
+              travelDate: '2020-12-12'
+              currency: AUD
+              paxMix:
+                - ageBand: ADULT
+                  numberOfTravelers: 2
+                - ageBand: CHILD
+                  numberOfTravelers: 2
+          46334P42:
+            value:
+              productCode: 46334P42
+              travelDate: '2020-12-30'
+              currency: AUD
+              paxMix:
+                - ageBand: TRAVELER
+                  numberOfTravelers: 7
+          265910P1:
+            value:
+              productCode: 265910P1
+              travelDate: '2020-11-30'
+              currency: AUD
+              paxMix:
+                - ageBand: ADULT
+                  numberOfTravelers: 2
+  responses:
+    '200':
+      description: Success
+      headers:
+        X-Unique-ID:
+          $ref: ../components/headers/XUniqueId.yaml
+      content:
+        application/json;version=2.0:
+          schema:
+            $ref: ../components/schemas/CheckAvailabilityResponse.yaml
+          examples:
+            5010SYDNEY:
+              $ref: >-
+                ../components/examples/availability-check-example-5010SYDNEY.yaml
+            46334P42:
+              $ref: ../components/examples/availability-check-example-46334P42.yaml
+            265910P1:
+              $ref: ../components/examples/availability-check-example-265910P1.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '404':
+      description: Not Found
+      headers:
+        X-Unique-ID:
+          $ref: ../components/headers/XUniqueId.yaml
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: ../components/schemas/ErrorResponse.yaml
+              - type: object
+                properties:
+                  code:
+                    description: |
+                      Code for this error type
+
+                      **Example**: `"NOT_FOUND"`
+                  message:
+                    description: |
+                      Details of this error
+
+                      **Example**: `"No bookable items found for the request"`
+              - type: object
+                example:
+                  code: NOT_FOUND
+                  message: No bookable items found for the request
+                  timestamp: '2019-09-17T03:20:45.737043Z'
+    '429':
+      $ref: ../components/responses/TooManyRequests.yaml
+    '500':
+      $ref: ../components/responses/InternalServerError.yaml
+    '503':
+      $ref: ../components/responses/ServiceUnavailable.yaml

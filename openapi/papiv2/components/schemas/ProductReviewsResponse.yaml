@@ -1,0 +1,54 @@
+type: object
+required:
+  - reviews
+  - totalReviewsSummary
+  - totalReviewCount
+  - filteredReviewCountByProvider
+properties:
+  reviews:
+    type: array
+    description: >
+      Reviews and review metadata for this product, from `start` to (`start`+`count`)
+    items:
+      $ref: './ProductReview.yaml'
+  totalReviewsSummary:
+    type: object
+    description: Summary of the set of all reviews available for this product
+    properties:
+      sources:
+        type: array
+        description: Breakdown of review summaries for each review source
+        items:
+          $ref: './ProductReviewsSummarySource.yaml'
+      reviewCountTotals:
+        type: array
+        description: Breakdown of number of reviews per rating for all reviews of this product from all sources
+        items:
+          $ref: './ProductReviewsSummaryCount.yaml'
+      totalReviews:
+        description: Total number of reviews available for this product from all sources
+        type: integer
+        format: int64
+  filteredReviewsSummary:
+    type: object
+    description: Summary of the set of reviews available for this product filtered by `provider`, `ratings`, `reviewsForNonPrimaryLocale` and `showMachineTranslated` in the request
+    properties:
+      sources:
+        type: array
+        description: Breakdown of review summaries for each review source
+        items:
+          type: object
+          properties:
+            provider:
+              type: string
+              description: |
+                Provider for this set of reviews; one of:
+                - `"VIATOR"`'
+            totalCount:
+              type: integer
+              format: int64
+              description: Total number of reviews for this product sourced from this provider
+      totalReviews:
+        description: Total number of reviews available for this product from all sources
+        type: integer
+        format: int64

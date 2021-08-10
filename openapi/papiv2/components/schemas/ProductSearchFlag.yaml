@@ -1,0 +1,9 @@
+type: string
+description: |
+  One of:
+  
+    - `"FREE_CANCELLATION"`
+    - `"SKIP_THE_LINE"`
+    - `"PRIVATE_TOUR"`
+    - `"SPECIAL_OFFER"`
+    - `"LIKELY_TO_SELL_OUT"` (same as tag 20757)

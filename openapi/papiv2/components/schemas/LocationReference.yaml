@@ -1,0 +1,14 @@
+type: object
+description: >
+  Details about the location can be retrieved using the
+  [/locations/bulk](../locationsBulk) endpoint
+required:
+  - ref
+properties:
+  ref:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: |
+      Location identifier code
+
+        - **Example**: `"LOC-c7d4f6ba-3633-4419-87d4-e88bb66206fc"`

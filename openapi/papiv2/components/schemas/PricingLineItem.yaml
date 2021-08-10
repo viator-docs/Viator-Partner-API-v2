@@ -1,0 +1,24 @@
+type: object
+required:
+  - numberOfTravelers
+  - subtotalPrice
+properties:
+  ageBand:
+    type: string
+    description: >
+      Machine-interpretable value indicating the age-band of the travelers that
+      this line-item describes the subtotal price for; one of:
+
+        - `"TRAVELER"`
+        - `"ADULT"`
+        - `"CHILD"`
+        - `"YOUTH"`
+        - `"INFANT"`
+        - `"SENIOR"`
+  numberOfTravelers:
+    type: integer
+    description: >-
+      The number of travelers that this line-item describes the subtotal price
+      for
+  subtotalPrice:
+    $ref: ./LineItemPriceObjectSubtotal.yaml

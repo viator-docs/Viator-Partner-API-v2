@@ -1,0 +1,14 @@
+type: object
+description: >
+  Numeric product category/subcategory tag identifiers for this product
+
+
+  To retrieve details about which tags these identifiers refer to, please use
+  the [/products/tags](../productsTags) endpoint.
+required:
+  - tags
+properties:
+  tags:
+    type: array
+    items:
+      $ref: ./TagWithAllLocalizations.yaml

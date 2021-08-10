@@ -1,0 +1,21 @@
+type: object
+required:
+  - dayOfWeek
+  - openTimes
+properties:
+  dayOfWeek:
+    type: string
+    description: Day of the week that these operating hours pertain to
+    enum:
+      - "MONDAY"
+      - "TUESDAY"
+      - "WEDNESDAY"
+      - "THURSDAY"
+      - "FRIDAY"
+      - "SATURDAY"
+      - "SUNDAY"
+  operatingHours:
+    type: array
+    description: Opening and closing times for this day of the week
+    items:
+      $ref: './OperatingHours.yaml'

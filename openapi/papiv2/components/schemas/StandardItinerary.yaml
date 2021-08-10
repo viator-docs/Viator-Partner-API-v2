@@ -1,0 +1,14 @@
+allOf:
+  - $ref: ./Itinerary.yaml
+  - type: object
+    description: Itinerary information where this product is a standard tour
+    required:
+      - itineraryItems
+    properties:
+      duration:
+        $ref: ./ItineraryDuration.yaml
+      itineraryItems:
+        type: array
+        description: Places that this tour visits or passes through
+        items:
+          $ref: ./StandardItineraryItem.yaml

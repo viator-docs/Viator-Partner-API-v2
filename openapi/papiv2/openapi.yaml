@@ -1,0 +1,97 @@
+openapi: 3.0.2
+
+info:
+  title: Viator Partner API v2
+  version: '2.0'
+  license:
+    name: CC BY 4.0
+    url: 'https://creativecommons.org/licenses/by/4.0/au/'
+  contact:
+    name: Viator Partner Support Team
+    url: 'https://docs.viator.com/partner-api/merchant/#support-procedures-merchant/'
+    email: dpsupport@viator.com
+
+servers:
+  - url: 'https://api.viator.com/partner'
+    description: Production server (uses live data)
+  - url: 'https://api.sandbox.viator.com/partner'
+    description: Sandbox server (uses test data)
+
+tags:
+  - name: Products
+  - name: Availability
+  - name: Bookings
+  - name: Auxiliary
+  - name: V1-endpoints
+  - name: V1-endpoints (affiliates only)
+  - name: Deprecated
+
+components:
+  securitySchemes:
+    API-key:
+      type: apiKey
+      in: header
+      name: exp-api-key
+
+security:
+  - API-key: []
+
+paths:
+  /products/modified-since:
+    $ref: paths/products@modified-since.yaml
+  /products/bulk:
+    $ref: paths/products@bulk.yaml
+  /products/{product-code}:
+    $ref: paths/products@{product-code}.yaml
+  /products/tags:
+    $ref: paths/products@tags.yaml
+  /products/booking-questions:
+    $ref: paths/products@booking-questions.yaml
+  /products/search:
+    $ref: paths/products@search.yaml
+  /availability/check:
+    $ref: paths/availability@check.yaml
+  /availability/schedules/{product-code}:
+    $ref: paths/availability@schedules@{product-code}.yaml
+  /availability/schedules/bulk:
+    $ref: paths/availability@schedules@bulk.yaml
+  /availability/schedules/modified-since:
+    $ref: paths/availability@schedules@modified-since.yaml
+  /bookings/hold:
+    $ref: paths/bookings@hold.yaml
+  /bookings/book:
+    $ref: paths/bookings@book.yaml
+  /bookings/status:
+    $ref: paths/bookings@status.yaml
+  /bookings/cancel-reasons:
+    $ref: paths/bookings@cancel-reasons.yaml
+  /bookings/{booking-reference}/cancel-quote:
+    $ref: paths/bookings@{booking-reference}@cancel-quote.yaml
+  /bookings/{booking-reference}/cancel:
+    $ref: paths/bookings@{booking-reference}@cancel.yaml
+  /locations/bulk:
+    $ref: paths/locations@bulk.yaml
+  /exchange-rates:
+    $ref: paths/exchange-rates.yaml
+  /reviews/product:
+    $ref: paths/reviews@product.yaml
+  /v1/taxonomy/destinations:
+    $ref: paths/v1@taxonomy@destinations.yaml
+  /v1/taxonomy/attractions:
+    $ref: paths/v1@taxonomy@attractions.yaml
+  /v1/product/reviews:
+    $ref: paths/v1@product@reviews.yaml
+  /v1/product/photos:
+    $ref: paths/v1@product@photos.yaml
+  /v1/search/attractions:
+    $ref: paths/v1@search@attractions.yaml
+  /v1/attraction:
+    $ref: paths/v1@attraction.yaml
+  /v1/attraction/reviews:
+    $ref: paths/v1@attraction@reviews.yaml
+  /v1/attraction/photos:
+    $ref: paths/v1@attraction@photos.yaml
+  /v1/attraction/products:
+    $ref: paths/v1@attraction@products.yaml
+  /v1/support/customercare:
+    $ref: paths/v1@support@customercare.yaml

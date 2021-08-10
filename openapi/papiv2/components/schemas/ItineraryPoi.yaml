@@ -1,0 +1,17 @@
+type: object
+description: Details about this Point Of Interest (POI)
+required:
+  - location
+properties:
+  location:
+    $ref: ./LocationReference.yaml
+  attractionId:
+    type: integer
+    description: >
+      Unique identifier in the Viator taxonomy of this point of interest if it
+      is regarded as an attraction
+
+      - **Note:** Use the `destinations[].ref` values in this response as the
+      `destId` request parameter when using the V1
+      [/v1/taxonomy/attractions](../v1TaxonomyAttractions)
+      endpoint get a list of the relevant attraction. 

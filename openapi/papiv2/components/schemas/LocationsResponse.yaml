@@ -1,0 +1,9 @@
+type: object
+required:
+  - locations
+properties:
+  locations:
+    type: array
+    description: Locations
+    items:
+      $ref: ./Location.yaml

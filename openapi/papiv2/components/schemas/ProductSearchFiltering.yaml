@@ -1,0 +1,61 @@
+type: object
+required:
+  - destination
+description: >
+  Only return products that match **all** the criteria provided here.
+properties:
+  destination:
+    type: string
+    description: |
+      Only return products that include the destination indicated by this numeric destination reference (as listed in the `destinations` array in the product content response), regardless of whether it is the product's primary destination.
+
+      See [Resolving references](#section/Workflows/Resolving-references) for more information about destinations.
+
+      **Note**: Specifying a 'country' destination will include all 'city' destinations within that country.
+  tags:
+    type: array
+    items:
+      type: integer
+    description: |
+      Only return products that include **all** tag identifiers provided here. Products with child tags of any parent tags specified here will also be returned.
+
+      See [Resolving references](../../../../papiv2/workflows/resolving-references) for more information about tags.
+  flags:
+    type: array
+    items:
+      $ref: ./ProductSearchFlag.yaml
+    description: |
+      Only return products that include **all** of the given attributes, which may include any of:
+
+        - `"FREE_CANCELLATION"` – products that have a cancellation policy that allows for free cancellation (i.e., excludes products for which `cancellationPolicy.type` is `"ALL_SALES_FINAL"` in the product content response)
+        - `"SKIP_THE_LINE"` – products that allow participants to attend a location without having to obtain a separate ticket on the occasion itself (`itinerary.skipTheLine` is `true`)
+        - `"PRIVATE_TOUR"` – products where only the travelers who have booked the product will be present (`itinerary.privateTour` is `true`)
+        - `"SPECIAL_OFFER"` – products that have a pricing discount available (i.e., `summary.fromPriceBeforeDiscount` will be present in the response from [/availability/schedules/{product-code}](../availabilitySchedules))
+        - `"LIKELY_TO_SELL_OUT"` - popular products that routinely sell out (this is equivalent to filtering by tag `20757`).
+  lowestPrice:
+    type: number
+    minimum: 0
+    description: Only return products that have a `fromPrice` that is higher than or equal to this price. If a date range is specified using `startDate` and `endDate`, pricing for the product only during this period will be considered.
+  highestPrice:
+    type: number
+    minimum: 0
+    exclusiveMinimum: true
+    description: Only return products that have a `fromPrice` that is lower than or equal to this price. If a date range is specified using `startDate` and `endDate`, pricing for the product only during this period will be considered.
+  startDate:
+    type: string
+    format: date
+    description: |
+      Only return products that are available during a period of time starting from this date.
+      
+      - **Format**: ISO-8601 (YYYY-MM-DD) in the time-zone of supplier
+      - **Default**: date on which the request is made in the time-zone of supplier
+      - **Note**: `startDate` cannot be in the past
+  endDate:
+    type: string
+    format: date
+    description: |
+      Only return products that are available during a period of time ending on this date.
+      
+      - **Format**: ISO-8601 (YYYY-MM-DD) in time-zone of supplier
+      - **Default**: one year in advance of the date on which the request is made in the time-zone of supplier
+      - **Note**: `endDate` cannot be in the past and is limited to one year from the date on which the request is made

@@ -1,0 +1,13 @@
+type: object
+description: Place at which passengers can board or alight the tour vehicle
+required:
+  - stopLocation
+properties:
+  stopLocation:
+    $ref: ./LocationReference.yaml
+  description:
+    type: string
+    description: |
+      Description of this stop
+
+        - **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter

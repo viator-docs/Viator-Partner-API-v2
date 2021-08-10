@@ -1,0 +1,177 @@
+allOf:
+  - $ref: ./Product.yaml
+  - type: object
+    required:
+      - ticketInfo
+      - timeZone
+      - description
+      - logistics
+      - additionalInfo
+      - cancellationPolicy
+      - bookingConfirmationSettings
+      - bookingRequirements
+      - bookingQuestions
+      - tags
+      - destinations
+      - pricingInfo
+      - supplier
+      - reviews
+    properties:
+      title:
+        type: string
+        description: |
+          Title of this product 
+
+           - **Example**: `"Sydney BridgeClimb"`
+
+           - **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter   
+      ticketInfo:
+        $ref: ./TicketInfo.yaml
+      pricingInfo:
+        $ref: ./PricingInfo.yaml
+      images:
+        type: array
+        description: Images for this product
+        items:
+          $ref: ./Image.yaml
+      logistics:
+        $ref: ./Logistics.yaml
+      timeZone:
+        type: string
+        pattern: '(?s).*[\S].*'
+        description: >
+          Code for the time zone in which this product operates (IANA TZ
+          database name format)
+
+            - **Example**: `'Australia/Sydney'`            
+      description:
+        type: string
+        pattern: '(?s).*[\S].*'
+        description: |
+          Description of this product
+
+            - **Example**: "Climb the Sydney Harbour Bridge with an expert guide for the ultimate Sydney experience..."
+
+            - **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter              
+      inclusions:
+        type: array
+        description: |
+          Features that are **included** with this product package
+
+            - **Note**: The same inclusion item may appear multiple times in this array. For example, `'Lunch'`. For a 7-day multi-day tour, 'Lunch' appearing seven times indicates that lunch is included on each of the seven days of the tour. This can be displayed as "Lunch (7)"
+        items:
+          allOf:
+            - $ref: ./InclusionExclusionItem.yaml
+      exclusions:
+        type: array
+        description: Features that are **not included** with this product package
+        items:
+          allOf:
+            - $ref: ./InclusionExclusionItem.yaml
+      additionalInfo:
+        type: array
+        description: Facts necessary to communicate to travelers regarding this product
+        items:
+          $ref: ./AdditionalInfo.yaml
+      cancellationPolicy:
+        $ref: ./CancellationPolicy.yaml
+      bookingConfirmationSettings:
+        $ref: ./BookingConfirmationSettings.yaml
+      bookingRequirements:
+        $ref: ./BookingRequirements.yaml
+      languageGuides:
+        type: array
+        description: >-
+          Language guides available for this product across all product
+          option codes
+        items:
+          $ref: ./LanguageGuide.yaml
+      bookingQuestions:
+        type: array
+        description: >
+          Array of machine-interpretable values specifying the facts that the
+          traveler must provide when booking this product; further details can
+          be retrieved via the
+          [/products/booking-questions](../productsBookingQuestions)
+          endpoint
+        items:
+          type: string
+      tags:
+        type: array
+        description: >
+          Array of numeric tag identifiers indicating the product categories
+          into which this product falls
+
+          To retrieve details about which tags these identifiers refer to,
+          please use the [/products/tags](../productsTags) endpoint.
+        items:
+          type: integer
+          description: |
+            Possible values:
+
+              - `"DATE_OF_BIRTH"`
+              - `"HEIGHT"`
+              - `"PASSPORT_EXPIRY"`
+              - `"PASSPORT_NATIONALITY"`
+              - `"PASSPORT_PASSPORT_NO"`
+              - `"PICKUP_POINT"`
+              - `"TRANSFER_AIR_ARRIVAL_AIRLINE"`
+              - `"TRANSFER_AIR_ARRIVAL_FLIGHT_NO"`
+              - `"TRANSFER_AIR_DEPARTURE_AIRLINE"`
+              - `"TRANSFER_AIR_DEPARTURE_FLIGHT_NO"`
+              - `"TRANSFER_ARRIVAL_DROP_OFF"`
+              - `"TRANSFER_ARRIVAL_TIME"`
+              - `"TRANSFER_DEPARTURE_DATE"`
+              - `"TRANSFER_DEPARTURE_PICKUP"`
+              - `"TRANSFER_DEPARTURE_TIME"`
+              - `"TRANSFER_PORT_ARRIVAL_TIME"`
+              - `"TRANSFER_PORT_CRUISE_SHIP"`
+              - `"TRANSFER_PORT_DEPARTURE_TIME"`
+              - `"TRANSFER_RAIL_ARRIVAL_LINE"`
+              - `"TRANSFER_RAIL_ARRIVAL_STATION"`
+              - `"TRANSFER_RAIL_DEPARTURE_LINE"`
+              - `"TRANSFER_RAIL_DEPARTURE_STATION"`
+              - `"WEIGHT"`
+              - `"FULL_NAMES_FIRST"`
+              - `"FULL_NAMES_LAST"`
+              - `"DISEMBARKATION_TIME"`
+              - `"SPECIAL_REQUIREMENTS"`
+              - `"AGEBAND"`
+              - `"TRANSFER_ARRIVAL_MODE"`
+              - `"TRANSFER_DEPARTURE_MODE"`
+      destinations:
+        type: array
+        description: >-
+          Destinations – i.e., cities, states, countries and regions – in which
+          this product can be considered to operate
+        items:
+          $ref: ./Destination.yaml
+      itinerary:
+        $ref: ./Itinerary.yaml
+      productOptions:
+        type: array
+        description: >
+          Product options (tour grades) available for this product
+
+
+          For more information see: [Key concepts: Product
+          options](../../../../papiv2/key-concepts/product-options)
+        items:
+          $ref: ./ProductOption.yaml
+      translationInfo:
+        $ref: ./TranslationDetails.yaml
+      supplier:
+        $ref: ./Supplier.yaml
+      productUrl:
+        type: string
+        description: >
+          **Affiliate partners only**: URL for booking this product on the [Viator.com](https://viator.com) site, including the tracking parameters for your account that will allow the attribution cookie on Viator.com to be set.
+
+
+
+          Example format: https://www.viator.com/tours/Sydney/Sydney-and-Bondi-Hop-on-Hop-off-Tour/d357-5010SYDNEY?mcid=42383&pid=P00045135&medium=api&version=2.0
+      reviews:
+        $ref: ./ProductReviews.yaml
+      viatorUniqueContent:
+        $ref: ./ViatorUniqueContent.yaml
+

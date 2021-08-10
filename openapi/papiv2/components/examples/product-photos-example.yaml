@@ -1,0 +1,82 @@
+summary: product photos example
+value:
+  errorReference: null
+  data:
+    - sortOrder: 1
+      ownerName: Husker1k
+      ownerCountry: null
+      productTitle: Big Bus Sydney and Bondi Hop-on Hop-off Tour
+      productUrlName: Sydney-and-Bondi-Hop-on-Hop-off-Tour
+      ownerAvatarURL: null
+      sslSupported: false
+      productCode: 5010SYDNEY
+      caption: <p>Carl and Karen meeting a new friend at the Wildlife park.</p>
+      timeUploaded: '2012-02-07'
+      photoURL: >-
+        http://cache-graphicslib.viator.com/graphicslib/media/e4/dsc00471-photo_1909732-770tall.jpg
+      photoId: 1909732
+      photoMediumResURL: >-
+        http://cache-graphicslib.viator.com/graphicslib/media/e4/dsc00471-photo_1909732-260tall.jpg
+      photoHiResURL: >-
+        http://cache-graphicslib.viator.com/graphicslib/media/e4/dsc00471-photo_1909732-1536tall.jpg
+      ownerId: 1755909
+      thumbnailURL: >-
+        http://cache-graphicslib.viator.com/graphicslib/media/e4/dsc00471-photo_1909732-133sq.jpg
+      editorsPick: true
+      title: DSC00471
+    - sortOrder: 2
+      ownerName: Kylie G
+      ownerCountry: Australia
+      productTitle: Big Bus Sydney and Bondi Hop-on Hop-off Tour
+      productUrlName: Sydney-and-Bondi-Hop-on-Hop-off-Tour
+      ownerAvatarURL: null
+      sslSupported: false
+      productCode: 5010SYDNEY
+      caption: Sydney Opera House
+      timeUploaded: '2009-07-22'
+      photoURL: >-
+        http://cache-graphicslib.viator.com/graphicslib/media/f2/sydney-opera-house-photo_997106-770tall.jpg
+      photoId: 997106
+      photoMediumResURL: >-
+        http://cache-graphicslib.viator.com/graphicslib/media/f2/sydney-opera-house-photo_997106-260tall.jpg
+      photoHiResURL: >-
+        http://cache-graphicslib.viator.com/graphicslib/media/f2/sydney-opera-house-photo_997106-1536tall.jpg
+      ownerId: 288013
+      thumbnailURL: >-
+        http://cache-graphicslib.viator.com/graphicslib/media/f2/sydney-opera-house-photo_997106-133sq.jpg
+      editorsPick: true
+      title: Sydney Opera House
+    - sortOrder: 3
+      ownerName: Sheila T
+      ownerCountry: null
+      productTitle: Big Bus Sydney and Bondi Hop-on Hop-off Tour
+      productUrlName: Sydney-and-Bondi-Hop-on-Hop-off-Tour
+      ownerAvatarURL: >-
+        http://cache-graphicslib.viator.com/graphicslib/media/d7/sheila-t-account_1327319-45sq.jpg
+      sslSupported: false
+      productCode: 5010SYDNEY
+      caption: <p>This was taken from a water taxi</p>
+      timeUploaded: '2018-03-28'
+      photoURL: >-
+        http://cache-graphicslib.viator.com/graphicslib/media/8a/-photo_31376266-770tall.jpg
+      photoId: 31376266
+      photoMediumResURL: >-
+        http://cache-graphicslib.viator.com/graphicslib/media/8a/-photo_31376266-260tall.jpg
+      photoHiResURL: >-
+        http://cache-graphicslib.viator.com/graphicslib/media/8a/-photo_31376266-1536tall.jpg
+      ownerId: 1327319
+      thumbnailURL: >-
+        http://cache-graphicslib.viator.com/graphicslib/media/8a/-photo_31376266-133sq.jpg
+      editorsPick: false
+      title: ''
+  dateStamp: '2020-02-10T15:32:59+0000'
+  errorType: null
+  errorCodes: []
+  errorMessage: null
+  errorName: null
+  extraInfo: {}
+  extraObject: null
+  success: true
+  totalCount: 118
+  vmid: '331001'
+  errorMessageText: null

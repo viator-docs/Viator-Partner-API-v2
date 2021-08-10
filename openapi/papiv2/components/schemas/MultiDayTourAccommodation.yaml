@@ -1,0 +1,13 @@
+type: object
+description: Details for this accommodation venue
+required:
+  - description
+properties:
+  description:
+    type: string
+    description: |
+      Description of this accommodation venue
+
+        - **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter
+  location:
+    $ref: ./LocationReference.yaml

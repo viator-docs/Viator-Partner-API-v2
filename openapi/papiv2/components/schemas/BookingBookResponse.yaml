@@ -1,0 +1,56 @@
+type: object
+properties:
+  status:
+    type: string
+    description: |
+      Indicates the outcome of the booking request; one of:
+
+        - `"CONFIRMED"` – the booking has been confimed
+        - `"REJECTED"` – the request was declined
+        - `"CANCELED"` – the booking has been canceled
+        - `"PENDING"` – the booking request has been submitted to the supplier and is awaiting their response
+  rejectionReasonCode:
+    type: string
+    description: >
+      In the case that `status` is `"REJECTED"`, this field provides a code as
+      to the reason for the rejection; one of:
+
+        - `"BOOKABLE_ITEM_IS_NO_LONGER_AVAILABLE"` – this bookable item is no longer available
+        - `"WEATHER"` – this booking was rejected on account of the weather
+        - `"DUPLICATE_BOOKING"` – this is a duplicate booking
+        - `"PRODUCT_NO_LONGER_OPERATING"` – the product is no longer operating
+        - `"MINIMUM_NUMBER_OF_PASSENGERS_NOT_MET"` – there are too few passengers for the product to operate
+        - `"SIGNIFICANT_GLOBAL_EVENT_FORCE_MAJEURE"` – the booking was rejected due to a natural disaster or other large-scale catastrophe 
+        - `"TOUR_WAS_CANCELLED"` – the product was cancelled
+        - `"ISSUE_WITH_TICKET"` – there was an issue with the ticket
+        - `"ISSUE_WITH_PICKUP"` – there was an issue with pick-up
+        - `"OTHER"` – other/unlisted reason
+
+  bookingRef:
+    type: string
+    description: Viator-generated booking reference number (if sent in the request)
+  partnerBookingRef:
+    type: string
+    description: Partner-generated booking reference number (if sent in the request)
+  currency:
+    type: string
+    description: |
+      One of the available billing currencies:
+
+        - `"USD"`
+        - `"GBP"`
+        - `"AUD"`
+        - `"EUR"`
+  lineItems:
+    type: array
+    description: Array of pricing details for each traveler in this booking
+    items:
+      $ref: ./PricingLineItem.yaml
+  totalPrice:
+    description: Total price of this booking
+    allOf:
+      - $ref: ./LineItemPriceObject.yaml
+  cancellationPolicy:
+    $ref: ./CancellationPolicy.yaml
+  voucherInfo:
+    $ref: ./VoucherInfo.yaml

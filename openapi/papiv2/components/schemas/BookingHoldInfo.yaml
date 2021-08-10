@@ -1,0 +1,14 @@
+type: object
+description: Availability and pricing hold information
+required:
+  - availability
+  - pricing
+properties:
+  availability:
+    description: Availability hold information
+    allOf:   
+      - $ref: ./HoldInfo.yaml
+  pricing:
+    description: Pricing hold information
+    allOf:
+      - $ref: ./HoldInfo.yaml

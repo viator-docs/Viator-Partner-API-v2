@@ -1,0 +1,15 @@
+type: object
+description: Additional details to display on voucher
+properties:
+  companyName:
+    description: Company name to display on voucher
+    type: string
+  email:
+    description: Company / customer support email address to display on voucher
+    type: string
+  phone:
+    type: string
+    description: Company / customer support phone number to display on voucher
+  voucherText:
+    type: string
+    description: Any additional custom text to display on voucher; e.g., customer support URL / instructions on how to access customer support

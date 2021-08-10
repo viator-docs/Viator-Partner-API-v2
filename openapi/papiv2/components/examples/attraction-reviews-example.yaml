@@ -1,0 +1,70 @@
+summary: /attraction/reviews
+value:
+  errorReference: null
+  data:
+    - sortOrder: 1
+      ownerName: Natalia brigham B
+      ownerCountry: null
+      productTitle: Shark Reef at Mandalay Bay Hotel and Casino
+      productUrlName: Shark-Reef-at-Mandalay-Bay-Hotel-and-Casino
+      ownerAvatarURL: null
+      sslSupported: false
+      viatorNotes: null
+      productCode: 5156SHARK
+      submissionDate: '2020-03-16'
+      rating: 1
+      review: >-
+        <p>Overpriced and very crowded.  There are tons of interesting things to
+        do in Vegas for families with kids but Shark Reef is NOT one of
+        them...</p>
+      publishedDate: '2020-03-16'
+      ownerId: 6500184
+      viatorFeedback: null
+      reviewId: 71781077
+    - sortOrder: 2
+      ownerName: Philip J
+      ownerCountry: null
+      productTitle: Shark Reef at Mandalay Bay Hotel and Casino
+      productUrlName: Shark-Reef-at-Mandalay-Bay-Hotel-and-Casino
+      ownerAvatarURL: null
+      sslSupported: false
+      viatorNotes: null
+      productCode: 5156SHARK
+      submissionDate: '2018-04-02'
+      rating: 1
+      review: >-
+        <p>Took longer to walk from the parking garage than it did to go through
+        it.</p>
+      publishedDate: '2018-04-02'
+      ownerId: 13474719
+      viatorFeedback: null
+      reviewId: 31509091
+    - sortOrder: 3
+      ownerName: Graham J
+      ownerCountry: null
+      productTitle: Shark Reef at Mandalay Bay Hotel and Casino
+      productUrlName: Shark-Reef-at-Mandalay-Bay-Hotel-and-Casino
+      ownerAvatarURL: null
+      sslSupported: false
+      viatorNotes: ''
+      productCode: 5156SHARK
+      submissionDate: '2015-03-02'
+      rating: 1
+      review: >-
+        <p>this was nothing like we expected.....it was a quick tour, not worth
+        the $$</p>
+      publishedDate: '2015-03-03'
+      ownerId: 11252090
+      viatorFeedback: ''
+      reviewId: 11408189
+  dateStamp: '2020-04-20T22:37:31+0000'
+  errorType: null
+  errorCodes: []
+  errorMessage: null
+  errorName: null
+  extraInfo: {}
+  extraObject: null
+  success: true
+  totalCount: 97
+  errorMessageText: null
+  vmid: '331004'

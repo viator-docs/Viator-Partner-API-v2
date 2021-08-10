@@ -1,0 +1,3 @@
+description: |
+  **suggested sell ('from') price** for this product in the currency set in the `currencyCode` parameter. This is the cheapest sell price, taking into consideration off-peak periods and discounts on larger groups.
+type: number

@@ -1,0 +1,33 @@
+type: object
+description: Redemption point details for this product
+required:
+  - redemptionType
+properties:
+  redemptionType:
+    pattern: '(?s).*[\S].*'
+    type: string
+    description: |
+      Machine-interpretable value specifying the type of redemption; one of:
+
+        - `"NONE"` - No redemption point - this is a direct entry ticket
+        - `"ATTRACTION_START_POINT"` - Tickets can be redeemed at this product's starting point
+        - `"DIFFERENT_LOCATION"` - Tickets can be redeemed from a location other than the product's starting point
+        - `"INDIRECT_DELIVERY"` - Tickets will be delivered post-booking by email; or, physically delivered to the customer or the customer's hotel
+  locations:
+    type: array
+    description: >
+      Locations for this redemption point
+
+
+      Details about the location can be retrieved using the
+      [/locations/bulk](../locationsBulk) endpoint
+    items:
+      $ref: ./LocationReference.yaml
+  specialInstructions:
+    type: string
+    description: |
+      Special instructions pertaining to this redemption point
+
+        - **Example**: `"Bring photo ID for entrance tickets."`
+
+        - **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter

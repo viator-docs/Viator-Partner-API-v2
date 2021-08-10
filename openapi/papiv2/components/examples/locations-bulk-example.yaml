@@ -1,0 +1,27 @@
+summary: /locations/bulk
+value:
+  locations:
+    - provider: GOOGLE
+      reference: LOC-f698f2a1-a53a-46bb-8708-3d45bf740f59
+      providerReference: ChIJi96kKfceB3wRhQLL_6FzrSg
+    - provider: GOOGLE
+      reference: LOC-9e88ac35-2e2c-4ecc-af8d-10b76770785f
+      providerReference: ChIJ--9uPvceB3wR-4BkkxaaWEI
+    - provider: TRIPADVISOR
+      reference: LOC-453b3cd4-4afa-414d-a8d8-bedb458d73fe
+      name: Hanalei Bay
+      address:
+        street: ', '
+        state: Hawaii
+        country: United States
+        countryCode: US
+        postcode: ''
+      center:
+        latitude: 22.207436
+        longitude: -159.49841
+    - provider: TRIPADVISOR
+      reference: CONTACT_SUPPLIER_LATER
+      name: I will contact the supplier later
+    - provider: TRIPADVISOR
+      reference: MEET_AT_DEPARTURE_POINT
+      name: I will meet at the departure point

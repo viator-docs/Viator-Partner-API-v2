@@ -1,0 +1,13 @@
+type: object
+required:
+  - opensAt
+  - closesAt
+properties:
+  opensAt:
+    type: string
+    description: Opening time; e.g. `"08:30"`
+    pattern: '(?s).*[\S].*'
+  closesAt:
+    type: string
+    description: Closing time; e.g. `"17:30"`
+    pattern: '(?s).*[\S].*'

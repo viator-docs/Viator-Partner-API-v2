@@ -1,0 +1,9 @@
+type: object
+description: Supplier details
+required:
+  - name
+properties:
+  name:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: Name of the supplier of this product

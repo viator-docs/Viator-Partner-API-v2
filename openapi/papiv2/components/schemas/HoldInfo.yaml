@@ -1,0 +1,16 @@
+type: object
+required:
+  - status
+properties:
+  status:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: |
+      Status of the booking hold; one of:
+
+        - `"HOLD_NOT_PROVIDED"`
+        - `"HOLDING"`
+  validUntil:
+    type: string
+    format: date-time
+    description: Timestamp (UTC) indicating when the booking hold expires

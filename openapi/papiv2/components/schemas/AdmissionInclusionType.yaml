@@ -1,0 +1,8 @@
+type: string
+description: >
+  Machine-interpretable value encoding whether the admission fee for this place
+  is included; one of:
+
+    - `"YES"`
+    - `"NO"`
+    - `"NOT_APPLICABLE"`

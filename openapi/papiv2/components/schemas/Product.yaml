@@ -1,0 +1,40 @@
+type: object
+required:
+  - productCode
+  - status
+  - createdAt
+properties:
+  status:
+    $ref: ./ProductStatus.yaml
+  productCode:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: |
+      Alphanumeric code that is the unique identifier for this product
+
+        - Example: `"5657BRIDGECLIMB"`
+  language:
+    type: string
+    description: >-
+      Code indicating the language into which the natural-language fields in
+      this response will be translated (if necessary)
+  createdAt:
+    type: string
+    format: date-time
+    description: |
+      Timestamp (UTC) indicating when this product was originally created
+
+        - Example: `"2019-04-03T02:54:29.082753Z"`
+  lastUpdatedAt:
+    type: string
+    format: date-time
+    description: >
+      Timestamp (UTC) indicating the most recent occasion of this product's
+      details being modified
+
+        - Example: `"2020-06-11T09:16:39Z"`
+discriminator:
+  propertyName: status
+  mapping:
+    ACTIVE: ./ActiveProduct.yaml
+    INACTIVE: ./InactiveProduct.yaml

@@ -1,0 +1,75 @@
+post:
+  tags:
+    - Auxiliary
+  summary: /exchange-rates
+  description: |
+    This endpoint gets the exchange rates for conversions between specified currencies.
+
+    In this API, all pricing is denominated in the currency of the supplier. For example, if a tour operates in Thailand, its prices will be given in Thai Baht (THB). 
+
+    Not all currencies are supported, but many are. They comprise:
+
+    - AED, AUD, BRL, CAD, CHF, CNY, DKK, EUR, FJD, GBP, HHL, 
+    - HKD, IDR, INR, ISK, JPY, KRW, MXN, MYR, NOK, NZD, PLN, 
+    - RUB, SEK, SGD, THB, TRY, TWD, USD, VND, ZAR
+    
+    While pricing can be in any of the currencies listed above, payments for bookings can only be made using the following four currencies:
+
+    - GBP (British Pound)
+    - EUR (Euros)
+    - USD (US Dollars)
+    - AUD (Australian dollars)
+
+    If you attempt to use an unsupported currency when making a booking request, you will receive the following error:
+
+    ```javascript
+    Incorrect currency code provided
+    ```
+
+    The exchange rates for conversions between the supplier and payment currencies that apply at any given moment are given in the response from this endpoint.
+
+    **Note**: In order to reduce the number of calls made to this service, we recommend retrieving the exchange rate for the currency pair in question just once for the time period during which it is valid, and then applying that rate to all products with pricing denominated in that currency rather than calling this endpoint for each product requiring currency conversion.
+
+    (Response sample generated on: 2020-09-17)
+  operationId: exchangeRates
+  requestBody:
+    content:
+      application/json;version=2.0:
+        schema:
+          $ref: ../components/schemas/ExchangeRatesRequest.yaml
+        example:
+          sourceCurrencies:
+            - AUD
+            - EUR
+            - USD
+            - GBP
+          targetCurrencies:
+            - AUD
+            - EUR
+            - USD
+            - GBP
+  responses:
+    '200':
+      description: Success
+      headers:
+        X-Unique-ID:
+          $ref: ../components/headers/XUniqueId.yaml
+      content:
+        application/json;version=2.0:
+          schema:
+            $ref: ../components/schemas/ExchangeRatesResponse.yaml
+          examples:
+            '1':
+              $ref: ../components/examples/exchange-rates-example.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '429':
+      $ref: ../components/responses/TooManyRequests.yaml
+    '500':
+      $ref: ../components/responses/InternalServerError.yaml
+    '503':
+      $ref: ../components/responses/ServiceUnavailable.yaml

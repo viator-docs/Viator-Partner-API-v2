@@ -1,0 +1,22 @@
+type: object
+required:
+  - height
+  - width
+  - url
+properties:
+  height:
+    type: integer
+    description: |
+      Height of this image in pixels
+
+        - Example: `'480'`
+  width:
+    type: integer
+    description: |
+      Width of this image in pixels
+      - Example `'720'`
+  url:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: |
+      URL from which this image can be retrieved.

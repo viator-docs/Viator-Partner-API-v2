@@ -1,0 +1,39 @@
+type: object
+required:
+  - filtering
+  - currency
+properties:
+  filtering:
+    $ref: ./ProductSearchFiltering.yaml
+  sorting:
+    $ref: ./ProductSearchSorting.yaml
+  pagination:
+    $ref: ./ProductSearchPagination.yaml
+  currency:
+    type: string
+    format: currency
+    description: |
+      Currency code for all prices provided in the request; and, the currency in which all pricing will be denominated in the response.
+      
+      One of: 
+
+       - `"AUD"`
+       - `"BRL"`
+       - `"CAD"`
+       - `"CHF"`
+       - `"DKK"`
+       - `"EUR"`
+       - `"GBP"`
+       - `"HKD"`
+       - `"INR"`
+       - `"JPY"`
+       - `"NOK"`
+       - `"NZD"`
+       - `"SEK"`
+       - `"SGD"`
+       - `"TWD"`
+       - `"USD"`
+       - `"ZAR"`
+
+       
+      **Note**: The currency you display to your users may not be the currency they see when they click through to the viator.com site. Instead, they will see the default currency for the locale from which they are accessing the site.

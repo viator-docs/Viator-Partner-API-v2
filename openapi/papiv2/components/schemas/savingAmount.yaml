@@ -1,0 +1,3 @@
+type: integer
+description: >-
+  **numeric price difference** of the price of this product (`price`) while on sale (`onSale` is `true`) compared to the product's original price (`rrp`).

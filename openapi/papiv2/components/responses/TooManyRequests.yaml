@@ -1,0 +1,32 @@
+description: Too Many Requests
+headers:
+  X-Unique-ID:
+    $ref: ../headers/XUniqueId.yaml
+content:
+  application/json:
+    schema:
+      allOf:
+        - $ref: ../schemas/ErrorResponse.yaml
+        - type: object
+          properties:
+            code:
+              description: >
+                Code for this error type
+
+
+                **Example**: `"TOO_MANY_REQUESTS"`
+
+                Note: We apply a rate limit of 150 requests per rolling 10
+                second time window. In order to avoid running-up against rate
+                limits, insert a delay of 2s if you receive a HTTP 429 status
+                code.
+            message:
+              description: |
+                Details of this error
+
+                **Example**: `"Too many requests"`
+        - type: object
+          example:
+            code: TOO_MANY_REQUESTS
+            message: Too many requests
+            timestamp: '2019-09-17T03:20:45.737043Z'

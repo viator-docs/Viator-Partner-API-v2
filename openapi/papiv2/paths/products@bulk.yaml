@@ -1,0 +1,54 @@
+post:
+  tags:
+    - Products
+  summary: /products/bulk
+  description: >
+    Get full product details for all requested products (limited to 500 products
+    per request)
+
+
+    (Response sample generated on: 2020-10-06)
+  operationId: productsBulk
+  parameters:
+    - $ref: ../components/parameters/campaignValue.yaml
+    - $ref: ../components/parameters/acceptLanguage.yaml
+    - $ref: ../components/parameters/accept.yaml
+  requestBody:
+    content:
+      application/json;version=2.0:
+        schema:
+          $ref: ../components/schemas/BulkProductRequest.yaml
+        example:
+          productCodes:
+            - 5010SYDNEY
+            - 2050_PA
+            - 2855KENNEDY_TKTS
+  responses:
+    '200':
+      description: Success
+      headers:
+        X-Unique-ID:
+          $ref: ../components/headers/XUniqueId.yaml
+      content:
+        application/json;version=2.0:
+          schema:
+            type: array
+            items:
+              $ref: ../components/schemas/Product.yaml
+          examples:
+            '1':
+              $ref: ../components/examples/products-bulk-example.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '404':
+      $ref: ../components/responses/NotFound.yaml
+    '429':
+      $ref: ../components/responses/TooManyRequests.yaml
+    '500':
+      $ref: ../components/responses/InternalServerError.yaml
+    '503':
+      $ref: ../components/responses/ServiceUnavailable.yaml

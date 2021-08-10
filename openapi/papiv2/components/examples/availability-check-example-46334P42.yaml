@@ -1,0 +1,91 @@
+summary: 46334P42
+value:
+  currency: USD
+  productCode: 46334P42
+  travelDate: '2020-12-30'
+  bookableItems:
+    - productOptionCode: TG5
+      startTime: '16:15'
+      available: false
+      unavailableReason: SOLD_OUT
+      lineItems:
+        - ageBand: ADULT
+          numberOfTravelers: 2
+          subtotalPrice:
+            price:
+              recommendedRetailPrice: 270.1
+              partnerNetPrice: 212.28
+      totalPrice:
+        price:
+          recommendedRetailPrice: 270.1
+          partnerNetPrice: 212.27
+          bookingFee: 12.74
+          partnerTotalPrice: 225.01
+    - productOptionCode: TG5
+      startTime: '16:45'
+      available: false
+      unavailableReason: SOLD_OUT
+      lineItems:
+        - ageBand: ADULT
+          numberOfTravelers: 2
+          subtotalPrice:
+            price:
+              recommendedRetailPrice: 270.1
+              partnerNetPrice: 212.28
+      totalPrice:
+        price:
+          recommendedRetailPrice: 270.1
+          partnerNetPrice: 212.27
+          bookingFee: 12.74
+          partnerTotalPrice: 225.01
+    - productOptionCode: TG5
+      startTime: '17:15'
+      available: false
+      unavailableReason: SOLD_OUT
+      lineItems:
+        - ageBand: ADULT
+          numberOfTravelers: 2
+          subtotalPrice:
+            price:
+              recommendedRetailPrice: 270.1
+              partnerNetPrice: 212.28
+      totalPrice:
+        price:
+          recommendedRetailPrice: 270.1
+          partnerNetPrice: 212.27
+          bookingFee: 12.74
+          partnerTotalPrice: 225.01
+    - productOptionCode: TG5
+      startTime: '17:45'
+      available: false
+      unavailableReason: SOLD_OUT
+      lineItems:
+        - ageBand: ADULT
+          numberOfTravelers: 2
+          subtotalPrice:
+            price:
+              recommendedRetailPrice: 270.1
+              partnerNetPrice: 212.28
+      totalPrice:
+        price:
+          recommendedRetailPrice: 270.1
+          partnerNetPrice: 212.27
+          bookingFee: 12.74
+          partnerTotalPrice: 225.01
+    - productOptionCode: TG5
+      startTime: '18:15'
+      available: false
+      unavailableReason: SOLD_OUT
+      lineItems:
+        - ageBand: ADULT
+          numberOfTravelers: 2
+          subtotalPrice:
+            price:
+              recommendedRetailPrice: 270.1
+              partnerNetPrice: 212.28
+      totalPrice:
+        price:
+          recommendedRetailPrice: 270.1
+          partnerNetPrice: 212.27
+          bookingFee: 12.74
+          partnerTotalPrice: 225.01

@@ -1,0 +1,25 @@
+type: object
+description: >
+  Details of the refund
+
+
+  **Note**: Bookings that have not been confirmed by the supplier and have a status of `"PENDING"` will report an `itemPrice`, `refundAmount` and `refundPercentage` of `0`, as no fees are charged until the booking has been accepted by the supplier and its status is `"CONFIRMED"`.
+properties:
+  itemPrice:
+    type: number
+    description: The merchant total price at the time this product was booked
+  refundAmount:
+    type: number
+    description: >-
+      Numeric currency amount that will be refunded if this booking is canceled
+      now
+  refundPercentage:
+    type: number
+    description: >-
+      Percentage of the item price that will be refunded if this booking is
+      canceled now
+  currencyCode:
+    type: string
+    description: >-
+      Three-letter code indicating the currency in which `itemPrice` and
+      `refundAmount` are displayed

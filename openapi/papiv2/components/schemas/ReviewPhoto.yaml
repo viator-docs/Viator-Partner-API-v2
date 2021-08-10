@@ -1,0 +1,17 @@
+type: object
+required:
+  - height
+  - width
+  - url
+properties:
+  height:
+    type: integer
+    format: int32
+    description: Height of image in pixels
+  width:
+    type: integer
+    format: int32
+    description: Width of image in pixels
+  url:
+    type: string
+    description: URL at which this image is located

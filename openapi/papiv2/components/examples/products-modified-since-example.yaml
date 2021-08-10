@@ -1,0 +1,805 @@
+summary: /products/modified-since
+value: {
+    "products": [
+        {
+            "status": "INACTIVE",
+            "productCode": "6550P3",
+            "language": "en",
+            "createdAt": "2020-12-10T00:00:00Z",
+            "lastUpdatedAt": "2021-05-31T02:01:01Z"
+        },
+        {
+            "status": "INACTIVE",
+            "productCode": "259269P1",
+            "language": "en",
+            "createdAt": "2020-12-10T00:00:00Z",
+            "lastUpdatedAt": "2021-05-31T06:26:37Z"
+        },
+        {
+            "status": "ACTIVE",
+            "productCode": "17556P22",
+            "language": "en-US",
+            "createdAt": "2020-03-18T08:04:02.760786Z",
+            "lastUpdatedAt": "2021-05-31T06:26:37Z",
+            "title": " Private Ho Chi Minh City Shopping Tour – Phu My Shore Excursions",
+            "ticketInfo": {
+                "ticketTypes": [
+                    "MOBILE_ONLY"
+                ],
+                "ticketTypeDescription": "Mobile or paper ticket accepted",
+                "ticketsPerBooking": "ONE_PER_BOOKING",
+                "ticketsPerBookingDescription": "One per booking"
+            },
+            "pricingInfo": {
+                "type": "PER_PERSON",
+                "ageBands": [
+                    {
+                        "ageBand": "INFANT",
+                        "startAge": 0,
+                        "endAge": 2,
+                        "minTravelersPerBooking": 0,
+                        "maxTravelersPerBooking": 15
+                    },
+                    {
+                        "ageBand": "CHILD",
+                        "startAge": 3,
+                        "endAge": 11,
+                        "minTravelersPerBooking": 0,
+                        "maxTravelersPerBooking": 15
+                    },
+                    {
+                        "ageBand": "ADULT",
+                        "startAge": 12,
+                        "endAge": 80,
+                        "minTravelersPerBooking": 1,
+                        "maxTravelersPerBooking": 15
+                    }
+                ]
+            },
+            "images": [
+                {
+                    "imageSource": "SUPPLIER_PROVIDED",
+                    "caption": "",
+                    "isCover": true,
+                    "variants": [
+                        {
+                            "height": 50,
+                            "width": 50,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-50x50/0a/a0/8f/3a.jpg"
+                        },
+                        {
+                            "height": 100,
+                            "width": 100,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/0a/a0/8f/3a.jpg"
+                        },
+                        {
+                            "height": 200,
+                            "width": 200,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/0a/a0/8f/3a.jpg"
+                        },
+                        {
+                            "height": 400,
+                            "width": 400,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/0a/a0/8f/3a.jpg"
+                        },
+                        {
+                            "height": 40,
+                            "width": 60,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-60x40/0a/a0/8f/3a.jpg"
+                        },
+                        {
+                            "height": 80,
+                            "width": 120,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-120x80/0a/a0/8f/3a.jpg"
+                        },
+                        {
+                            "height": 120,
+                            "width": 180,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-180x120/0a/a0/8f/3a.jpg"
+                        },
+                        {
+                            "height": 160,
+                            "width": 240,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-240x160/0a/a0/8f/3a.jpg"
+                        },
+                        {
+                            "height": 240,
+                            "width": 360,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/0a/a0/8f/3a.jpg"
+                        },
+                        {
+                            "height": 320,
+                            "width": 480,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/0a/a0/8f/3a.jpg"
+                        },
+                        {
+                            "height": 360,
+                            "width": 540,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/0a/a0/8f/3a.jpg"
+                        },
+                        {
+                            "height": 446,
+                            "width": 674,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0a/a0/8f/3a.jpg"
+                        },
+                        {
+                            "height": 480,
+                            "width": 720,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0a/a0/8f/3a.jpg"
+                        },
+                        {
+                            "height": 118,
+                            "width": 210,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/0a/a0/8f/3a.jpg"
+                        },
+                        {
+                            "height": 75,
+                            "width": 75,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/0a/a0/8f/3a.jpg"
+                        },
+                        {
+                            "height": 109,
+                            "width": 154,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-154x109/0a/a0/8f/3a.jpg"
+                        }
+                    ]
+                },
+                {
+                    "imageSource": "SUPPLIER_PROVIDED",
+                    "caption": "",
+                    "isCover": false,
+                    "variants": [
+                        {
+                            "height": 50,
+                            "width": 50,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-50x50/0a/a3/0d/6b.jpg"
+                        },
+                        {
+                            "height": 100,
+                            "width": 100,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/0a/a3/0d/6b.jpg"
+                        },
+                        {
+                            "height": 200,
+                            "width": 200,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/0a/a3/0d/6b.jpg"
+                        },
+                        {
+                            "height": 400,
+                            "width": 400,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/0a/a3/0d/6b.jpg"
+                        },
+                        {
+                            "height": 40,
+                            "width": 60,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-60x40/0a/a3/0d/6b.jpg"
+                        },
+                        {
+                            "height": 80,
+                            "width": 120,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-120x80/0a/a3/0d/6b.jpg"
+                        },
+                        {
+                            "height": 120,
+                            "width": 180,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-180x120/0a/a3/0d/6b.jpg"
+                        },
+                        {
+                            "height": 160,
+                            "width": 240,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-240x160/0a/a3/0d/6b.jpg"
+                        },
+                        {
+                            "height": 240,
+                            "width": 360,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/0a/a3/0d/6b.jpg"
+                        },
+                        {
+                            "height": 320,
+                            "width": 480,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/0a/a3/0d/6b.jpg"
+                        },
+                        {
+                            "height": 360,
+                            "width": 540,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/0a/a3/0d/6b.jpg"
+                        },
+                        {
+                            "height": 446,
+                            "width": 674,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0a/a3/0d/6b.jpg"
+                        },
+                        {
+                            "height": 480,
+                            "width": 720,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0a/a3/0d/6b.jpg"
+                        },
+                        {
+                            "height": 118,
+                            "width": 210,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/0a/a3/0d/6b.jpg"
+                        },
+                        {
+                            "height": 75,
+                            "width": 75,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/0a/a3/0d/6b.jpg"
+                        },
+                        {
+                            "height": 109,
+                            "width": 154,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-154x109/0a/a3/0d/6b.jpg"
+                        }
+                    ]
+                },
+                {
+                    "imageSource": "SUPPLIER_PROVIDED",
+                    "caption": "",
+                    "isCover": false,
+                    "variants": [
+                        {
+                            "height": 50,
+                            "width": 50,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-50x50/0a/a3/09/56.jpg"
+                        },
+                        {
+                            "height": 100,
+                            "width": 100,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/0a/a3/09/56.jpg"
+                        },
+                        {
+                            "height": 200,
+                            "width": 200,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/0a/a3/09/56.jpg"
+                        },
+                        {
+                            "height": 400,
+                            "width": 400,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/0a/a3/09/56.jpg"
+                        },
+                        {
+                            "height": 40,
+                            "width": 60,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-60x40/0a/a3/09/56.jpg"
+                        },
+                        {
+                            "height": 80,
+                            "width": 120,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-120x80/0a/a3/09/56.jpg"
+                        },
+                        {
+                            "height": 120,
+                            "width": 180,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-180x120/0a/a3/09/56.jpg"
+                        },
+                        {
+                            "height": 160,
+                            "width": 240,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-240x160/0a/a3/09/56.jpg"
+                        },
+                        {
+                            "height": 240,
+                            "width": 360,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/0a/a3/09/56.jpg"
+                        },
+                        {
+                            "height": 320,
+                            "width": 480,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/0a/a3/09/56.jpg"
+                        },
+                        {
+                            "height": 360,
+                            "width": 540,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/0a/a3/09/56.jpg"
+                        },
+                        {
+                            "height": 446,
+                            "width": 674,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0a/a3/09/56.jpg"
+                        },
+                        {
+                            "height": 480,
+                            "width": 720,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0a/a3/09/56.jpg"
+                        },
+                        {
+                            "height": 118,
+                            "width": 210,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/0a/a3/09/56.jpg"
+                        },
+                        {
+                            "height": 75,
+                            "width": 75,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/0a/a3/09/56.jpg"
+                        },
+                        {
+                            "height": 109,
+                            "width": 154,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-154x109/0a/a3/09/56.jpg"
+                        }
+                    ]
+                },
+                {
+                    "imageSource": "SUPPLIER_PROVIDED",
+                    "caption": "",
+                    "isCover": false,
+                    "variants": [
+                        {
+                            "height": 50,
+                            "width": 50,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-50x50/0a/a3/04/ce.jpg"
+                        },
+                        {
+                            "height": 100,
+                            "width": 100,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/0a/a3/04/ce.jpg"
+                        },
+                        {
+                            "height": 200,
+                            "width": 200,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/0a/a3/04/ce.jpg"
+                        },
+                        {
+                            "height": 400,
+                            "width": 400,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/0a/a3/04/ce.jpg"
+                        },
+                        {
+                            "height": 40,
+                            "width": 60,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-60x40/0a/a3/04/ce.jpg"
+                        },
+                        {
+                            "height": 80,
+                            "width": 120,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-120x80/0a/a3/04/ce.jpg"
+                        },
+                        {
+                            "height": 120,
+                            "width": 180,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-180x120/0a/a3/04/ce.jpg"
+                        },
+                        {
+                            "height": 160,
+                            "width": 240,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-240x160/0a/a3/04/ce.jpg"
+                        },
+                        {
+                            "height": 240,
+                            "width": 360,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/0a/a3/04/ce.jpg"
+                        },
+                        {
+                            "height": 320,
+                            "width": 480,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/0a/a3/04/ce.jpg"
+                        },
+                        {
+                            "height": 360,
+                            "width": 540,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/0a/a3/04/ce.jpg"
+                        },
+                        {
+                            "height": 446,
+                            "width": 674,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0a/a3/04/ce.jpg"
+                        },
+                        {
+                            "height": 480,
+                            "width": 720,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0a/a3/04/ce.jpg"
+                        },
+                        {
+                            "height": 118,
+                            "width": 210,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/0a/a3/04/ce.jpg"
+                        },
+                        {
+                            "height": 75,
+                            "width": 75,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/0a/a3/04/ce.jpg"
+                        },
+                        {
+                            "height": 109,
+                            "width": 154,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-154x109/0a/a3/04/ce.jpg"
+                        }
+                    ]
+                },
+                {
+                    "imageSource": "SUPPLIER_PROVIDED",
+                    "caption": "",
+                    "isCover": false,
+                    "variants": [
+                        {
+                            "height": 50,
+                            "width": 50,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-50x50/0a/a3/0a/24.jpg"
+                        },
+                        {
+                            "height": 100,
+                            "width": 100,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/0a/a3/0a/24.jpg"
+                        },
+                        {
+                            "height": 200,
+                            "width": 200,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/0a/a3/0a/24.jpg"
+                        },
+                        {
+                            "height": 400,
+                            "width": 400,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/0a/a3/0a/24.jpg"
+                        },
+                        {
+                            "height": 40,
+                            "width": 60,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-60x40/0a/a3/0a/24.jpg"
+                        },
+                        {
+                            "height": 80,
+                            "width": 120,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-120x80/0a/a3/0a/24.jpg"
+                        },
+                        {
+                            "height": 120,
+                            "width": 180,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-180x120/0a/a3/0a/24.jpg"
+                        },
+                        {
+                            "height": 160,
+                            "width": 240,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-240x160/0a/a3/0a/24.jpg"
+                        },
+                        {
+                            "height": 240,
+                            "width": 360,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/0a/a3/0a/24.jpg"
+                        },
+                        {
+                            "height": 320,
+                            "width": 480,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/0a/a3/0a/24.jpg"
+                        },
+                        {
+                            "height": 360,
+                            "width": 540,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/0a/a3/0a/24.jpg"
+                        },
+                        {
+                            "height": 446,
+                            "width": 674,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0a/a3/0a/24.jpg"
+                        },
+                        {
+                            "height": 480,
+                            "width": 720,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0a/a3/0a/24.jpg"
+                        },
+                        {
+                            "height": 118,
+                            "width": 210,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/0a/a3/0a/24.jpg"
+                        },
+                        {
+                            "height": 75,
+                            "width": 75,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/0a/a3/0a/24.jpg"
+                        },
+                        {
+                            "height": 109,
+                            "width": 154,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-154x109/0a/a3/0a/24.jpg"
+                        }
+                    ]
+                }
+            ],
+            "logistics": {
+                "redemption": {
+                    "redemptionType": "NONE",
+                    "specialInstructions": ""
+                },
+                "travelerPickup": {
+                    "pickupOptionType": "PICKUP_EVERYONE",
+                    "allowCustomTravelerPickup": false,
+                    "locations": [
+                        {
+                            "location": {
+                                "ref": "LOC-o0AXGEKPN4wJ9sIG0RAn5GZSKUbt1OQ9sKzR4DSmFzFolySbPhFCpna5D0/PG6wD"
+                            },
+                            "pickupType": "PORT"
+                        },
+                        {
+                            "location": {
+                                "ref": "LOC-o0AXGEKPN4wJ9sIG0RAn5Prp0akVv8qE+SrTYXPKopPmLfiCZTK/BzhXU1fvlnTf"
+                            },
+                            "pickupType": "PORT"
+                        },
+                        {
+                            "location": {
+                                "ref": "LOC-o0AXGEKPN4wJ9sIG0RAn5JaRZv8vmwh2yoeXyutiSDy2yRssmYRUnIVJWxcYHvcR"
+                            },
+                            "pickupType": "PORT"
+                        },
+                        {
+                            "location": {
+                                "ref": "LOC-o0AXGEKPN4wJ9sIG0RAn5MLAp1gTj0p0epB6IVH86ncW0isQ0Kt/ApmYGB5zBcGJ"
+                            },
+                            "pickupType": "PORT"
+                        },
+                        {
+                            "location": {
+                                "ref": "CONTACT_SUPPLIER_LATER"
+                            },
+                            "pickupType": "OTHER"
+                        }
+                    ],
+                    "additionalInfo": "⭐ Meeting point: at port gate (Nha Rong, Hiep Phuoc, Phu Huu, or Phu My port)\n⭐ Port Permit Service:\n 1. Opt to purchase port permit service: For a fee of 25USD/person, our guide and transport can go inside the port, right to your cruise ship for pick-up and drop off. This requires passport details such as full name, passport number, DOB, expiry date and nationality. We recommend this service for safety and comfort during the hot or rainy days, as well a reliable transport service.\n 2. Opt not to purchase port service fee: Please walk out of the port for 7 minutes – 15 minutes or take a shuttle bus inside port gate where our guide and driver will welcome you with a sign and a smile. This does not include a fee."
+                }
+            },
+            "timeZone": "Asia/Ho_Chi_Minh",
+            "description": "With the brand name of bustle and hustle center in Asia, Ho Chi Minh City is charmed with plenty of shopping malls, souvenir shops, and traditional art showrooms. Explore all of them by joining this Ho Chi Minh City day tour from Phu My port, or Nha Rong, Hiep Phuoc, Phu Huu port.\n\n⭐ HIGHLIGHTS:\n\n - Go shopping like locals,\n - Best things, best prices, various choices;\n - Hustle and bustle city;\n - Enjoy lunch with Vietnamese traditional food as Vietnamese pancake & rice noodles with grilled pork/fried roll or Pho– specialty food of the city\n\n⭐ Meeting point: port gate outside. (inside optional) \n\n⭐ Duration: This private tour is approximately 8 hours or longer depending on your time constraints. At the end of the private tour, we always make sure that you return on-time to board the cruise ship.\n\n⭐Tour customizable: Absolutely! (Tell us your specific requirements in the special request form)",
+            "inclusions": [
+                {
+                    "category": "OTHER",
+                    "categoryDescription": "Other",
+                    "type": "OTHER",
+                    "typeDescription": "Other",
+                    "otherDescription": "All entrance fees"
+                },
+                {
+                    "category": "FOOD_AND_DRINK",
+                    "categoryDescription": "Food and drink",
+                    "type": "LUNCH",
+                    "typeDescription": "Lunch",
+                    "description": "Lunch as indicated in the itinerary (please note we can cater for any dietary requirements, just be sure to get in touch beforehand)"
+                },
+                {
+                    "category": "OTHER",
+                    "categoryDescription": "Other",
+                    "type": "OTHER",
+                    "typeDescription": "Other",
+                    "otherDescription": "Unlimited Bottles of Water"
+                },
+                {
+                    "category": "OTHER",
+                    "categoryDescription": "Other",
+                    "type": "OTHER",
+                    "typeDescription": "Other",
+                    "otherDescription": "Round trip on private air-conditioner vehicle from the ports to Ho Chi Minh City"
+                },
+                {
+                    "category": "OTHER",
+                    "categoryDescription": "Other",
+                    "type": "OTHER",
+                    "typeDescription": "Other",
+                    "otherDescription": "English-speaking local guide"
+                }
+            ],
+            "exclusions": [
+                {
+                    "category": "OTHER",
+                    "categoryDescription": "Other",
+                    "type": "OTHER",
+                    "typeDescription": "Other",
+                    "otherDescription": "Tips & Other drinks"
+                },
+                {
+                    "category": "OTHER",
+                    "categoryDescription": "Other",
+                    "type": "OTHER",
+                    "typeDescription": "Other",
+                    "otherDescription": "Other personal expenses"
+                },
+                {
+                    "category": "OTHER",
+                    "categoryDescription": "Other",
+                    "type": "OTHER",
+                    "typeDescription": "Other",
+                    "otherDescription": "Port fee (port permit service)"
+                }
+            ],
+            "additionalInfo": [
+                {
+                    "type": "PETS_WELCOME",
+                    "description": "Pets and service animals are welcome"
+                },
+                {
+                    "type": "PUBLIC_TRANSPORTATION_NEARBY",
+                    "description": "Public transportation options are available nearby"
+                },
+                {
+                    "type": "NO_BACK_PROBLEMS",
+                    "description": "Not recommended for travelers with spinal injuries"
+                },
+                {
+                    "type": "PHYSICAL_EASY",
+                    "description": "Suitable for all physical fitness levels"
+                },
+                {
+                    "type": "OTHER",
+                    "description": "What to bring: Sunscreen • Hat • Insect Repellent • Light Jacket • Flashlight or Torch "
+                },
+                {
+                    "type": "OTHER",
+                    "description": "What to wear: Please ensure you dress respectfully. Knees and shoulders should be covered at all times. "
+                }
+            ],
+            "cancellationPolicy": {
+                "type": "STANDARD",
+                "description": "For a full refund, cancel at least 24 hours before the scheduled departure time.",
+                "cancelIfBadWeather": false,
+                "cancelIfInsufficientTravelers": false,
+                "refundEligibility": [
+                    {
+                        "dayRangeMin": 1,
+                        "percentageRefundable": 100
+                    },
+                    {
+                        "dayRangeMin": 0,
+                        "dayRangeMax": 1,
+                        "percentageRefundable": 0
+                    }
+                ]
+            },
+            "bookingConfirmationSettings": {
+                "bookingCutoffType": "START_TIME",
+                "bookingCutoffInMinutes": 1440,
+                "confirmationType": "INSTANT"
+            },
+            "bookingRequirements": {
+                "minTravelersPerBooking": 1,
+                "maxTravelersPerBooking": 15,
+                "requiresAdultForBooking": true
+            },
+            "languageGuides": [
+                {
+                    "type": "GUIDE",
+                    "language": "en",
+                    "legacyGuide": "en/SERVICE_GUIDE"
+                }
+            ],
+            "bookingQuestions": [
+                "PICKUP_POINT",
+                "SPECIAL_REQUIREMENTS"
+            ],
+            "tags": [
+                11928,
+                12039,
+                21736,
+                21946,
+                11930,
+                12075,
+                12056,
+                21733,
+                21768,
+                11941
+            ],
+            "destinations": [
+                {
+                    "ref": "25711",
+                    "primary": true
+                }
+            ],
+            "itinerary": {
+                "itineraryType": "STANDARD",
+                "skipTheLine": false,
+                "privateTour": true,
+                "duration": {
+                    "fixedDurationInMinutes": 510
+                },
+                "itineraryItems": [
+                    {
+                        "pointOfInterestLocation": {
+                            "location": {
+                                "ref": "LOC-6eKJ+or5y8o99Qw0C8xWyGlAxNYBHe0Ep2+3MEW9ikM="
+                            }
+                        },
+                        "duration": {
+                            "fixedDurationInMinutes": 10
+                        },
+                        "passByWithoutStopping": false,
+                        "admissionIncluded": "NOT_APPLICABLE",
+                        "description": "Welcome to Ho Chi Minh! Our team will be waiting with name signs, big smiles at your port to take you to your cool air-conditioned transport."
+                    },
+                    {
+                        "pointOfInterestLocation": {
+                            "location": {
+                                "ref": "LOC-6eKJ+or5y8o99Qw0C8xWyHeMs3iO6+A/+DAlt3qilgw="
+                            }
+                        },
+                        "duration": {
+                            "fixedDurationInMinutes": 300
+                        },
+                        "passByWithoutStopping": false,
+                        "admissionIncluded": "NOT_APPLICABLE",
+                        "description": " We start our Ho Chi Minh Shore Excursions and visit a local Lacquerware shop. Get a glimpse of this ancient art form by witnessing every detailed step of the manufacturing process under the guidance of local artisans.\nThen, head to the XQ showroom where you can admire how embroidery was made. Gazed at a high quality of artistic embroidery designed with traditional Vietnamese images such as lotus, home-dwelling animals, flowers, landscapes, and so on. Moreover, you have a chance to pick up some unique products as gifts and souvenirs for your friends and family.\nThe next stop is in Sai Gon Square. The center contains a huge scale of retailers and Mercian selling local goods from food, snacks, and fruits to clothing. Most of them are prepared for export that you can purchase some interesting items with reasonable prices. Remember to bargain before deciding to buy anything.\nAfter a delicious meal sampling Pho – Vietnamese traditional noodle soup and spring rolls.\nAfter that, visit Ben Thanh Market – the most famous and bustling market in Ho Chi Minh City. Witness the sight of various stalls full with interesting products from traditional to modern as well as Vietnamese and other countries cuisines. Continue on to the most modern center of the city – Vincom Center Shopping Mall where you enjoy a stroll along hundreds of department stores. The trip ends with a drive back to port."
+                    },
+                    {
+                        "pointOfInterestLocation": {
+                            "location": {
+                                "ref": "LOC-6eKJ+or5y8o99Qw0C8xWyGlAxNYBHe0Ep2+3MEW9ikM="
+                            }
+                        },
+                        "duration": {
+                            "fixedDurationInMinutes": 10
+                        },
+                        "passByWithoutStopping": false,
+                        "admissionIncluded": "NOT_APPLICABLE",
+                        "description": "Trip ends when the driver drops you at the port for the next departure."
+                    }
+                ]
+            },
+            "productOptions": [
+                {
+                    "productOptionCode": "TG2",
+                    "description": "Duration: 8 hours: We will meet you at Nha Rong port gate.<br/>Pickup included",
+                    "title": "Pickup at Nha Rong Port gate!",
+                    "languageGuides": [
+                        {
+                            "type": "GUIDE",
+                            "language": "en",
+                            "legacyGuide": "en/SERVICE_GUIDE"
+                        }
+                    ]
+                },
+                {
+                    "productOptionCode": "TG3",
+                    "description": "Duration: 8 hours 30 minutes: We will meet you at Phu Huu or Hiep Phuoc port gate!<br/>Pickup included",
+                    "title": "Phu Huu, Hiep Phuoc Port",
+                    "languageGuides": [
+                        {
+                            "type": "GUIDE",
+                            "language": "en",
+                            "legacyGuide": "en/SERVICE_GUIDE"
+                        }
+                    ]
+                },
+                {
+                    "productOptionCode": "TG1",
+                    "description": "Pickup included",
+                    "title": "Phu My Port & Cai Mep Port",
+                    "languageGuides": [
+                        {
+                            "type": "GUIDE",
+                            "language": "en",
+                            "legacyGuide": "en/SERVICE_GUIDE"
+                        }
+                    ]
+                }
+            ],
+            "translationInfo": {
+                "containsMachineTranslatedText": false
+            },
+            "supplier": {
+                "name": "Scooter Saigon Tour"
+            },
+            "reviews": {
+                "reviewCountTotals": [
+                    {
+                        "rating": 1.0,
+                        "count": 0
+                    },
+                    {
+                        "rating": 2.0,
+                        "count": 0
+                    },
+                    {
+                        "rating": 3.0,
+                        "count": 0
+                    },
+                    {
+                        "rating": 4.0,
+                        "count": 0
+                    },
+                    {
+                        "rating": 5.0,
+                        "count": 0
+                    }
+                ],
+                "totalReviews": 0
+            },
+            "viatorUniqueContent": {}
+        }
+    ],
+    "nextCursor": "MTYyMjQ0MjM5N3wyNTkyNjlQMXxJTkFDVElWRQ=="
+}

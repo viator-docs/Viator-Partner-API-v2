@@ -1,0 +1,5 @@
+summary: Canceled booking
+value:
+  bookingRef: BR-582323272
+  status: CANCELED
+  partnerBookingRef: test-partner-ref-aejsmont-num-1604985575

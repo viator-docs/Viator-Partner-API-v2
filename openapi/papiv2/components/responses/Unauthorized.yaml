@@ -1,0 +1,28 @@
+description: Unauthorized
+headers:
+  X-Unique-ID:
+    $ref: ../headers/XUniqueId.yaml
+content:
+  application/json:
+    schema:
+      allOf:
+        - $ref: ../schemas/ErrorResponse.yaml
+        - type: object
+          properties:
+            code:
+              description: |
+                Code for this error type
+
+                **Example**: `"UNAUTHORIZED"`
+            message:
+              description: >
+                Details of this error
+
+
+                **Example**: `"Access denied for API key:
+                73874dea-523d-430d-a981-a6d75b9c41d5"`
+        - type: object
+          example:
+            code: UNAUTHORIZED
+            message: 'Access denied for API key: 73874dea-523d-430d-a981-a6d75b9c41d5'
+            timestamp: '2019-09-17T03:20:45.737043Z'

@@ -1,0 +1,28 @@
+type: object
+required:
+  - currency
+  - productCode
+  - travelDate
+  - bookableItems
+properties:
+  currency:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: >-
+      Currency in which pricing is expressed in this response (as specified in
+      the request)
+  productCode:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: Product code of the product that this availability response pertains to
+  travelDate:
+    type: string
+    format: date
+    description: >
+      Date of travel for all bookable items returned in this response (relative
+      to the time zone in which the product operates)
+  bookableItems:
+    type: array
+    description: Bookable items for this product
+    items:
+      $ref: ./CheckAvailabilityBookableItem.yaml

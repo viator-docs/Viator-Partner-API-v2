@@ -1,0 +1,10 @@
+type: object
+description: Information about this product's booking questions
+required:
+  - bookingQuestions
+properties:
+  bookingQuestions:
+    type: array
+    description: Booking questions for this product
+    items:
+      $ref: ./BookingQuestion.yaml

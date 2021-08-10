@@ -1,71 +1,86 @@
-training:
-  - page: developer-portal/index.md
-  - group: Training exercises
+PAPIv2:
+  - page: index.md
+  - label: New features in this version
+    page: papiv2/about/new-features-in-this-version.md
+  - group: Implementation guide
     expanded: true
     pages:
-      - label: Setup
-        page: developer-portal/setup.md
-      - label: Markdown
-        page: developer-portal/markdown.md
-      - label: Folder structure
-        page: developer-portal/awesome/folders.md
-      - label: Mermaid diagrams
-        page: developer-portal/mermaid.md
-      - label: Page table of contents
-        page: developer-portal/page-table-of-contents.md
-      - separator: This is a separator
-      - label: Sidebar navigation
-        page: developer-portal/sidebar-nav.md
-      - label: Search
-        page: developer-portal/search.md
-      - label: Top nav and footers
-        page: developer-portal/nav-footer.md
-      - label: Logo and favicon
-        page: developer-portal/logo.md
-      - label: Metadata
-        page: developer-portal/metadata.md
-      - label: Colors
-        page: developer-portal/colors.md
-      - label: Typography
-        page: developer-portal/typography.md
-      - label: Analytics
-        page: developer-portal/analytics.md
-      - label: Home page
-        page: developer-portal/home-page.md
-      - label: Adding API reference docs
-        page: developer-portal/oas-definitions.md
-      - label: Adding an API response to an MDX page
-        page: developer-portal/mdx.mdx
-      - label: Creating React components
-        page: developer-portal/custom-component.mdx
-  - group: Petstore reference
-    expanded: false
+      - label: Access to endpoints
+        page: papiv2/access-to-endpoints.md
+      - label: Authentication
+        page: papiv2/authentication.md
+      - label: Localization
+        page: papiv2/localization.md
+      - group: Conventions
+        expanded: false
+        pages:
+          - label: API versioning strategy
+            page: papiv2/conventions/API-versioning-strategy.md
+          - label: Accept-Encoding
+            page: papiv2/conventions/accept-encoding.md
+          - label: V1-endpoint conventions
+            page: papiv2/conventions/v1-endpoint-conventions.md
+      - group: Key concepts
+        expanded: false
+        pages:
+          - label: Content-ingestion endpoints
+            page: papiv2/key-concepts/content-ingestion-endpoints.md
+          - label: V1 to V2 migration reference
+            page: papiv2/key-concepts/v1-to-v2-migration-reference.md
+          - label: Product options
+            page: papiv2/key-concepts/product-options.md
+          - label: Availability schedules
+            page: papiv2/key-concepts/availability-schedules.md
+          - label: Itineraries
+            page: papiv2/key-concepts/itineraries.md
+      - group: Booking concepts
+        expanded: false
+        pages: 
+          - label: Working with age bands
+            page: papiv2/booking-concepts/working-with-age-bands.md
+          - label: Cancellation policy
+            page: papiv2/booking-concepts/cancellation-policy.md
+          - label: Per-person and unit pricing
+            page: papiv2/booking-concepts/per-person-and-unit-pricing.md
+          - label: Supplier communications
+            page: papiv2/booking-concepts/supplier-communications.md
+          - label: Booking questions
+            page: papiv2/booking-concepts/booking-questions.md
+          - label: Booking cutoff times
+            page: papiv2/booking-concepts/booking-cutoff-times.md
+          - label: Booking confirmation types
+            page: papiv2/booking-concepts/booking-confirmation-types.md
+          - label: Making a booking
+            page: papiv2/booking-concepts/making-a-booking.md
+          - label: Cancellation API workflow
+            page: papiv2/booking-concepts/cancellation-API-workflow.md
+          - label: Checking booking status
+            page: papiv2/booking-concepts/checking-booking-status.md
+      - group: Testing
+        expanded: false
+        pages:
+          - label: Postman collectons for testing
+            page: papiv2/testing/postman-collections-for-testing.md
+      - group: Workflows
+        expanded: false
+        pages:
+          - label: Ingesting and updating the product catalogue
+            page: papiv2/workflows/ingesting-and-updating-the-product-catalogue.md
+          - label: Resolving references
+            page: papiv2/workflows/resolving-references.md
+          - label: Ingesting and updating availability schedules
+            page: papiv2/workflows/ingesting-and-updating-availability-schedules.md
+          - label: Update frequency
+            page: papiv2/workflows/update-frequency.md
+      - group: Appendices
+        expanded: false
+        pages:
+          - label: Inclusions and exclusions
+            page: papiv2/appendices/inclusions-and-exclusions.md
+          - label: Update log
+            page: papiv2/appendices/update-log.md
+
+  - group: API Specification
+    expanded: true
     pages:
       - page: openapi/reference.page.yaml/*
-
-  - group: Admin
-    expanded: true
-    pages:
-      - group: Routine
-        expanded: true
-        pages:
-          - group: Rock
-            expanded: true
-            pages:
-              - group: Paper
-                expanded: true
-                pages:
-                  - group: Scissors
-                    expanded: true
-                    pages:
-                      - group: 1-2-3
-                        expanded: true
-                        pages:
-                          - group: Go
-                            expanded: true
-                            pages:
-                              - label: Upgrading
-                                # page: developer-portal/upgrade.md
-alternative:
-  - page: developer-portal/sidebar-alternative.md
-    label: Alternative sidebar example

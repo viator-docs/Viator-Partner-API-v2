@@ -1,0 +1,99 @@
+type: object
+required:
+  - reviewReference
+  - language
+  - publishedDate
+  - text
+  - title
+  - machineTranslated
+  - provider
+  - helpfulVotes
+properties:
+  reviewReference:
+    type: string
+    description: Unique identification code for this review
+  language:
+    type: string
+    description: Language code for the language in which this review is written
+  avatarUrl:
+    type: string
+    description: URL for the avatar image (if available) for the reviewer that authored this review
+  publishedDate:
+    type: string
+    format: date-time
+    description: |
+      Date-time stamp indicating when this review was published
+
+      E.g.: `2021-01-02T11:17:12Z`
+  userName:
+    type: string
+    description: Username of the reviewer who submitted this review
+  rating:
+    type: integer
+    format: int32
+    description: Star-rating for this product given by this reviewer in this review
+  text:
+    type: string
+    description: |
+      Main text of this review
+
+      - **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter.
+  title:
+    type: string
+    description: |
+      Title of this review
+
+      - **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter.
+  machineTranslated:
+    type: boolean
+    description: Indicates whether the natural-language elements of this review have been machine translated
+  provider:
+    type: string
+    description: |
+      Provider for this review; one of:
+
+        - `"VIATOR"`
+  ownerResponse:
+    type: object
+    description: Response to this review from the supplier of this product if available
+    required:
+      - reviewReference
+      - language
+      - publishedDate
+      - text
+      - machineTranslated
+    properties:
+      reviewReference:
+        type: string
+        description: Unique identification code for this owner-response-review 
+      language:
+        type: string
+        description: Language code for the language in which this owner-response-review is written
+      publishedDate:
+        type: string
+        format: date-time
+        description: |
+          Date-time stamp indicating when this owner-response-review was published
+
+          E.g.: `2021-01-02T11:17:12Z`
+      userName:
+        type: string
+        description: Username of the supplier who submitted this owner-response-review
+      text:
+        type: string
+        description: |
+          Main text of this owner-response-review
+
+          - **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter.
+      machineTranslated:
+        type: boolean
+        description: Indicates whether the natural-language elements of this review have been machine translated
+  helpfulVotes:
+    type: integer
+    format: int32
+    description: Number of times this review has been labeled 'helpful' by other users
+  photosInfo:
+    type: array
+    description: Information about any photographs that were submitted with this review
+    items:
+      $ref: './ReviewPhotoInfo.yaml'

@@ -1,0 +1,9 @@
+type: object
+required:
+  - photoVersions
+properties:
+  photoVersions:
+    type: array
+    description: Width and height variants of this review image and associated URLs
+    items:
+      $ref: './ReviewPhoto.yaml'

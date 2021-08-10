@@ -1,0 +1,85 @@
+get:
+  tags:
+    - Availability
+  summary: /availability/schedules/modified-since
+  description: >
+    Get full availability details for all products modified since the specified
+    time
+
+
+    (Response sample generated on: 2021-03-12)
+  operationId: availabilitySchedulesModifiedSince
+  parameters:
+    - name: cursor
+      in: query
+      description: |
+        Pagination cursor received from a previous call to **this** endpoint that
+        points to the desired starting point for the results.
+
+        **Note**: Pagination will come into play when the number of results
+        exceeds the figure given in the `count` parameter. In this case, pass
+        the content of the `nextCursor` element for the value of `cursor` to
+        receive the next page of results. The final page of results will not
+        include the `nextCursor` element. For more information, see: [Ingesting
+        and updating availability schedules](../../../../papiv2/workflows/ingesting-and-updating-availability-schedules).
+        - Example: `'MTYwNTA2ODAwOXw1NjcyUDk='`
+      required: false
+      schema:
+        type: string
+    - name: count
+      in: query
+      description: |
+        The maximum number of products to be returned in response. 
+        - Maximum allowed and default value: `500`
+      required: false
+      schema:
+        type: integer
+        minimum: 1
+        maximum: 500
+    - name: modified-since
+      in: query
+      description: >
+        Only retrieve schedule that have alterations to their details since this
+        date and time.
+
+        - Format: `'YYYY-MM-DDTHH:MM:SS.SSSSSSZ'`
+
+        - Example: `"2020-09-30T00%3A00%3A01.737043Z"` (URL-encoded)
+
+
+        **Notes**: 
+
+        - You **must** submit the time-stamp in its <u>URL-encoded format</u>
+
+        - Using this parameter is <u>not recommended</u> as the standard pagination method; rather, use the `cursor` parameter to ensure all availability updates are captured during ingestion.
+      required: false
+      schema:
+        type: string
+        format: date-time
+    - $ref: ../components/parameters/accept.yaml
+  responses:
+    '200':
+      description: Success
+      headers:
+        X-Unique-ID:
+          $ref: ../components/headers/XUniqueId.yaml
+      content:
+        application/json;version=2.0:
+          schema:
+            $ref: ../components/schemas/AvailabilitySchedulesResponse.yaml
+          examples:
+            '1':
+              $ref: >-
+                ../components/examples/availability-schedules-modified-since-example.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '429':
+      $ref: ../components/responses/TooManyRequests.yaml
+    '500':
+      $ref: ../components/responses/InternalServerError.yaml
+    '503':
+      $ref: ../components/responses/ServiceUnavailable.yaml

@@ -1,0 +1,58 @@
+get:
+  tags:
+    - Deprecated
+  summary: /v1/product/reviews
+  operationId: v1ProductReviews
+  deprecated: true
+  description: >
+    <mark>This endpoint is now deprecated, but it will remain available to ensure backwards compatibilty of existing integrations. To retrieve product reviews, please use the new [/reviews/product](../reviewsProduct) endpoint.</mark>
+    
+
+    Get user-submitted reviews of a product
+
+    - **Note**: This endpoint uses conventions from V1 of this API. See
+    [V1 endpoints](../../../../papiv2/key-concepts/v1-endpoints) for further
+    information
+
+    - Only reviews in the language specified in the Accept-Language request
+    header parameter will be returned. The value given in `totalCount` represents the total 
+    number of reviews for this product across all languages. Therefore, the number 
+    of reviews you can access may be fewer than this value for the language you specify.
+
+
+    **Example:** "Get the first three reviews for product `5010SYDNEY` sorted by
+    rating in ascending order":
+
+
+    ```javascript
+
+    https://viatorapi.sandbox.viator.com/service/product/reviews?sortOrder=REVIEW_RATING_A&topX=1-3&code=5010SYDNEY&showUnavailable=false
+
+    ```
+
+    For information about how to find the review count and average rating, see: [Determining ratings](#section/Workflows/Determining-ratings)
+
+  parameters:
+    - $ref: ../components/parameters/acceptLanguage.yaml
+    - $ref: ../components/parameters/sortOrder_REVIEW.yaml
+    - $ref: ../components/parameters/topX.yaml
+    - $ref: ../components/parameters/code.yaml
+    - $ref: ../components/parameters/showUnavailable.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: ../components/schemas/basicErrorModel.yaml
+              - type: object
+                properties:
+                  data:
+                    type: array
+                    description: '**array** of review objects'
+                    items:
+                      $ref: ../components/schemas/reviewObject.yaml
+          examples:
+            '1':
+              $ref: ../components/examples/product-reviews-example.yaml

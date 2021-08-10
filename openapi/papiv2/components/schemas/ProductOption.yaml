@@ -1,0 +1,35 @@
+type: object
+description: Detail about a single product option for this product
+required:
+  - title
+  - productOptionCode
+properties:
+  productOptionCode:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: >
+      Identification code for this product option 
+
+        - **Example**: `"BCLM"`
+
+
+      For more information see: [Key concepts: Product
+      options](../../../../papiv2/key-concepts/product-options)
+  description:
+    type: string
+    description: |
+      Description of this product option
+
+        - **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter
+  title:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: |
+      Title of this product option
+
+        - **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter
+  languageGuides:
+    type: array
+    description: Language guides available for this product option
+    items:
+      $ref: ./LanguageGuide.yaml

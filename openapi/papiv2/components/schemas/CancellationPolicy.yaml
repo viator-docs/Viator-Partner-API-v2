@@ -1,0 +1,33 @@
+type: object
+description: Cancellation policy details for this product
+required:
+  - type
+  - cancelIfBadWeather
+  - cancelIfInsufficientTravelers
+  - refundEligibility
+properties:
+  type:
+    $ref: ./CancellationConditionType.yaml
+  description:
+    type: string
+    description: >
+      Description of this product's cancellation policy
+
+      - **Note**: This field contains natural language suitable for display to
+      the user; content will be translated (if necessary) into the language
+      specified in the Accept-Language header parameter
+  cancelIfBadWeather:
+    type: boolean
+    description: >-
+      **True** if the supplier of this product may cancel on account of weather
+      conditions
+  cancelIfInsufficientTravelers:
+    type: boolean
+    description: >-
+      **True** if the supplier of this product can cancel due to too few
+      participants
+  refundEligibility:
+    type: array
+    description: Cancellation policy definitions for this product
+    items:
+      $ref: ./CancellationCondition.yaml

@@ -1,0 +1,8 @@
+type: object
+properties:
+  cancellationReasonText:
+    type: string
+    description: Natural-language description of this cancellation reason
+  cancellationReasonCode:
+    type: string
+    description: Machine-interpretable identification code for this cancellation

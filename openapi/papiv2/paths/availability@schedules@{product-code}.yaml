@@ -1,0 +1,53 @@
+get:
+  tags:
+    - Availability
+  summary: '/availability/schedules/{product-code}'
+  description: |
+    Get availability details for all product options of the requested product
+
+    (Response sample generated on: 2021-03-12)
+  operationId: availabilitySchedules
+  parameters:
+    - $ref: ../components/parameters/accept.yaml
+    - name: product-code
+      in: path
+      description: >-
+        Retrieve availability details for the product identified by this product
+        code
+      required: true
+      schema:
+        type: string
+  responses:
+    '200':
+      description: Success
+      headers:
+        X-Unique-ID:
+          $ref: ../components/headers/XUniqueId.yaml
+      content:
+        application/json;version=2.0:
+          schema:
+            $ref: ../components/schemas/ProductAvailabilitySchedule.yaml
+          examples:
+            5010SYDNEY:
+              $ref: >-
+                ../components/examples/availability-schedules-5010SYDNEY-example.yaml
+            10175P18 (timed entry):
+              $ref: >-
+                ../components/examples/availability-schedules-46334P42-example.yaml
+            265910P1 (with discount):
+              $ref: >-
+                ../components/examples/availability-schedules-265910P1-example.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '404':
+      $ref: ../components/responses/NotFound.yaml
+    '429':
+      $ref: ../components/responses/TooManyRequests.yaml
+    '500':
+      $ref: ../components/responses/InternalServerError.yaml
+    '503':
+      $ref: ../components/responses/ServiceUnavailable.yaml

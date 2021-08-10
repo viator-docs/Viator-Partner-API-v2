@@ -1,0 +1,20 @@
+type: object
+description: |
+  Reference details about a destination associated with this product
+required:
+  - ref
+  - primary
+properties:
+  ref:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: >
+      Unique numeric identifier for this destination
+
+      - **Note**: Full details about the destination associated with this
+      reference can be found in the response from the
+      [/v1/taxonomy/destinations](../v1TaxonomyDestinations)
+      endpoint.
+  primary:
+    type: boolean
+    description: '**True** if this is the primary destination associated with this product'

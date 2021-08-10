@@ -1,0 +1,22 @@
+summary: 265910P1
+value:
+  currency: USD
+  productCode: 265910P1
+  travelDate: '2020-11-30'
+  bookableItems:
+    - productOptionCode: TG1
+      startTime: '09:30'
+      available: true
+      lineItems:
+        - ageBand: ADULT
+          numberOfTravelers: 2
+          subtotalPrice:
+            price:
+              recommendedRetailPrice: 588.98
+              partnerNetPrice: 470.45
+      totalPrice:
+        price:
+          recommendedRetailPrice: 588.98
+          partnerNetPrice: 470.45
+          bookingFee: 28.23
+          partnerTotalPrice: 498.68

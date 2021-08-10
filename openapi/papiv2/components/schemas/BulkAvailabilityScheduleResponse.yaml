@@ -1,0 +1,9 @@
+type: object
+required:
+  - availabilitySchedules
+properties:
+  availabilitySchedules:
+    type: array
+    description: Array of availability schedule objects
+    items:
+      $ref: ./ProductAvailabilitySchedule.yaml

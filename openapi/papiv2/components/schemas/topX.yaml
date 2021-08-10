@@ -1,0 +1,13 @@
+type: string
+description: >
+  **start and end rows** to return in the format {start}-{end}
+
+  - e.g. `'1-10'`, `'11-20'`
+
+
+  **Note**: 
+
+  - the maximum number of rows per request is 100; therefore, `'100-400'` will
+  return the same as `'100-200'`
+
+  - if `topX` is not specified, the default is `'1-100'`

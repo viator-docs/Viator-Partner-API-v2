@@ -1,0 +1,54 @@
+type: object
+description: |
+  Product details unique to Viator.com
+
+  **Note**: 
+    - Access to this information is only available if it is enabled for your account. Please speak to your account manager if you would like to take advantage of our unique content.
+    - You must ensure that your site is configured such that **no Viator Unique Content is indexed by any search engine**. This is a requirement for site certification.
+properties: 
+  title: 
+    type: string
+    description: |
+      Viator-improved title of this product
+
+      This replaces the supplier-provided-title (given in the `title` element). Improved by Viator, this is a more sales-worthy title for this product.
+
+      **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter.
+    pattern: '(?s).*[\S].*'
+  shortDescription: 
+    type: string
+    description: |
+      Viator-improved description of this product
+
+      This replaces the supplier-provided-description (given in the `description` element) and is used in the 'Overview' section of the product display page on Viator.com.
+
+      **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter.
+    pattern: '(?s).*[\S].*'
+  longDescription: 
+    type: string
+    description: |
+      Viator-improved natural-language description of this product's itinerary
+
+      This text is used in the 'What To Expect' section of the product display page on Viator.com as a preamble to the structured itinerary.
+
+      **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter.
+    pattern: '(?s).*[\S].*'
+  insiderTips: 
+    type: string
+    description: |
+      Viator's 'insider-tips' for this product
+
+      This text is used in the 'Overview – Why Travelers Chose This Tour' section of the product display page on Viator.com.
+
+      **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter.
+    pattern: '(?s).*[\S].*'
+  highlights: 
+    type: array
+    description: |
+      Viator's 'highlights' for this product
+
+      These text items are used to provide additional bullet-point highlights as part of the 'Overview' section of the product display page on Viator.com.
+
+      **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter.
+    items: 
+      type: string

@@ -1,0 +1,18 @@
+type: object
+required:
+  - phone
+description: |
+  Details for correspondence regarding this booking
+
+  **See**: [Booking concepts – Supplier communications](../../../../papiv2/booking-concepts/supplier-communications) for information about closed-loop communication
+properties:
+  phone:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: Telephone number to be used for correspondence from the supplier regarding the booking. This can be a mobile or land-line number and should be the phone number at which the booker is most easily contactable.
+  email:
+    type: string
+    description: |
+      Email address of the customer to be used for correspondence from the supplier regarding the booking
+
+      **Note**: Including this field enables CLC between supplier and customer; omitting the field will result in supplier communications being sent only to your customer support address

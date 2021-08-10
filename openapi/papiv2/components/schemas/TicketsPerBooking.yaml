@@ -1,0 +1,7 @@
+type: string
+description: >
+  Machine-interpretable value indicating whether each traveler needs their own
+  ticket; one of: 
+
+    - `"ONE_PER_BOOKING"`  
+    - `"ONE_PER_TRAVELER"`

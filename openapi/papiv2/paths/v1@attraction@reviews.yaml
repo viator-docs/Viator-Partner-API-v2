@@ -1,0 +1,114 @@
+get:
+  tags:
+    - V1-endpoints (affiliates only)
+  summary: /v1/attraction/reviews
+  operationId: v1AttractionReviews
+  description: |
+
+    This service gets reviews related to an attraction. These reviews might be
+    associated indirectly through the related products.
+
+    **Note**:
+
+    - <mark>This endpoint uses conventions from V1 of this API. See
+    [V1 endpoints](../../../../papiv2/key-concepts/v1-endpoints) for further
+    information</mark>
+    - This endpoint is only available to <u>affiliate partners</u>
+    - Pages generated using data from this endpoint are subject to a **strict no-index policy**. If you are unsure about whether you are correctly following this rule, please reach out to your account manager for advice.
+
+  parameters:
+    - $ref: ../components/parameters/acceptLanguage.yaml
+    - in: query
+      name: seoId
+      required: true
+      description: >-
+        **unique numeric identifier** for the attraction to retrieve
+        recommmendation details for
+      example: 14235
+      schema:
+        type: integer
+    - $ref: ../components/parameters/topX.yaml
+    - in: query
+      name: sortOrder
+      description: '**sort order** in which to return results'
+      example: SEO_REVIEW_RATING_A
+      schema:
+        type: string
+        enum:
+          - SEO_REVIEW_RATING_A - Traveler Rating (low->high)
+          - SEO_REVIEW_RATING_D - Traveler Rating (high->low)
+          - SEO_REVIEW_RATING_PUBLISHED_DATE_D - Most recent review
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: ../components/schemas/basicErrorModel.yaml
+              - type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        sortOrder:
+                          type: integer
+                          description: '**sort order** for *this* review'
+                        ownerName:
+                          type: string
+                          description: '**name** of the owner of *this* review'
+                        ownerCountry:
+                          type: string
+                          description: >-
+                            **country** in which the owner of *this* review is
+                            located
+                        productTitle:
+                          type: string
+                          description: '**title** of the product that *this* review is about'
+                        productUrlName:
+                          type: string
+                          description: >-
+                            **URL-formatted name** of the product *this* review
+                            is about
+                        ownerAvatarURL:
+                          type: string
+                          description: ignore (Viator only)
+                        sslSupported:
+                          type: boolean
+                          description: ignore (Viator only)
+                        publishedDate:
+                          type: string
+                          description: '**date** on which *this* review was published'
+                        productCode:
+                          type: string
+                          description: >-
+                            **unique alphanumeric identifier** of the product
+                            that *this* review is about
+                        viatorNotes:
+                          type: string
+                          description: ignore (Viator only)
+                        submissionDate:
+                          type: string
+                          description: '**date** on which *this* review was submitted'
+                        rating:
+                          type: integer
+                          description: '**rating** given by the author of *this* review'
+                        review:
+                          type: string
+                          description: '**text content** of *this* review'
+                        ownerId:
+                          type: integer
+                          description: >-
+                            **unique numeric identifier** of *this* review's
+                            author
+                        viatorFeedback:
+                          type: string
+                          description: ignore (Viator only)
+                        reviewId:
+                          type: integer
+                          description: '**unique numeric identifier** for *this* review'
+          examples:
+            '1':
+              $ref: ../components/examples/attraction-reviews-example.yaml

@@ -1,0 +1,475 @@
+get:
+  tags:
+    - V1-endpoints (affiliates only)
+  summary: /v1/attraction
+  operationId: v1Attraction
+  description: |
+    This service returns the details of an attraction.
+
+    
+    **Note**:
+
+    - <mark>This endpoint uses conventions from V1 of this API. See
+    [V1 endpoints](../../../../papiv2/key-concepts/v1-endpoints) for further
+    information</mark>
+    - This endpoint is only available to <u>affiliate partners</u>
+    - Pages generated using data from this endpoint are subject to a **strict no-index policy**. If you are unsure about whether you are correctly following this rule, please reach out to your account manager for advice.    
+  
+  parameters:
+    - $ref: ../components/parameters/acceptLanguage.yaml
+    - in: query
+      name: seoId
+      required: true
+      description: '**unique numeric identifier** for the attraction to retrieve details for'
+      example: 14235
+      schema:
+        type: integer
+    - in: query
+      name: currencyCode
+      description: >-
+        **currency-code** for the currency in which to display pricing details for the products related to this attraction.
+
+
+        **Note:**
+
+        - You must have multiple currencies enabled in order to set the currency using this parameter. Please speak to your account manager if you wish to have this enabled.
+
+        - If you omit this parameter; or, if you do not have multiple currencies enabled, pricing will be returned in the default currency for your account.
+      example: EUR
+      schema:
+        type: string
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: ../components/schemas/basicErrorModel.yaml
+              - type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      panoramaCount:
+                        type: integer
+                        description: '**number of panoramas** available for this attraction'
+                        example: 0
+                      webURL:
+                        $ref: ../components/schemas/webURL.yaml
+                      userPhotos:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            sortOrder:
+                              type: integer
+                              description: '**sort order** for *this* result'
+                            ownerName:
+                              type: string
+                              description: '**name** of the owner of *this* photograph'
+                            ownerCountry:
+                              type: string
+                              nullable: true
+                              description: >-
+                                **natural-language name** of the country that
+                                the owner of this photo calls home
+                            productTitle:
+                              type: string
+                              description: >-
+                                **title** of the product that *this* photo
+                                represents
+                            ownerAvatarURL:
+                              type: string
+                              description: >-
+                                **URL** for the avatar image of the owner of
+                                this photo
+                            productCode:
+                              type: string
+                              description: >-
+                                **unique alpha-numeric identifier** of the
+                                product that this photo represents
+                            title:
+                              type: string
+                              description: >-
+                                **natural-language title** of the product that
+                                this photo represents
+                            caption:
+                              type: string
+                              description: '**HTML-formatted caption** for *this* photo'
+                            thumbnailURL:
+                              type: string
+                              description: '**URL** for the thumbnail image of *this* photo'
+                            ownerId:
+                              type: integer
+                              description: >-
+                                **unique numeric identifier** of the owner of
+                                *this* photo
+                            editorsPick:
+                              type: boolean
+                              description: >-
+                                **indicator**: `true` if this photo is an
+                                editor's pick
+                            photoHiResURL:
+                              type: string
+                              description: >-
+                                **URL** for the high-resolution version of
+                                *this* photo
+                            photoId:
+                              type: integer
+                              description: '**unique numeric identifier** for *this* photo'
+                            photoURL:
+                              type: string
+                              description: '**URL** for *this* photo'
+                            photoMediumResURL:
+                              type: string
+                              description: >-
+                                **URL** for the medium-resolution version of
+                                *this* photo
+                            timeUploaded:
+                              type: string
+                              description: >-
+                                **date** on which *this* photo was uploaded
+                                formatted according to the example
+                      reviews:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            sortOrder:
+                              type: integer
+                              description: '**sort order** for *this* result'
+                            ownerName:
+                              type: string
+                            ownerCountry:
+                              type: string
+                              description: ignore (Viator only)
+                            productTitle:
+                              type: string
+                              description: >-
+                                **title** of the product that *this* photo
+                                represents
+                            ownerAvatarURL:
+                              type: string
+                              description: ignore (Viator only)
+                            productCode:
+                              type: string
+                              description: >-
+                                **unique alpha-numeric identifier** of the
+                                product that this photo represents
+                            review:
+                              type: string
+                              description: '**HTML-formatted text** of *this* review'
+                            rating:
+                              type: integer
+                              description: >-
+                                **numeric rating** given in *this*
+                                recommendation
+                            ownerId:
+                              type: integer
+                              description: >-
+                                **unique numeric identifier** for the owner of
+                                *this* review
+                            viatorFeedback:
+                              type: string
+                              description: ignore (Viator only)
+                            reviewId:
+                              type: integer
+                              description: '**unique numeric identifier** for *this* review'
+                            submissionDate:
+                              type: string
+                              description: >-
+                                **date** on which *this* review was submitted
+                                formatted according to the example
+                            publishedDate:
+                              type: string
+                              description: '**date** on which *this* review was published'
+                            viatorNotes:
+                              type: string
+                              description: ignore (Viator only)
+                      products:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            sortOrder:
+                              type: integer
+                              description: '**sort order** for *this* result'
+                            supplierName:
+                              type: string
+                              description: ignore (Viator only)
+                            currencyCode:
+                              type: string
+                              description: >-
+                                **currency-code** for the currency in which
+                                pricing information is displayed
+                            catIds:
+                              type: string
+                              description: ignore (Viator only)
+                            subCatIds:
+                              type: string
+                              description: ignore (Viator only)
+                            webURL:
+                              $ref: ../components/schemas/webURL.yaml
+                            specialReservationDetails:
+                              type: string
+                              description: ignore (Viator only)
+                            panoramaCount:
+                              type: integer
+                              description: ignore (Viator only)
+                            merchantCancellable:
+                              type: boolean
+                              description: ignore (Viator only)
+                            duration:
+                              type: string
+                              description: >-
+                                **natural-language duration** of *this* tour,
+                                formatted according to the example
+                            code:
+                              type: string
+                              description: >-
+                                **unique alphanumeric identifier** for *this*
+                                product
+                            shortDescription:
+                              type: string
+                              description: >-
+                                **short, natural-language description** of *this*
+                                product
+                            supplierCode:
+                              type: string
+                              description: >-
+                                **unique numeric identifer** of the supplier of
+                                *this* product expressed as a string
+                            title:
+                              type: string
+                              description: '**natural-language title** of *this* product'
+                            thumbnailURL:
+                              type: string
+                              description: >-
+                                **URL** of the thumbnail image for *this*
+                                product
+                            specialReservation:
+                              type: boolean
+                              description: ignore (Viator only)
+                            reviewCount:
+                              type: integer
+                              description: >-
+                                **number of reviews** available for *this*
+                                product
+                            photoCount:
+                              type: integer
+                              description: >-
+                                **number of photos** available for *this*
+                                product
+                            rating:
+                              type: string
+                              description: ignore (Viator only)
+                            rrp:
+                              type: number
+                              description: ignore (Viator only)
+                            rrpformatted:
+                              type: string
+                              description: ignore (Viator only)
+                            savingAmount:
+                              type: number
+                              description: >-
+                                **magnitude of the discount** applied to *this*
+                                product represented in the currency specified in
+                                `countryCode`
+                            savingAmountFormated:
+                              type: string
+                              description: >-
+                                **magnitude of the discount** applied to *this*
+                                product represented and formatted according to
+                                the currency specified in `countryCode` (note
+                                misspelling - 'formated')
+                            price:
+                              type: number
+                              description: >-
+                                **numeric price** for *this* product
+                                respresented in the currency specified in
+                                `countryCode`
+                            videoCount:
+                              type: number
+                              description: >-
+                                ignore (Viator only) – videos are not available
+                                to partners
+                            onSale:
+                              type: boolean
+                              description: >-
+                                **indicator**: `true` if a discount has been
+                                applied to *this* product's price
+                            shortTitle:
+                              type: string
+                              description: >-
+                                **natural-language shortened title** of *this*
+                                product
+                            translationLevel:
+                              type: integer
+                              description: ignore (Viator only)
+                            primaryDestinationId:
+                              type: integer
+                              description: >-
+                                **unique numeric identifier** of the primary
+                                destination associated with *this* product
+                            primaryDestinationName:
+                              type: string
+                              description: >-
+                                **natural-language name** of the destination associated with *this* product
+                            priceFormatted:
+                              type: string
+                              description: '**currency-formatted price** of the product'
+                            merchantNetPriceFrom:
+                              type: number
+                              description: ignore (Viator only)
+                            merchantNetPriceFromFormatted:
+                              type: string
+                              description: ignore (Viator only)
+                            specialOfferAvailable:
+                              type: boolean
+                              description: ignore (Viator only)
+                            thumbnailHiResURL:
+                              type: string
+                              description: >-
+                                **URL** for the high-resolution version of the
+                                thumbnail image for this product
+                      infoPageOverview1:
+                        type: string
+                        description: >-
+                          **HTML-formatted overview** for *this* attraction: part 1
+                      infoPageOverview2:
+                        type: string
+                        description: >-
+                          **HTML-formatted overview** for this attraction: part 2
+                      attractionAdmission:
+                        type: string
+                        description: >-
+                          **natural-language descrption** of the admission terms
+                          for the attraction
+                      attractionTransit:
+                        type: string
+                        description: ignore (Viator only)
+                      attractionOpenHours:
+                        type: string
+                        description: >-
+                          **natural-language description** of the opening hours for *this* attraction
+                      infoPageOverviewTitle1:
+                        type: string
+                        description: '**first title** of overview info page'
+                      infoPageOverviewTitle2:
+                        type: string
+                        description: '**first title** of overview info page'
+                      seoId:
+                        type: integer
+                        description: '**unique numeric identifier** for *this* attraction'
+                      productCount:
+                        type: integer
+                        description: '**number** of products available for *this* attraction'
+                      title:
+                        type: string
+                        description: '**natural-language title** of *this* attraction'
+                      thumbnailURL:
+                        type: string
+                        description: '**URL** of the thumbnail image for *this* attraction'
+                      reviewCount:
+                        type: integer
+                        description: ignore (Viator only)
+                      photoCount:
+                        type: integer
+                        description: '**number** of photos available for *this* attraction'
+                      rating:
+                        type: integer
+                        description: '**average user rating** for *this* attraction'
+                      destinationId:
+                        type: integer
+                        description: '**unique numeric identifier** for *this* attraction'
+                      seoType:
+                        type: string
+                        description: >-
+                          **indicator**: one of `'recommendation'` or
+                          `'RECOMMENDATION'` depending on the type of *this*
+                          result
+                      pageTitle:
+                        type: string
+                        description: '**title** of the page for *this* attraction'
+                      editorsPick:
+                        type: string
+                        description: ''
+                      keywords:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            keyword:
+                              type: string
+                              description: >-
+                                **natural-language keyword or phrase** that
+                                describes *this* recommendation
+                            keywordId:
+                              type: number
+                              description: '**unique numeric identifier** for *this* keyword'
+                      showPhotos:
+                        type: boolean
+                        description: '**specifier**: `true` if photos are to be shown'
+                      primaryDestinationId:
+                        type: integer
+                        description: >-
+                          **unique numeric identifier** for the destination
+                          associated with *this* attraction
+                      primaryDestinationName:
+                        type: string
+                        description: >-
+                          **name** of the primary destination associated with
+                          *this* attraction
+                      thumbnailHiResURL:
+                        type: string
+                        description: >-
+                          **URL** for the high-resolution thumbnail image for
+                          *this* attraction
+                      tabTitle:
+                        type: string
+                        description: '**title** for the tab for *this* attraction'
+                      descriptionIntro:
+                        type: string
+                        description: '**intro** for the description for *this* attraction'
+                      descriptionText:
+                        type: string
+                        description: '**HTML-formatted description** of *this* attraction'
+                      showReviews:
+                        type: boolean
+                        description: '**specifier**: `true` if reviews are to be shown'
+                      attractionLatitude:
+                        type: number
+                        description: >-
+                          **latitude component** of *this* attraction's
+                          geolocation
+                      attractionLongitude:
+                        type: number
+                        description: >-
+                          **longitude component** of *this* attraction's
+                          geolocation
+                      attractionStreetAddress:
+                        type: string
+                        description: >-
+                          **street address component** of *this* attraction's
+                          address
+                      attractionCity:
+                        type: string
+                        description: '**city component** of *this* attraction''s address'
+                      attractionState:
+                        type: string
+                        description: '**state component** of *this* attraction''s address'
+                      keywordCount:
+                        type: integer
+                        description: '**number** of keywords in *this* response'
+                      overviewSummary:
+                        type: string
+                        description: '**summary description** of *this* attraction'
+                      pagePrimaryLanguage:
+                        type: string
+                        description: >-
+                          **language-code** for the language that *this*
+                          attraction's page is primarily expressed in
+          examples:
+            '1':
+              $ref: ../components/examples/attraction-example.yaml

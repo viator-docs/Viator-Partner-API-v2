@@ -1,0 +1,8 @@
+required: true
+schema:
+  type: string
+  description: >
+    Tracking identifier for this response. Please include the value of this
+    field when making help requests.
+
+    - **Example**: `"0A871A13:DE2A_0A8712F9:01BB_5DCCC98C_260DAA:0D5B"`

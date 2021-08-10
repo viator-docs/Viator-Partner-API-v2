@@ -1,0 +1,94 @@
+summary: '/availability/schedule/265910P1'
+value: {
+    "productCode": "265910P1",
+    "bookableItems": [
+        {
+            "productOptionCode": "TG1",
+            "seasons": [
+                {
+                    "startDate": "2020-05-22",
+                    "pricingRecords": [
+                        {
+                            "daysOfWeek": [
+                                "MONDAY",
+                                "TUESDAY",
+                                "WEDNESDAY",
+                                "THURSDAY",
+                                "FRIDAY",
+                                "SATURDAY",
+                                "SUNDAY"
+                            ],
+                            "timedEntries": [
+                                {
+                                    "startTime": "09:30"
+                                }
+                            ],
+                            "pricingDetails": [
+                                {
+                                    "pricingPackageType": "PER_PERSON",
+                                    "minTravelers": 1,
+                                    "maxTravelers": 8,
+                                    "ageBand": "CHILD",
+                                    "price": {
+                                        "original": {
+                                            "recommendedRetailPrice": 200.00,
+                                            "partnerNetPrice": 159.75,
+                                            "bookingFee": 9.58,
+                                            "partnerTotalPrice": 169.33
+                                        }
+                                    }
+                                },
+                                {
+                                    "pricingPackageType": "PER_PERSON",
+                                    "minTravelers": 1,
+                                    "maxTravelers": 8,
+                                    "ageBand": "YOUTH",
+                                    "price": {
+                                        "original": {
+                                            "recommendedRetailPrice": 260.00,
+                                            "partnerNetPrice": 207.68,
+                                            "bookingFee": 12.46,
+                                            "partnerTotalPrice": 220.14
+                                        }
+                                    }
+                                },
+                                {
+                                    "pricingPackageType": "PER_PERSON",
+                                    "minTravelers": 2,
+                                    "maxTravelers": 9,
+                                    "ageBand": "ADULT",
+                                    "price": {
+                                        "original": {
+                                            "recommendedRetailPrice": 400.00,
+                                            "partnerNetPrice": 319.50,
+                                            "bookingFee": 19.17,
+                                            "partnerTotalPrice": 338.67
+                                        }
+                                    }
+                                },
+                                {
+                                    "pricingPackageType": "PER_PERSON",
+                                    "minTravelers": 1,
+                                    "maxTravelers": 8,
+                                    "ageBand": "SENIOR",
+                                    "price": {
+                                        "original": {
+                                            "recommendedRetailPrice": 350.00,
+                                            "partnerNetPrice": 279.56,
+                                            "bookingFee": 16.77,
+                                            "partnerTotalPrice": 296.33
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "currency": "AUD",
+    "summary": {
+        "fromPrice": 400.00
+    }
+}

@@ -1,0 +1,8 @@
+type: string
+description: |
+  Machine-interpretable value encoding the type of booking cutoff; one of:
+
+    - `"OPENING_TIME"`
+    - `"CLOSING_TIME"`
+    - `"START_TIME"`
+    - `"FIXED_TIME"`

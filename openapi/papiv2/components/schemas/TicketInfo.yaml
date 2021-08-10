@@ -1,0 +1,35 @@
+type: object
+required:
+  - ticketTypes
+  - ticketsPerBooking
+description: Ticket/voucher details for this product
+properties:
+  ticketTypes:
+    type: array
+    description: >
+      Array of machine-interpretable values encoding the ticket type for this
+      product; i.e., must be printed (`"PAPER"`) or can be displayed on-screen
+      (`"MOBILE_ONLY"`); either or both of:
+
+        - `"MOBILE_ONLY"`
+        - `"PAPER"`
+    items:
+      $ref: ./TicketType.yaml
+  ticketTypeDescription:
+    type: string
+    description: >
+      Description of this ticket type
+
+      - **Note**: This field contains natural language suitable for display to
+      the user; content will be translated (if necessary) into the language
+      specified in the Accept-Language header parameter
+  ticketsPerBooking:
+    $ref: ./TicketsPerBooking.yaml
+  ticketsPerBookingDescription:
+    type: string
+    description: >
+      Description of this product's tickets-per-booking information 
+
+      - **Note**: This field contains natural language suitable for display to
+      the user; content will be translated (if necessary) into the language
+      specified in the Accept-Language header parameter

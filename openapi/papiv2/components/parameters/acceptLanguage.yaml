@@ -1,0 +1,9 @@
+in: header
+name: Accept-Language
+description: >
+  Specifies the language into which the natural-language fields in the response
+  from this service will be translated. See [Localization – Accept-Language header](../../../../papiv2/localization/#accept-language-header-parameter)
+required: true
+schema:
+  type: string
+  example: en-US

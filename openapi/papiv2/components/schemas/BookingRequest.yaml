@@ -1,0 +1,48 @@
+type: object
+required:
+  - productCode
+  - travelDate
+  - paxMix
+  - currency
+properties:
+  productCode:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: Unique identifier for the product
+  productOptionCode:
+    type: string
+    description: >
+      Product option (tour grade) identifier
+
+
+      For more information see: [Key concepts: Product
+      options](../../../../papiv2/key-concepts/product-options)
+  startTime:
+    type: string
+    description: >
+      Starting time for the item in the case that the product/product option
+      (tour grade) has multiple start times.
+
+
+      - **Note**: This element must be included for products that have multiple starting times.
+  currency:
+    type: string
+    pattern: '.*[\S].*'
+    description: >
+      Three-letter currency code for the currency in which to return pricing
+      information; one of:
+
+        - `"USD"`
+        - `"GBP"`
+        - `"AUD"`
+        - `"EUR"`
+  travelDate:
+    description: >-
+      Date of travel (according to the time zone in which the product operates)
+    type: string
+    format: date
+  paxMix:
+    type: array
+    description: Passenger details
+    items:
+      $ref: ./PaxMixItem.yaml

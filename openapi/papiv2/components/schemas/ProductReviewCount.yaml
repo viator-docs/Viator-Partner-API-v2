@@ -1,0 +1,14 @@
+type: object
+description: Breakdown of number of reviews for each rating of this product
+required:
+  - rating
+  - count
+properties:
+  rating:
+    type: number
+    description: Rating given in the review for this product
+    format: float
+  count:
+    type: integer
+    description: How many reviews of this product have this rating
+    format: int64

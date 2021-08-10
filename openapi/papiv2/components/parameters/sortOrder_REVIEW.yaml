@@ -1,0 +1,16 @@
+in: query
+name: sortOrder
+schema:
+  type: string
+  enum:
+    - REVIEW_RATING_A
+    - REVIEW_RATING_D
+    - REVIEW_RATING_SUBMISSION_DATE_D
+description: |
+  **specifier** of the order in which to return reviews
+
+  Sort order options:
+
+    - `"REVIEW_RATING_A"`: Traveler Rating (low→high) Average
+    - `"REVIEW_RATING_D"`: Traveler Rating (high→low) Average
+    - `"REVIEW_RATING_SUBMISSION_DATE_D"`: Most recent review

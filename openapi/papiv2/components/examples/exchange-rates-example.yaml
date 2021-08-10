@@ -1,0 +1,83 @@
+summary: /exchange-rates
+value:
+  rates:
+    - sourceCurrency: EUR
+      targetCurrency: EUR
+      rate: 1
+      lastUpdated: '2020-09-10T07:00:09Z'
+      expiry: '2020-09-12T07:05:09Z'
+    - sourceCurrency: AUD
+      targetCurrency: AUD
+      rate: 1
+      lastUpdated: '2020-09-10T07:00:09Z'
+      expiry: '2020-09-12T07:05:09Z'
+    - sourceCurrency: EUR
+      targetCurrency: USD
+      rate: 1.2145889436
+      lastUpdated: '2020-09-16T06:55:00Z'
+      expiry: '2020-09-18T07:05:00Z'
+    - sourceCurrency: USD
+      targetCurrency: GBP
+      rate: 0.78444221728675
+      lastUpdated: '2020-09-10T07:00:09Z'
+      expiry: '2020-09-12T07:05:09Z'
+    - sourceCurrency: GBP
+      targetCurrency: GBP
+      rate: 1
+      lastUpdated: '2020-09-10T07:00:10Z'
+      expiry: '2020-09-12T07:05:10Z'
+    - sourceCurrency: AUD
+      targetCurrency: GBP
+      rate: 0.56872265726375
+      lastUpdated: '2020-09-10T07:00:09Z'
+      expiry: '2020-09-12T07:05:09Z'
+    - sourceCurrency: USD
+      targetCurrency: AUD
+      rate: 1.4034428375
+      lastUpdated: '2020-09-10T07:00:09Z'
+      expiry: '2020-09-12T07:05:09Z'
+    - sourceCurrency: GBP
+      targetCurrency: AUD
+      rate: 1.8204061975
+      lastUpdated: '2020-09-10T07:00:09Z'
+      expiry: '2020-09-12T07:05:09Z'
+    - sourceCurrency: AUD
+      targetCurrency: EUR
+      rate: 0.6257333533055
+      lastUpdated: '2020-09-10T07:00:09Z'
+      expiry: '2020-09-12T07:05:09Z'
+    - sourceCurrency: EUR
+      targetCurrency: AUD
+      rate: 1.65454861
+      lastUpdated: '2020-09-10T07:00:09Z'
+      expiry: '2020-09-12T07:05:09Z'
+    - sourceCurrency: USD
+      targetCurrency: USD
+      rate: 1
+      lastUpdated: '2020-09-10T07:00:09Z'
+      expiry: '2020-09-12T07:05:09Z'
+    - sourceCurrency: EUR
+      targetCurrency: GBP
+      rate: 0.924811674699
+      lastUpdated: '2020-09-10T07:00:09Z'
+      expiry: '2020-09-12T07:05:09Z'
+    - sourceCurrency: GBP
+      targetCurrency: USD
+      rate: 1.3234666156
+      lastUpdated: '2020-09-16T06:55:00Z'
+      expiry: '2020-09-18T07:05:00Z'
+    - sourceCurrency: USD
+      targetCurrency: EUR
+      rate: 0.863156412382
+      lastUpdated: '2020-09-10T07:00:09Z'
+      expiry: '2020-09-12T07:05:09Z'
+    - sourceCurrency: GBP
+      targetCurrency: EUR
+      rate: 1.11947792
+      lastUpdated: '2020-09-10T07:00:09Z'
+      expiry: '2020-09-12T07:05:09Z'
+    - sourceCurrency: AUD
+      targetCurrency: USD
+      rate: 0.7376903585645
+      lastUpdated: '2020-09-10T07:00:10Z'
+      expiry: '2020-09-12T07:05:10Z'

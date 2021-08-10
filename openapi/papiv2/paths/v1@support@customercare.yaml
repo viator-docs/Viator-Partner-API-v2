@@ -1,0 +1,36 @@
+get:
+  tags:
+    - V1-endpoints
+  summary: /v1/support/customercare
+  operationId: v1SupportCustomercare
+  description: >-
+    This endpoint returns the URL to the Viator help page.
+
+    - <mark>**Note**: This endpoint uses conventions from V1 of this API. See
+    [V1 endpoints](../../../../papiv2/key-concepts/v1-endpoints) for further
+    information</mark>
+
+    - **Note**: This endpoint is only available to <u>affiliate partners</u>
+
+  parameters:
+    - $ref: ../components/parameters/acceptLanguage.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: ../components/schemas/basicErrorModel.yaml
+              - type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      url:
+                        type: string
+                        description: '**URL** for the Viator help page'
+                        example: 'http://www.viator.com/customer-care?eap=brand-subbrand-16721&aid=vba16721en'
+          examples:
+            '1':
+              $ref: ../components/examples/support-customercare-example.yaml

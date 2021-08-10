@@ -1,0 +1,28 @@
+type: object
+required:
+  - provider
+  - totalCount
+properties:
+  provider:
+    type: string
+    description: |
+      Source of the review; one of:
+        - `"VIATOR"`
+
+      **Note**: At present, only Viator reviews are available. Other providers will be added in future.
+  reviewCounts:
+    type: array
+    items:
+      $ref: ./ProductReviewCount.yaml
+    description: Breakdown of ratings and counts for reviews from this source for this product
+  totalCount:
+    type: integer
+    description: Total number of reviews for all ratings of this product
+    format: int64
+  averageRating:
+    description: |
+      Average rating across all reviews from this source for this product
+
+      This average is equal to the sum of the product of each rating and its count divided by the sum of the counts.
+    type: number
+    format: float

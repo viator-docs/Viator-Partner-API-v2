@@ -1,0 +1,35 @@
+type: object
+required:
+  - price
+properties:
+  pricingPackageType:
+    type: string
+    description: |
+      Machine-interpretable value indicating the pricing type; one of: 
+
+        - `"PER_PERSON"` - pricing is calculated per-person            
+        - `"UNIT"` - pricing is calculated per-group/unit
+  minTravelers:
+    type: integer
+    description: >-
+      **Minimum** number of travelers required to book to be eligible for this
+      price
+  maxTravelers:
+    description: >-
+      **Maximum** number of travelers required to book to be eligible for this
+      price
+    type: integer
+  ageBand:
+    type: string
+    description: >
+      Machine-interpretable value indicating the age-band to which this price
+      applies; one of:
+
+        - `"ADULT"`
+        - `"SENIOR"`
+        - `"YOUTH"`            
+        - `"CHILD"`
+        - `"INFANT"`
+        - `"TRAVELER"`
+  price:
+    $ref: ./BasicPriceWithSpecial.yaml

@@ -1,0 +1,24 @@
+type: object
+required:
+  - ageBand
+  - numberOfTravelers
+properties:
+  ageBand:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: >
+      Machine-interpretable value indicating the age-band that this/these
+      traveler(s) fall into; one of:
+
+        - `"ADULT"`
+        - `"SENIOR"`
+        - `"YOUTH"`
+        - `"CHILD"`
+        - `"INFANT"`
+        - `"TRAVELER"`
+
+      The valid age-band identifiers for the product are provided in the `pricingInfo.ageBands[]` array in the [product content response](../../../../papiv2/key-concepts/content-ingestion-endpoints). The `"TRAVELER"` age-band is to be used when the `pricingInfo.type` is `"UNIT"`; i.e., unit or group pricing.
+  numberOfTravelers:
+    type: integer
+    description: >-
+      Number of travelers/passengers in this age-band

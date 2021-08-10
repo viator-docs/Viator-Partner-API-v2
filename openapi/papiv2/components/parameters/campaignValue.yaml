@@ -1,0 +1,10 @@
+name: campaign-value
+in: query
+description: |
+  **Affiliate partners only**: Specifies the campaign tracking identifier that will be appended to the URL returned in `productUrl` as a query parameter. Campaigns allow you to track how specific links perform, with metrics such as sessions, bookings, and commission. Reports are available via the Viator Partner Platform.
+
+  **Note**: If you wish to use a campaign value that includes non-alphanumeric characters (e.g., '+', '-', etc.), you must URL-encode these characters.
+required: false
+schema:
+  type: string	
+  maxLength: 200

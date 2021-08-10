@@ -1,0 +1,19 @@
+type: object
+description: Logistics details for this product
+required:
+  - redemption
+properties:
+  start:
+    type: array
+    description: Starting point locations and descriptions
+    items:
+      $ref: ./StartEndPoint.yaml
+  end:
+    type: array
+    description: Ending point locations and descriptions
+    items:
+      $ref: ./StartEndPoint.yaml
+  redemption:
+    $ref: ./Redemption.yaml
+  travelerPickup:
+    $ref: ./TravelerPickup.yaml

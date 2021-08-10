@@ -1,0 +1,2165 @@
+summary: /availability/schedules/5010SYDNEY
+value: {
+    "productCode": "5010SYDNEY",
+    "bookableItems": [
+        {
+            "productOptionCode": "TG1",
+            "seasons": [
+                {
+                    "startDate": "2021-01-15",
+                    "pricingRecords": [
+                        {
+                            "daysOfWeek": [
+                                "MONDAY",
+                                "TUESDAY",
+                                "WEDNESDAY",
+                                "THURSDAY",
+                                "FRIDAY",
+                                "SATURDAY",
+                                "SUNDAY"
+                            ],
+                            "pricingDetails": [
+                                {
+                                    "pricingPackageType": "PER_PERSON",
+                                    "minTravelers": 1,
+                                    "ageBand": "INFANT",
+                                    "price": {
+                                        "original": {
+                                            "recommendedRetailPrice": 0.00,
+                                            "partnerNetPrice": 0.00,
+                                            "bookingFee": 0.00,
+                                            "partnerTotalPrice": 0.00
+                                        }
+                                    }
+                                },
+                                {
+                                    "pricingPackageType": "PER_PERSON",
+                                    "minTravelers": 1,
+                                    "ageBand": "CHILD",
+                                    "price": {
+                                        "original": {
+                                            "recommendedRetailPrice": 65.80,
+                                            "partnerNetPrice": 51.92,
+                                            "bookingFee": 3.12,
+                                            "partnerTotalPrice": 55.04
+                                        }
+                                    }
+                                },
+                                {
+                                    "pricingPackageType": "PER_PERSON",
+                                    "minTravelers": 1,
+                                    "ageBand": "ADULT",
+                                    "price": {
+                                        "original": {
+                                            "recommendedRetailPrice": 100.25,
+                                            "partnerNetPrice": 79.08,
+                                            "bookingFee": 4.74,
+                                            "partnerTotalPrice": 83.82
+                                        }
+                                    }
+                                }
+                            ],
+                            "unavailableDates": [
+                                {
+                                    "date": "2021-12-01",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-07",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-05",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-29",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-08",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-15",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-17",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-15",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-16",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-28",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-25",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-10",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-27",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-16",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-23",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-04",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-25",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-08",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-09",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-02",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-23",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-16",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-30",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-15",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-10",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-14",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-12",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-24",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-28",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-26",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-23",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-22",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-21",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-07",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-08",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-09",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-25",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-18",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-13",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-06",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-27",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-20",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-11",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-04",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-03",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-01",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-22",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-31",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-15",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-19",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-21",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-13",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-24",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-30",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-11",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-29",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-14",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-02",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-28",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-01",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-11",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-18",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-09",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-02",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-01",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-30",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-09",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-02",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-23",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-29",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-16",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-22",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-08",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-08",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-29",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-15",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-22",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-01",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-22",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-06",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-04",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-17",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-21",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-20",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-18",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-03",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-28",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-21",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-27",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-20",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-07",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-14",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-26",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-19",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-12",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-05",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-26",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-19",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-12",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-05",
+                                    "reason": "SOLD_OUT"
+                                }
+                            ]
+                        }
+                    ],
+                    "operatingHours": [
+                        {
+                            "dayOfWeek": "MONDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "TUESDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "WEDNESDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "THURSDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "FRIDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "SATURDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "SUNDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "productOptionCode": "TG3",
+            "seasons": [
+                {
+                    "startDate": "2021-03-23",
+                    "pricingRecords": [
+                        {
+                            "daysOfWeek": [
+                                "MONDAY",
+                                "TUESDAY",
+                                "WEDNESDAY",
+                                "THURSDAY",
+                                "FRIDAY",
+                                "SATURDAY",
+                                "SUNDAY"
+                            ],
+                            "pricingDetails": [
+                                {
+                                    "pricingPackageType": "PER_PERSON",
+                                    "minTravelers": 1,
+                                    "ageBand": "CHILD",
+                                    "price": {
+                                        "original": {
+                                            "recommendedRetailPrice": 41.00,
+                                            "partnerNetPrice": 32.35,
+                                            "bookingFee": 1.94,
+                                            "partnerTotalPrice": 34.29
+                                        }
+                                    }
+                                },
+                                {
+                                    "pricingPackageType": "PER_PERSON",
+                                    "minTravelers": 1,
+                                    "ageBand": "ADULT",
+                                    "price": {
+                                        "original": {
+                                            "recommendedRetailPrice": 59.25,
+                                            "partnerNetPrice": 46.73,
+                                            "bookingFee": 2.80,
+                                            "partnerTotalPrice": 49.53
+                                        }
+                                    }
+                                }
+                            ],
+                            "unavailableDates": [
+                                {
+                                    "date": "2021-08-18",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-28",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-16",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-25",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-27",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-21",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-25",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-08",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-02",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-15",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-26",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-30",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-06",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-19",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-01",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-29",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-08",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-07",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-28",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-15",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-17",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-24",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-08",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-20",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-15",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-27",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-07",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-14",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-21",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-07",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-14",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-18",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-28",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-19",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-09",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-23",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-05",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-26",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-13",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-27",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-12",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-19",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-26",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-12",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-22",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-02",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-16",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-29",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-09",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-23",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-15",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-01",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-08",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-30",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-24",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-04",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-17",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-11",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-10",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-18",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-25",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-03",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-02",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-14",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-04",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-07",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-11",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-13",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-11",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-16",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-22",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-29",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-12",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-15",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-20",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-05",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-01",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-14",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-21",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-10",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-22",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-13",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-22",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-06",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-29",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-01",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-21",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-28",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-23",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-25",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-09",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-11",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-20",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-04",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-06",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-18",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-01",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-15",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-08",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-22",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-29",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-08",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-22",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-05",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-03",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-12",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-10",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-19",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-17",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-24",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-26",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-31",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-23",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-30",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-30",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-23",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-09",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-09",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-16",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-16",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-02",
+                                    "reason": "SOLD_OUT"
+                                }
+                            ]
+                        }
+                    ],
+                    "operatingHours": [
+                        {
+                            "dayOfWeek": "MONDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "TUESDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "WEDNESDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "THURSDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "FRIDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "SATURDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "SUNDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "productOptionCode": "24HOUR",
+            "seasons": [
+                {
+                    "startDate": "2021-02-01",
+                    "endDate": "2021-04-30",
+                    "pricingRecords": [
+                        {
+                            "daysOfWeek": [
+                                "MONDAY",
+                                "TUESDAY",
+                                "WEDNESDAY",
+                                "THURSDAY",
+                                "FRIDAY",
+                                "SATURDAY",
+                                "SUNDAY"
+                            ],
+                            "pricingDetails": [
+                                {
+                                    "pricingPackageType": "PER_PERSON",
+                                    "minTravelers": 1,
+                                    "ageBand": "CHILD",
+                                    "price": {
+                                        "original": {
+                                            "recommendedRetailPrice": 38.90,
+                                            "partnerNetPrice": 30.67,
+                                            "bookingFee": 1.84,
+                                            "partnerTotalPrice": 32.51
+                                        }
+                                    }
+                                },
+                                {
+                                    "pricingPackageType": "PER_PERSON",
+                                    "minTravelers": 1,
+                                    "ageBand": "ADULT",
+                                    "price": {
+                                        "original": {
+                                            "recommendedRetailPrice": 56.15,
+                                            "partnerNetPrice": 44.30,
+                                            "bookingFee": 2.66,
+                                            "partnerTotalPrice": 46.96
+                                        }
+                                    }
+                                }
+                            ],
+                            "unavailableDates": [
+                                {
+                                    "date": "2021-04-23",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-14",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-24",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-13",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-06",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-30",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-07",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-16",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-21",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-15",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-29",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-22",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-08",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-18",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-09",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-28",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-10",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-17",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-20",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-27",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-25",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-11",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-26",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-19",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-12",
+                                    "reason": "SOLD_OUT"
+                                }
+                            ]
+                        }
+                    ],
+                    "operatingHours": [
+                        {
+                            "dayOfWeek": "MONDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "TUESDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "WEDNESDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "THURSDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "FRIDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "SATURDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "SUNDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "productOptionCode": "48HOUR",
+            "seasons": [
+                {
+                    "startDate": "2021-04-01",
+                    "pricingRecords": [
+                        {
+                            "daysOfWeek": [
+                                "MONDAY",
+                                "TUESDAY",
+                                "WEDNESDAY",
+                                "THURSDAY",
+                                "FRIDAY",
+                                "SATURDAY",
+                                "SUNDAY"
+                            ],
+                            "pricingDetails": [
+                                {
+                                    "pricingPackageType": "PER_PERSON",
+                                    "minTravelers": 1,
+                                    "ageBand": "INFANT",
+                                    "price": {
+                                        "original": {
+                                            "recommendedRetailPrice": 0.00,
+                                            "partnerNetPrice": 0.00,
+                                            "bookingFee": 0.00,
+                                            "partnerTotalPrice": 0.00
+                                        }
+                                    }
+                                },
+                                {
+                                    "pricingPackageType": "PER_PERSON",
+                                    "minTravelers": 1,
+                                    "ageBand": "CHILD",
+                                    "price": {
+                                        "original": {
+                                            "recommendedRetailPrice": 45.55,
+                                            "partnerNetPrice": 35.94,
+                                            "bookingFee": 2.16,
+                                            "partnerTotalPrice": 38.10
+                                        }
+                                    }
+                                },
+                                {
+                                    "pricingPackageType": "PER_PERSON",
+                                    "minTravelers": 1,
+                                    "ageBand": "ADULT",
+                                    "price": {
+                                        "original": {
+                                            "recommendedRetailPrice": 74.70,
+                                            "partnerNetPrice": 58.95,
+                                            "bookingFee": 3.54,
+                                            "partnerTotalPrice": 62.49
+                                        }
+                                    }
+                                }
+                            ],
+                            "unavailableDates": [
+                                {
+                                    "date": "2022-03-16",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-10",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-24",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-20",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-07",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-15",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-29",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-27",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-15",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-01",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-16",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-24",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-26",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-07",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-18",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-05",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-16",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-08",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-19",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-06",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-24",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-28",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-15",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-27",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-25",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-05",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-08",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-20",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-09",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-27",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-26",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-16",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-06",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-21",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-29",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-07",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-14",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-14",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-28",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-07",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-01",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-08",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-07",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-17",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-19",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-13",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-09",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-08",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-23",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-03",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-26",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-22",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-27",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-05",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-17",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-31",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-09",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-29",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-11",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-12",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-23",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-28",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-14",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-01",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-25",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-15",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-16",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-09",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-23",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-25",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-08",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-01",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-15",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-22",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-04",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-29",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-30",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-18",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-11",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-03",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-10",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-17",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-24",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-30",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-10",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-24",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-11",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-31",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-02",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-06",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-15",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-01-19",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-29",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-13",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-02",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-12",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-01",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-30",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-10",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-20",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-02",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-04",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-21",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-10",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-21",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-05",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-22",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-12",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-19",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-30",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-06",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-13",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-22",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-01",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-18",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-13",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-29",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-20",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-07",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-11",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-23",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-14",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-08-02",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-14",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-21",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-28",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-28",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-21",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-22",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-03-21",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-15",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-04",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-17",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-18",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-03",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-20",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-22",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-22",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-08",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-09",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-12-08",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-06-23",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-31",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-09-06",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-14",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-26",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-30",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-12",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-07-28",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-13",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-17",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-03",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-27",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-28",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-04-04",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-02",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-09",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-16",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-11-23",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-07",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-21",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2022-02-14",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-18",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-19",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-12",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-05-25",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-04",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-04-26",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-11",
+                                    "reason": "SOLD_OUT"
+                                },
+                                {
+                                    "date": "2021-10-25",
+                                    "reason": "SOLD_OUT"
+                                }
+                            ]
+                        }
+                    ],
+                    "operatingHours": [
+                        {
+                            "dayOfWeek": "MONDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "TUESDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "WEDNESDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "THURSDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "FRIDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "SATURDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        },
+                        {
+                            "dayOfWeek": "SUNDAY",
+                            "operatingHours": [
+                                {
+                                    "opensAt": "10:00:00",
+                                    "closesAt": "14:00:00"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "currency": "AUD",
+    "summary": {
+        "fromPrice": 56.15
+    }
+}

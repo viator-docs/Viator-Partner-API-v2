@@ -1,0 +1,40 @@
+summary: Confirmed booking
+value:
+  status: CONFIRMED
+  bookingRef: BR-791143912
+  partnerBookingRef: BR-791143912
+  currency: USD
+  lineItems:
+    - ageBand: ADULT
+      numberOfTravelers: 2
+      subtotalPrice:
+        price:
+          recommendedRetailPrice: 21.4
+          partnerNetPrice: 20.52
+  totalPrice:
+    price:
+      recommendedRetailPrice: 21.4
+      partnerNetPrice: 20.52
+      bookingFee: 1.23
+      partnerTotalPrice: 21.75
+  cancellationPolicy:
+    type: STANDARD
+    description: >-
+      For a full refund, cancel at least 24 hours before the scheduled departure
+      time.
+    cancelIfBadWeather: false
+    cancelIfInsufficientTravelers: false
+    refundEligibility:
+      - dayRangeMin: 2
+        percentageRefundable: 100
+        startTimestamp: '2020-11-10T02:04:15Z'
+        endTimestamp: '2021-03-30T23:00:00Z'
+      - dayRangeMin: 0
+        dayRangeMax: 1
+        percentageRefundable: 0
+        startTimestamp: '2021-03-31T23:00:00Z'
+        endTimestamp: '2021-04-01T23:00:00Z'
+  voucherInfo:
+    url: >-
+      https://www.viator.com/ticket?code=1187186744:8ac3e6308555ab632fe89e8a6b83c41620e840a3bc485f6e0d836192eae1ffc4
+    format: HTML

@@ -1,0 +1,35 @@
+get:
+  tags:
+    - V1-endpoints
+  summary: /v1/product/photos
+  operationId: v1ProductPhotos
+  description: >
+
+    Get photos of a product submitted by users
+
+    - <mark>**Note**: This endpoint uses conventions from V1 of this API. See
+    [V1 endpoints](../../../../papiv2/key-concepts/v1-endpoints) for further
+    information</mark>
+  parameters:
+    - $ref: ../components/parameters/acceptLanguage.yaml
+    - $ref: ../components/parameters/topX.yaml
+    - $ref: ../components/parameters/code.yaml
+    - $ref: ../components/parameters/showUnavailable.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: ../components/schemas/basicErrorModel.yaml
+              - type: object
+                properties:
+                  data:
+                    type: array
+                    description: '**array** of photo objects'
+                    items:
+                      $ref: ../components/schemas/photoObject.yaml
+          examples:
+            '1':
+              $ref: ../components/examples/product-photos-example.yaml

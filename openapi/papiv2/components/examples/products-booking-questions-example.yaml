@@ -1,0 +1,328 @@
+summary: /products/booking-questions
+value: {
+    "bookingQuestions": [
+        {
+            "legacyBookingQuestionId": 1,
+            "id": "DATE_OF_BIRTH",
+            "type": "DATE",
+            "group": "PER_TRAVELER",
+            "label": "Date of birth",
+            "required": "MANDATORY",
+            "maxLength": 100
+        },
+        {
+            "legacyBookingQuestionId": 2,
+            "id": "HEIGHT",
+            "type": "NUMBER_AND_UNIT",
+            "group": "PER_TRAVELER",
+            "label": "Traveler height in feet or centimeters (required for safety reasons)",
+            "units": [
+                "cm",
+                "ft"
+            ],
+            "required": "MANDATORY",
+            "maxLength": 50
+        },
+        {
+            "legacyBookingQuestionId": 3,
+            "id": "PASSPORT_EXPIRY",
+            "type": "DATE",
+            "group": "PER_TRAVELER",
+            "label": "Passport expiration date",
+            "required": "MANDATORY",
+            "maxLength": 100
+        },
+        {
+            "legacyBookingQuestionId": 4,
+            "id": "PASSPORT_NATIONALITY",
+            "type": "STRING",
+            "group": "PER_TRAVELER",
+            "label": "Passport country of issue",
+            "hint": "E.g. Australia, China",
+            "required": "MANDATORY",
+            "maxLength": 255
+        },
+        {
+            "legacyBookingQuestionId": 5,
+            "id": "PASSPORT_PASSPORT_NO",
+            "type": "STRING",
+            "group": "PER_TRAVELER",
+            "label": "Passport number",
+            "hint": "E.g. 0123456, 6543210",
+            "required": "MANDATORY",
+            "maxLength": 255
+        },
+        {
+            "legacyBookingQuestionId": 6,
+            "id": "PICKUP_POINT",
+            "type": "LOCATION_REF_OR_FREE_TEXT",
+            "group": "PER_BOOKING",
+            "label": "Hotel pickup",
+            "hint": "E.g. 1234 Cedar Way, Brooklyn NY 00123",
+            "units": [
+                "LOCATION_REFERENCE",
+                "FREETEXT"
+            ],
+            "required": "CONDITIONAL",
+            "maxLength": 1000
+        },
+        {
+            "legacyBookingQuestionId": 7,
+            "id": "TRANSFER_AIR_ARRIVAL_AIRLINE",
+            "type": "STRING",
+            "group": "PER_BOOKING",
+            "label": "Name of arrival airline",
+            "hint": "E.g. United Airlines",
+            "required": "CONDITIONAL",
+            "maxLength": 255
+        },
+        {
+            "legacyBookingQuestionId": 8,
+            "id": "TRANSFER_AIR_ARRIVAL_FLIGHT_NO",
+            "type": "STRING",
+            "group": "PER_BOOKING",
+            "label": "Arrival flight number",
+            "hint": "E.g. UA864",
+            "required": "CONDITIONAL",
+            "maxLength": 255
+        },
+        {
+            "legacyBookingQuestionId": 9,
+            "id": "TRANSFER_AIR_DEPARTURE_AIRLINE",
+            "type": "STRING",
+            "group": "PER_BOOKING",
+            "label": "Name of departure airline",
+            "hint": "E.g. United Airlines",
+            "required": "CONDITIONAL",
+            "maxLength": 255
+        },
+        {
+            "legacyBookingQuestionId": 10,
+            "id": "TRANSFER_AIR_DEPARTURE_FLIGHT_NO",
+            "type": "STRING",
+            "group": "PER_BOOKING",
+            "label": "Departure flight number",
+            "hint": "E.g. UA864",
+            "required": "CONDITIONAL",
+            "maxLength": 255
+        },
+        {
+            "legacyBookingQuestionId": 11,
+            "id": "TRANSFER_ARRIVAL_DROP_OFF",
+            "type": "LOCATION_REF_OR_FREE_TEXT",
+            "group": "PER_BOOKING",
+            "label": "Dropoff address",
+            "hint": "E.g. 1234 Cedar Way, Brooklyn NY 00123",
+            "units": [
+                "LOCATION_REFERENCE",
+                "FREETEXT"
+            ],
+            "required": "CONDITIONAL",
+            "maxLength": 1000
+        },
+        {
+            "legacyBookingQuestionId": 12,
+            "id": "TRANSFER_ARRIVAL_TIME",
+            "type": "TIME",
+            "group": "PER_BOOKING",
+            "label": "Arrival time",
+            "required": "CONDITIONAL",
+            "maxLength": 100
+        },
+        {
+            "legacyBookingQuestionId": 13,
+            "id": "TRANSFER_DEPARTURE_DATE",
+            "type": "DATE",
+            "group": "PER_BOOKING",
+            "label": "Departure date",
+            "required": "CONDITIONAL",
+            "maxLength": 100
+        },
+        {
+            "legacyBookingQuestionId": 14,
+            "id": "TRANSFER_DEPARTURE_PICKUP",
+            "type": "LOCATION_REF_OR_FREE_TEXT",
+            "group": "PER_BOOKING",
+            "label": "Pickup address",
+            "hint": "E.g. 1234 Cedar Way, Brooklyn NY 00123",
+            "units": [
+                "LOCATION_REFERENCE",
+                "FREETEXT"
+            ],
+            "required": "CONDITIONAL",
+            "maxLength": 1000
+        },
+        {
+            "legacyBookingQuestionId": 15,
+            "id": "TRANSFER_DEPARTURE_TIME",
+            "type": "TIME",
+            "group": "PER_BOOKING",
+            "label": "Departure time",
+            "required": "CONDITIONAL",
+            "maxLength": 100
+        },
+        {
+            "legacyBookingQuestionId": 16,
+            "id": "TRANSFER_PORT_ARRIVAL_TIME",
+            "type": "TIME",
+            "group": "PER_BOOKING",
+            "label": "Disembarkation time",
+            "required": "CONDITIONAL",
+            "maxLength": 100
+        },
+        {
+            "legacyBookingQuestionId": 17,
+            "id": "TRANSFER_PORT_CRUISE_SHIP",
+            "type": "STRING",
+            "group": "PER_BOOKING",
+            "label": "Name of cruise ship",
+            "hint": "E.g. Brilliance of the Seas",
+            "required": "CONDITIONAL",
+            "maxLength": 255
+        },
+        {
+            "legacyBookingQuestionId": 18,
+            "id": "TRANSFER_PORT_DEPARTURE_TIME",
+            "type": "STRING",
+            "group": "PER_BOOKING",
+            "label": "Boarding time",
+            "required": "CONDITIONAL",
+            "maxLength": 100
+        },
+        {
+            "legacyBookingQuestionId": 19,
+            "id": "TRANSFER_RAIL_ARRIVAL_LINE",
+            "type": "TIME",
+            "group": "PER_BOOKING",
+            "label": "Name of arrival rail provider",
+            "hint": "E.g. Amtrak",
+            "required": "CONDITIONAL",
+            "maxLength": 255
+        },
+        {
+            "legacyBookingQuestionId": 20,
+            "id": "TRANSFER_RAIL_ARRIVAL_STATION",
+            "type": "STRING",
+            "group": "PER_BOOKING",
+            "label": "Name of arrival station",
+            "hint": "E.g. Central Station",
+            "required": "CONDITIONAL",
+            "maxLength": 255
+        },
+        {
+            "legacyBookingQuestionId": 21,
+            "id": "TRANSFER_RAIL_DEPARTURE_LINE",
+            "type": "TIME",
+            "group": "PER_BOOKING",
+            "label": "Name of departure rail provider",
+            "hint": "E.g. Amtrak",
+            "required": "CONDITIONAL",
+            "maxLength": 255
+        },
+        {
+            "legacyBookingQuestionId": 22,
+            "id": "TRANSFER_RAIL_DEPARTURE_STATION",
+            "type": "STRING",
+            "group": "PER_BOOKING",
+            "label": "Name of departure station",
+            "hint": "E.g. Central Station",
+            "required": "CONDITIONAL",
+            "maxLength": 255
+        },
+        {
+            "legacyBookingQuestionId": 23,
+            "id": "WEIGHT",
+            "type": "NUMBER_AND_UNIT",
+            "group": "PER_TRAVELER",
+            "label": "Traveler weight in pounds or kilograms (required for safety reasons)",
+            "units": [
+                "kg",
+                "lbs"
+            ],
+            "required": "MANDATORY",
+            "maxLength": 50
+        },
+        {
+            "legacyBookingQuestionId": 24,
+            "id": "FULL_NAMES_FIRST",
+            "type": "STRING",
+            "group": "PER_TRAVELER",
+            "label": "First name",
+            "required": "MANDATORY",
+            "maxLength": 50
+        },
+        {
+            "legacyBookingQuestionId": 25,
+            "id": "FULL_NAMES_LAST",
+            "type": "STRING",
+            "group": "PER_TRAVELER",
+            "label": "Last name",
+            "required": "MANDATORY",
+            "maxLength": 50
+        },
+        {
+            "legacyBookingQuestionId": 26,
+            "id": "DISEMBARKATION_TIME",
+            "type": "TIME",
+            "group": "PER_BOOKING",
+            "label": "Disembarkation time",
+            "required": "MANDATORY",
+            "maxLength": 100
+        },
+        {
+            "legacyBookingQuestionId": 27,
+            "id": "SPECIAL_REQUIREMENTS",
+            "type": "STRING",
+            "group": "PER_BOOKING",
+            "label": "Special requirements",
+            "required": "OPTIONAL",
+            "maxLength": 1000
+        },
+        {
+            "legacyBookingQuestionId": 30,
+            "id": "AGEBAND",
+            "type": "STRING",
+            "group": "PER_TRAVELER",
+            "label": "Age band",
+            "allowedAnswers": [
+                "ADULT",
+                "SENIOR",
+                "YOUTH",
+                "CHILD",
+                "INFANT",
+                "TRAVELER"
+            ],
+            "required": "MANDATORY",
+            "maxLength": 50
+        },
+        {
+            "legacyBookingQuestionId": 31,
+            "id": "TRANSFER_ARRIVAL_MODE",
+            "type": "STRING",
+            "group": "PER_BOOKING",
+            "label": "Arrival mode",
+            "allowedAnswers": [
+                "AIR",
+                "RAIL",
+                "SEA",
+                "OTHER"
+            ],
+            "required": "MANDATORY",
+            "maxLength": 50
+        },
+        {
+            "legacyBookingQuestionId": 32,
+            "id": "TRANSFER_DEPARTURE_MODE",
+            "type": "STRING",
+            "group": "PER_BOOKING",
+            "label": "Departure mode",
+            "allowedAnswers": [
+                "AIR",
+                "RAIL",
+                "SEA"
+            ],
+            "required": "MANDATORY",
+            "maxLength": 50
+        }
+    ]
+}

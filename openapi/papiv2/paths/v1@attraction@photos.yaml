@@ -1,0 +1,120 @@
+get:
+  tags:
+    - V1-endpoints (affiliates only)
+  summary: /v1/attraction/photos
+  operationId: v1AttractionPhotos
+  description: |
+
+    This service returns photos that are related to an attraction. These may be
+    associated indirectly if they are photos of products related to the
+    attraction.
+
+    **Note**:
+
+    - <mark>This endpoint uses conventions from V1 of this API. See
+    [V1 endpoints](../../../../papiv2/key-concepts/v1-endpoints) for further
+    information</mark>
+    - This endpoint is only available to <u>affiliate partners</u>
+    - Pages generated using data from this endpoint are subject to a **strict no-index policy**. If you are unsure about whether you are correctly following this rule, please reach out to your account manager for advice.
+
+
+  parameters:
+    - $ref: ../components/parameters/acceptLanguage.yaml
+    - $ref: ../components/parameters/topX.yaml
+    - in: query
+      name: seoId
+      required: true
+      description: '**unique numeric identifier** for the attraction to retrieve photos'
+      example: 14235
+      schema:
+        type: integer
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: ../components/schemas/basicErrorModel.yaml
+              - type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        sortOrder:
+                          type: integer
+                          description: '**sort order** for *this* photo'
+                        ownerName:
+                          type: string
+                          description: '**name** of the owner of *this* photo'
+                        ownerCountry:
+                          type: string
+                          description: >-
+                            **country** in which the owner of *this* photo is
+                            located
+                        productTitle:
+                          type: string
+                          description: '**title** of the product that this photo depicts'
+                        productUrlName:
+                          type: string
+                          description: >-
+                            **URL-formatted title** of the product that this
+                            photo depicts
+                        ownerAvatarURL:
+                          type: string
+                          description: >-
+                            **URL** of the avatar photo of the owner of *this*
+                            photo
+                        sslSupported:
+                          type: boolean
+                          description: ignore (Viator only)
+                        title:
+                          type: string
+                          description: '**title** of *this* photo'
+                        ownerId:
+                          type: integer
+                          description: >-
+                            **unique numeric identifier** of the owner of *this*
+                            product
+                        productCode:
+                          type: string
+                          description: >-
+                            **unique alphanumeric identifier** of the product
+                            that *this* photo depicts
+                        caption:
+                          type: string
+                          description: '**HTML-formatted caption** for *this* photo'
+                        thumbnailURL:
+                          type: string
+                          description: '**URL** for the thumbnail version of *this* image'
+                        timeUploaded:
+                          type: string
+                          description: >-
+                            **date stamp** indicating when *this* photo was
+                            uploaded
+                        editorsPick:
+                          type: boolean
+                          description: >-
+                            **indicator**: `true` if *this* photo has been
+                            selected as an editor's pick
+                        photoId:
+                          type: integer
+                          description: '**unique numeric identifier** for *this* photo'
+                        photoURL:
+                          type: string
+                          description: '**URL** at which *this* photo can be accessed'
+                        photoHiResURL:
+                          type: string
+                          description: >-
+                            **URL** at which the high-resolution version of
+                            *this* photo can be accessed
+                        photoMediumResURL:
+                          type: string
+                          description: >-
+                            **URL** at which the medium-resolution version of
+                            *this* photo can be accessed
+          examples:
+            '1':
+              $ref: ../components/examples/attraction-photos-example.yaml

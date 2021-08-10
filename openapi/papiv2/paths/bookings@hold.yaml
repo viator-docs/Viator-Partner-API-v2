@@ -1,0 +1,74 @@
+post:
+  tags:
+    - Bookings
+  description: >
+    **Note**: This endpoint is only available to <u>merchant partners</u>.
+
+    Requests the creation of a booking-hold - a guarantee that either the price
+    or availability (or both) of the product will be retained until a booking
+    request is made using the [/bookings/book](../bookingsBook)
+    endpoint.
+
+
+    The booking-hold consists of two components - **availability** and
+    **pricing**. The response to this service indicates whether one, both or
+    neither has been granted, and until when.
+
+    - The length of time for which the availability hold will be granted is determined by the supplier, and therefore varies between products. 
+
+    - The length of time for the pricing-hold is determined by Viator, and is therefore standard across all products (5 minutes). 
+
+
+    This endpoint should be called only once there is a strong intention from the customer to make a purchase; i.e., immediately prior to requesting the customer's credit card payment details. This is to ensure that the customer has time to enter and submit their payment details without the risk of changes to the availability or price occurring.
+
+
+    This endpoint must not be used to check availability of a product. Instead, always use the [/availability/check](../availabilityCheck) endpoint to perform the final availability check.
+
+    
+    (Response sample generated on: 2020-08-25)
+  operationId: bookingsHold
+  summary: /bookings/hold
+  parameters:
+    - $ref: ../components/parameters/acceptLanguage.yaml
+    - $ref: ../components/parameters/accept.yaml
+    - $ref: ../components/parameters/exp-demo.yaml
+  requestBody:
+    content:
+      application/json;version=2.0:
+        schema:
+          $ref: ../components/schemas/BookingHoldRequest.yaml
+        example:
+          productCode: 3857NYCNIA
+          productOptionCode: NIA
+          travelDate: '2021-04-01'
+          currency: AUD
+          startTime: '06:30'
+          paxMix:
+            - ageBand: ADULT
+              numberOfTravelers: 2
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json;version=2.0:
+          schema:
+            $ref: ../components/schemas/BookingHoldResponse.yaml
+          examples:
+            '1':
+              $ref: ../components/examples/bookings-hold-example.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '404':
+      $ref: ../components/responses/NotFound.yaml
+    '406':
+      $ref: ../components/responses/NotAcceptable.yaml
+    '429':
+      $ref: ../components/responses/TooManyRequests.yaml
+    '500':
+      $ref: ../components/responses/InternalServerError.yaml
+    '503':
+      $ref: ../components/responses/ServiceUnavailable.yaml

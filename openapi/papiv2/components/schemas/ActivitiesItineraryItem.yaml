@@ -1,0 +1,13 @@
+type: object
+description: Location and description of this activity item
+required:
+  - location
+properties:
+  location:
+    $ref: ./LocationReference.yaml
+  description:
+    type: string
+    description: |
+      Description of this activity item
+
+        - **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter

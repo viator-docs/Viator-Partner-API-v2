@@ -1,0 +1,67 @@
+summary: taxonomy destinations example
+value:
+  errorReference: null
+  data:
+    - sortOrder: 1
+      selectable: false
+      destinationUrlName: USA
+      defaultCurrencyCode: USD
+      lookupId: '8.77'
+      parentId: 8
+      timeZone: America/New_York
+      iataCode: null
+      destinationName: USA
+      destinationType: COUNTRY
+      destinationId: 77
+      latitude: 37.09024
+      longitude: -95.712891
+    - sortOrder: 1
+      selectable: true
+      destinationUrlName: Alabama
+      defaultCurrencyCode: USD
+      lookupId: 8.77.22212
+      parentId: 77
+      timeZone: ''
+      iataCode: null
+      destinationName: Alabama
+      destinationType: REGION
+      destinationId: 22212
+      latitude: 32.34
+      longitude: -86.26
+    - sortOrder: 2
+      selectable: true
+      destinationUrlName: Alaska
+      defaultCurrencyCode: USD
+      lookupId: 8.77.270
+      parentId: 77
+      timeZone: America/Anchorage
+      iataCode: null
+      destinationName: Alaska
+      destinationType: REGION
+      destinationId: 270
+      latitude: 63.588753
+      longitude: -154.4930619
+    - sortOrder: 3
+      selectable: true
+      destinationUrlName: Arizona
+      defaultCurrencyCode: USD
+      lookupId: 8.77.271
+      parentId: 77
+      timeZone: America/Phoenix
+      iataCode: null
+      destinationName: Arizona
+      destinationType: REGION
+      destinationId: 271
+      latitude: 34.0489281
+      longitude: -111.0937311
+  dateStamp: '2020-02-06T19:43:09+0000'
+  errorType: null
+  errorCodes: []
+  errorMessage: null
+  errorName: null
+  extraInfo: {}
+  extraObject: null
+  success: true
+  totalCount: 1
+  errorMessageText: null
+  vmid: '331001'

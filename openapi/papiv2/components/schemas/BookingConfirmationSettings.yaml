@@ -1,0 +1,31 @@
+type: object
+required:
+  - bookingCutoffType
+  - confirmationType
+description: >
+  How this product's bookings are confirmed
+
+
+  For more information, see [Booking concepts – Booking cutoff
+  times](../../../../papiv2/booking-concepts/booking-cutoff-times)
+properties:
+  bookingCutoffType:
+    $ref: ./BookingCutoffType.yaml
+  bookingCutoffInMinutes:
+    type: integer
+    description: Period in minutes before the start time, opening time, closing time, or a fixed time (respectively, depending on the value of `bookingCutoffType`) that this product can be booked
+  confirmationType:
+    $ref: ./ConfirmationType.yaml
+  manualConfirmationPeriod:
+    type: integer
+    description: >-
+      When – relative to the time indicated by the value in `bookingCutoffType` – this product will
+      require manual confirmation by the supplier before a booking is confirmed
+  bookingCutoffFixedTime:
+    type: string
+    pattern: '^([01]\d|2[0-3]):[0-5]\d(:[0-5]\d(\.\d{1,9})?)?$'
+    description: >
+      Time of day before which this product can be booked (ISO-8601 time stamp,
+      no time zone)
+
+        - Example: `'14:30:00.1234'`

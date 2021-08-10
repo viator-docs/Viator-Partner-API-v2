@@ -1,0 +1,68 @@
+post:
+  tags:
+    - Products
+  description: |
+    Returns a list of filtered, ordered and sorted product summaries for products that match the given search criteria.
+  
+    **Note**: At present, only active products are returned
+  operationId: productsSearch
+  summary: /products/search
+  parameters:
+    - $ref: ../components/parameters/campaignValue.yaml
+    - $ref: ../components/parameters/acceptLanguage.yaml
+    - $ref: ../components/parameters/accept.yaml
+  requestBody:
+    content:
+      application/json;version=2.0:
+        schema:
+          $ref: ../components/schemas/ProductSearchRequest.yaml
+        example: {
+  "filtering": {
+    "destination": "77",
+    "tags": [
+      21972
+    ],
+    "flags": [
+      "FREE_CANCELLATION"
+    ],
+    "highestPrice": 500,
+    "startDate": "2021-06-30",
+    "endDate": "2021-08-24"
+  },
+  "sorting": {
+    "sort": "PRICE",
+    "order": "DESCENDING"
+  },
+  "pagination": {
+    "start": 1,
+    "count": 5
+  },
+  "currency": "AUD"
+}
+  responses:
+    200:
+      description: "Success"
+      headers:
+        'X-Unique-ID':
+          $ref: ../components/headers/XUniqueId.yaml
+      content:
+        application/json;version=2.0:
+          schema:
+            $ref: ../components/schemas/ProductSearchResponse.yaml
+          examples:
+            Affiliates:
+              $ref: ../components/examples/products-search-example-affiliates.yaml
+            Merchants:
+              $ref: ../components/examples/products-search-example-merchants.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '429':
+      $ref: ../components/responses/TooManyRequests.yaml
+    '500':
+      $ref: ../components/responses/InternalServerError.yaml
+    '503':
+      $ref: ../components/responses/ServiceUnavailable.yaml

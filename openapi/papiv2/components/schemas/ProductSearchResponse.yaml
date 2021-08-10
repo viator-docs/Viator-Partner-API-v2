@@ -1,0 +1,13 @@
+type: object
+required:
+  - products
+  - total
+properties:
+  products:
+    type: array
+    items:
+      $ref: ./ProductSummary.yaml
+    description: List of products matching the filtering criteria, sorted and paginated as specified in the request
+  totalCount:
+    type: integer
+    description: Total number of products matching the filtering criteria – these may be accessed via multiple calls to this service using the pagination feature.

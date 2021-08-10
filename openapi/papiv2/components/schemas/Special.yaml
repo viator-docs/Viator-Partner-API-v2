@@ -1,0 +1,26 @@
+allOf:
+  - $ref: ./PriceObject.yaml
+  - type: object
+    properties:
+      offerStartDate:
+        type: string
+        format: date
+        description: >
+          The special offer is effective <u>for tickets purchased</u> **from**
+          this date
+      offerEndDate:
+        type: string
+        format: date
+        description: >
+          The special offer is effective <u>for tickets purchased</u> **until**
+          this date
+      travelStartDate:
+        type: string
+        format: date
+        description: |
+          The special offer is effective <u>for travel</u> **from** this date
+      travelEndDate:
+        type: string
+        format: date
+        description: |
+          The special offer is effective <u>for travel</u> **until** this date

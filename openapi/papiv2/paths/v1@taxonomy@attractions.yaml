@@ -1,0 +1,154 @@
+post:
+  tags:
+    - V1-endpoints
+  summary: /v1/taxonomy/attractions
+  operationId: v1TaxonomyAttractions
+  description: >
+    Get attractions
+
+    - <mark>**Note**: This endpoint uses conventions from V1 of this API. See
+    [V1 endpoints](../../../../papiv2/key-concepts/v1-endpoints) for further
+    information</mark>
+
+    - Retrieves a list of attractions (things like the Eiffel Tower or Empire
+    State Building) and their associated unique numeric identifiers
+
+    - Use this endpoint to resolve the numeric attraction references (`seoId` in
+    this response) to the (`itinerary.routes[].pointsOfInterest[].attractionId`)
+    in the response from any of the [product
+    content](../../../../papiv2/key-concepts/content-ingestion-endpoints) endpoints.
+  parameters:
+    - $ref: ../components/parameters/acceptLanguage.yaml
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            destId:
+              type: integer
+              description: >-
+                **unique numeric identifier** of the destination in which to
+                search for attractions
+            topX:
+              $ref: ../components/schemas/topX.yaml
+            sortOrder:
+              type: string
+              enum:
+                - SEO_PUBLISHED_DATE_D
+                - SEO_PUBLISHED_DATE_A
+                - SEO_REVIEW_AVG_RATING_D
+                - SEO_REVIEW_AVG_RATING_A
+                - SEO_ALPHABETICAL
+              description: |
+                **sort order** in which to return the results that is *one of*:
+                  * `"SEO_PUBLISHED_DATE_D"`: publish date (descending)
+                  * `"SEO_PUBLISHED_DATE_A"`: publish date (ascending)
+                  * `"SEO_REVIEW_AVG_RATING_D"`: traveler rating (high→low)
+                  * `"SEO_REVIEW_AVG_RATING_A"`: traveler rating (low→high)
+                  * `"SEO_ALPHABETICAL"`: alphabetical (A→Z)
+        example:
+          destId: 684
+          topX: 1-3
+          sortOrder: SEO_PUBLISHED_DATE_D
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: ../components/schemas/basicErrorModel.yaml
+              - type: object
+                properties:
+                  data:
+                    type: array
+                    description: '**array** of attraction objects'
+                    items:
+                      type: object
+                      properties:
+                        sortOrder:
+                          type: integer
+                          description: '**sort order** of *this* listing'
+                        webURL:
+                          description: ignore - (Viator only)
+                          type: string
+                          nullable: true
+                        pageUrlName:
+                          description: '**URL-formatted title** of the attraction page'
+                          type: string
+                        primaryDestinationUrlName:
+                          description: >-
+                            **URL-formatted name** of the destination associated
+                            with *this* attraction
+                          type: string
+                        publishedDate:
+                          description: >-
+                            **conventionally-formatted date** on which the
+                            attraction was listed
+                          type: string
+                        title:
+                          description: '**natural-language title** of the attraction'
+                          type: string
+                        attractionLatitude:
+                          description: '**latitude component** of the attraction''s location'
+                          type: number
+                        attractionLongitude:
+                          description: '**longitude component** of the attraction''s location'
+                          type: number
+                        attractionStreetAddress:
+                          description: '**street address** of the attraction'
+                          type: string
+                        attractionCity:
+                          description: >-
+                            **name** of the city in which the attraction is
+                            located
+                          type: string
+                        attractionState:
+                          description: >-
+                            **name** of the state in which the attraction is
+                            located
+                          type: string
+                        destinationId:
+                          description: >-
+                            **unique numeric identifier** of the the destination
+                            associated with the attraction
+                          type: integer
+                        thumbnailHiResURL:
+                          description: >-
+                            **URL** for the attraction's high-resolution
+                            thumbnail image
+                          type: string
+                        photoCount:
+                          description: >-
+                            **number** of user photos published for the
+                            attraction
+                          type: integer
+                        primaryDestinationId:
+                          description: >-
+                            **unique numeric identifier** of the attraction's
+                            primary destination
+                          type: integer
+                        seoId:
+                          description: >
+                            **unique numeric identifier** of the attraction
+                          type: integer
+                        productCount:
+                          description: >-
+                            **number** of products associated with the
+                            attraction
+                          type: integer
+                        primaryDestinationName:
+                          description: >-
+                            **natural-language name** of the attraction's
+                            primary destination
+                          type: string
+                        thumbnailURL:
+                          description: '**URL** the attraction''s thumbnail image'
+                          type: string
+                        rating:
+                          description: '**average user rating** of the attraction'
+                          type: number
+          examples:
+            '1':
+              $ref: ../components/examples/taxonomy-attractions-example.yaml

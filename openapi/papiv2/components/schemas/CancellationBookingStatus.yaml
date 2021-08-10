@@ -1,0 +1,7 @@
+type: string
+description: >
+  Machine-interpretable string indicating the outcome of the booking
+  cancellation request. One of: 
+
+    - `"ACCEPTED"`: The cancellation was successful
+    - `"DECLINED"`: The cancellation failed

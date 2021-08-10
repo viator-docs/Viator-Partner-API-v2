@@ -1,0 +1,4 @@
+summary: '/bookings/{product-code}/cancel'
+value:
+  bookingId: BR-581567752
+  status: ACCEPTED

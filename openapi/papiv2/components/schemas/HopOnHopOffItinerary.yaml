@@ -1,0 +1,12 @@
+allOf:
+  - $ref: ./Itinerary.yaml
+  - type: object
+    description: Itinerary information where this product is a hop-on/hop-off tour
+    required:
+      - routes
+    properties:
+      routes:
+        type: array
+        description: Routes that this tour takes
+        items:
+          $ref: ./HopOnHopOffItineraryRoute.yaml

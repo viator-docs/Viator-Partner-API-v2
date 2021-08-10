@@ -1,0 +1,24 @@
+type: object
+description: Image information
+required:
+  - variants
+  - isCover
+properties:
+  imageSource:
+    $ref: ./ImageSourceType.yaml
+  caption:
+    type: string
+    description: >
+      Description of this photo
+
+      - **Note**: This field contains natural language suitable for display to
+      the user; content will be translated (if necessary) into the language
+      specified in the Accept-Language header parameter
+  isCover:
+    type: boolean
+    description: '`true` if this photo is considered to be the cover (leading) photo for this product from this `imageSource`'
+  variants:
+    type: array
+    description: Dimension/resolution variants available for this image
+    items:
+      $ref: ./ImageVariant.yaml

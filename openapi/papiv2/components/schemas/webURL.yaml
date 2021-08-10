@@ -1,0 +1,9 @@
+type: string
+description: >
+  **URL** to forward users to in order to complete
+  their purchase on the Viator site
+
+
+  Example: 
+
+  * http://es.live.rc.viator.com/tours/Sydney/Sydney-and-Bondi-Hop-on-Hop-off-Tour/d357-5010SYDNEY?eap=brand-subbrand-24251&aid=vba24251es

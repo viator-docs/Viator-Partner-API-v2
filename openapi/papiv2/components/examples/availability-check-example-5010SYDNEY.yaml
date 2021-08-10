@@ -1,0 +1,110 @@
+summary: 5010SYDNEY
+value: {
+    "currency": "AUD",
+    "productCode": "5010SYDNEY",
+    "travelDate": "2021-12-12",
+    "bookableItems": [
+        {
+            "productOptionCode": "TG3",
+            "available": true,
+            "lineItems": [
+                {
+                    "ageBand": "ADULT",
+                    "numberOfTravelers": 2,
+                    "subtotalPrice": {
+                        "price": {
+                            "recommendedRetailPrice": 118.50,
+                            "partnerNetPrice": 93.46
+                        }
+                    }
+                },
+                {
+                    "ageBand": "CHILD",
+                    "numberOfTravelers": 2,
+                    "subtotalPrice": {
+                        "price": {
+                            "recommendedRetailPrice": 82.00,
+                            "partnerNetPrice": 64.70
+                        }
+                    }
+                }
+            ],
+            "totalPrice": {
+                "price": {
+                    "recommendedRetailPrice": 200.50,
+                    "partnerNetPrice": 158.16,
+                    "bookingFee": 9.49,
+                    "partnerTotalPrice": 167.65
+                }
+            }
+        },
+        {
+            "productOptionCode": "48HOUR",
+            "available": true,
+            "lineItems": [
+                {
+                    "ageBand": "ADULT",
+                    "numberOfTravelers": 2,
+                    "subtotalPrice": {
+                        "price": {
+                            "recommendedRetailPrice": 149.40,
+                            "partnerNetPrice": 117.90
+                        }
+                    }
+                },
+                {
+                    "ageBand": "CHILD",
+                    "numberOfTravelers": 2,
+                    "subtotalPrice": {
+                        "price": {
+                            "recommendedRetailPrice": 91.10,
+                            "partnerNetPrice": 71.88
+                        }
+                    }
+                }
+            ],
+            "totalPrice": {
+                "price": {
+                    "recommendedRetailPrice": 240.50,
+                    "partnerNetPrice": 189.78,
+                    "bookingFee": 11.39,
+                    "partnerTotalPrice": 201.17
+                }
+            }
+        },
+        {
+            "productOptionCode": "TG1",
+            "available": true,
+            "lineItems": [
+                {
+                    "ageBand": "ADULT",
+                    "numberOfTravelers": 2,
+                    "subtotalPrice": {
+                        "price": {
+                            "recommendedRetailPrice": 200.50,
+                            "partnerNetPrice": 158.16
+                        }
+                    }
+                },
+                {
+                    "ageBand": "CHILD",
+                    "numberOfTravelers": 2,
+                    "subtotalPrice": {
+                        "price": {
+                            "recommendedRetailPrice": 131.60,
+                            "partnerNetPrice": 103.84
+                        }
+                    }
+                }
+            ],
+            "totalPrice": {
+                "price": {
+                    "recommendedRetailPrice": 332.10,
+                    "partnerNetPrice": 262.00,
+                    "bookingFee": 15.72,
+                    "partnerTotalPrice": 277.72
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+type: object
+properties:
+  errorReference:
+    type: string
+    description: '**reference number** of *this* error'
+    nullable: true
+  dateStamp:
+    type: string
+    description: '**timestamp** of *this* response'
+    nullable: true
+  errorType:
+    type: string
+    description: '**code** specifying the type of error'
+    nullable: true
+  errorCodes:
+    nullable: true
+    type: array
+    description: |
+      **array** of error codes pertaining to *this* error
+    items:
+      type: string
+    example: []
+  errorMessage:
+    nullable: true
+    type: array
+    description: '**array** of error message strings'
+  errorName:
+    nullable: true
+    type: string
+    description: '**name** of *this* type of error'
+  extraInfo:
+    nullable: true
+    type: object
+    description: ignore (Viator only)
+  extraObject:
+    nullable: true
+    type: object
+    description: ignore (Viator only)
+  success:
+    nullable: true
+    type: boolean
+    description: |
+      **boolean indicator** of *this* request's outcome
+      - `true`: the request was successful with no errors
+      - `false`: an error was encountered
+  totalCount:
+    nullable: true
+    type: integer
+    description: |
+      **number** of results available for *this* service
+  errorMessageText:
+    nullable: true
+    type: string
+    description: '**array** of error message strings in plain text'
+  vmid:
+    nullable: true
+    type: string
+    description: '**unique numeric id** of the server that processed *this* request'

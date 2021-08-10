@@ -1,0 +1,9 @@
+type: string
+description: >
+
+  **currency-formatted price difference** of the price of this product (`price`) while on sale (`onSale` is `true`) compared to the product's original price (`rrp`)
+
+  - if no discount has been applied, the value will be empty 
+  
+  - Note: There is a typo in the spelling of this field name ('formated')
+example: ''

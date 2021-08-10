@@ -1,0 +1,224 @@
+get:
+  tags:
+    - V1-endpoints (affiliates only)
+  summary: /v1/attraction/products
+  operationId: v1AttractionProducts
+  description: |
+    This service gets attraction-related products (for cross-selling purposes)
+
+    **Note**:
+
+    - <mark>This endpoint uses conventions from V1 of this API. See
+    [V1 endpoints](../../../../papiv2/key-concepts/v1-endpoints) for further
+    information</mark>
+    - This endpoint is only available to <u>affiliate partners</u>
+    - Pages generated using data from this endpoint are subject to a **strict no-index policy**. If you are unsure about whether you are correctly following this rule, please reach out to your account manager for advice.
+
+  parameters:
+    - $ref: ../components/parameters/acceptLanguage.yaml
+    - in: query
+      name: seoId
+      required: true
+      description: >-
+        **unique numeric identifier** for the attraction to retrieve
+        recommmendation details for
+      example: 14235
+      schema:
+        type: integer
+    - $ref: ../components/parameters/topX.yaml
+    - in: query
+      name: sortOrder
+      description: >
+        **sort order** in which to return results; one of:
+
+        - `SEO_PRODUCT_TOP_SELLERS` - Top Sellers
+        
+        - `SEO_PRODUCT_REVIEW_AVG_RATING_A` - Traveller Rating (low->high)
+        
+        - `SEO_PRODUCT_REVIEW_AVG_RATING_D` - Traveller Rating (high->low) 
+        
+        - `SEO_PRODUCT_PRICE_FROM_A` - Price (low->high) 
+        
+        - `SEO_PRODUCT_PRICE_FROM_D` - Price (high->low)
+      example: SEO_PRODUCT_TOP_SELLERS
+      schema:
+        type: string
+    - in: query
+      name: currencyCode
+      description: >
+        **currency-code** for the currency in which to display pricing details for the products associated with the attraction specified.
+
+
+        **Note:**
+
+        - You must have multiple currencies enabled in order to set the currency using this parameter. Please speak to your account manager if you wish to have this enabled.
+
+        - If you omit this parameter; or, if you do not have multiple currencies enabled, pricing will be returned in the default currency for your account.
+
+      example: EUR
+      schema:
+        type: string
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: ../components/schemas/basicErrorModel.yaml
+              - type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        sortOrder:
+                          type: integer
+                          description: '**sort order** for *this* product'
+                        supplierName:
+                          type: string
+                          description: '**name** of the supplier of *this* product'
+                        currencyCode:
+                          $ref: ../components/schemas/currencyCode.yaml
+                        catIds:
+                          type: array
+                          description: ignore (Viator only)
+                          items:
+                            type: integer
+                        subCatIds:
+                          type: array
+                          description: ignore (Viator only)
+                          items:
+                            type: integer
+                        webURL:
+                          $ref: ../components/schemas/webURL.yaml
+                        specialReservationDetails:
+                          type: string
+                          description: ignore (Viator only)
+                        sslSupported:
+                          type: boolean
+                          description: '**ignore (Viator only)**'
+                        panoramaCount:
+                          type: integer
+                          description: '**number** of panoramas available for *this* product'
+                        merchantCancellable:
+                          type: boolean
+                          description: ignore (Viator only)
+                        bookingEngineId:
+                          description: ignore (Viator only)
+                        onRequestPeriod:
+                          type: string
+                          description: ignore (Viator only)
+                        primaryGroupId:
+                          type: string
+                          description: ignore (Viator only)
+                        pas:
+                          type: string
+                          description: ignore (Viator only)
+                        available:
+                          type: boolean
+                          description: ignore (Viator only)
+                        productUrlName:
+                          type: string
+                          description: ignore (Viator only)
+                        primaryDestinationUrlName:
+                          type: string
+                          description: >-
+                            **URL-formatted name** of the primary destination of
+                            *this* product
+                        title:
+                          type: string
+                          description: '**natural-lannguage title** of *this* product'
+                        videoCount:
+                          type: integer
+                          description: >-
+                            ignore (Viator only) – videos are not available to
+                            partners
+                        rating:
+                          type: number
+                          description: ignore (Viator only)
+                        supplierCode:
+                          type: string
+                          description: >-
+                            **alphanumeric identifier** for the supplier of
+                            *this* product
+                        shortTitle:
+                          type: string
+                          description: '**title (short)** of *this* product'
+                        specialOfferAvailable:
+                          $ref: ../components/schemas/specialOfferAvailable.yaml
+                        price:
+                          $ref: ../components/schemas/price.yaml
+                        priceFormatted:
+                          $ref: ../components/schemas/priceFormatted.yaml
+                        rrp:
+                          description: ignore (Viator only)
+                          type: integer
+                        rrpformatted:
+                          description: ignore (Viator only)
+                          type: string
+                        onSale:
+                          $ref: ../components/schemas/onSale.yaml
+                        savingAmount:
+                          $ref: ../components/schemas/savingAmount.yaml
+                        savingAmountFormated:
+                          $ref: ../components/schemas/savingAmountFormated.yaml
+                        translationLevel:
+                          type: integer
+                          description: ignore (Viator only)
+                        thumbnailHiResURL:
+                          type: string
+                          description: >-
+                            **URL** for the high-resolution thumbnail image for
+                            *this* product
+                        primaryDestinationName:
+                          type: string
+                          description: >-
+                            **name** of the primary destination for *this*
+                            product
+                        thumbnailURL:
+                          type: string
+                          description: '**URL** for the thumbnail image for *this* product'
+                        photoCount:
+                          type: integer
+                          description: '**number** of photos available for *this* product'
+                        reviewCount:
+                          type: integer
+                          description: ignore (Viator only)
+                        primaryDestinationId:
+                          type: integer
+                          description: >-
+                            **numeric identifier** for *this* product's primary
+                            destination
+                        merchantNetPriceFrom:
+                          type: integer
+                          description: ignore (Viator only)
+                        specialReservation:
+                          type: integer
+                          description: ignore (Viator only)
+                        uniqueShortdescription:
+                          type: boolean
+                          description: ignore (Viator only)
+                        merchantNetPriceFromFormatted:
+                          type: string
+                          description: ignore (Viator only)
+                        
+                        essential:
+                          type: string
+                          description: ignore (Viator only)
+                        admission:
+                          type: string
+                          description: ignore (Viator only)
+                        shortdescription:
+                          type: string
+                          description: '**short description** of *this* product'
+                        duration:
+                          type: string
+                          description: '**duration** of this product'
+                        code:
+                          type: string
+                          description: '**unique alphanumeric identifier** for this product'
+          examples:
+            '1':
+              $ref: ../components/examples/attraction-products-example.yaml

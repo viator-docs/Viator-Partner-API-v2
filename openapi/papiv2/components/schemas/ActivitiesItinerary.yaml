@@ -1,0 +1,22 @@
+allOf:
+  - $ref: ./Itinerary.yaml
+  - type: object
+    description: Itinerary information where this product is an activity
+    required:
+      - duration
+      - activityInfo
+    properties:
+      duration:
+        $ref: ./ItineraryDuration.yaml
+      pointsOfInterest:
+        type: array
+        description: Places of interest at which this activity occurs
+        items:
+          $ref: ./LocationReference.yaml
+      activityInfo:
+        $ref: ./ActivitiesItineraryItem.yaml
+      foodMenus:
+        type: array
+        description: Food menus for this activity
+        items:
+          $ref: ./ActivityFoodMenu.yaml

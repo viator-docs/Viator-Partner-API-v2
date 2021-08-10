@@ -1,0 +1,30 @@
+type: object
+required:
+  - duration
+  - stops
+  - pointsOfInterest
+properties:
+  operatingSchedule:
+    type: string
+    description: |
+      Description of this product's operating schedule
+
+        - **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter
+  duration:
+    $ref: ./ItineraryDuration.yaml
+  name:
+    type: string
+    description: |
+      Name of this route
+
+        - **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter
+  stops:
+    type: array
+    description: Stops on this route
+    items:
+      $ref: ./HopOnHopOffStop.yaml
+  pointsOfInterest:
+    type: array
+    description: Locations of interest relevant to this route
+    items:
+      $ref: ./ItineraryPoi.yaml

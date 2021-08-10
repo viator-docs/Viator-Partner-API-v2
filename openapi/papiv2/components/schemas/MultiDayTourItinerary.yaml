@@ -1,0 +1,12 @@
+allOf:
+  - $ref: ./Itinerary.yaml
+  - type: object
+    required:
+      - days
+    description: Itinerary information where this product is a multi-day tour
+    properties:
+      days:
+        type: array
+        description: Each day of this multi-day tour
+        items:
+          $ref: ./MultiDayTourItineraryDay.yaml

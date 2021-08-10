@@ -1,0 +1,9 @@
+type: string
+description: >
+  **currency code** for the currency to use for pricing fields
+
+  - **Note**: See [Supported currency
+  codes](../exchangeRates) for available currencies
+
+  - **Default**: the default currency set up for your account
+example: USD

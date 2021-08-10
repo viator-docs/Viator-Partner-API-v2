@@ -1,0 +1,22 @@
+type: object
+properties:
+  sourceCurrency:
+    type: string
+    description: Base currency for this conversion rate
+  targetCurrency:
+    type: string
+    description: Target currency for this conversion rate
+  rate:
+    type: number
+    description: Value of `targetCurrency` per unit of `sourceCurrency`
+  lastUpdated:
+    type: string
+    format: date-time
+    description: >
+      Timestamp (UTC) indicating the last time this currency exchange rate was
+      updated
+  expiry:
+    type: string
+    format: date-time
+    description: |
+      Timestamp (UTC) indicating until when this rate will apply

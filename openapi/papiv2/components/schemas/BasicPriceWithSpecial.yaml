@@ -1,0 +1,24 @@
+required:
+  - original
+description: >
+  Pricing amount information, including 'special' pricing when available.
+
+  - **Note**: As the prices listed here may have changed by the time the booking
+  request is made, **please only use the pricing amounts given in the responses
+  from the [/bookings/hold](../bookingsHold) and
+  [/bookings/book](../bookingsBook) endpoints** when charging customers
+  and for invoicing purposes.
+allOf:
+  - type: object
+    properties:
+      original:
+        allOf:
+          - $ref: ./PriceObject.yaml
+          - description: Original price
+  - type: object
+    description: Price details for this item
+    properties:
+      special:
+        allOf:
+          - $ref: ./Special.yaml
+          - description: Special price

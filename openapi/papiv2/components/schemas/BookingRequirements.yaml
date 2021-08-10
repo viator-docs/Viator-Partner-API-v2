@@ -1,0 +1,18 @@
+type: object
+description: Passenger type and number requirements for booking
+required:
+  - minTravelersPerBooking
+  - maxTravelersPerBooking
+  - requiresAdultForBooking
+properties:
+  minTravelersPerBooking:
+    type: integer
+    description: Minimum number of travelers required to book this product
+  maxTravelersPerBooking:
+    type: integer
+    description: Maximum number of travelers required to book this product
+  requiresAdultForBooking:
+    type: boolean
+    description: >
+      **True** if at least one passenger from the `"ADULT"` or `"SENIOR"` age
+      band type must be included to book this product

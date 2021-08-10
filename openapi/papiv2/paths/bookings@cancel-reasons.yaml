@@ -1,0 +1,40 @@
+get:
+  tags:
+    - Bookings
+  description: >
+    Retrieves a dictionary of unique identification codes
+    (`cancellationReasonCode`) and their associated natural-language
+    descriptions (`cancellationReasonText`).
+
+
+    **Note**: This endpoint is only available to <u>merchant partners</u>.
+
+
+    (Response sample generated on: 2020-08-25)
+  operationId: bookingsCancelReasons
+  summary: /bookings/cancel-reasons
+  parameters:
+    - $ref: ../components/parameters/acceptLanguage.yaml
+    - $ref: ../components/parameters/accept.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json;version=2.0:
+          schema:
+            $ref: ../components/schemas/CancellationReasonsResponse.yaml
+          examples:
+            '1':
+              $ref: ../components/examples/bookings-cancel-reasons-example.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '406':
+      $ref: ../components/responses/NotAcceptable.yaml
+    '429':
+      $ref: ../components/responses/TooManyRequests.yaml
+    '500':
+      $ref: ../components/responses/InternalServerError.yaml
+    '503':
+      $ref: ../components/responses/ServiceUnavailable.yaml

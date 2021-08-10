@@ -1,0 +1,13 @@
+type: object
+required:
+  - locations
+properties:
+  locations:
+    type: array
+    maxItems: 500
+    description: >
+      List of location reference identifiers for which to retrieve full location
+      details.
+    items:
+      type: string
+      pattern: '(?s).*[\S].*'

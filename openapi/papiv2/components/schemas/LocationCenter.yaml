@@ -1,0 +1,18 @@
+type: object
+description: Geographic coordinates (lattitude/longitude) for this location
+required:
+  - latitude
+  - longitude
+properties:
+  latitude:
+    type: number
+    description: |
+      Latitude of this location
+
+        - **Example**: `"-33.870037"`
+  longitude:
+    type: number
+    description: |
+      Longitude of this location
+
+        - **Example**: `"151.20955"`

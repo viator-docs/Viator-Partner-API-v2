@@ -1,0 +1,10 @@
+type: string
+description: >
+  Machine-interpretable value encoding the required unit type for the answer to
+  the booking question; one of:
+
+    - `"STRING"`
+    - `"NUMBER_AND_UNIT"`
+    - `"DATE"`
+    - `"TIME"`
+    - `"LOCATION_REF_OR_FREE_TEXT"`

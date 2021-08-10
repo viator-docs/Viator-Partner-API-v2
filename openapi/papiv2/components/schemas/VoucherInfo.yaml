@@ -1,0 +1,18 @@
+type: object
+required:
+  - url
+  - format
+description: Voucher information for this booking
+properties:
+  url:
+    type: string
+    description: URL from which this voucher can be retrieved
+    pattern: '(?s).*[\S].*'
+  format:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: |
+      File format of the voucher; one of:
+
+        - `"HTML"`
+        - `"PDF"`

@@ -1,0 +1,81 @@
+summary: taxonomy attractions example
+value:
+  errorReference: null
+  data:
+    - sortOrder: 1
+      webURL: null
+      pageUrlName: Grand-Canyon-West-Rim
+      primaryDestinationUrlName: Las-Vegas
+      publishedDate: '2020-01-15'
+      attractionLatitude: 35.8808
+      attractionLongitude: -113.97048
+      attractionStreetAddress: ''
+      attractionCity: ''
+      attractionState: ''
+      destinationId: 684
+      photoCount: 157
+      primaryDestinationId: 684
+      thumbnailHiResURL: >-
+        http://cache-graphicslib.viator.com/graphicslib/page-images/742x525/44811_GrandCanyon_WestRim_d815-24.jpg
+      primaryDestinationName: Las Vegas
+      thumbnailURL: >-
+        http://cache-graphicslib.viator.com/graphicslib/page-images/44811_GrandCanyon_WestRim_d815-24.jpg
+      seoId: 1594
+      productCount: 16
+      rating: 4.5
+      title: Grand Canyon West Rim
+    - sortOrder: 2
+      webURL: null
+      pageUrlName: Graceland-Wedding-Chapel
+      primaryDestinationUrlName: Las-Vegas
+      publishedDate: '2019-08-22'
+      attractionLatitude: 36.162683
+      attractionLongitude: -115.144685
+      attractionStreetAddress: 619 Las Vegas Boulevard South
+      attractionCity: Las Vegas
+      attractionState: ''
+      destinationId: 684
+      photoCount: 10
+      primaryDestinationId: 684
+      thumbnailHiResURL: >-
+        http://cache-graphicslib.viator.com/graphicslib/page-images/742x525/785937_Viator_Photographer_395090.jpg
+      primaryDestinationName: Las Vegas
+      thumbnailURL: >-
+        http://cache-graphicslib.viator.com/graphicslib/page-images/785937_Viator_Photographer_395090.jpg
+      seoId: 1246
+      productCount: 2
+      rating: 4.5
+      title: Graceland Wedding Chapel
+    - sortOrder: 3
+      webURL: null
+      pageUrlName: Wynn-Las-Vegas
+      primaryDestinationUrlName: Las-Vegas
+      publishedDate: '2019-07-30'
+      attractionLatitude: 36.126374
+      attractionLongitude: -115.166749
+      attractionStreetAddress: 3131 Las Vegas Blvd South
+      attractionCity: Las Vegas
+      attractionState: ''
+      destinationId: 684
+      photoCount: 5
+      primaryDestinationId: 684
+      thumbnailHiResURL: >-
+        http://cache-graphicslib.viator.com/graphicslib/page-images/742x525/100516_Las%20Vegas_Wynn%20Hotel%20&%20Casino_d684-508.jpg
+      primaryDestinationName: Las Vegas
+      thumbnailURL: >-
+        http://cache-graphicslib.viator.com/graphicslib/page-images/100516_Las%20Vegas_Wynn%20Hotel%20&%20Casino_d684-508.jpg
+      seoId: 1266
+      productCount: 2
+      rating: 0
+      title: Wynn Las Vegas
+  dateStamp: '2020-02-06T19:55:25+0000'
+  errorType: null
+  errorCodes: []
+  errorMessage: null
+  errorName: null
+  extraInfo: {}
+  extraObject: null
+  success: true
+  totalCount: 72
+  errorMessageText: null
+  vmid: '331004'

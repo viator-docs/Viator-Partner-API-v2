@@ -1,0 +1,75 @@
+type: object
+required:
+  - productCode
+  - destinations
+  - tags
+  - flags
+properties:
+  productCode:
+    type: string
+    description: |
+      Alphanumeric code that is the unique identifier for this product
+
+      - Example: `"5657BRIDGECLIMB"`
+  title:
+    type: string
+    description: |
+      Title of this product
+
+        - **Example**: `"Sydney BridgeClimb"`
+        - **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameterNatural-language title of this product
+  description:
+    type: string
+    description: |
+      Description of this product
+
+      - **Example**: "Climb the Sydney Harbour Bridge with an expert guide for the ultimate Sydney experience..."
+      - **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter
+  images:
+    type: array
+    items:
+      $ref: ./Image.yaml
+    description: Images for this product
+  reviews:
+    $ref: ./ProductReviews.yaml
+  pricing:
+    $ref: ./ProductSearchPricing.yaml
+  productUrl:
+    type: string
+    description: |
+      **Affiliate partners only**: URL for booking this product on the Viator.com site, including the tracking parameters for your account that will allow the attribution cookie on Viator.com to be set.'
+      
+      Example format: https://www.viator.com/tours/Sydney/Sydney-and-Bondi-Hop-on-Hop-off-Tour/d357-5010SYDNEY?mcid=42383&pid=P00045135&medium=api&api_version=2.0
+  destinations:
+    type: array
+    items:
+      $ref: ./Destination.yaml
+    description: |
+      Destinations in which this product operates.
+      
+      - **Note**: At present, only the primary destination ID is returned; i.e., the item in the `destinations` array of the product content response for which `primary` is `true`. Therefore, `primary` will always be `true` in this response. Furthermore, the destination given here may differ from the destination specified in the request.
+  tags:
+    type: array
+    items:
+      type: integer
+    description: |
+      Array of numeric tag identifiers indicating the product categories into which this product falls 
+
+      To retrieve details about which tags these identifiers refer to, please use the [/products/tags](../productsTags) endpoint.
+  flags:
+    type: array
+    items:
+      $ref: ./ProductSearchFlag.yaml
+    description: |
+      List of product attribute flags specified in the request
+
+      May include any of:
+
+        - `"FREE_CANCELLATION"` – products that have a cancellation policy that allows for free cancellation (i.e., excludes products for which `cancellationPolicy.type` is `"ALL_SALES_FINAL"` in the product content response)
+        - `"SKIP_THE_LINE"` – products that allow participants to attend a location without having to obtain a separate ticket on the occasion itself (`itinerary.skipTheLine` is `true`)
+        - `"PRIVATE_TOUR"` – products where only the travelers who have booked the product will be present (`itinerary.privateTour` is `true`)
+        - `"SPECIAL_OFFER"` – products that have a pricing discount available (i.e., `summary.fromPriceBeforeDiscount` will be present in the response from [/availability/schedules/{product-code}](../availabilitySchedules))
+        - `"LIKELY_TO_SELL_OUT"` - popular products that routinely sell out (this is equivalent to filtering by tag `20757`).
+
+  translationInfo:
+        $ref: ./TranslationDetails.yaml

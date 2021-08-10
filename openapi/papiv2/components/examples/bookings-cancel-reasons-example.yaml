@@ -1,0 +1,37 @@
+summary: /bookings/cancel-reasons
+value: {
+    "reasons": [
+        {
+            "cancellationReasonText": "Supplier No Show",
+            "cancellationReasonCode": "Customer_Service.Supplier_no_show"
+        },
+        {
+            "cancellationReasonText": "Chose a different/cheaper tour",
+            "cancellationReasonCode": "Customer_Service.Chose_a_different_cheaper_tour"
+        },
+        {
+            "cancellationReasonText": "Unexpected medical circumstances",
+            "cancellationReasonCode": "Customer_Service.Unexpected_medical_circumstances"
+        },
+        {
+            "cancellationReasonText": "Weather",
+            "cancellationReasonCode": "Customer_Service.Weather"
+        },
+        {
+            "cancellationReasonText": "Booked wrong tour date",
+            "cancellationReasonCode": "Customer_Service.Booked_wrong_tour_date"
+        },
+        {
+            "cancellationReasonText": "Duplicate Booking",
+            "cancellationReasonCode": "Customer_Service.Duplicate_Booking"
+        },
+        {
+            "cancellationReasonText": "Significant global event",
+            "cancellationReasonCode": "Customer_Service.Significant_global_event"
+        },
+        {
+            "cancellationReasonText": "I canceled my entire trip",
+            "cancellationReasonCode": "Customer_Service.I_canceled_my_entire_trip"
+        }
+    ]
+}

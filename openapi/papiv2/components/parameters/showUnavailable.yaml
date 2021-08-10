@@ -1,0 +1,10 @@
+name: showUnavailable
+in: query
+schema:
+  type: boolean
+description: |
+  **specifier** as to whether or not to show 'unavailable' products:
+
+    - `true`: return *both* available and unavailable products
+    - `false`: return *only* available products (default)
+example: false

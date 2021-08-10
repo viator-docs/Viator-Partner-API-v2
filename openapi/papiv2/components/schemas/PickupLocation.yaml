@@ -1,0 +1,16 @@
+type: object
+description: Pick-up or meeting point
+required:
+  - location
+properties:
+  location:
+    $ref: ./LocationReference.yaml
+  pickupType:
+    type: string
+    description: |
+      Type of pick-up location; one of: 
+
+        - `"AIRPORT"`
+        - `"HOTEL"`
+        - `"PORT"`
+        - `"OTHER"`

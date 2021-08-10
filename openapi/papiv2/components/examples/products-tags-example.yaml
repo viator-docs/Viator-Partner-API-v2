@@ -1,0 +1,188 @@
+summary: /products/tags
+value:
+  tags:
+    - tagId: 11980
+      allNamesByLocale:
+        de: Mehrtägige Touren von Mailand an die italienische Riviera
+        'no': Turer over flere dager fra Milan til den italienske riviera
+        sv: Turer på flera dagar till italienska rivieran från Milano
+        pt: Viagens de um dia para a Riviera Italiana saindo de Milão
+        en_AU: Italian Riviera Multi Day Trips from Milan
+        en: Italian Riviera Multi Day Trips from Milan
+        it: Escursioni di più giorni sulla riviera ligure da Milano
+        fr: Excursions de plusieurs jours sur la riviera italienne depuis Milan
+        en_UK: Italian Riviera Multi Day Trips from Milan
+        es: Excursiones de varios días a la Riviera italiana desde Milán
+        zh: 米兰至意大利里维埃拉多日游
+        zh_HK: 米蘭出發意大利里維埃拉多日遊
+        zh_TW: 米蘭出發的義大利里維耶拉一日遊
+        ja: ミラノ発イタリアン リヴィエラの複数日にまたがるツアー
+        zh_CN: 米兰至意大利里维埃拉多日游
+        da: Flerdagesture til Den Italienske Riviera fra Milano
+        nl: Meerdaagse tochten naar de Italiaanse Rivièra vanaf Milaan
+    - tagId: 21768
+      parentTagIds:
+        - 21701
+        - 21913
+      allNamesByLocale:
+        de: Landausflüge
+        'no': Utflukter på land
+        sv: Utflykter i land
+        pt: Excursões de cruzeiro
+        en_AU: Shore Excursions
+        en: Shore Excursions
+        it: Escursioni a terra
+        fr: Excursions en bord de mer
+        en_UK: Shore Excursions
+        es: Excursiones por la costa
+        zh: 岸上游览
+        zh_HK: 海岸短程旅行
+        zh_TW: 岸上觀光
+        ja: 寄港地観光
+        zh_CN: 岸上游览
+        da: Kystudflugter
+        nl: Kustexcursies
+    - tagId: 21767
+      parentTagIds:
+        - 12040
+        - 21912
+      allNamesByLocale:
+        de: Schwimmwettbewerbe
+        'no': Svømmekonkurranser
+        sv: Simningstävlingar
+        pt: Competições de natação
+        en_AU: Swimming Competitions
+        en: Swimming Competitions
+        it: Gare di nuoto
+        fr: Compétitions de natation
+        en_UK: Swimming Competitions
+        es: Competiciones de natación
+        zh: 游泳比赛
+        zh_HK: 游泳比賽
+        zh_TW: 游泳比賽
+        ja: 水泳大会
+        zh_CN: 游泳比赛
+        da: Svømmekonkurrencer
+        nl: Zwemwedstrijden
+    - tagId: 21766
+      parentTagIds:
+        - 12040
+        - 21912
+      allNamesByLocale:
+        de: Snowboard-Wettbewerbe
+        'no': Konkurranser i snøbrettkjøring
+        sv: Snowboardtävlingar
+        pt: Competições de snowboard
+        en_AU: Snowboarding Competitions
+        en: Snowboarding Competitions
+        it: Gare di snowboard
+        fr: Compétitions de snowboard
+        en_UK: Snowboarding Competitions
+        es: Competiciones de snowboard
+        zh: 单板滑雪竞赛
+        zh_HK: 單板滑雪競賽
+        zh_TW: 滑雪板比賽
+        ja: スノーボード大会
+        zh_CN: 单板滑雪竞赛
+        da: Snowboardkonkurrencer
+        nl: Snowboardwedstrijden
+    - tagId: 11966
+      parentTagIds:
+        - 21442
+        - 21909
+        - 21715
+        - 21913
+      allNamesByLocale:
+        de: Fahrten im Glasbodenboot
+        'no': Båtturer med glassbunn
+        sv: Rundturer med glasbottenbåt
+        pt: Passeios em barcos com fundo de vidro
+        en_AU: Glass Bottom Boat Tours
+        en: Glass Bottom Boat Tours
+        it: Escursioni in barca con il fondo in vetro
+        fr: Tours en bateau à fond vitré
+        en_UK: Glass Bottom Boat Tours
+        es: Paseos en barco con fondo de cristal
+        zh: 玻璃底小船游览
+        zh_HK: 玻璃船旅遊
+        zh_TW: 玻璃船遊覽
+        ja: グラスボトムボートツアー
+        zh_CN: 玻璃底小船游览
+        da: Airboat-ture
+        nl: Tours in boot met glazen bodem
+    - tagId: 11965
+      parentTagIds:
+        - 11890
+        - 21911
+        - 21442
+        - 21909
+        - 21701
+        - 21913
+      allNamesByLocale:
+        de: Bootstouren mit Abendessen
+        'no': Middagscruise
+        sv: Middagskryssningar
+        pt: Cruzeiros com jantar
+        en_AU: Dinner Cruises
+        en: Dinner Cruises
+        it: Crociere con cena
+        fr: Dîners-croisières
+        en_UK: Dinner Cruises
+        es: Cruceros con cena
+        zh: 晚餐游览船
+        zh_HK: 晚餐郵輪
+        zh_TW: 晚餐郵輪之旅
+        ja: ディナークルーズ
+        zh_CN: 晚餐游览船
+        da: Sejlture med middag
+        nl: Dinercruises
+    - tagId: 11968
+      parentTagIds:
+        - 21442
+        - 21909
+        - 21715
+        - 21913
+      allNamesByLocale:
+        de: Airboat-Touren
+        'no': Luftbåt-turer
+        sv: Träskbåtsturer
+        pt: Passeios de aerobarco
+        en_AU: Airboat Tours
+        en: Airboat Tours
+        it: Gite in idroscivolante
+        fr: Circuits en hydroglisseur
+        en_UK: Airboat Tours
+        es: Recorridos en hidrodeslizador
+        zh: 飞艇游览
+        zh_HK: 汽船旅遊
+        zh_TW: 汽船遊覽
+        ja: エアボートツアー
+        zh_CN: 飞艇游览
+        da: Luftbådsture
+        nl: Moerasboottours
+    - tagId: 11967
+      parentTagIds:
+        - 21442
+        - 21909
+        - 11890
+        - 21911
+        - 21701
+        - 21913
+      allNamesByLocale:
+        de: Bootstouren mit Brunch
+        'no': Brunsjcruise
+        sv: Brunchkryssningar
+        pt: Cruzeiros com brunch
+        en_AU: Brunch Cruises
+        en: Brunch Cruises
+        it: Crociere con brunch
+        fr: Croisières brunch
+        en_UK: Brunch Cruises
+        es: Cruceros con brunch
+        zh: 早午餐游览船
+        zh_HK: 早午餐郵輪
+        zh_TW: 早午餐郵輪之旅
+        ja: ブランチクルーズ
+        zh_CN: 早午餐游览船
+        da: Sejlture med brunch
+        nl: Brunchcruises

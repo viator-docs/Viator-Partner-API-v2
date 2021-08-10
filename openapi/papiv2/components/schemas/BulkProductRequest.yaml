@@ -1,0 +1,11 @@
+type: object
+required:
+  - productCodes
+properties:
+  productCodes:
+    type: array
+    description: List of product codes for which to retrieve full product details
+    maxItems: 500
+    items:
+      type: string
+      pattern: '(?s).*[\S].*'

@@ -1,0 +1,7 @@
+type: object
+properties:
+  rates:
+    type: array
+    description: Currency exchange rates
+    items:
+      $ref: ./ExchangeRateItem.yaml

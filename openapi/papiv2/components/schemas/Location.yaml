@@ -1,0 +1,19 @@
+type: object
+description: Location detail
+required:
+  - reference
+  - provider
+properties:
+  reference:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: Unique identifier for this location as given in the request
+  provider:
+    $ref: ./LocationProvider.yaml
+discriminator:
+  propertyName: provider
+  mapping:
+    TRIPADVISOR: ./ResolvedLocation.yaml
+    GOOGLE: ./ProvidedLocation.yaml
+    ResolvedLocation: ./ResolvedLocation.yaml
+    ProvidedLocation: ./ProvidedLocation.yaml

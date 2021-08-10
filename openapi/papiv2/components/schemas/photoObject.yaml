@@ -1,0 +1,67 @@
+description: '**object** detailing a single photo from a user'
+type: object
+properties:
+  productCode:
+    type: string
+    description: '**product code** for the product that *this* photograph is of'
+  title:
+    type: string
+    description: '**title** of *this* photograph'
+  caption:
+    type: string
+    description: |
+      **HTML-formatted caption** for *this* photograph
+      - may contain basic HTML mark-up - e.g., br, li, b, u, p, i, ul and ol
+  thumbnailURL:
+    type: string
+    description: '**URL** of *this* product''s thumbnail image'
+  ownerId:
+    type: integer
+    description: '**unique numeric identifier** of the user that owns the photograph'
+  editorsPick:
+    type: boolean
+    description: >-
+      **indicator**: `true` if *this* photograph has been tagged as an *editor's
+      pick*; i.e., can be given preference for display
+  photoId:
+    type: integer
+    description: '**unique numeric identifier** of *this* photograph'
+  photoURL:
+    type: string
+    description: '**URL** for the standard-resolution version of *this* photograph'
+  photoHiResURL:
+    type: string
+    description: '**URL** of the high-resolution version of *this* photograph'
+  photoMediumResURL:
+    type: string
+    description: '**URL** of the medium-resolution version of *this* photograph'
+  timeUploaded:
+    type: string
+    description: '**date** on which *this* photograph was submitted'
+  productTitle:
+    type: string
+    description: >-
+      **natural-language title** of the product associated with *this*
+      photograph; e.g., 'Sydney and Bondi Hop-on Hop-off Tour'
+  productUrlName:
+    type: string
+    description: >-
+      **URL-formatted title** of the product associated with *this* photograph;
+      e.g., `Sydney-and-Bondi-Hop-on-Hop-off-Tour`
+  ownerName:
+    type: string
+    description: '**handle** of the user that submitted *this* photograph; e.g., ''Husker1k'''
+  ownerCountry:
+    type: string
+    description: '**country** in which the owner of *this* photograph is located'
+    nullable: true
+  ownerAvatarURL:
+    type: string
+    description: '**URL** for the avatar image of the user that submitted *this* photograph'
+    nullable: true
+  sortOrder:
+    type: integer
+    description: '**sort order** for *this* photograph; e.g., `3`'
+  sslSupported:
+    type: boolean
+    description: ignore (Viator only)

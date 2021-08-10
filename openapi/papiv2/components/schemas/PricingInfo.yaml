@@ -1,0 +1,15 @@
+type: object
+required:
+  - type
+  - agebands
+description: Ticket/voucher details for this product
+properties:
+  type:
+    $ref: ./PricingType.yaml
+  ageBands:
+    type: array
+    description: Age bands for this product
+    items:
+      $ref: ./AgeBand.yaml
+  unitType:
+    $ref: ./PricingUnitType.yaml

@@ -1,0 +1,43 @@
+type: object
+description: Details of this bookable item
+required:
+  - available
+properties:
+  productOptionCode:
+    type: string
+    description: >
+      Product option code for this bookable item
+
+
+      For more information see: [Key concepts: Product
+      options](../../../../papiv2/key-concepts/product-options)
+  startTime:
+    type: string
+    description: >
+      Starting time for this bookable item relative to the time zone in which
+      this product operates
+
+      - **Example**: `"09:00:00"`
+  available:
+    type: boolean
+    description: '`true` if this item is available to be booked'
+  unavailableReason:
+    type: string
+    description: >
+      Machine-interpretable reason code indicating why this bookable item is
+      unavailable (when `available` is `false`); one of:
+
+        - `"NOT_OPERATING"` - product is not operating on this date
+        - `"SOLD_OUT"` - this option is unavailable because it has sold out
+        - `"PAST_BOOKING_CUTOFF"` - it is too near to the product's starting time to book this item
+        - `"TRAVELER_MISMATCH"` - this item is not available for the specified passenger mix
+        - `"UNKNOWN"` - the reason is unknown
+  lineItems:
+    type: array
+    description: >-
+      Components of total price, each consisting of passenger(s) from a single
+      age band
+    items:
+      $ref: ./PricingLineItem.yaml
+  totalPrice:
+    $ref: ./LineItemPriceObject.yaml

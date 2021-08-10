@@ -3,10 +3,10 @@ meta:
   description: The best API documentation generator ever.
   siteUrl: https://portal-demo.redoc.ly
   keywords: redocly developer portal, api portal starter, api reference docs
-logo: ./images/logo.png
+logo: ./images/viator-partners.png
 enableToc: true
 oasDefinitions:
-  petstore: ./openapi/petstore.yaml
+  papiv2: ./openapi/papiv2/openapi.yaml
   # add links to definitions in our API registry by using a fully qualified URL.
 stylesheets:
   - https://fonts.googleapis.com/css?family=Roboto:300,400,600,700
@@ -19,29 +19,29 @@ stylesheets:
 #  - ./static/intercom.js
 nav:
 
-  - label: Training exercises
-    page: developer-portal/index.md
+  # - label: Training exercises
+  #   page: developer-portal/index.md
 
-  - label: External docs
-    icon: ./images/redocly-icon-white.png
-    href: https://docs.redoc.ly/developer-portal/introduction/
+  # - label: External docs
+  #   icon: ./images/redocly-icon-white.png
+  #   href: https://docs.redoc.ly/developer-portal/introduction/
 
   - search: true
 
 footer:
-  copyrightText: Copyright © Redocly 2019-2021. All right reserved.
-  columns:
-    - group: Legal
-      items:
-        - label: Terms of Use
-          href: 'https://redoc.ly/subscription-agreement/'
-        - label: Privacy Notice
-          href: 'https://redoc.ly/privacy-policy/'
-        - label: Cookie Notice
-          href: 'https://redoc.ly/privacy-policy/'
-    - group: Support
-      items:
-        - label: FAQ
-          page: faq.md
-        - label: Contact us
-          page: contact.mdx
+  copyrightText: Copyright © Viator 2021. All rights reserved.
+  # columns:
+  #   - group: Legal
+  #     items:
+  #       - label: Terms of Use
+  #         href: 'https://redoc.ly/subscription-agreement/'
+  #       - label: Privacy Notice
+  #         href: 'https://redoc.ly/privacy-policy/'
+  #       - label: Cookie Notice
+  #         href: 'https://redoc.ly/privacy-policy/'
+  #   - group: Support
+  #     items:
+  #       - label: FAQ
+  #         page: faq.md
+  #       - label: Contact us
+  #         page: contact.mdx

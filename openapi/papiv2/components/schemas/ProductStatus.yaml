@@ -1,0 +1,7 @@
+type: string
+description: >
+  Machine-interpretable value indicating this product's current availablility;
+  one of:
+
+    - `"ACTIVE"` - product is available for sale
+    - `"INACTIVE"` - product is not available for sale (remainder of object will be empty)

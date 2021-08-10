@@ -1,0 +1,78 @@
+type: object
+required:
+  - language
+  - type
+properties:
+  type:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: |
+      Machine-interpretable value encoding the type of language guide; one of:
+
+        - `GUIDE` – human tour guide
+        - `AUDIO` – audio guide
+        - `WRITTEN` – printed guide 
+  language:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: |
+      Language code of the language for this guide; one of:
+
+        - `"cmn"` - Mandarin
+        - `"es"` - Spanish
+        - `"en"` - English
+        - `"hi"` - Hindi
+        - `"ar"` - Arabic
+        - `"pt"` - Portuguese
+        - `"bn"` - Bengali
+        - `"ru"` - Russian
+        - `"ja"` - Japanese
+        - `"pa"` - Panjabi
+        - `"de"` - German
+        - `"jv"` - Javanese
+        - `"wuu"` - Wu Chinese
+        - `"ms"` - Malay
+        - `"te"` - Telugu
+        - `"vi"` - Vietnamese
+        - `"ko"` - Korean
+        - `"fr"` - French
+        - `"mr"` - Marathi
+        - `"ta"` - Tamil
+        - `"ur"` - Urdu
+        - `"tr"` - Turkish
+        - `"it"` - Italian
+        - `"yue"` - Cantonese
+        - `"th"` - Thai
+        - `"gu"` - Gujarati
+        - `"mnp"` - Chinese Min Bei
+        - `"fa"` - Farsi
+        - `"pl"` - Polish
+        - `"ps"` - Pushto
+        - `"hsn"` - Hunanese
+        - `"ml"` - Malayalam
+        - `"my"` - Burmese
+        - `"hak"` - Hakka Chinese
+        - `"uk"` - Ukrainian
+        - `"fil"` - Filipino
+        - `"ro"` - Romanian
+        - `"nl"` - Dutch
+        - `"ku"` - Kurdish
+        - `"hr"` - Croatian
+        - `"hu"` - Hungarian
+        - `"el"` - Greek
+        - `"cs"` - Czech
+        - `"sv"` - Swedish
+        - `"fi"` - Finnish
+        - `"sk"` - Slovak
+        - `"sr"` - Serbian
+        - `"no"` - Norwegian
+        - `"he"` - Hebrew
+        - `"da"` - Danish
+        - `"zh_TW"` - Chinese Traditional
+        - `"zh_CN"` - Chinese Simplified
+        - `"id"` - Indonesian
+  legacyGuide:
+    type: string
+    description: >-
+      Supply this value in the `languageOptionCode` element when making a
+      booking request

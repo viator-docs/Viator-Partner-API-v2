@@ -1,0 +1,10 @@
+type: string
+description: |
+  Machine-interpretable value that specifies this age band's type; one of:
+
+    - `"ADULT"`
+    - `"SENIOR"`
+    - `"YOUTH"`
+    - `"CHILD"`
+    - `"INFANT"`
+    - `"TRAVELER"`

@@ -1,0 +1,23 @@
+summary: /bookings/hold
+value:
+  bookingRef: BR-788161184
+  bookingHoldInfo:
+    availability:
+      status: HOLD_NOT_PROVIDED
+    pricing:
+      status: HOLDING
+      validUntil: '2020-09-21T00:18:47.233Z'
+  currency: AUD
+  lineItems:
+    - ageBand: ADULT
+      numberOfTravelers: 2
+      subtotalPrice:
+        price:
+          recommendedRetailPrice: 601.68
+          partnerNetPrice: 463.3
+  totalPrice:
+    price:
+      recommendedRetailPrice: 601.68
+      partnerNetPrice: 463.3
+      bookingFee: 27.8
+      partnerTotalPrice: 491.1

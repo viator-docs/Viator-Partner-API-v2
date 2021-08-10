@@ -1,0 +1,127 @@
+get:
+  tags:
+    - Products
+  summary: /products/modified-since
+  operationId: productsModifiedSince
+  description: >
+    Get full product details for all products modified since a specified time.
+
+    See [Ingesting and updating the product
+    catalogue](../../../../papiv2/workflows/ingesting-and-updating-the-product-catalogue/)
+    for instructions on how to use this service to ingest the full product
+    catalogue and ensure that it remains up-to-date.
+
+
+    **Examples:**
+
+
+    Get all products in the Viator inventory with 500 products per response
+    page:
+
+
+    ```html
+
+    GET https://api.sandbox.viator.com/partner/products/modified-since?count=500
+
+    ```
+
+    Get the next page of results:
+
+    ```html
+
+    GET
+    https://api.sandbox.viator.com/partner/products/modified-since?count=500&cursor=MTU3NDA0MzU1NQ==
+
+    ```
+
+    Alternative pagination method (not recommended); e.g., if you have misplaced the cursor value or if for any other reason you wish to get all products modified since 2019-09-17T03:20:45.737043Z:
+
+    ```html
+
+    GET
+    https://api.sandbox.viator.com/partner/products/modified-since?count=500&modified-since=2020-09-30T00%3A00%3A01.737043Z
+
+    ```
+
+
+    (Response sample generated on: 2020-10-06)
+  parameters:
+    - name: cursor
+      in: query
+      description: >
+        Pagination cursor received from a previous call to **this** endpoint that
+        points to the desired starting point for the results. 
+
+
+        **Note**: Pagination will come into play when the number of results
+        exceeds the figure given in the `count` parameter. In this case, pass
+        the content of the `nextCursor` element for the value of `cursor` to
+        receive the next page of results. The final page of results will not
+        include the `nextCursor` element. For more information, see: [Ingesting
+        and updating the product
+        catalogue](../../../../papiv2/workflows/ingesting-and-updating-the-product-catalogue).
+
+        - Example: `'MTU3NDA0MzU1NQ=='`
+      required: false
+      schema:
+        type: string
+    - name: count
+      in: query
+      description: >
+        Specifies the maximum number of product detail items to be returned in
+        each response from this endpoint
+      required: true
+      schema:
+        type: integer
+        minimum: 1
+        maximum: 500
+    - $ref: ../components/parameters/campaignValue.yaml
+    - $ref: ../components/parameters/acceptLanguage.yaml
+    - $ref: ../components/parameters/accept.yaml
+    - name: modified-since
+      in: query
+      description: >
+        Only return products that have been modified since the date and time
+        (UTC) specified here 
+
+        - Format: `'YYYY-MM-DDTHH:MM:SS.SSSSSSZ'`
+
+        - Example: `"2020-09-30T00%3A00%3A01.737043Z"` (URL-encoded)
+
+
+        **Notes**: 
+
+        - You **must** submit the time-stamp in its <u>URL-encoded format</u>
+        
+        - Using this parameter is <u>not recommended</u> as the standard pagination method; rather, use the `cursor` parameter to ensure all product updates are captured during ingestion.
+      required: false
+      schema:
+        type: string
+        format: date-time
+  responses:
+    '200':
+      description: Success
+      headers:
+        X-Unique-ID:
+          $ref: ../components/headers/XUniqueId.yaml
+      content:
+        application/json;version=2.0:
+          schema:
+            $ref: ../components/schemas/ProductsResponse.yaml
+          examples:
+            '1':
+              $ref: ../components/examples/products-modified-since-example.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '404':
+      $ref: ../components/responses/NotFound.yaml
+    '429':
+      $ref: ../components/responses/TooManyRequests.yaml
+    '500':
+      $ref: ../components/responses/InternalServerError.yaml
+    '503':
+      $ref: ../components/responses/ServiceUnavailable.yaml

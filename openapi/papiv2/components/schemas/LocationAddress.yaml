@@ -1,0 +1,39 @@
+type: object
+description: Address details for this location
+properties:
+  street:
+    type: string
+    description: |
+      Street address of this location
+
+        - **Example**: `"1 George St."`
+  administrativeArea:
+    type: string
+    description: |
+      Administrative area this location falls into
+
+        - **Example**: `"Sydney"`
+  state:
+    type: string
+    description: |
+      State or region of this location
+
+        - **Example**: `"New South Wales"`
+  country:
+    type: string
+    description: |
+      Country of this location
+
+        - **Example**: `"Australia"`
+  countryCode:
+    type: string
+    description: |
+      Two-character Alpha-2 country-code for this location
+
+        - **Example**: `"AU"`
+  postcode:
+    type: string
+    description: |
+      Post code of this location
+
+        - **Example**: `"2000"`

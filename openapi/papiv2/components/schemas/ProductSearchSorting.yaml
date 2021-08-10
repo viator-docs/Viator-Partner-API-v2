@@ -1,0 +1,18 @@
+type: object
+description: How the search results will be sorted
+properties:
+  sort:
+    type: string
+    description: |
+      Method by which product search results will be sorted; one of:
+        
+        - `"DEFAULT"`: the default sort, where 'featured' products appear first; custom ordering is not supported (therefore, the `order` field should be omitted)
+        - `"PRICE"`: products are sorted by `fromPrice`, with ordering based on the value of the `order` field (default is `"ASCENDING"` if the `order` field is omitted)
+  order:
+    type: string
+    description: |
+      Ordering of product search results when `sort` is `"PRICE"`
+      
+      One of: 
+        - `"ASCENDING"`
+        - `"DESCENDING"`

@@ -1,0 +1,18 @@
+type: object
+description: |
+  Information about the lowest price available for this product
+
+  **Note**: The pricing information given here is based on the recommended retail price (RRP). While affiliate partners must sell at this price, merchant partners set their own prices according to their own margins and booking fees; therefore, merchant partners must calculate their own from-price for display, rather than using these values, unless they have elected to sell at the RRP.
+required:
+  - fromPrice
+properties:
+  fromPrice:
+    type: number
+    description: >
+      Lowest per-person retail price for this product, calculated according to the price for a group of at least two standard participants (or, the smallest bookable group if more than two participants are required) for a period not exceeding 384 days into the future.
+
+      This value can be used to advertise a 'from'-price; e.g., "From $99 per person"
+  fromPriceBeforeDiscount:
+    type: number
+    description: >
+      If the product is presently discounted, this field shows what the value of `fromPrice` would be if no discount had been applied; otherwise, it will be absent.

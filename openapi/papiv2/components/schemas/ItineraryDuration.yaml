@@ -1,0 +1,27 @@
+type: object
+description: >
+  Duration information for this itinerary
+
+
+  **Note**: Depending on whether this itinerary has a fixed or variable
+  duration, this object will include either the `fixedValueInMinutes` element
+  alone; or, both the `fromMinutes` and `toMinutes` elements, respectively.
+properties:
+  fixedDurationInMinutes:
+    type: integer
+    description: >-
+      Duration of this itinerary (in minutes) in the case that it takes a fixed
+      amount of time
+  variableDurationFromMinutes:
+    type: integer
+    description: >-
+      Lower limit of the duration of this itinerary (in minutes) in the case
+      that this product's duration varies
+  variableDurationToMinutes:
+    type: integer
+    description: >-
+      Upper limit of the duration of this itinerary (in minutes) in the case
+      that this product's duration varies
+  unstructuredDuration:
+    type: string
+    description: Description of the duration in natural language (present if product lacks structured data)

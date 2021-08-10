@@ -1,0 +1,11 @@
+allOf:
+  - $ref: ./Location.yaml
+  - type: object
+    required:
+      - providerReference
+    properties:
+      providerReference:
+        type: string
+        description: >-
+          Unique identifier (location provider reference) for this location in
+          the case that this is not a Viator location

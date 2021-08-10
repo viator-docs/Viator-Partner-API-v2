@@ -1,0 +1,8 @@
+type: string
+description: >
+  Machine-interpretable value specifying whether the booking question must be
+  answered individually for each traveler or once per group of travelers in each
+  booking; one of:
+
+    - `"PER_TRAVELER"`
+    - `"PER_BOOKING"`

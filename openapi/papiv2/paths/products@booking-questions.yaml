@@ -1,0 +1,43 @@
+get:
+  tags:
+    - Products
+  summary: /products/booking-questions
+  description: |
+    Get full details of all available preset booking questions
+
+
+    **Note**: This endpoint is only available to <u>merchant partners</u>.
+    
+
+    (Response sample generated on: 2020-08-25)
+  operationId: productsBookingQuestions
+  parameters:
+    - $ref: ../components/parameters/acceptLanguage.yaml
+    - $ref: ../components/parameters/accept.yaml
+  responses:
+    '200':
+      description: Success
+      headers:
+        X-Unique-ID:
+          $ref: ../components/headers/XUniqueId.yaml
+      content:
+        application/json;version=2.0:
+          schema:
+            $ref: ../components/schemas/BookingQuestionsResponse.yaml
+          examples:
+            '1':
+              $ref: ../components/examples/products-booking-questions-example.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '404':
+      $ref: ../components/responses/NotFound.yaml
+    '429':
+      $ref: ../components/responses/TooManyRequests.yaml
+    '500':
+      $ref: ../components/responses/InternalServerError.yaml
+    '503':
+      $ref: ../components/responses/ServiceUnavailable.yaml

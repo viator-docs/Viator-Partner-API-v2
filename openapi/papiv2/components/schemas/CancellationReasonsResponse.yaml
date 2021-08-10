@@ -1,0 +1,9 @@
+type: object
+properties:
+  reasons:
+    type: array
+    description: >-
+      Array of cancellation reason codes and their asssociated texts for display
+      to the user
+    items:
+      $ref: ./CancellationReason.yaml

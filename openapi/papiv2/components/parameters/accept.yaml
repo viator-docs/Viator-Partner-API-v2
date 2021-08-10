@@ -1,0 +1,8 @@
+in: header
+name: Accept
+description: >
+  Specifies the version of this API to access
+required: true
+schema:
+  type: string
+  example: application/json;version=2.0

@@ -1,0 +1,6 @@
+type: string
+description: |
+  Machine-interpretable value indicating the source of this image; one of:
+
+    - `"SUPPLIER_PROVIDED"`
+    - `"PROFESSIONAL"`

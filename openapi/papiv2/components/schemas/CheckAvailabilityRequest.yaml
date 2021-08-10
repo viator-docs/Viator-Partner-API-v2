@@ -1,0 +1,46 @@
+type: object
+required:
+  - productCode
+  - paxMix
+  - currency
+  - travelDate
+properties:
+  productCode:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: >-
+      Retrieve availability details for the product identified by this product
+      code
+  productOptionCode:
+    type: string
+    description: >
+      Retrieve availability details for the product option (tour grade)
+      identified by this product option code
+
+
+      For more information see: [Key concepts: Product
+      options](../../../../papiv2/key-concepts/product-options)
+  startTime:
+    type: string
+    format: time
+    description: >
+      Retrieve availability details only for items that start at this time. If
+      this parameter is omitted, information about **all** available starting
+      times for the specified date will be included in the response.
+
+      - **Example**: `"17:15"`
+  travelDate:
+    type: string
+    format: date
+    description: Retrieve availability details for items that operate on this date
+  currency:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: |
+      Display pricing in the currency identified by this 3-letter code
+      - **Example**: `"USD"`
+  paxMix:
+    type: array
+    description: Passenger-mix information
+    items:
+      $ref: ./PaxMixItem.yaml

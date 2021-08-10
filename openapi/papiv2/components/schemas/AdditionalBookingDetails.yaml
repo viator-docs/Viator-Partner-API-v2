@@ -1,0 +1,5 @@
+type: object
+description: Optional extra details to include with booking
+properties:
+  voucherDetails:
+    $ref: ./VoucherDetails.yaml

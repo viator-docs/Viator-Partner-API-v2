@@ -1,0 +1,29 @@
+type: object
+description: |
+  Summary of reviews and ratings for this product
+
+  **Note**: 
+
+    - At present, only reviews submitted on viator.com are included.
+    - Review data is updated daily; i.e., all reviews received on a day will be added and averages re-calculated in a single event.
+required:
+  - totalReviews
+properties:
+  sources:
+    type: array
+    items:
+      $ref: ./ProductReviewSource.yaml
+    description: Breakdown of ratings, counts and the sources of the reviews of this product
+  reviewCountTotals:
+    type: array
+    items:
+      $ref: ./ProductReviewCount.yaml
+    description: Combined total number of reviews per rating across all sources for this product
+  totalReviews:
+    type: integer
+    description: Total number of reviews from all sources for this product
+    format: int64
+  combinedAverageRating:
+    description: Average rating for all reviews from all sources for this product
+    type: number
+    format: float

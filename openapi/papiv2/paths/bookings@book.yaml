@@ -1,0 +1,90 @@
+post:
+  tags:
+    - Bookings
+  summary: /bookings/book
+  description: >
+    Requests a booking for an item that was previously the subject of a
+    booking-hold (with regard to availability, price, or both) via the
+    [/bookings/hold](../bookingHold) endpoint.
+
+
+    **Note**: This endpoint is only available to <u>merchant partners</u>.
+
+
+    (Response sample generated on: 2020-08-25)
+  operationId: bookingsBook
+  parameters:
+    - $ref: ../components/parameters/acceptLanguage.yaml
+    - $ref: ../components/parameters/accept.yaml
+    - $ref: ../components/parameters/exp-demo.yaml
+  requestBody:
+    content:
+      application/json;version=2.0:
+        schema:
+          $ref: ../components/schemas/BookingBookRequest.yaml
+        example:
+          productCode: 5010SYDNEY
+          productOptionCode: 48HOUR
+          currency: AUD
+          partnerBookingRef: BR-581567752
+          travelDate: '2020-11-30'
+          paxMix:
+            - ageBand: ADULT
+              numberOfTravelers: 1
+          languageGuide:
+            type: AUDIO
+            language: en
+            legacyGuide: en/SERVICE_AUDIO
+          bookingRef: BR-581567752
+          bookerInfo:
+            firstName: Simon
+            lastName: Nettle
+          bookingQuestionAnswers:
+            - question: AGEBAND
+              answer: ADULT
+              travelerNum: 1
+            - question: FULL_NAMES_LAST
+              answer: Nettle
+              travelerNum: 1
+            - question: FULL_NAMES_FIRST
+              answer: Simon
+              travelerNum: 1
+            - question: SPECIAL_REQUIREMENTS
+              answer: 'NO'
+              travelerNum: 1
+          communication:
+            email: snettle@tripadvisor.com
+            phone: +61 431532778
+          additionalBookingDetails:
+            voucherDetails:
+              companyName: Booking King
+              email: support@bookingking.com
+              phone: '+61400500600'
+              voucherText: For any enquiries, please visit our customer support page at https://support.bookingking.com
+
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json;version=2.0:
+          schema:
+            $ref: ../components/schemas/BookingBookResponse.yaml
+          examples:
+            '1':
+              $ref: ../components/examples/bookings-book-example.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '404':
+      $ref: ../components/responses/NotFound.yaml
+    '406':
+      $ref: ../components/responses/NotAcceptable.yaml
+    '429':
+      $ref: ../components/responses/TooManyRequests.yaml
+    '500':
+      $ref: ../components/responses/InternalServerError.yaml
+    '503':
+      $ref: ../components/responses/ServiceUnavailable.yaml

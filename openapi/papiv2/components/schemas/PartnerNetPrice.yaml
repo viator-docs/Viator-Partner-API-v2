@@ -1,0 +1,4 @@
+type: number
+description: >-
+  The non-booking fee component of the total amount that Viator will invoice the
+  merchant for this item

@@ -1,0 +1,19 @@
+allOf:
+  - $ref: ./Itinerary.yaml
+  - type: object
+    properties:
+      unstructuredItinerary:
+        type: string
+        description: >
+          Description of this product's itinerary
+
+          - **Note**: This field contains natural language suitable for display
+          to the user; content will be translated (if necessary) into the
+          language specified in the Accept-Language header parameter
+      duration:
+        $ref: ./ItineraryDuration.yaml
+      pointOfInterestLocations:
+        type: array
+        description: Places of interest relevant to this itinerary
+        items:
+          $ref: ./ItineraryPoi.yaml

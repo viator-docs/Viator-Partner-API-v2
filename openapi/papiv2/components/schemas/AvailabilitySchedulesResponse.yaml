@@ -1,0 +1,9 @@
+allOf:
+  - $ref: ./BulkAvailabilityScheduleResponse.yaml
+  - type: object
+    properties:
+      nextCursor:
+        type: string
+        description: |
+          A cursor to use when fetching the next set of products.
+          - **Example**: `"MTU3NDA0NDczOQ=="`

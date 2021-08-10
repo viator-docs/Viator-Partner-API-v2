@@ -1,0 +1,1925 @@
+summary: /products/10175P18
+value: {
+    "status": "ACTIVE",
+    "productCode": "10175P18",
+    "language": "en",
+    "createdAt": "2019-04-09T15:55:58.177651Z",
+    "title": "French Riviera Multi-Day Tour",
+    "ticketInfo": {
+        "ticketTypes": [
+            "MOBILE_ONLY"
+        ],
+        "ticketTypeDescription": "Mobile or paper ticket accepted",
+        "ticketsPerBooking": "ONE_PER_BOOKING",
+        "ticketsPerBookingDescription": "One per booking"
+    },
+    "pricingInfo": {
+        "type": "PER_PERSON",
+        "ageBands": [
+            {
+                "ageBand": "ADULT",
+                "startAge": 0,
+                "endAge": 99,
+                "minTravelersPerBooking": 0,
+                "maxTravelersPerBooking": 15
+            }
+        ]
+    },
+    "images": [
+        {
+            "imageSource": "SUPPLIER_PROVIDED",
+            "caption": "Monte-Carlo Place",
+            "isCover": true,
+            "variants": [
+                {
+                    "height": 50,
+                    "width": 50,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-50x50/07/70/eb/d1.jpg"
+                },
+                {
+                    "height": 100,
+                    "width": 100,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/07/70/eb/d1.jpg"
+                },
+                {
+                    "height": 200,
+                    "width": 200,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/07/70/eb/d1.jpg"
+                },
+                {
+                    "height": 400,
+                    "width": 400,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/07/70/eb/d1.jpg"
+                },
+                {
+                    "height": 40,
+                    "width": 60,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-60x40/07/70/eb/d1.jpg"
+                },
+                {
+                    "height": 80,
+                    "width": 120,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-120x80/07/70/eb/d1.jpg"
+                },
+                {
+                    "height": 120,
+                    "width": 180,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-180x120/07/70/eb/d1.jpg"
+                },
+                {
+                    "height": 160,
+                    "width": 240,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-240x160/07/70/eb/d1.jpg"
+                },
+                {
+                    "height": 240,
+                    "width": 360,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/07/70/eb/d1.jpg"
+                },
+                {
+                    "height": 320,
+                    "width": 480,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/07/70/eb/d1.jpg"
+                },
+                {
+                    "height": 360,
+                    "width": 540,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/07/70/eb/d1.jpg"
+                },
+                {
+                    "height": 446,
+                    "width": 674,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/70/eb/d1.jpg"
+                },
+                {
+                    "height": 480,
+                    "width": 720,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/70/eb/d1.jpg"
+                },
+                {
+                    "height": 118,
+                    "width": 210,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/07/70/eb/d1.jpg"
+                },
+                {
+                    "height": 75,
+                    "width": 75,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/07/70/eb/d1.jpg"
+                },
+                {
+                    "height": 109,
+                    "width": 154,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-154x109/07/70/eb/d1.jpg"
+                }
+            ]
+        },
+        {
+            "imageSource": "SUPPLIER_PROVIDED",
+            "caption": "Medieval street in Saint Paul de Vence",
+            "isCover": false,
+            "variants": [
+                {
+                    "height": 50,
+                    "width": 50,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-50x50/07/6f/7f/21.jpg"
+                },
+                {
+                    "height": 100,
+                    "width": 100,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/07/6f/7f/21.jpg"
+                },
+                {
+                    "height": 200,
+                    "width": 200,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/07/6f/7f/21.jpg"
+                },
+                {
+                    "height": 400,
+                    "width": 400,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/07/6f/7f/21.jpg"
+                },
+                {
+                    "height": 40,
+                    "width": 60,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-60x40/07/6f/7f/21.jpg"
+                },
+                {
+                    "height": 80,
+                    "width": 120,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-120x80/07/6f/7f/21.jpg"
+                },
+                {
+                    "height": 120,
+                    "width": 180,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-180x120/07/6f/7f/21.jpg"
+                },
+                {
+                    "height": 160,
+                    "width": 240,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-240x160/07/6f/7f/21.jpg"
+                },
+                {
+                    "height": 240,
+                    "width": 360,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/07/6f/7f/21.jpg"
+                },
+                {
+                    "height": 320,
+                    "width": 480,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/07/6f/7f/21.jpg"
+                },
+                {
+                    "height": 360,
+                    "width": 540,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/07/6f/7f/21.jpg"
+                },
+                {
+                    "height": 446,
+                    "width": 674,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/6f/7f/21.jpg"
+                },
+                {
+                    "height": 480,
+                    "width": 720,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/6f/7f/21.jpg"
+                },
+                {
+                    "height": 118,
+                    "width": 210,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/07/6f/7f/21.jpg"
+                },
+                {
+                    "height": 75,
+                    "width": 75,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/07/6f/7f/21.jpg"
+                },
+                {
+                    "height": 109,
+                    "width": 154,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-154x109/07/6f/7f/21.jpg"
+                }
+            ]
+        },
+        {
+            "imageSource": "SUPPLIER_PROVIDED",
+            "caption": "Panoramic view from Eze Village",
+            "isCover": false,
+            "variants": [
+                {
+                    "height": 50,
+                    "width": 50,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-50x50/07/6f/7e/e2.jpg"
+                },
+                {
+                    "height": 100,
+                    "width": 100,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/07/6f/7e/e2.jpg"
+                },
+                {
+                    "height": 200,
+                    "width": 200,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/07/6f/7e/e2.jpg"
+                },
+                {
+                    "height": 400,
+                    "width": 400,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/07/6f/7e/e2.jpg"
+                },
+                {
+                    "height": 40,
+                    "width": 60,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-60x40/07/6f/7e/e2.jpg"
+                },
+                {
+                    "height": 80,
+                    "width": 120,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-120x80/07/6f/7e/e2.jpg"
+                },
+                {
+                    "height": 120,
+                    "width": 180,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-180x120/07/6f/7e/e2.jpg"
+                },
+                {
+                    "height": 160,
+                    "width": 240,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-240x160/07/6f/7e/e2.jpg"
+                },
+                {
+                    "height": 240,
+                    "width": 360,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/07/6f/7e/e2.jpg"
+                },
+                {
+                    "height": 320,
+                    "width": 480,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/07/6f/7e/e2.jpg"
+                },
+                {
+                    "height": 360,
+                    "width": 540,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/07/6f/7e/e2.jpg"
+                },
+                {
+                    "height": 446,
+                    "width": 674,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/6f/7e/e2.jpg"
+                },
+                {
+                    "height": 480,
+                    "width": 720,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/6f/7e/e2.jpg"
+                },
+                {
+                    "height": 118,
+                    "width": 210,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/07/6f/7e/e2.jpg"
+                },
+                {
+                    "height": 75,
+                    "width": 75,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/07/6f/7e/e2.jpg"
+                },
+                {
+                    "height": 109,
+                    "width": 154,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-154x109/07/6f/7e/e2.jpg"
+                }
+            ]
+        },
+        {
+            "imageSource": "SUPPLIER_PROVIDED",
+            "caption": "Antibes Le Nomade",
+            "isCover": false,
+            "variants": [
+                {
+                    "height": 50,
+                    "width": 50,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-50x50/06/e8/ab/a4.jpg"
+                },
+                {
+                    "height": 100,
+                    "width": 100,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/06/e8/ab/a4.jpg"
+                },
+                {
+                    "height": 200,
+                    "width": 200,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/06/e8/ab/a4.jpg"
+                },
+                {
+                    "height": 400,
+                    "width": 400,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/06/e8/ab/a4.jpg"
+                },
+                {
+                    "height": 40,
+                    "width": 60,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-60x40/06/e8/ab/a4.jpg"
+                },
+                {
+                    "height": 80,
+                    "width": 120,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-120x80/06/e8/ab/a4.jpg"
+                },
+                {
+                    "height": 120,
+                    "width": 180,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-180x120/06/e8/ab/a4.jpg"
+                },
+                {
+                    "height": 160,
+                    "width": 240,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-240x160/06/e8/ab/a4.jpg"
+                },
+                {
+                    "height": 240,
+                    "width": 360,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/06/e8/ab/a4.jpg"
+                },
+                {
+                    "height": 320,
+                    "width": 480,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/06/e8/ab/a4.jpg"
+                },
+                {
+                    "height": 360,
+                    "width": 540,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/06/e8/ab/a4.jpg"
+                },
+                {
+                    "height": 446,
+                    "width": 674,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/e8/ab/a4.jpg"
+                },
+                {
+                    "height": 480,
+                    "width": 720,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/06/e8/ab/a4.jpg"
+                },
+                {
+                    "height": 118,
+                    "width": 210,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/06/e8/ab/a4.jpg"
+                },
+                {
+                    "height": 75,
+                    "width": 75,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/06/e8/ab/a4.jpg"
+                },
+                {
+                    "height": 109,
+                    "width": 154,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-154x109/06/e8/ab/a4.jpg"
+                }
+            ]
+        },
+        {
+            "imageSource": "SUPPLIER_PROVIDED",
+            "caption": "Port Grimaud",
+            "isCover": false,
+            "variants": [
+                {
+                    "height": 50,
+                    "width": 50,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-50x50/07/70/ef/72.jpg"
+                },
+                {
+                    "height": 100,
+                    "width": 100,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/07/70/ef/72.jpg"
+                },
+                {
+                    "height": 200,
+                    "width": 200,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/07/70/ef/72.jpg"
+                },
+                {
+                    "height": 400,
+                    "width": 400,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/07/70/ef/72.jpg"
+                },
+                {
+                    "height": 40,
+                    "width": 60,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-60x40/07/70/ef/72.jpg"
+                },
+                {
+                    "height": 80,
+                    "width": 120,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-120x80/07/70/ef/72.jpg"
+                },
+                {
+                    "height": 120,
+                    "width": 180,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-180x120/07/70/ef/72.jpg"
+                },
+                {
+                    "height": 160,
+                    "width": 240,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-240x160/07/70/ef/72.jpg"
+                },
+                {
+                    "height": 240,
+                    "width": 360,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/07/70/ef/72.jpg"
+                },
+                {
+                    "height": 320,
+                    "width": 480,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/07/70/ef/72.jpg"
+                },
+                {
+                    "height": 360,
+                    "width": 540,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/07/70/ef/72.jpg"
+                },
+                {
+                    "height": 446,
+                    "width": 674,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/70/ef/72.jpg"
+                },
+                {
+                    "height": 480,
+                    "width": 720,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/70/ef/72.jpg"
+                },
+                {
+                    "height": 118,
+                    "width": 210,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/07/70/ef/72.jpg"
+                },
+                {
+                    "height": 75,
+                    "width": 75,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/07/70/ef/72.jpg"
+                },
+                {
+                    "height": 109,
+                    "width": 154,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-154x109/07/70/ef/72.jpg"
+                }
+            ]
+        },
+        {
+            "imageSource": "SUPPLIER_PROVIDED",
+            "caption": "Cannes city center",
+            "isCover": false,
+            "variants": [
+                {
+                    "height": 50,
+                    "width": 50,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-50x50/07/70/ea/55.jpg"
+                },
+                {
+                    "height": 100,
+                    "width": 100,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/07/70/ea/55.jpg"
+                },
+                {
+                    "height": 200,
+                    "width": 200,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/07/70/ea/55.jpg"
+                },
+                {
+                    "height": 400,
+                    "width": 400,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/07/70/ea/55.jpg"
+                },
+                {
+                    "height": 40,
+                    "width": 60,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-60x40/07/70/ea/55.jpg"
+                },
+                {
+                    "height": 80,
+                    "width": 120,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-120x80/07/70/ea/55.jpg"
+                },
+                {
+                    "height": 120,
+                    "width": 180,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-180x120/07/70/ea/55.jpg"
+                },
+                {
+                    "height": 160,
+                    "width": 240,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-240x160/07/70/ea/55.jpg"
+                },
+                {
+                    "height": 240,
+                    "width": 360,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/07/70/ea/55.jpg"
+                },
+                {
+                    "height": 320,
+                    "width": 480,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/07/70/ea/55.jpg"
+                },
+                {
+                    "height": 360,
+                    "width": 540,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/07/70/ea/55.jpg"
+                },
+                {
+                    "height": 446,
+                    "width": 674,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/70/ea/55.jpg"
+                },
+                {
+                    "height": 480,
+                    "width": 720,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/70/ea/55.jpg"
+                },
+                {
+                    "height": 118,
+                    "width": 210,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/07/70/ea/55.jpg"
+                },
+                {
+                    "height": 75,
+                    "width": 75,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/07/70/ea/55.jpg"
+                },
+                {
+                    "height": 109,
+                    "width": 154,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-154x109/07/70/ea/55.jpg"
+                }
+            ]
+        },
+        {
+            "imageSource": "SUPPLIER_PROVIDED",
+            "caption": "Cannes Film Festival Palace - Red Carpet",
+            "isCover": false,
+            "variants": [
+                {
+                    "height": 50,
+                    "width": 50,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-50x50/06/6a/c3/0a.jpg"
+                },
+                {
+                    "height": 100,
+                    "width": 100,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/06/6a/c3/0a.jpg"
+                },
+                {
+                    "height": 200,
+                    "width": 200,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/06/6a/c3/0a.jpg"
+                },
+                {
+                    "height": 400,
+                    "width": 400,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/06/6a/c3/0a.jpg"
+                },
+                {
+                    "height": 40,
+                    "width": 60,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-60x40/06/6a/c3/0a.jpg"
+                },
+                {
+                    "height": 80,
+                    "width": 120,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-120x80/06/6a/c3/0a.jpg"
+                },
+                {
+                    "height": 120,
+                    "width": 180,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-180x120/06/6a/c3/0a.jpg"
+                },
+                {
+                    "height": 160,
+                    "width": 240,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-240x160/06/6a/c3/0a.jpg"
+                },
+                {
+                    "height": 240,
+                    "width": 360,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/06/6a/c3/0a.jpg"
+                },
+                {
+                    "height": 320,
+                    "width": 480,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/06/6a/c3/0a.jpg"
+                },
+                {
+                    "height": 360,
+                    "width": 540,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/06/6a/c3/0a.jpg"
+                },
+                {
+                    "height": 446,
+                    "width": 674,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/6a/c3/0a.jpg"
+                },
+                {
+                    "height": 480,
+                    "width": 720,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/06/6a/c3/0a.jpg"
+                },
+                {
+                    "height": 118,
+                    "width": 210,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/06/6a/c3/0a.jpg"
+                },
+                {
+                    "height": 75,
+                    "width": 75,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/06/6a/c3/0a.jpg"
+                },
+                {
+                    "height": 109,
+                    "width": 154,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-154x109/06/6a/c3/0a.jpg"
+                }
+            ]
+        },
+        {
+            "imageSource": "SUPPLIER_PROVIDED",
+            "caption": "Cannes Harbour",
+            "isCover": false,
+            "variants": [
+                {
+                    "height": 50,
+                    "width": 50,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-50x50/07/70/e9/86.jpg"
+                },
+                {
+                    "height": 100,
+                    "width": 100,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/07/70/e9/86.jpg"
+                },
+                {
+                    "height": 200,
+                    "width": 200,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/07/70/e9/86.jpg"
+                },
+                {
+                    "height": 400,
+                    "width": 400,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/07/70/e9/86.jpg"
+                },
+                {
+                    "height": 40,
+                    "width": 60,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-60x40/07/70/e9/86.jpg"
+                },
+                {
+                    "height": 80,
+                    "width": 120,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-120x80/07/70/e9/86.jpg"
+                },
+                {
+                    "height": 120,
+                    "width": 180,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-180x120/07/70/e9/86.jpg"
+                },
+                {
+                    "height": 160,
+                    "width": 240,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-240x160/07/70/e9/86.jpg"
+                },
+                {
+                    "height": 240,
+                    "width": 360,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/07/70/e9/86.jpg"
+                },
+                {
+                    "height": 320,
+                    "width": 480,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/07/70/e9/86.jpg"
+                },
+                {
+                    "height": 360,
+                    "width": 540,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/07/70/e9/86.jpg"
+                },
+                {
+                    "height": 446,
+                    "width": 674,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/70/e9/86.jpg"
+                },
+                {
+                    "height": 480,
+                    "width": 720,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/70/e9/86.jpg"
+                },
+                {
+                    "height": 118,
+                    "width": 210,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/07/70/e9/86.jpg"
+                },
+                {
+                    "height": 75,
+                    "width": 75,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/07/70/e9/86.jpg"
+                },
+                {
+                    "height": 109,
+                    "width": 154,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-154x109/07/70/e9/86.jpg"
+                }
+            ]
+        },
+        {
+            "imageSource": "SUPPLIER_PROVIDED",
+            "caption": "Eze Vllage",
+            "isCover": false,
+            "variants": [
+                {
+                    "height": 50,
+                    "width": 50,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-50x50/07/70/eb/e4.jpg"
+                },
+                {
+                    "height": 100,
+                    "width": 100,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/07/70/eb/e4.jpg"
+                },
+                {
+                    "height": 200,
+                    "width": 200,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/07/70/eb/e4.jpg"
+                },
+                {
+                    "height": 400,
+                    "width": 400,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/07/70/eb/e4.jpg"
+                },
+                {
+                    "height": 40,
+                    "width": 60,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-60x40/07/70/eb/e4.jpg"
+                },
+                {
+                    "height": 80,
+                    "width": 120,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-120x80/07/70/eb/e4.jpg"
+                },
+                {
+                    "height": 120,
+                    "width": 180,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-180x120/07/70/eb/e4.jpg"
+                },
+                {
+                    "height": 160,
+                    "width": 240,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-240x160/07/70/eb/e4.jpg"
+                },
+                {
+                    "height": 240,
+                    "width": 360,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/07/70/eb/e4.jpg"
+                },
+                {
+                    "height": 320,
+                    "width": 480,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/07/70/eb/e4.jpg"
+                },
+                {
+                    "height": 360,
+                    "width": 540,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/07/70/eb/e4.jpg"
+                },
+                {
+                    "height": 446,
+                    "width": 674,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/70/eb/e4.jpg"
+                },
+                {
+                    "height": 480,
+                    "width": 720,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/70/eb/e4.jpg"
+                },
+                {
+                    "height": 118,
+                    "width": 210,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/07/70/eb/e4.jpg"
+                },
+                {
+                    "height": 75,
+                    "width": 75,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/07/70/eb/e4.jpg"
+                },
+                {
+                    "height": 109,
+                    "width": 154,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-154x109/07/70/eb/e4.jpg"
+                }
+            ]
+        },
+        {
+            "imageSource": "SUPPLIER_PROVIDED",
+            "caption": "French Riviera",
+            "isCover": false,
+            "variants": [
+                {
+                    "height": 50,
+                    "width": 50,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-50x50/07/70/ee/c5.jpg"
+                },
+                {
+                    "height": 100,
+                    "width": 100,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/07/70/ee/c5.jpg"
+                },
+                {
+                    "height": 200,
+                    "width": 200,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/07/70/ee/c5.jpg"
+                },
+                {
+                    "height": 400,
+                    "width": 400,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/07/70/ee/c5.jpg"
+                },
+                {
+                    "height": 40,
+                    "width": 60,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-60x40/07/70/ee/c5.jpg"
+                },
+                {
+                    "height": 80,
+                    "width": 120,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-120x80/07/70/ee/c5.jpg"
+                },
+                {
+                    "height": 120,
+                    "width": 180,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-180x120/07/70/ee/c5.jpg"
+                },
+                {
+                    "height": 160,
+                    "width": 240,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-240x160/07/70/ee/c5.jpg"
+                },
+                {
+                    "height": 240,
+                    "width": 360,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/07/70/ee/c5.jpg"
+                },
+                {
+                    "height": 320,
+                    "width": 480,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/07/70/ee/c5.jpg"
+                },
+                {
+                    "height": 360,
+                    "width": 540,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/07/70/ee/c5.jpg"
+                },
+                {
+                    "height": 446,
+                    "width": 674,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/70/ee/c5.jpg"
+                },
+                {
+                    "height": 480,
+                    "width": 720,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/70/ee/c5.jpg"
+                },
+                {
+                    "height": 118,
+                    "width": 210,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/07/70/ee/c5.jpg"
+                },
+                {
+                    "height": 75,
+                    "width": 75,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/07/70/ee/c5.jpg"
+                },
+                {
+                    "height": 109,
+                    "width": 154,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-154x109/07/70/ee/c5.jpg"
+                }
+            ]
+        },
+        {
+            "imageSource": "SUPPLIER_PROVIDED",
+            "caption": "Menton",
+            "isCover": false,
+            "variants": [
+                {
+                    "height": 50,
+                    "width": 50,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-50x50/07/70/ee/fc.jpg"
+                },
+                {
+                    "height": 100,
+                    "width": 100,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/07/70/ee/fc.jpg"
+                },
+                {
+                    "height": 200,
+                    "width": 200,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/07/70/ee/fc.jpg"
+                },
+                {
+                    "height": 400,
+                    "width": 400,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/07/70/ee/fc.jpg"
+                },
+                {
+                    "height": 40,
+                    "width": 60,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-60x40/07/70/ee/fc.jpg"
+                },
+                {
+                    "height": 80,
+                    "width": 120,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-120x80/07/70/ee/fc.jpg"
+                },
+                {
+                    "height": 120,
+                    "width": 180,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-180x120/07/70/ee/fc.jpg"
+                },
+                {
+                    "height": 160,
+                    "width": 240,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-240x160/07/70/ee/fc.jpg"
+                },
+                {
+                    "height": 240,
+                    "width": 360,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/07/70/ee/fc.jpg"
+                },
+                {
+                    "height": 320,
+                    "width": 480,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/07/70/ee/fc.jpg"
+                },
+                {
+                    "height": 360,
+                    "width": 540,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/07/70/ee/fc.jpg"
+                },
+                {
+                    "height": 446,
+                    "width": 674,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/70/ee/fc.jpg"
+                },
+                {
+                    "height": 480,
+                    "width": 720,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/70/ee/fc.jpg"
+                },
+                {
+                    "height": 118,
+                    "width": 210,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/07/70/ee/fc.jpg"
+                },
+                {
+                    "height": 75,
+                    "width": 75,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/07/70/ee/fc.jpg"
+                },
+                {
+                    "height": 109,
+                    "width": 154,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-154x109/07/70/ee/fc.jpg"
+                }
+            ]
+        },
+        {
+            "imageSource": "SUPPLIER_PROVIDED",
+            "caption": "Prince Palace",
+            "isCover": false,
+            "variants": [
+                {
+                    "height": 50,
+                    "width": 50,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-50x50/07/70/e4/c5.jpg"
+                },
+                {
+                    "height": 100,
+                    "width": 100,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/07/70/e4/c5.jpg"
+                },
+                {
+                    "height": 200,
+                    "width": 200,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/07/70/e4/c5.jpg"
+                },
+                {
+                    "height": 400,
+                    "width": 400,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/07/70/e4/c5.jpg"
+                },
+                {
+                    "height": 40,
+                    "width": 60,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-60x40/07/70/e4/c5.jpg"
+                },
+                {
+                    "height": 80,
+                    "width": 120,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-120x80/07/70/e4/c5.jpg"
+                },
+                {
+                    "height": 120,
+                    "width": 180,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-180x120/07/70/e4/c5.jpg"
+                },
+                {
+                    "height": 160,
+                    "width": 240,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-240x160/07/70/e4/c5.jpg"
+                },
+                {
+                    "height": 240,
+                    "width": 360,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/07/70/e4/c5.jpg"
+                },
+                {
+                    "height": 320,
+                    "width": 480,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/07/70/e4/c5.jpg"
+                },
+                {
+                    "height": 360,
+                    "width": 540,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/07/70/e4/c5.jpg"
+                },
+                {
+                    "height": 446,
+                    "width": 674,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/70/e4/c5.jpg"
+                },
+                {
+                    "height": 480,
+                    "width": 720,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/70/e4/c5.jpg"
+                },
+                {
+                    "height": 118,
+                    "width": 210,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/07/70/e4/c5.jpg"
+                },
+                {
+                    "height": 75,
+                    "width": 75,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/07/70/e4/c5.jpg"
+                },
+                {
+                    "height": 109,
+                    "width": 154,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-154x109/07/70/e4/c5.jpg"
+                }
+            ]
+        },
+        {
+            "imageSource": "SUPPLIER_PROVIDED",
+            "caption": "Formula One Track Monaco",
+            "isCover": false,
+            "variants": [
+                {
+                    "height": 50,
+                    "width": 50,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-50x50/07/70/ef/1f.jpg"
+                },
+                {
+                    "height": 100,
+                    "width": 100,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/07/70/ef/1f.jpg"
+                },
+                {
+                    "height": 200,
+                    "width": 200,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/07/70/ef/1f.jpg"
+                },
+                {
+                    "height": 400,
+                    "width": 400,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/07/70/ef/1f.jpg"
+                },
+                {
+                    "height": 40,
+                    "width": 60,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-60x40/07/70/ef/1f.jpg"
+                },
+                {
+                    "height": 80,
+                    "width": 120,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-120x80/07/70/ef/1f.jpg"
+                },
+                {
+                    "height": 120,
+                    "width": 180,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-180x120/07/70/ef/1f.jpg"
+                },
+                {
+                    "height": 160,
+                    "width": 240,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-240x160/07/70/ef/1f.jpg"
+                },
+                {
+                    "height": 240,
+                    "width": 360,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/07/70/ef/1f.jpg"
+                },
+                {
+                    "height": 320,
+                    "width": 480,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/07/70/ef/1f.jpg"
+                },
+                {
+                    "height": 360,
+                    "width": 540,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/07/70/ef/1f.jpg"
+                },
+                {
+                    "height": 446,
+                    "width": 674,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/70/ef/1f.jpg"
+                },
+                {
+                    "height": 480,
+                    "width": 720,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/70/ef/1f.jpg"
+                },
+                {
+                    "height": 118,
+                    "width": 210,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/07/70/ef/1f.jpg"
+                },
+                {
+                    "height": 75,
+                    "width": 75,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/07/70/ef/1f.jpg"
+                },
+                {
+                    "height": 109,
+                    "width": 154,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-154x109/07/70/ef/1f.jpg"
+                }
+            ]
+        },
+        {
+            "imageSource": "SUPPLIER_PROVIDED",
+            "caption": "Saint Tropez",
+            "isCover": false,
+            "variants": [
+                {
+                    "height": 50,
+                    "width": 50,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-50x50/06/96/70/34.jpg"
+                },
+                {
+                    "height": 100,
+                    "width": 100,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/06/96/70/34.jpg"
+                },
+                {
+                    "height": 200,
+                    "width": 200,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/06/96/70/34.jpg"
+                },
+                {
+                    "height": 400,
+                    "width": 400,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/06/96/70/34.jpg"
+                },
+                {
+                    "height": 40,
+                    "width": 60,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-60x40/06/96/70/34.jpg"
+                },
+                {
+                    "height": 80,
+                    "width": 120,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-120x80/06/96/70/34.jpg"
+                },
+                {
+                    "height": 120,
+                    "width": 180,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-180x120/06/96/70/34.jpg"
+                },
+                {
+                    "height": 160,
+                    "width": 240,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-240x160/06/96/70/34.jpg"
+                },
+                {
+                    "height": 240,
+                    "width": 360,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/06/96/70/34.jpg"
+                },
+                {
+                    "height": 320,
+                    "width": 480,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/06/96/70/34.jpg"
+                },
+                {
+                    "height": 360,
+                    "width": 540,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/06/96/70/34.jpg"
+                },
+                {
+                    "height": 446,
+                    "width": 674,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/96/70/34.jpg"
+                },
+                {
+                    "height": 480,
+                    "width": 720,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/06/96/70/34.jpg"
+                },
+                {
+                    "height": 118,
+                    "width": 210,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/06/96/70/34.jpg"
+                },
+                {
+                    "height": 75,
+                    "width": 75,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/06/96/70/34.jpg"
+                },
+                {
+                    "height": 109,
+                    "width": 154,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-154x109/06/96/70/34.jpg"
+                }
+            ]
+        },
+        {
+            "imageSource": "SUPPLIER_PROVIDED",
+            "caption": "Mougins village",
+            "isCover": false,
+            "variants": [
+                {
+                    "height": 50,
+                    "width": 50,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-50x50/07/70/ef/92.jpg"
+                },
+                {
+                    "height": 100,
+                    "width": 100,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/07/70/ef/92.jpg"
+                },
+                {
+                    "height": 200,
+                    "width": 200,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/07/70/ef/92.jpg"
+                },
+                {
+                    "height": 400,
+                    "width": 400,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/07/70/ef/92.jpg"
+                },
+                {
+                    "height": 40,
+                    "width": 60,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-60x40/07/70/ef/92.jpg"
+                },
+                {
+                    "height": 80,
+                    "width": 120,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-120x80/07/70/ef/92.jpg"
+                },
+                {
+                    "height": 120,
+                    "width": 180,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-180x120/07/70/ef/92.jpg"
+                },
+                {
+                    "height": 160,
+                    "width": 240,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-240x160/07/70/ef/92.jpg"
+                },
+                {
+                    "height": 240,
+                    "width": 360,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/07/70/ef/92.jpg"
+                },
+                {
+                    "height": 320,
+                    "width": 480,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/07/70/ef/92.jpg"
+                },
+                {
+                    "height": 360,
+                    "width": 540,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/07/70/ef/92.jpg"
+                },
+                {
+                    "height": 446,
+                    "width": 674,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/70/ef/92.jpg"
+                },
+                {
+                    "height": 480,
+                    "width": 720,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/70/ef/92.jpg"
+                },
+                {
+                    "height": 118,
+                    "width": 210,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/07/70/ef/92.jpg"
+                },
+                {
+                    "height": 75,
+                    "width": 75,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/07/70/ef/92.jpg"
+                },
+                {
+                    "height": 109,
+                    "width": 154,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-154x109/07/70/ef/92.jpg"
+                }
+            ]
+        },
+        {
+            "imageSource": "SUPPLIER_PROVIDED",
+            "caption": "Gourdon Village",
+            "isCover": false,
+            "variants": [
+                {
+                    "height": 50,
+                    "width": 50,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-50x50/07/70/ef/87.jpg"
+                },
+                {
+                    "height": 100,
+                    "width": 100,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/07/70/ef/87.jpg"
+                },
+                {
+                    "height": 200,
+                    "width": 200,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/07/70/ef/87.jpg"
+                },
+                {
+                    "height": 400,
+                    "width": 400,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/07/70/ef/87.jpg"
+                },
+                {
+                    "height": 40,
+                    "width": 60,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-60x40/07/70/ef/87.jpg"
+                },
+                {
+                    "height": 80,
+                    "width": 120,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-120x80/07/70/ef/87.jpg"
+                },
+                {
+                    "height": 120,
+                    "width": 180,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-180x120/07/70/ef/87.jpg"
+                },
+                {
+                    "height": 160,
+                    "width": 240,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-240x160/07/70/ef/87.jpg"
+                },
+                {
+                    "height": 240,
+                    "width": 360,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/07/70/ef/87.jpg"
+                },
+                {
+                    "height": 320,
+                    "width": 480,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/07/70/ef/87.jpg"
+                },
+                {
+                    "height": 360,
+                    "width": 540,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/07/70/ef/87.jpg"
+                },
+                {
+                    "height": 446,
+                    "width": 674,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/70/ef/87.jpg"
+                },
+                {
+                    "height": 480,
+                    "width": 720,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/70/ef/87.jpg"
+                },
+                {
+                    "height": 118,
+                    "width": 210,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/07/70/ef/87.jpg"
+                },
+                {
+                    "height": 75,
+                    "width": 75,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/07/70/ef/87.jpg"
+                },
+                {
+                    "height": 109,
+                    "width": 154,
+                    "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-154x109/07/70/ef/87.jpg"
+                }
+            ]
+        }
+    ],
+    "logistics": {
+        "redemption": {
+            "redemptionType": "NONE",
+            "specialInstructions": "• The order of your tours's date will be sent via Viator.\n\n• In case of transfers, please send us your arrival flight number and / or pick up time at the hotel for the departure transfer.\n\n• Airport Transfers are possible only for addresses in Nice city. And they are available from 07:00 a.m to 08:00 p.m\n\n• Only Tours pick-up from Nice city is included in the price. Pick-up from other cities may require an additional fee and depends to the supplier availability.\n\n• If a pickup address is not added to booking information, it must be emailed a minimum of 24 hours before the activity begins.\n\n• For last-minute bookings, the pickup address must be added in the reservation information or sent by email within one hour of the booking\n\n• Customer Service hours: 8:00 AM to 7:00 PM / booking@nicetour.fr"
+        },
+        "travelerPickup": {
+            "pickupOptionType": "PICKUP_EVERYONE",
+            "allowCustomTravelerPickup": true,
+            "locations": [
+                {
+                    "location": {
+                        "ref": "LOC-6eKJ+or5y8o99Qw0C8xWyO8dsH5KI42OzpEPF5MYqI0="
+                    },
+                    "pickupType": "HOTEL"
+                },
+                {
+                    "location": {
+                        "ref": "LOC-7R9vDC1WbTul6QhatPuKoWV2QvfEdeHQzPZFgcf+qUpEpvhcAE5KgUYVGjPE1xERpkSUKgur+P2ZQ1WwUGof8Q=="
+                    },
+                    "pickupType": "PORT"
+                },
+                {
+                    "location": {
+                        "ref": "CONTACT_SUPPLIER_LATER"
+                    },
+                    "pickupType": "OTHER"
+                }
+            ],
+            "minutesBeforeDepartureTimeForPickup": 30,
+            "additionalInfo": "Pickup possible from AirBnb and private addresses in Nice city\n"
+        }
+    },
+    "timeZone": "Europe/Paris",
+    "description": "The best way to discover all magnific sights of the French Riviera. With a personal service including pick up and drop off from your hotel or private adress in Nice and be accompagnied with a bilingual and informative guide.\n\nBegin the adventure by the program of the 1st day to visit the famous places as Monaco Monte-Carlo, Cannes Eze and Antibes. \n\nBook a second day to visit the villages and countryside and get 5% discount.\n\nEnjoy a 3rd day to travel to Italy for the italian market in San Remo with a visit to Dolce Aqua village and Menton and we'll offer you a reduction of 15€ and FREE Nice Airport departure transfer. \n\nFor the 4-days option, you will visit one of the most luxurious and famous cities of the French Riviera, Saint-Tropez. A Boat Experience will be included in the tour to discover the splendid Mediterranean shores and cross the glistening waters of Saint Tropez gulf with a visit to Port Grimaud. furthermore, you'll get 10% off and FREE Nice Airport transfer Roundtrip.\n",
+    "inclusions": [
+        {
+            "category": "OTHER",
+            "categoryDescription": "Other",
+            "type": "OTHER",
+            "typeDescription": "Other",
+            "otherDescription": "Free Airport Transfer / One way or RoundTrip"
+        },
+        {
+            "category": "TRANSPORT_AMENITIES",
+            "categoryDescription": "Transportation amenities",
+            "type": "AIR_CONDITIONED_VEHICLE",
+            "typeDescription": "In-vehicle air conditioning",
+            "description": "Air-conditioned vehicle"
+        },
+        {
+            "category": "OTHER",
+            "categoryDescription": "Other",
+            "type": "OTHER",
+            "typeDescription": "Other",
+            "otherDescription": "Hotep pick up and drop off"
+        },
+        {
+            "category": "OTHER",
+            "categoryDescription": "Other",
+            "type": "OTHER",
+            "typeDescription": "Other",
+            "otherDescription": "Bilingual Guide"
+        }
+    ],
+    "exclusions": [
+        {
+            "category": "OTHER",
+            "categoryDescription": "Other",
+            "type": "OTHER",
+            "typeDescription": "Other",
+            "otherDescription": "accommodation"
+        },
+        {
+            "category": "OTHER",
+            "categoryDescription": "Other",
+            "type": "OTHER",
+            "typeDescription": "Other",
+            "otherDescription": "Food & Drinks"
+        }
+    ],
+    "additionalInfo": [
+        {
+            "type": "STROLLER_ACCESSIBLE",
+            "description": "Infants and small children can ride in a pram or stroller"
+        },
+        {
+            "type": "PUBLIC_TRANSPORTATION_NEARBY",
+            "description": "Public transportation options are available nearby"
+        },
+        {
+            "type": "INFANT_SEATS_AVAILABLE",
+            "description": "Specialized infant seats are available"
+        },
+        {
+            "type": "PHYSICAL_EASY",
+            "description": "Suitable for all physical fitness levels"
+        }
+    ],
+    "cancellationPolicy": {
+        "type": "STANDARD",
+        "description": "For a full refund, cancel at least 24 hours before the scheduled departure time.",
+        "cancelIfBadWeather": false,
+        "cancelIfInsufficientTravelers": false,
+        "refundEligibility": [
+            {
+                "dayRangeMin": 1,
+                "percentageRefundable": 100
+            },
+            {
+                "dayRangeMin": 0,
+                "dayRangeMax": 1,
+                "percentageRefundable": 0
+            }
+        ]
+    },
+    "bookingConfirmationSettings": {
+        "bookingCutoffType": "START_TIME",
+        "bookingCutoffInMinutes": 720,
+        "confirmationType": "INSTANT"
+    },
+    "bookingRequirements": {
+        "minTravelersPerBooking": 1,
+        "maxTravelersPerBooking": 15,
+        "requiresAdultForBooking": false
+    },
+    "languageGuides": [
+        {
+            "type": "GUIDE",
+            "language": "en",
+            "legacyGuide": "en/SERVICE_GUIDE"
+        },
+        {
+            "type": "GUIDE",
+            "language": "es",
+            "legacyGuide": "es/SERVICE_GUIDE"
+        }
+    ],
+    "bookingQuestions": [
+        "SPECIAL_REQUIREMENTS",
+        "PICKUP_POINT"
+    ],
+    "tags": [
+        11930,
+        12075,
+        12056,
+        21768,
+        11922
+    ],
+    "destinations": [
+        {
+            "ref": "478",
+            "primary": true
+        }
+    ],
+    "itinerary": {
+        "itineraryType": "MULTI_DAY_TOUR",
+        "skipTheLine": false,
+        "privateTour": false,
+        "days": [
+            {
+                "title": "French Riviera Best sights",
+                "dayNumber": 1,
+                "items": [
+                    {
+                        "pointOfInterestLocation": {
+                            "location": {
+                                "ref": "LOC-6eKJ+or5y8o99Qw0C8xWyOLizYkTGmOOU5P1W3VSy+A="
+                            },
+                            "attractionId": 567
+                        },
+                        "duration": {
+                            "fixedDurationInMinutes": 40
+                        },
+                        "passByWithoutStopping": false,
+                        "admissionIncluded": "NOT_APPLICABLE",
+                        "description": "Visit to the medieval village of Eze, where you will admire the splendid panorama.\n"
+                    },
+                    {
+                        "pointOfInterestLocation": {
+                            "location": {
+                                "ref": "LOC-6eKJ+or5y8o99Qw0C8xWyEt0imnQQSMkzUufyX3Z3io="
+                            },
+                            "attractionId": 4080
+                        },
+                        "duration": {
+                            "fixedDurationInMinutes": 50
+                        },
+                        "passByWithoutStopping": false,
+                        "admissionIncluded": "NOT_APPLICABLE",
+                        "description": "Every day at 11.55am precisely, on the square in front of the Palace, the traditional ritual of the Changing of the Guard – the Carabiniers du Prince – attracts and delights thousands of spectators.\n\nThe visit of the interior of the palace is not possible during this tour.\n\nHave time to see the old town and the cathedral.\n"
+                    },
+                    {
+                        "pointOfInterestLocation": {
+                            "location": {
+                                "ref": "LOC-6eKJ+or5y8o99Qw0C8xWyIYes9FYjmuW3jk5Bq/FnBg="
+                            },
+                            "attractionId": 4081
+                        },
+                        "duration": {
+                            "fixedDurationInMinutes": 20
+                        },
+                        "passByWithoutStopping": false,
+                        "admissionIncluded": "NOT_APPLICABLE",
+                        "description": "Have a stop on the famous Casino of Monte-Carlo to take unforgettable pictures. "
+                    },
+                    {
+                        "pointOfInterestLocation": {
+                            "location": {
+                                "ref": "LOC-6eKJ+or5y8o99Qw0C8xWyHcucAXDUiVsBZPIGHVyaeo="
+                            },
+                            "attractionId": 1811
+                        },
+                        "duration": {
+                            "fixedDurationInMinutes": 30
+                        },
+                        "passByWithoutStopping": false,
+                        "admissionIncluded": "NOT_APPLICABLE",
+                        "description": "Explore the Beverly Hills of France, walk along the famous \"Croisette\", enjoy the luxury hotels, restaurants and shops. And most important: Step on the famous film festival red carpet, just like Hollywood stars."
+                    },
+                    {
+                        "pointOfInterestLocation": {
+                            "location": {
+                                "ref": "LOC-6eKJ+or5y8o99Qw0C8xWyBet3bKyNNUlQv2xCiMCBAA="
+                            },
+                            "attractionId": 14191
+                        },
+                        "duration": {
+                            "fixedDurationInMinutes": 40
+                        },
+                        "passByWithoutStopping": false,
+                        "admissionIncluded": "NOT_APPLICABLE",
+                        "description": "This tourist-oriented city combines nautical traditions and pleasures. You will visit the old town, the largest business and pleasure marina of Europe and the port of billionaires."
+                    }
+                ]
+            },
+            {
+                "title": "French Riviera Villages and Countryside",
+                "dayNumber": 2,
+                "items": [
+                    {
+                        "pointOfInterestLocation": {
+                            "location": {
+                                "ref": "LOC-6eKJ+or5y8o99Qw0C8xWyBRr6vU2SXdMhFV9LKbRFLc="
+                            }
+                        },
+                        "duration": {
+                            "fixedDurationInMinutes": 60
+                        },
+                        "passByWithoutStopping": false,
+                        "admissionIncluded": "YES",
+                        "description": "Discover the trade secrets of perfumes and cosmetics in a free guided visit.\n\nThe visit to the factory and the shop is optional, you can benefit from this time in the village of Grasse."
+                    },
+                    {
+                        "pointOfInterestLocation": {
+                            "location": {
+                                "ref": "LOC-6eKJ+or5y8o99Qw0C8xWyI33zpCTa6KvW/cn9VOmE60="
+                            }
+                        },
+                        "duration": {
+                            "fixedDurationInMinutes": 60
+                        },
+                        "passByWithoutStopping": false,
+                        "admissionIncluded": "NOT_APPLICABLE",
+                        "description": "Discover one of the most impressive villages in the country. See its magnificent castle perched on rocks 750 meters above sea level."
+                    },
+                    {
+                        "pointOfInterestLocation": {
+                            "location": {
+                                "ref": "LOC-6eKJ+or5y8o99Qw0C8xWyIk4elWqOozrXA5+Mudyz8Y="
+                            }
+                        },
+                        "duration": {
+                            "fixedDurationInMinutes": 60
+                        },
+                        "passByWithoutStopping": false,
+                        "admissionIncluded": "NOT_APPLICABLE",
+                        "description": "Stroll the medieval streets and admire the stone façades and fragrant flowers of some of the prettiest settlements in France."
+                    },
+                    {
+                        "pointOfInterestLocation": {
+                            "location": {
+                                "ref": "LOC-6eKJ+or5y8o99Qw0C8xWyO0CKx65qMc3ccwuoVsfrVE="
+                            }
+                        },
+                        "duration": {
+                            "fixedDurationInMinutes": 45
+                        },
+                        "passByWithoutStopping": false,
+                        "admissionIncluded": "NOT_APPLICABLE",
+                        "description": "Medieval walled village, you'll be able to sense centuries of history and artistic creativity. It’s a unique place and it’s the place to be!"
+                    },
+                    {
+                        "pointOfInterestLocation": {
+                            "location": {
+                                "ref": "LOC-6eKJ+or5y8o99Qw0C8xWyKEjr3R2SbJ2dnFlVHauIzc="
+                            }
+                        },
+                        "duration": {
+                            "fixedDurationInMinutes": 30
+                        },
+                        "passByWithoutStopping": false,
+                        "admissionIncluded": "NOT_APPLICABLE",
+                        "description": "Learn how olive oil is produced and taste different varieties of olives and other delicacies at the Moulin d'Opio mill."
+                    },
+                    {
+                        "pointOfInterestLocation": {
+                            "location": {
+                                "ref": "LOC-6eKJ+or5y8o99Qw0C8xWyKSdH7VPRmFV6KFzABDGM+8="
+                            }
+                        },
+                        "duration": {
+                            "fixedDurationInMinutes": 60
+                        },
+                        "passByWithoutStopping": false,
+                        "admissionIncluded": "NOT_APPLICABLE",
+                        "description": "Visit Grasse city, the world capital of perfumes. You will enjoy a free guided visit to the perfume factory and/or the village center."
+                    },
+                    {
+                        "pointOfInterestLocation": {
+                            "location": {
+                                "ref": "LOC-o0AXGEKPN4wJ9sIG0RAn5KEqrsUZzC7mL7R4oNgx6b2XGS2r0FDKPmVU/sOgP9RE"
+                            }
+                        },
+                        "duration": {
+                            "fixedDurationInMinutes": 10
+                        },
+                        "passByWithoutStopping": false,
+                        "admissionIncluded": "YES",
+                        "description": "Stop at the Waterfalls of Saut Du Loup for photos"
+                    }
+                ]
+            },
+            {
+                "title": "Travel to Italy : San remo's Market & Dolceaqua village",
+                "dayNumber": 3,
+                "items": [
+                    {
+                        "pointOfInterestLocation": {
+                            "location": {
+                                "ref": "LOC-6eKJ+or5y8o99Qw0C8xWyAvqA1uNt4EqpsOedmLUjKo="
+                            }
+                        },
+                        "duration": {
+                            "fixedDurationInMinutes": 180
+                        },
+                        "passByWithoutStopping": false,
+                        "admissionIncluded": "NOT_APPLICABLE",
+                        "description": "Explore the famous Italian markets and browse the shops offering handbags, leather goods, clothing and fashion accessories. Spend some time walking around the old town and try the delicious pizza, pasta and other local favorites at lunch."
+                    },
+                    {
+                        "pointOfInterestLocation": {
+                            "location": {
+                                "ref": "LOC-6eKJ+or5y8o99Qw0C8xWyN27oOc32flXklTgpWxRZh4="
+                            }
+                        },
+                        "duration": {
+                            "fixedDurationInMinutes": 60
+                        },
+                        "passByWithoutStopping": false,
+                        "admissionIncluded": "NOT_APPLICABLE",
+                        "description": "Visit the medieval village of Dolceaqua with ancient stone houses on narrow paved alleys, an attractive humpback bridge over a scenic river and a castle overlooking the village."
+                    },
+                    {
+                        "pointOfInterestLocation": {
+                            "location": {
+                                "ref": "LOC-6eKJ+or5y8o99Qw0C8xWyDG8xi55EoeZ6bzhqnldvjs="
+                            }
+                        },
+                        "duration": {
+                            "fixedDurationInMinutes": 60
+                        },
+                        "passByWithoutStopping": false,
+                        "admissionIncluded": "NOT_APPLICABLE",
+                        "description": "Visit Menton, located on the border between Italy and France. You’ll have free time to visit the old town and admire the Basilica of Saint-Michel."
+                    },
+                    {
+                        "pointOfInterestLocation": {
+                            "location": {
+                                "ref": "LOC-6eKJ+or5y8o99Qw0C8xWyPsYjBNHDqrjbNz6MMOfbHI="
+                            },
+                            "attractionId": 22779
+                        },
+                        "duration": {
+                            "fixedDurationInMinutes": 15
+                        },
+                        "passByWithoutStopping": false,
+                        "admissionIncluded": "NOT_APPLICABLE",
+                        "description": "Stop at various stunning panoramic viewpoints for photos of Monaco and Monte Carlo."
+                    }
+                ]
+            },
+            {
+                "title": "Saint Tropez with Cruise and Port Grimaud",
+                "dayNumber": 4,
+                "items": [
+                    {
+                        "pointOfInterestLocation": {
+                            "location": {
+                                "ref": "LOC-6eKJ+or5y8o99Qw0C8xWyMQtEXLV5nYsG9NrYwcUHUw="
+                            }
+                        },
+                        "duration": {
+                            "fixedDurationInMinutes": 4
+                        },
+                        "passByWithoutStopping": false,
+                        "admissionIncluded": "NOT_APPLICABLE",
+                        "description": "Discover this town which has long been a favorite destination of celebrities, history buffs, and art addicts. Take advantage of some free time to explore this beautiful town, gaze at luxury yachts, picturesque alleys and the sixteenth-century citadel."
+                    },
+                    {
+                        "pointOfInterestLocation": {
+                            "location": {
+                                "ref": "LOC-6eKJ+or5y8o99Qw0C8xWyEEn3i3t80IewPYON/j/s3M="
+                            },
+                            "attractionId": 14193
+                        },
+                        "duration": {
+                            "fixedDurationInMinutes": 60
+                        },
+                        "passByWithoutStopping": false,
+                        "admissionIncluded": "NOT_APPLICABLE",
+                        "description": "In the heart of the Gulf of Saint Tropez, the seaside town of Port Grimaud is an architectural exploit dreamed up.\n\nMediterranean, Port Grimaud is both a port and a true Provençal village. "
+                    }
+                ]
+            }
+        ]
+    },
+    "productOptions": [
+        {
+            "productOptionCode": "TG2",
+            "description": "Duration: 9 hours: 9 Hours tour each day<br/>Cities and villages: First day : Best cities.\n\n2nd day: Villages and countryside<br/>5% off : Get 5% reduction from total price<br/>Pickup included",
+            "title": "2 Days",
+            "languageGuides": [
+                {
+                    "type": "GUIDE",
+                    "language": "en",
+                    "legacyGuide": "en/SERVICE_GUIDE"
+                },
+                {
+                    "type": "GUIDE",
+                    "language": "es",
+                    "legacyGuide": "es/SERVICE_GUIDE"
+                }
+            ]
+        },
+        {
+            "productOptionCode": "TG3",
+            "description": "Duration: 9 hours: 9 Hours tour each day<br/>Cities, Villages and Italy: 1st day :Visit the best cities, 2nd day : discover the perched villages and countryside, 3rd day go to Italy to San Remo<br/>15€ + FREE Airport transfer: Get 15€ discount and FREE Departure Nice Airport transfer <br/>Pickup included",
+            "title": "3 Days ",
+            "languageGuides": [
+                {
+                    "type": "GUIDE",
+                    "language": "en",
+                    "legacyGuide": "en/SERVICE_GUIDE"
+                },
+                {
+                    "type": "GUIDE",
+                    "language": "es",
+                    "legacyGuide": "es/SERVICE_GUIDE"
+                }
+            ]
+        },
+        {
+            "productOptionCode": "TG1",
+            "description": "Duration: 9 hours<br/>Best sights of French Riviera: Visit Eze village and Fragonard perfume, Monaco and Monte-Carlo, Cannes, Antibes and St Paul de Vence village<br/>Pickup included",
+            "title": "1 Day ",
+            "languageGuides": [
+                {
+                    "type": "GUIDE",
+                    "language": "en",
+                    "legacyGuide": "en/SERVICE_GUIDE"
+                },
+                {
+                    "type": "GUIDE",
+                    "language": "es",
+                    "legacyGuide": "es/SERVICE_GUIDE"
+                }
+            ]
+        },
+        {
+            "productOptionCode": "TG4",
+            "description": "Duration: 9 hours: 9 Hours tour each day<br/>4 days: 1st day :Best cities, 2nd day : Perched villages & countryside, 3rd day go to Italy, 4rd day St Tropez with cruise<br/>10% + FREE Roundtrip transfer: Get 10% off and Free Roundtrip Nice Airport transfer<br/>Pickup included",
+            "title": "4 Days",
+            "languageGuides": [
+                {
+                    "type": "GUIDE",
+                    "language": "en",
+                    "legacyGuide": "en/SERVICE_GUIDE"
+                },
+                {
+                    "type": "GUIDE",
+                    "language": "es",
+                    "legacyGuide": "es/SERVICE_GUIDE"
+                }
+            ]
+        }
+    ],
+    "translationInfo": {
+        "containsMachineTranslatedText": false
+    },
+    "supplier": {
+        "name": "Nice Tour Sightseeing"
+    },
+    "productUrl": "https://shop.live.rc.viator.com/tours/x/y/d0-10175P18?mcid=42383&pid=P00045135&medium=api&version=2.0"
+}

@@ -1,0 +1,18 @@
+type: object
+required:
+  - totalReviews
+properties:
+  sources:
+    type: array
+    description: Breakdown of review summaries for each review source
+    items:
+      $ref: './ProductReviewsSummarySource.yaml'
+  reviewCountTotals:
+    type: array
+    description: Breakdown of number of reviews per rating for all reviews of this product
+    items:
+      $ref: './ProductReviewsSummaryCount.yaml'
+  totalReviews:
+    description: Total number of reviews available for this product from all sources
+    type: integer
+    format: int64

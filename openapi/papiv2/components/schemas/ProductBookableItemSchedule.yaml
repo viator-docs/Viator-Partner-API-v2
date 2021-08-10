@@ -1,0 +1,19 @@
+type: object
+required:
+  - seasons
+properties:
+  productOptionCode:
+    type: string
+    description: >
+      Product option code for this bookable item schedule
+
+
+      For more information see: [Key concepts: Product
+      options](../../../../papiv2/key-concepts/product-options)
+  seasons:
+    type: array
+    description: >-
+      Descriptions of pricing and availability information as they pertain to
+      periods of time
+    items:
+      $ref: ./BookableItemSeason.yaml

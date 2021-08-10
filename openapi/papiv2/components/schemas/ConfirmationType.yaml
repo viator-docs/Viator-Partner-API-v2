@@ -1,0 +1,8 @@
+type: string
+description: >
+  Machine-interpretable value encoding when bookings for this product will be
+  confirmed; one of: 
+
+    - `"INSTANT"` (instantly) 
+    - `"MANUAL"` (requires manual action prior to confirmation)
+    - `"INSTANT_THEN_MANUAL"` (combination – subject to cutoff time)

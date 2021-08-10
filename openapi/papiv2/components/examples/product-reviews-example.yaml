@@ -1,0 +1,83 @@
+summary: product reviews example
+value:
+  errorReference: null
+  data:
+    - sortOrder: 1
+      ownerName: Lauren
+      ownerCountry: null
+      productTitle: Big Bus Sydney and Bondi Hop-on Hop-off Tour
+      productUrlName: Sydney-and-Bondi-Hop-on-Hop-off-Tour
+      ownerAvatarURL: null
+      sslSupported: false
+      publishedDate: '2019-12-31'
+      viatorNotes: ''
+      productCode: 5010SYDNEY
+      reviewId: 63679157
+      submissionDate: '2019-11-04'
+      rating: 1
+      review: >-
+        <p>We did the hop on hop off bus for the second half of our day. The
+        buses were supposed to stop running at 7:30 pm. At 6:58 our bus driver
+        kicked everyone off the bus before the end time. We were almost 3 miles
+        from our hotel. We all asked if we could get off at an actual stop which
+        was 2 miles closer to our hotel and the driver said no. I want my money
+        back because it was awful!!! I would give 0 stars if I could!</p>
+      ownerId: 29510203
+      viatorFeedback: ''
+    - sortOrder: 2
+      ownerName: Robin R
+      ownerCountry: null
+      productTitle: Big Bus Sydney and Bondi Hop-on Hop-off Tour
+      productUrlName: Sydney-and-Bondi-Hop-on-Hop-off-Tour
+      ownerAvatarURL: null
+      sslSupported: false
+      publishedDate: '2018-05-09'
+      viatorNotes: ''
+      productCode: 5010SYDNEY
+      reviewId: 32425348
+      submissionDate: '2018-05-09'
+      rating: 1
+      review: >-
+        <p>The bus was so crowded people were standing in the aisle which made
+        it very difficult to see the sights.  I got the last available seat
+        which was facing backwards, so what little I could see, was of no value.
+        The audio system was unusable because the sound quality was terrible.
+        </p>
+
+
+        <p>When we finally got to Bondi Beach which was lovely, we opted to uber
+        back to our hotel which was much more convenient, efficient and had
+        unobstructed views.</p>
+      ownerId: 30185188
+      viatorFeedback: ''
+    - sortOrder: 3
+      ownerName: Nancy S
+      ownerCountry: null
+      productTitle: Big Bus Sydney and Bondi Hop-on Hop-off Tour
+      productUrlName: Sydney-and-Bondi-Hop-on-Hop-off-Tour
+      ownerAvatarURL: null
+      sslSupported: false
+      publishedDate: '2018-03-26'
+      viatorNotes: ''
+      productCode: 5010SYDNEY
+      reviewId: 31322881
+      submissionDate: '2018-03-26'
+      rating: 1
+      review: >-
+        <p>There were not buses. At one stop we waited almost 30 minutes and
+        then the bus was so crowded we had to stand. We had bought our tickets
+        in advance to be sure to have a place on the bus but when we got on they
+        were still selling tickets. Never again.</p>
+      ownerId: 29062502
+      viatorFeedback: ''
+  dateStamp: '2020-02-09T19:05:03+0000'
+  errorType: null
+  errorCodes: []
+  errorMessage: null
+  errorName: null
+  extraInfo: {}
+  extraObject: null
+  success: true
+  totalCount: 1561
+  errorMessageText: null
+  vmid: '331004'

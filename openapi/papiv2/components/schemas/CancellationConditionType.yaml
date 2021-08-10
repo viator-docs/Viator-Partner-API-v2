@@ -1,0 +1,8 @@
+type: string
+description: >
+  Machine-interpretable value encoding the type of cancellation policy for this
+  product; one of:
+
+    - `"STANDARD"` - Products in this category are cancellable up to 24 hours before the travel date (local supplier time) for a full refund. However, a 100% cancellation penalty applies for cancellations submitted less than 24 hours before the start time. Most products (about 85%) fall into this category.
+    - `"ALL_SALES_FINAL"` - Products in this category cannot be cancelled or amended without incurring a 100% penalty; i.e., the refund amount will be zero. Around 10% of products fall into this category.
+    - `"CUSTOM"` - The refund amount for products in this category varies depending on how long before its start time the product is cancelled. Many products on a custom policy are multi-day tours, which require more sophisticated planning on the supplier’s end. Only a small number of products (around 5%) fall into this category.

@@ -1,0 +1,62 @@
+get:
+  tags:
+    - Products
+  summary: '/products/{product-code}'
+  operationId: products
+  description: >
+    Get full product details for a single product.
+
+
+    **Example:** Get details for "Big Bus Sydney and Bondi Hop-on Hop-off Tour"
+    (product code: 5010SYDNEY):
+
+
+    ```
+
+    GET https://api.sandbox.viator.com/partner/products/5010SYDNEY
+
+    ```
+
+
+    (Response samples generated on: 2021-03-29)
+  parameters:
+    - $ref: ../components/parameters/acceptLanguage.yaml
+    - $ref: ../components/parameters/accept.yaml
+    - $ref: ../components/parameters/campaignValue.yaml
+    - name: product-code
+      in: path
+      description: Retrieve details of the product identified by this product code
+      required: true
+      schema:
+        type: string
+  responses:
+    '200':
+      description: Success
+      headers:
+        X-Unique-ID:
+          $ref: ../components/headers/XUniqueId.yaml
+      content:
+        application/json;version=2.0:
+          schema:
+            $ref: ../components/schemas/Product.yaml
+          examples:
+            5010SYDNEY (HOP_ON_HOP_OFF):
+              $ref: ../components/examples/products-5010SYDNEY-example.yaml
+            # 10175P18 (MULTI_DAY_TOUR):
+            #   $ref: ../components/examples/products-10175P18-example.yaml
+            250380P1 (ACTIVITY):
+              $ref: ../components/examples/products-250380P1-example.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '404':
+      $ref: ../components/responses/NotFound.yaml
+    '429':
+      $ref: ../components/responses/TooManyRequests.yaml
+    '500':
+      $ref: ../components/responses/InternalServerError.yaml
+    '503':
+      $ref: ../components/responses/ServiceUnavailable.yaml

@@ -1,0 +1,12 @@
+type: string
+description: >
+  Machine-interpretable value specifying the type of unit/group when `type` is
+  `"UNIT"`; one of:
+
+    - `"BIKE"`
+    - `"BOAT"`
+    - `"GROUP"`
+    - `"PACKAGE"`
+    - `"ROOM"`
+    - `"AIRCRAFT"`
+    - `"VEHICLE"`

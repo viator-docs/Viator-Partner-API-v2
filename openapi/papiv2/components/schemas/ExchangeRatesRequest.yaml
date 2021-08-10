@@ -1,0 +1,16 @@
+type: object
+properties:
+  sourceCurrencies:
+    type: array
+    description: >-
+      List of three-letter currency codes for the source currencies for which to
+      retrieve exchange rate data
+    items:
+      type: string
+  targetCurrencies:
+    type: array
+    description: >-
+      List of three-letter currency codes for the target currencies for which to
+      retrieve exchange rate data
+    items:
+      type: string

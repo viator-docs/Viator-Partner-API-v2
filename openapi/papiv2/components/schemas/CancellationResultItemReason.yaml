@@ -1,0 +1,11 @@
+type: string
+description: >
+  Machine-interpretable reason code indicating why the cancellation was not
+  successful
+
+    - `"ALREADY_CANCELLED"`: The booking has already been cancelled
+    - `"NOT_CANCELLABLE"`: The booking cannot be canceled because the product start time was in the past
+
+
+  **Note**: This field will not be present in the response if the cancellation
+  was successful

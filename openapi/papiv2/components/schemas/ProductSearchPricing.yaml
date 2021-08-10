@@ -1,0 +1,19 @@
+type: object
+description: |
+  High-level summary of product prices
+    
+    - **Note**: This price may not be available during the date range specified in the `filtering` section of the request
+required:
+  - fromPrice
+  - currency
+properties:
+  summary:
+    allOf:
+      - type: object
+        properties:
+          fromPriceBeforeDiscount:
+            description: If the product is presently discounted, this field shows what the value of `fromPrice` would be if no discount had been applied; otherwise, it will be equal to `fromPrice`.
+      - $ref: ./AvailabilityScheduleSummary.yaml
+  currency:
+    type: string
+    description: Currency code for the currency in which the prices in `summary` are denominated

@@ -1,8 +1,11 @@
 type: reference-docs
-definitionId: petstore
+definitionId: papiv2
+showInfo: true
+expand: true
 settings:
   generateCodeSamples:
     languages:
       - lang: curl
       - lang: JavaScript
       - lang: Node.js
+      - lang: Java

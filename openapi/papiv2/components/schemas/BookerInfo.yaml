@@ -1,0 +1,9 @@
+type: object
+description: Name details for the person making this booking
+properties:
+  firstName:
+    type: string
+    description: First name of the person making this booking
+  lastName:
+    type: string
+    description: Surname of the person making this booking

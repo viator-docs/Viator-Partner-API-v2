@@ -1,0 +1,37 @@
+type: object
+required:
+  - bookingRef
+  - bookingHoldInfo
+properties:
+  bookingRef:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: |
+      **Viator-generated** booking reference for this booked item in format `BR-123456789` 
+
+      This value can be used in the request to:
+        - [/bookings/book](../bookingsBook) (`bookingRef`)
+        - [/bookings/status](../bookingsStatus) (`bookingRef`)
+        - [/bookings/{booking-reference}/cancel-quote](../bookingsCancelQuote) (in-query parameter)
+        - [/bookings/{booking-reference}/cancel](../bookingsCancel) (in-query parameter)
+  bookingHoldInfo:
+    $ref: ./BookingHoldInfo.yaml
+  currency:
+    type: string
+    description: >
+      Three-letter currency code for the currency in which pricing information
+      is displayed; one of:
+
+        - `"USD"`
+        - `"GBP"`
+        - `"AUD"`
+        - `"EUR"`
+  lineItems:
+    type: array
+    description: Array of pricing details for each traveler in this booking
+    items:
+      $ref: ./PricingLineItem.yaml
+  totalPrice:
+    description: Details about the total price of this booking
+    allOf:
+      - $ref: ./LineItemPriceObject.yaml

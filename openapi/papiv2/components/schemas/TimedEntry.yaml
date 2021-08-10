@@ -1,0 +1,17 @@
+type: object
+required:
+  - startTime
+properties:
+  startTime:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: |
+      Starting time for this timed entry
+      - **Example**: `"09:00:00"` 
+  unavailableDates:
+    type: array
+    description: >-
+      Dates on which this timed entry is unavailable. If no unavailable dates
+      exist, this array will be absent from the response.
+    items:
+      $ref: ./UnavailableDate.yaml

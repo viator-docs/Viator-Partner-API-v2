@@ -1,0 +1,12 @@
+type: object
+required:
+  - price
+properties:
+  price:
+    description: Current price
+    allOf:
+    - $ref: ./PriceObject.yaml
+  priceBeforeDiscount:
+    description: Non-discounted price if `price` has a discount applied to it
+    allOf:
+      - $ref: ./PriceObject.yaml

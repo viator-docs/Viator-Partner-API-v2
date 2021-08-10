@@ -1,0 +1,7 @@
+in: header
+name: exp-demo
+description: |
+  Specifies that this should be a test/demo booking
+schema:
+  type: boolean
+  example: true

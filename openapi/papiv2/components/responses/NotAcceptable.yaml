@@ -1,0 +1,26 @@
+description: Not Acceptable
+headers:
+  X-Unique-ID:
+    $ref: ../headers/XUniqueId.yaml
+content:
+  application/json:
+    schema:
+      allOf:
+        - $ref: ../schemas/ErrorResponse.yaml
+        - type: object
+          properties:
+            code:
+              description: |
+                Code for this error type
+
+                **Example**: `"NOT_ACCEPTABLE"`
+            message:
+              description: |
+                Details of this error
+
+                **Example**: `"Not acceptable"`
+        - type: object
+          example:
+            code: NOT_ACCEPTABLE
+            message: Not acceptable
+            timestamp: '2019-09-17T03:20:45.737043Z'

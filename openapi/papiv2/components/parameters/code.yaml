@@ -1,0 +1,9 @@
+name: code
+in: query
+schema:
+  type: string
+description: >
+  **unique alphanumeric identifier** of the product, corresponding to
+  `productCode` in the response from the [product
+  content endpoints](../../../key-concepts/content-ingestion-endpoints/#product-content-endpoints)
+example: 5010SYDNEY

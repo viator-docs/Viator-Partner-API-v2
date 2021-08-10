@@ -1,0 +1,40 @@
+summary: /bookings/book
+value:
+  status: CONFIRMED
+  bookingRef: BR-581567752
+  partnerBookingRef: BR-581567752
+  currency: AUD
+  lineItems:
+    - ageBand: ADULT
+      numberOfTravelers: 1
+      subtotalPrice:
+        price:
+          recommendedRetailPrice: 71.1
+          partnerNetPrice: 56.79
+  totalPrice:
+    price:
+      recommendedRetailPrice: 71.1
+      partnerNetPrice: 56.79
+      bookingFee: 3.41
+      partnerTotalPrice: 60.2
+  cancellationPolicy:
+    type: STANDARD
+    description: >-
+      For a full refund, cancel at least 24 hours before the scheduled departure
+      time.
+    cancelIfBadWeather: false
+    cancelIfInsufficientTravelers: false
+    refundEligibility:
+      - dayRangeMin: 1
+        percentageRefundable: 100
+        startTimestamp: '2020-08-25T00:36:49.69005Z'
+        endTimestamp: '2020-11-28T13:00:00Z'
+      - dayRangeMin: 0
+        dayRangeMax: 1
+        percentageRefundable: 0
+        startTimestamp: '2020-11-28T13:00:00Z'
+        endTimestamp: '2020-11-29T13:00:00Z'
+  voucherInfo:
+    url: >-
+      https://shop.live.rc.viator.com/ticket?code=1006658118:1176d4aed0e88ffec7faf11e67183edc0cd40d5b5244b30b0cd08aab14f72b4b
+    format: HTML

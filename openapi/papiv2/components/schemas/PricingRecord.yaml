@@ -1,0 +1,41 @@
+type: object
+properties:
+  daysOfWeek:
+    type: array
+    description: >
+      Array of machine-interpretable strings representing days of the week on
+      which this pricing and availability information applies during the period
+      from `startDate` to `endDate`
+
+
+      Any of:
+        
+        - `"MONDAY"`            
+        - `"TUESDAY"`              
+        - `"WEDNESDAY"`              
+        - `"THURSDAY"`              
+        - `"FRIDAY"`              
+        - `"SATURDAY"`              
+        - `"SUNDAY"`
+    items:
+      type: string
+  timedEntries:
+    type: array
+    description: >-
+      Array of starting times and unavailability information for this product
+      option code if timed entry is applicable; otherwise, this array will not
+      be included in the response
+    items:
+      $ref: ./TimedEntry.yaml
+  pricingDetails:
+    type: array
+    description: Pricing details for this season
+    items:
+      $ref: ./PricingDetails.yaml
+  unavailableDates:
+    type: array
+    description: >-
+      Dates on which this product is unavailable during the season. If no
+      unavailable dates exist, this array will be absent from the response.
+    items:
+      $ref: ./UnavailableDate.yaml

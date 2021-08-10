@@ -1,0 +1,4 @@
+type: boolean
+description: >-
+  **indicator**: `true` if a special offer is available
+  for *this* product.

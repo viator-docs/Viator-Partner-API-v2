@@ -1,0 +1,9 @@
+type: object
+description: Subtotal pricing for this line item, including discount information if available
+required:
+  - price
+properties:
+  price:
+    $ref: ./PriceObjectSubtotal.yaml
+  priceBeforeDiscount:
+    $ref: ./PriceObjectSubtotal.yaml

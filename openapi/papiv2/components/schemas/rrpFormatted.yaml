@@ -1,0 +1,3 @@
+type: string
+description: >-
+  **currency-formatted original price** for this product if the product is on special / a discount has been applied. Empty string if there is no discount on this product.

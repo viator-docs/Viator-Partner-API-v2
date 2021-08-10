@@ -1,0 +1,8 @@
+type: string
+description: >
+  Machine-interpretable value encoding the type of traveler pick-up option; one
+  of:
+
+    - `"PICKUP_EVERYONE"`
+    - `"PICKUP_AND_MEET_AT_START_POINT"`
+    - `"MEET_EVERYONE_AT_START_POINT"`

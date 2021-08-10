@@ -1,0 +1,30 @@
+type: object
+description: Details about a single day of a multi-day tour
+required:
+  - dayNumber
+  - items
+properties:
+  title:
+    type: string
+    description: |
+      Title of this day of the tour
+
+        - **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter
+  dayNumber:
+    type: integer
+    description: Number of this day
+  items:
+    type: array
+    description: Places that this product visits or passes through on this day
+    items:
+      $ref: ./StandardItineraryItem.yaml
+  accommodations:
+    type: array
+    description: Accommodation available for this day of this tour
+    items:
+      $ref: ./MultiDayTourAccommodation.yaml
+  foodAndDrinks:
+    type: array
+    description: Food and drinks available for this day of this tour
+    items:
+      $ref: ./MultiDayTourFoodAndDrinks.yaml

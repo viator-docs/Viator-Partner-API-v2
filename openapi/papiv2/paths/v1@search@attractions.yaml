@@ -1,0 +1,236 @@
+post:
+  tags:
+    - V1-endpoints (affiliates only)
+  summary: /v1/search/attractions
+  operationId: v1SearchAttractions
+  description: |
+
+    This service retrieves a list of attractions associated with the given
+    destination
+
+    
+    **Note**:
+
+    - <mark>This endpoint uses conventions from V1 of this API. See
+    [V1 endpoints](../../../../papiv2/key-concepts/v1-endpoints) for further
+    information</mark>
+    - This endpoint is only available to <u>affiliate partners</u>
+    - Pages generated using data from this endpoint are subject to a **strict no-index policy**. If you are unsure about whether you are correctly following this rule, please reach out to your account manager for advice.
+    
+  parameters:
+    - $ref: ../components/parameters/acceptLanguage.yaml
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          required:
+            - destId
+          properties:
+            destId:
+              type: integer
+              description: >-
+                **unique numeric identifier** of the destination in which to
+                search for attractions
+            topX:
+              $ref: ../components/schemas/topX.yaml
+            seoType:
+              description: >-
+                **search specifier**: one of `'ATTRACTION'` or
+                `'RECOMMENDATION'`
+              enum:
+                - ATTRACTION
+                - RECOMMENDATION
+            sortOrder:
+              type: string
+              description: |
+                Sort order for the results; one of:
+                - `'SEO_PUBLISHED_DATE_D'` - Publish Date (Descending)
+                  
+                - `'SEO_PUBLISHED_DATE_A'` - Publish Date (Ascending)
+                - `'SEO_EDITORS_PICK'` - Editors pick
+                - `'SEO_REVIEW_AVG_RATING_D'` - Traveler Rating (high->low)
+                - `'SEO_REVIEW_AVG_RATING_A'` - Traveler Rating (low->high)
+                - `'SEO_ALPHABETICAL'` - Alphabetical (A->Z)
+              enum:
+                - SEO_PUBLISHED_DATE_D
+                - SEO_PUBLISHED_DATE_A
+                - SEO_EDITORS_PICK
+                - SEO_REVIEW_AVG_RATING_D
+                - SEO_REVIEW_AVG_RATING_A
+                - SEO_ALPHABETICAL
+        example:
+          destId: 684
+          topX: 1-3
+          seoType: ATTRACTION
+          sortOrder: SEO_PUBLISHED_DATE_D
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: ../components/schemas/basicErrorModel.yaml
+              - type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        sortOrder:
+                          type: integer
+                          description: '**sort-order* for *this* search result'
+                        panoramaCount:
+                          type: integer
+                          description: >-
+                            **number** of panoramic images available for *this*
+                            attraction
+                        webURL:
+                          $ref: ../components/schemas/webURL.yaml
+                        pageUrlName:
+                          description: '**URL-formatted title** of the attraction page'
+                          type: string
+                        primaryDestinationUrlName:
+                          type: string
+                          description: '**URL-formatted name** of the primary destination'
+                        publishedDate:
+                          type: string
+                          description: '**date** on which *this* review was published'
+                        userName:
+                          type: string
+                          description: ignore (Viator only)
+                        seoId:
+                          type: integer
+                          description: '**unique numeric identifier** for *this* attraction'
+                        productCount:
+                          type: integer
+                          description: >-
+                            **number of products** available at *this*
+                            attraction
+                        title:
+                          type: string
+                          description: '**natural-language title** of *this* attraction'
+                        thumbnailURL:
+                          type: string
+                          description: >-
+                            **URL** for the thumbnail image to be displayed for
+                            *this* attraction
+                        reviewCount:
+                          type: integer
+                          description: >-
+                            **number** of reviews available for *this*
+                            attraction
+                        photoCount:
+                          type: integer
+                          description: '**number** of photos available for *this* attraction'
+                        rating:
+                          type: number
+                          description: '**average user rating** for *this* attraction'
+                        destinationId:
+                          type: integer
+                          description: '**unique numeric identifier** for *this* attraction'
+                        seoType:
+                          type: string
+                          description: >-
+                            **indicator**: one of `'ATTRACTION'` or
+                            `'RECOMMENDATION'` depending on the type of *this*
+                            result
+                        pageTitle:
+                          type: string
+                          description: '**title** of the page for *this* attraction'
+                        editorsPick:
+                          type: boolean
+                          description: >-
+                            **indicator**: `true` if only the top (editor's
+                            pick) attractions will be shown
+                        keywords:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              keyword:
+                                type: string
+                                description: >-
+                                  **natural-language keyword or phrase** that
+                                  describes *this* attraction
+                              keywordId:
+                                type: number
+                                description: >-
+                                  **unique numeric identifier** for *this*
+                                  keyword
+                        showPhotos:
+                          type: boolean
+                          description: >-
+                            **indicator**: `true` if photos should be shown for
+                            *this* attraction
+                        primaryDestinationId:
+                          type: integer
+                          description: >-
+                            **unique numeric identifier** for the primary
+                            destination associated with *this* attraction
+                        primaryDestinationName:
+                          type: string
+                          description: >-
+                            **natural-language name** of the primary destination
+                            identified by `primaryDestinationId`
+                        thumbnailHiResURL:
+                          type: string
+                          description: >-
+                            **URL** for the thumbnail image that should be used
+                            for *this* attraction
+                        tabTitle:
+                          type: string
+                          description: >-
+                            **title** for the tab on which this attraction is
+                            displayed
+                        descriptionIntro:
+                          description: >-
+                            **natural-language introduction** for the
+                            description of *this* attraction
+                        descriptionText:
+                          type: string
+                          description: >-
+                            **natural-language description** of *this*
+                            attraction
+                        showReviews:
+                          type: boolean
+                          description: '**indicator**: `true` if review should be shown'
+                        attractionLatitude:
+                          type: number
+                          description: >-
+                            **latitude component** of *this* attraction's
+                            geolocation
+                        attractionLongitude:
+                          type: number
+                          description: >-
+                            **longitude component** of *this* attraction's
+                            geolocation
+                        attractionStreetAddress:
+                          type: string
+                          description: >-
+                            **street address component** of *this* attraction's
+                            address
+                        attractionCity:
+                          type: string
+                          description: '**city component** of *this* attraction''s address'
+                        attractionState:
+                          type: string
+                          description: '**state component** of *this* attraction''s address'
+                        keywordCount:
+                          type: integer
+                          description: '**number** of keywords for *this* result'
+                        overviewSummary:
+                          type: string
+                          description: >-
+                            **HTML-formatted overview summary** for *this*
+                            atraction
+                        pagePrimaryLanguage:
+                          type: string
+                          description: >-
+                            **language code** for the language that this content
+                            is primarily expressed in
+          examples:
+            '1':
+              $ref: ../components/examples/search-attractions-example.yaml

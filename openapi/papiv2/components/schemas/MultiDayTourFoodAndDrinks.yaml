@@ -1,0 +1,32 @@
+type: object
+properties:
+  type:
+    type: string
+    description: |
+      One of:
+        
+        - `"BREAKFAST"`,
+        - `"LUNCH"`,
+        - `"DINNER"`,
+        - `"SNACKS"`,
+        - `"BOTTLED_WATER"`,
+        - `"COFFEE_AND_TEA"`,
+        - `"SODA_POP"`,
+        - `"ALCOHOLIC_BEVERAGES"`,
+        - `"REFRESHMENTS"`'
+  typeDescription:
+    type: string
+    description: >
+      Description of the `type` element in this response
+
+      - **Note**: This field contains natural language suitable for display to
+      the user; content will be translated (if necessary) into the language
+      specified in the Accept-Language header parameter
+  description:
+    type: string
+    description: >
+      Description of the item
+
+      - **Note**: This field contains natural language suitable for display to
+      the user; content will be translated (if necessary) into the language
+      specified in the Accept-Language header parameter

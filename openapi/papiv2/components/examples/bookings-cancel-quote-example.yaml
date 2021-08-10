@@ -1,0 +1,9 @@
+summary: '/bookings/{product-code}/cancel-quote'
+value:
+  bookingId: BR-581567752
+  refundDetails:
+    itemPrice: 60.2
+    refundAmount: 60.2
+    refundPercentage: 100
+    currencyCode: AUD
+  status: CANCELLABLE

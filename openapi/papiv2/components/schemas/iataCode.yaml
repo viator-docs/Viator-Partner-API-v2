@@ -1,0 +1,14 @@
+type: string
+nullable: true
+description: >
+  **IATA airport code** for the destination
+
+  - a three-letter code defined by the International Air Transport Association
+  (IATA) used to identify many airports around the world
+
+  - the IATA code is also known as an 'IATA location identifier', 'IATA station
+  code' or simply a 'location identifier'
+
+  - the IATA code is <u>not available</u> for destinations with a destination
+  type of `'COUNTRY'` or `'REGION'`, as there could be more than one airport
+  within a destination

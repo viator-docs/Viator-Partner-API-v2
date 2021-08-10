@@ -1,0 +1,26 @@
+allOf:
+  - $ref: ./Location.yaml
+  - type: object
+    required:
+      - name
+    properties:
+      name:
+        type: string
+        pattern: '(?s).*[\S].*'
+        description: >
+          Name of this location
+
+          - **Note**: This field contains natural language suitable for display
+          to the user; content will be translated (if necessary) into the
+          language specified in the Accept-Language header parameter
+      unstructuredAddress:
+        type: string
+        description: >
+          Summary of the address of this location in the case that structured
+          information is unavailable
+
+            - **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter
+      address:
+        $ref: ./LocationAddress.yaml
+      center:
+        $ref: ./LocationCenter.yaml

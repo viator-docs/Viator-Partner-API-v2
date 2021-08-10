@@ -1,0 +1,7 @@
+type: string
+description: >
+  Machine-interpretable value specifying whether the pricing for this product is
+  calculated per individual or per group (unit); one of:  
+
+    - `"PER_PERSON"`
+    - `"UNIT"`

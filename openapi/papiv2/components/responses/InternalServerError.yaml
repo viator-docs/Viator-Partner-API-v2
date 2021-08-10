@@ -1,0 +1,26 @@
+description: Internal Server Error
+headers:
+  X-Unique-ID:
+    $ref: ../headers/XUniqueId.yaml
+content:
+  application/json:
+    schema:
+      allOf:
+        - $ref: ../schemas/ErrorResponse.yaml
+        - type: object
+          properties:
+            code:
+              description: |
+                Code for this error type
+
+                **Example**: `"INTERNAL_SERVER_ERROR"`
+            message:
+              description: |
+                Details of this error
+
+                **Example**: `"Internal server error"`
+        - type: object
+          example:
+            code: INTERNAL_SERVER_ERROR
+            message: Internal Server Error
+            timestamp: '2019-09-17T03:20:45.737043Z'

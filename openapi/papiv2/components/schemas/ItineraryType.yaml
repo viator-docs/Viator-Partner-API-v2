@@ -1,0 +1,10 @@
+type: string
+description: >
+  Machine-interpretable value specifying the type of itinerary available for
+  this product; one of:
+
+    - `"STANDARD"`
+    - `"ACTIVITY"`
+    - `"MULTI_DAY_TOUR"`
+    - `"HOP_ON_HOP_OFF"`
+    - `"UNSTRUCTURED"`

@@ -1,0 +1,23 @@
+type: object
+description: Category/subcategory tag for this product
+required:
+  - tagId
+properties:
+  tagId:
+    type: integer
+    description: Unique identifier for this tag
+    format: int32
+  parentTagIds:
+    type: array
+    description: Unique identifiers for parent tags of this tag
+    uniqueItems: true
+    items:
+      type: integer
+      format: int32
+  allNamesByLocale:
+    type: object
+    description: >-
+      Dictionary of language codes to the description of this tag in that
+      language
+    additionalProperties:
+      type: string

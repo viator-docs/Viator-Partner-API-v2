@@ -1,0 +1,23 @@
+type: object
+required:
+  - provider
+  - totalCount
+properties:
+  provider:
+    type: string
+    description: |
+      Provider for this set of reviews; one of:
+      - `"VIATOR"`'
+  reviewCounts:
+    type: array
+    description: Breakdown of number of reviews per rating for reviews sourced from this provider
+    items:
+      $ref: './ProductReviewsSummaryCount.yaml'
+  totalCount:
+    type: integer
+    format: int64
+    description: Total number of reviews for this product sourced from this provider
+  averageRating:
+    description: Average rating across reviews for this product sourced from this provider
+    type: number
+    format: float

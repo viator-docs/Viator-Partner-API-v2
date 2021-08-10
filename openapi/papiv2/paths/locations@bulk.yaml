@@ -1,0 +1,58 @@
+post:
+  tags:
+    - Auxiliary
+  summary: /locations/bulk
+  description: >
+    Get full location details for the requested location references
+
+
+    **Note**: If no response is received for a given location reference, this
+    means that the location was removed from our database and the associated
+    product has not yet been updated with a replacement location. If this
+    occurs, please disregard the removed location reference.
+
+
+    (Response sample generated on: 2020-08-25)
+  operationId: locationsBulk
+  requestBody:
+    content:
+      application/json;version=2.0:
+        schema:
+          $ref: ../components/schemas/BulkLocationReferencesRequest.yaml
+        example:
+          locations:
+            - LOC-f698f2a1-a53a-46bb-8708-3d45bf740f59
+            - LOC-9e88ac35-2e2c-4ecc-af8d-10b76770785f
+            - LOC-453b3cd4-4afa-414d-a8d8-bedb458d73fe
+            - CONTACT_SUPPLIER_LATER
+            - MEET_AT_DEPARTURE_POINT
+  parameters:
+    - $ref: ../components/parameters/acceptLanguage.yaml
+    - $ref: ../components/parameters/accept.yaml
+  responses:
+    '200':
+      description: Success
+      headers:
+        X-Unique-ID:
+          $ref: ../components/headers/XUniqueId.yaml
+      content:
+        application/json;version=2.0:
+          schema:
+            $ref: ../components/schemas/LocationsResponse.yaml
+          examples:
+            '1':
+              $ref: ../components/examples/locations-bulk-example.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '404':
+      $ref: ../components/responses/NotFound.yaml
+    '429':
+      $ref: ../components/responses/TooManyRequests.yaml
+    '500':
+      $ref: ../components/responses/InternalServerError.yaml
+    '503':
+      $ref: ../components/responses/ServiceUnavailable.yaml

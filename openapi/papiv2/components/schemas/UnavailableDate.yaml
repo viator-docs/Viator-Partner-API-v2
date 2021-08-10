@@ -1,0 +1,14 @@
+type: object
+properties:
+  date:
+    type: string
+    format: date
+    description: Date on which the product is unavailable
+  reason:
+    type: string
+    description: >
+      Machine-interpretable reason code indicating why this bookable item is
+      unavailable on this date; one of:
+
+        - `"NOT_OPERATING"` - product is not operating on this date
+        - `"SOLD_OUT"` - this option is unavailable because it has sold out

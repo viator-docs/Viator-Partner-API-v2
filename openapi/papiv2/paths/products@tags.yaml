@@ -1,0 +1,48 @@
+get:
+  tags:
+    - Products
+  summary: /products/tags
+  operationId: productsTags
+  description: >
+    Get details for all tags (includes all languages/localizations)
+
+
+    **Note**: If no response is received for a given tag reference, this means
+    that the tag was removed from our database and the associated product has
+    not yet been updated with a replacement tag. If this occurs, please
+    disregard the removed tag.
+
+
+    - **Note**: the example has been truncated to five entries
+
+
+    (Response sample generated on: 2020-08-25)
+  parameters:
+    - $ref: ../components/parameters/accept.yaml
+  responses:
+    '200':
+      description: Success
+      headers:
+        X-Unique-ID:
+          $ref: ../components/headers/XUniqueId.yaml
+      content:
+        application/json;version=2.0:
+          schema:
+            $ref: ../components/schemas/TagsResponse.yaml
+          examples:
+            '1':
+              $ref: ../components/examples/products-tags-example.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '404':
+      $ref: ../components/responses/NotFound.yaml
+    '429':
+      $ref: ../components/responses/TooManyRequests.yaml
+    '500':
+      $ref: ../components/responses/InternalServerError.yaml
+    '503':
+      $ref: ../components/responses/ServiceUnavailable.yaml

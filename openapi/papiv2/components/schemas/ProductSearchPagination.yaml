@@ -1,0 +1,14 @@
+type: object
+description: Pagination details specifying which search results to return based on start position and item count.
+properties:
+  start:
+    type: integer
+    minimum: 1
+    default: 1
+    description: Position of first filtered and ordered search result to be included in the response (1-based).
+  count:
+    type: integer
+    minimum: 1
+    default: 10
+    maximum: 50
+    description: Number of filtered and ordered search results to be returned in the response.

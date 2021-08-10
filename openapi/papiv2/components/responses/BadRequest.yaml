@@ -1,0 +1,26 @@
+description: Bad Request
+headers:
+  X-Unique-ID:
+    $ref: ../headers/XUniqueId.yaml
+content:
+  application/json:
+    schema:
+      allOf:
+        - $ref: ../schemas/ErrorResponse.yaml
+        - type: object
+          properties:
+            code:
+              description: |
+                Code for this error type
+
+                **Example**: `"BAD_REQUEST"`
+            message:
+              description: |
+                Details of this error
+
+                **Example**: `"Invalid request"`
+        - type: object
+          example:
+            code: BAD_REQUEST
+            message: Invalid request
+            timestamp: '2019-09-17T03:20:45.737043Z'

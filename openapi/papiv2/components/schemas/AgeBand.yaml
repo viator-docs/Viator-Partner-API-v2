@@ -1,0 +1,17 @@
+type: object
+description: Age range categories for this product's ticketing scheme
+properties:
+  ageBand:
+    $ref: ./AgeBandType.yaml
+  startAge:
+    type: integer
+    description: Lower limit (inclusive) of the age range defined by this age band
+  endAge:
+    type: integer
+    description: Upper limit (inclusive) of the age range defined by this age band
+  minTravelersPerBooking:
+    type: integer
+    description: Minimum number of travelers in this age band required to book the product
+  maxTravelersPerBooking:
+    type: integer
+    description: Maximum Number of travelers in this age band allowed to book the product

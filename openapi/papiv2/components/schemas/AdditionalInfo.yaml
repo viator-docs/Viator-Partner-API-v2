@@ -1,0 +1,59 @@
+type: object
+description: >-
+  An additional information fact to communicate to travelers regarding this
+  product
+required:
+  - type
+properties:
+  type:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: >
+      Machine-interpretable value encoding the type/category of additional
+      information fact; one of (but not limited to):
+
+        - `"OTHER"`
+        - `"WHEELCHAIR_ACCESSIBLE"`
+        - `"NOT_WHEELCHAIR_ACCESSIBLE"`
+        - `"STROLLER_ACCESSIBLE"`
+        - `"PETS_WELCOME"`
+        - `"PUBLIC_TRANSPORTATION_NEARBY"`
+        - `"INFANTS_MUST_SIT_ON_LAPS"`
+        - `"INFANT_SEATS_AVAILABLE"`
+        - `"TRANSPORTATION_WHEELCHAIR_ACCESSIBLE"`
+        - `"SURFACES_WHEELCHAIR_ACCESSIBLE"`
+        - `"NO_BACK_PROBLEMS"`
+        - `"NO_PREGNANT"`
+        - `"NO_HEART_PROBLEMS"`
+        - `"OTHER_HEALTH"`
+        - `"PHYSICAL_EASY"`
+        - `"PHYSICAL_MEDIUM"`
+        - `"PHYSICAL_HARD"`
+        
+      **Additional COVID-19 safety information:**
+
+        - `"SAFETY_OTHER"`
+        - `"SAFETY_FACE_MASKS_REQUIRED_FOR_TRAVELERS_IN_PUBLIC_AREAS"`
+        - `"SAFETY_FACE_MASKS_REQUIRED_FOR_GUIDES_IN_PUBLIC_AREAS"`
+        - `"SAFETY_FACE_MASKS_PROVIDED_FOR_TRAVELERS"`
+        - `"SAFETY_HAND_SANITIZER_AVAILABLE_TO_TRAVELERS_AND_STAFF"`
+        - `"SAFETY_SOCIAL_DISTANCING_ENFORCED_THROUGHOUT_EXPERIENCE"`
+        - `"SAFETY_REGULARLY_SANITIZED_HIGH_TRAFFIC_AREAS"`
+        - `"SAFETY_GEAR_EQUIPMENT_SANITIZED_BETWEEN_USE"`
+        - `"SAFETY_TRANSPORTATION_VEHICLES_REGULARLY_SANITIZED"`
+        - `"SAFETY_GUIDES_REQUIRED_TO_REGULARLY_WASH_HANDS"`
+        - `"SAFETY_REGULAR_TEMPERATURE_CHECKS_FOR_STAFF"`
+        - `"SAFETY_TEMPERATURE_CHECKS_FOR_TRAVELERS_UPON_ARRIVAL"`
+        - `"SAFETY_PAID_STAY_AT_HOME_POLICY_FOR_STAFF_WITH_SYMPTOMS"`
+        - `"SAFETY_CONTACTLESS_PAYMENTS_FOR_GRATUITIES_AND_ADD_ONS"`
+  description:
+    type: string
+    description: >
+      Description of this additional information fact
+
+      - **Example**: "Operates in all weather conditions (with the exception of
+      extreme weather conditions such as an electrical storm)"
+
+      - **Note**: This field contains natural language suitable for display to
+      the user; content will be translated (if necessary) into the language
+      specified in the Accept-Language header parameter

@@ -1,0 +1,45 @@
+post:
+  tags:
+    - Availability
+  summary: /availability/schedules/bulk
+  description: |
+    Get availability details for all product options of all requested products
+
+    (Response sample generated on: 2021-03-12)
+  operationId: availabilitySchedulesBulk
+  parameters:
+    - $ref: ../components/parameters/accept.yaml
+  requestBody:
+    content:
+      application/json;version=2.0:
+        schema:
+          $ref: ../components/schemas/BulkAvailabilityScheduleRequest.yaml
+        example:
+          productCodes:
+            - 265910P1
+            - 5010SYDNEY
+  responses:
+    '200':
+      description: Success
+      headers:
+        X-Unique-ID:
+          $ref: ../components/headers/XUniqueId.yaml
+      content:
+        application/json;version=2.0:
+          schema:
+            $ref: ../components/schemas/BulkAvailabilityScheduleResponse.yaml
+          examples:
+            '1':
+              $ref: ../components/examples/availability-schedules-bulk-example.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '429':
+      $ref: ../components/responses/TooManyRequests.yaml
+    '500':
+      $ref: ../components/responses/InternalServerError.yaml
+    '503':
+      $ref: ../components/responses/ServiceUnavailable.yaml

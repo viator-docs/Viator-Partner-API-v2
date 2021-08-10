@@ -1,0 +1,3 @@
+type: boolean
+description: >-
+  **indicator**: `true` if the product is 'on sale' and a discount has been applied to the price. When a product is on sale, the `price` and `priceFormatted` fields give the discounted price, `rrp` and `rrpFormatted` give the original price, and `savingAmount`, `savingAmountFormated` give the difference between the discount and original prices.

@@ -1,0 +1,17 @@
+summary: /support/customercare
+value:
+  errorReference: null
+  data:
+    url: >-
+      "http://www.viator.com/customer-care?eap=brand-subbrand-16721&aid=vba16721en
+  dateStamp: '2020-04-21T17:05:27+0000'
+  errorType: null
+  errorCodes: []
+  errorMessage: null
+  errorName: null
+  extraInfo: {}
+  extraObject: null
+  success: true
+  totalCount: 1
+  errorMessageText: null
+  vmid: '331002'

@@ -1,0 +1,52 @@
+post:
+  tags:
+    - Auxiliary
+  description: |
+    Retrieves and filters reviews <u>for a **single** product</u>
+  operationId: reviewsProduct
+  summary: '/reviews/product'
+  parameters:
+    - $ref: ../components/parameters/acceptLanguage.yaml
+    - $ref: ../components/parameters/accept.yaml
+  requestBody:
+    content:
+      application/json;version=2.0:
+        schema:
+          $ref: ../components/schemas/ProductReviewsRequest.yaml
+        example:
+          {
+              "productCode": "5010SYDNEY",
+              "count": 100,
+              "start": 1,
+              "showMachineTranslated":true,
+              "reviewsForNonPrimaryLocale":true,
+              "ratings":[1,2,3,4,5],
+              "sortBy":"MOST_RECENT_PER_LOCALE"
+          }
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json;version=2.0:
+          schema:
+            $ref: ../components/schemas/ProductReviewsResponse.yaml
+          examples:
+            1:
+              $ref: ../components/examples/products-reviews-example.yaml
+
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '404':
+      $ref: ../components/responses/NotFound.yaml
+    '406':
+      $ref: ../components/responses/NotAcceptable.yaml
+    '429':
+      $ref: ../components/responses/TooManyRequests.yaml
+    '500':
+      $ref: ../components/responses/InternalServerError.yaml
+    '503':
+      $ref: ../components/responses/ServiceUnavailable.yaml

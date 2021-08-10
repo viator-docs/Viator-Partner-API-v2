@@ -1,0 +1,52 @@
+type: object
+required:
+  - productCode
+  - start
+  - count
+properties:
+  productCode:
+    type: string
+    description: Retrieve reviews for the product identified by this product code
+  count:
+    type: integer
+    format: int32
+    description: Number of reviews to be returned in the response; used for pagination
+  start:
+    type: integer
+    format: int32
+    description: Position of first review to be returned in the response; used for pagination
+  provider:
+    type: string
+    description: |
+      Limit the reviews returned in the response to those associated with this provider; one of:
+
+      - `"VIATOR"`
+
+  sortBy:
+    type: string
+    description: |
+      One of:
+
+      - `"HIGHEST_RATING_PER_LOCALE"` – sort by rating (descending) *for each locale*
+      - `"MOST_RECENT_PER_LOCALE"` – sort by publication date (descending) *for each locale*
+      - `"MOST_HELPFUL_PER_LOCALE"` – sort by the number of 'helpful' votes (descending) *for each locale*
+      - `"HIGHEST_RATING"` –  sort by rating (descending) *across all locales*
+      - `"MOST_RECENT"` – sort by publication date (descending) *across all locales*
+      - `"MOST_HELPFUL"` – sort by the number of 'helpful' votes (descending) *across all locales*
+
+      If this element is omitted, the default sort option is `"MOST_RECENT"`
+  reviewsForNonPrimaryLocale:
+    type: boolean
+    description: Set to `true` to include reviews submitted by users from locales that are not the primary locale as given in the Accept-Language header parameter.
+  showMachineTranslated:
+    type: boolean
+    description: Set to `true` to include machine-translated reviews.
+  ratings:
+    type: array
+    description: |
+      Only include reviews with these ratings
+
+      **Example**: `[3,4,5]` to receive reviews with a rating of 3 or above
+    items:
+      type: integer
+      format: int32

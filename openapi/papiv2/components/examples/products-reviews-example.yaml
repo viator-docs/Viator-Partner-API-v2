@@ -1,0 +1,590 @@
+summary: /products/reviews
+value: {
+    "reviews": [
+        {
+            "reviewReference": "REV-7GMRfrA79CGhRAmjwU+4lIXU/a48chrbfdax19evxL8=",
+            "language": "en",
+            "publishedDate": "2021-01-02T11:17:12Z",
+            "userName": "Michele_H",
+            "rating": 5,
+            "text": "Loved the fact that I was outdoors while riding on the upstairs section of the bus. Especially important during Covid to have the fresh air in my face. ",
+            "title": "Loved Being Outdoors While Tiding The Bus ",
+            "machineTranslated": false,
+            "provider": "VIATOR",
+            "helpfulVotes": 0
+        },
+        {
+            "reviewReference": "REV-ytLmIiqg7xWUqJIyCX5x2IXU/a48chrbfdax19evxL8=",
+            "language": "en",
+            "publishedDate": "2020-12-17T18:31:11Z",
+            "userName": "Susanna_L",
+            "rating": 3,
+            "text": "The staff are fantastic but due to COVID the service is only running from 10.00 am to 3.00 pm so I don't think it is worth booking the Hop on Hop off as a way to enjoy Sydney.  The train and ferry system in Sydney is amazing so it is better to simply top up an Opal card and go.",
+            "title": "Not good value with COVID restrictions",
+            "machineTranslated": false,
+            "provider": "VIATOR",
+            "helpfulVotes": 3
+        },
+        {
+            "reviewReference": "REV-fcMOcpu9m1A///1mQytKvIXU/a48chrbfdax19evxL8=",
+            "language": "en",
+            "publishedDate": "2020-12-10T15:30:35Z",
+            "userName": "Michele_H",
+            "rating": 5,
+            "text": "It was a fantastic trip. The driver was friendly, kind and helpful and went out of his way to ensure I got the return connection from Bondi to the Opera House so I could get back to my hotel. ",
+            "title": "A Must Do Trip Around Sydney!! ",
+            "machineTranslated": false,
+            "provider": "VIATOR",
+            "helpfulVotes": 0,
+            "photosInfo": [
+                {
+                    "photoVersions": [
+                        {
+                            "height": 0,
+                            "width": 0,
+                            "url": "https://hare-dynamic-image-cutter.media.tamg.cloud/media/photo-o/1c/69/c5/02/caption.jpg?w=100&h=100&s=1"
+                        },
+                        {
+                            "height": 50,
+                            "width": 50,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-t/1c/69/c5/02/caption.jpg"
+                        },
+                        {
+                            "height": 150,
+                            "width": 150,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-l/1c/69/c5/02/caption.jpg"
+                        },
+                        {
+                            "height": 205,
+                            "width": 154,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-f/1c/69/c5/02/caption.jpg"
+                        },
+                        {
+                            "height": 200,
+                            "width": 180,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-i/1c/69/c5/02/caption.jpg"
+                        },
+                        {
+                            "height": 450,
+                            "width": 338,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-s/1c/69/c5/02/caption.jpg"
+                        },
+                        {
+                            "height": 733,
+                            "width": 550,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-p/1c/69/c5/02/caption.jpg"
+                        },
+                        {
+                            "height": 1280,
+                            "width": 960,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-m/1280/1c/69/c5/02/caption.jpg"
+                        },
+                        {
+                            "height": 1365,
+                            "width": 1024,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-w/1c/69/c5/02/caption.jpg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "reviewReference": "REV-Q6yPvQx0JhE3xui8rRV/AIXU/a48chrbfdax19evxL8=",
+            "language": "en",
+            "publishedDate": "2020-09-02T05:51:57Z",
+            "userName": "Denise_H",
+            "rating": 5,
+            "text": "I am a local and have always wondered about the commentary. It was fantastic.  I would recommend it to anyone.",
+            "title": "Sydney hop on hop off",
+            "machineTranslated": false,
+            "provider": "VIATOR",
+            "helpfulVotes": 1
+        },
+        {
+            "reviewReference": "REV-kEBAXEIoQIFpcgFvYmHv5YXU/a48chrbfdax19evxL8=",
+            "language": "en",
+            "publishedDate": "2020-08-12T22:20:31Z",
+            "userName": "Bertha_B",
+            "rating": 5,
+            "text": "This experience is one memorable one for me and husband. Regardless of the weather we enjoyed the tour. Listening to the history and seeing it at the time was so beautiful. I highly recommend the Hop-on-Hop-off bus if you want to know Sydney CDB well and the History. i will take my kids and Family back there at anytime.\n\nRegards\nBex & Fred",
+            "title": "MEMORABLE EXPERIENCE",
+            "machineTranslated": false,
+            "provider": "VIATOR",
+            "helpfulVotes": 2
+        },
+        {
+            "reviewReference": "REV-BA/XoUwy8zr88uv6QaX4a4XU/a48chrbfdax19evxL8=",
+            "language": "en",
+            "publishedDate": "2020-07-26T18:18:03Z",
+            "userName": "Peter_Vassallo",
+            "rating": 5,
+            "text": "We travelled by train from Penrith to Sydney to do some sight seeing  . Travelling by bus we covered a lot of ground and the commentary informed us about the many sights . My wife Marina and I Highly Recommend Hop on Hop off Bus Tours .",
+            "title": "Time Out in the City .",
+            "machineTranslated": false,
+            "provider": "VIATOR",
+            "helpfulVotes": 1
+        },
+        {
+            "reviewReference": "REV-5CoEYhO9Rr28J4y9YflxxoXU/a48chrbfdax19evxL8=",
+            "language": "en",
+            "publishedDate": "2020-07-21T20:56:43Z",
+            "userName": "Jenny_V",
+            "rating": 5,
+            "text": "Great time. Even the 24 year old, who lives in Sydney, enjoyed the commentary. We have been twice and there is new information each time....Great for overseas travellers..A snapshot of Sydney for a small cost",
+            "title": "Hop on and off...best idea ever",
+            "machineTranslated": false,
+            "provider": "VIATOR",
+            "helpfulVotes": 1
+        },
+        {
+            "reviewReference": "REV-5mbnBt46KnDj65BE9OeGJYXU/a48chrbfdax19evxL8=",
+            "language": "en",
+            "publishedDate": "2020-04-03T14:37:55Z",
+            "userName": "Graeme_I",
+            "rating": 5,
+            "text": "Great time seeing the sights. The city is in two areas, but we didn’t have time to tour both. Maybe next year ? ",
+            "title": "Two areas ! ",
+            "machineTranslated": false,
+            "provider": "VIATOR",
+            "helpfulVotes": 1
+        },
+        {
+            "reviewReference": "REV-ETzFR7ewdXZF8/uBQFTPc4XU/a48chrbfdax19evxL8=",
+            "language": "en",
+            "publishedDate": "2020-03-23T12:18:47Z",
+            "userName": "BillB",
+            "rating": 5,
+            "text": "Efficient and reasonable priced. Buses came on time and always had space. Would definitely recommend.",
+            "title": "Satisfied in Sydney ",
+            "machineTranslated": false,
+            "provider": "VIATOR",
+            "helpfulVotes": 1
+        },
+        {
+            "reviewReference": "REV-FV2HOw36EfE7SxG8DQnpJIXU/a48chrbfdax19evxL8=",
+            "language": "en",
+            "publishedDate": "2020-03-13T11:25:41Z",
+            "userName": "Ronald_L",
+            "rating": 5,
+            "text": "Let the bus do the driving and get to see the sights. Clean and friendly. Loved the headsets to listen to what we were driving by and seeing.",
+            "title": "Beautiful Sydney ",
+            "machineTranslated": false,
+            "provider": "VIATOR",
+            "helpfulVotes": 1
+        },
+        {
+            "reviewReference": "REV-BX4ywxwrj5zrZEMAuFu+loXU/a48chrbfdax19evxL8=",
+            "language": "en",
+            "publishedDate": "2020-03-12T21:05:56Z",
+            "userName": "William_B",
+            "rating": 5,
+            "text": "Excellent tour two routes saw not only major attractions darling harbor opera house the Eye but also Bondi beach and a number of local towns\nBoat tour was great went to Manly and Watson cove both grea places for a stroll and drinks and food on the waterfront \nWell worth the price",
+            "title": "Great city and harbor tour",
+            "machineTranslated": false,
+            "provider": "VIATOR",
+            "helpfulVotes": 0
+        },
+        {
+            "reviewReference": "REV-MhYSE8h+hwx1JpoFCaF1y4XU/a48chrbfdax19evxL8=",
+            "language": "en",
+            "publishedDate": "2020-03-09T23:44:57Z",
+            "userName": "Keithy",
+            "rating": 3,
+            "text": "Very slow, I know Sydney is a big city but there are so many traffic lights the bus gets stopped at and some of its actual stops it takes ages to get passengers on and off and when you are exposed on the upper deck in 36 degrees plus temperatures it becomes very unpleasant. One bus we were on vibrated terribly when stopped and on one the downstairs air conditioning wasn’t working so had to change busses. Some pretty naff music between commentary’s.but at least we seen some of the sights of Sydney on the whole probably worth it",
+            "title": "Slow Sydney bus tour",
+            "machineTranslated": false,
+            "provider": "VIATOR",
+            "helpfulVotes": 0
+        },
+        {
+            "reviewReference": "REV-fMbcah7C2VOfy1XQFjbDnoXU/a48chrbfdax19evxL8=",
+            "language": "en",
+            "publishedDate": "2020-03-08T22:24:49Z",
+            "userName": "Barbara_S",
+            "rating": 4,
+            "text": "Very inclusive. Really glad we got both the red and blue bus on our ticket. Really enjoyed Bondi Beach",
+            "title": "2020 Trippers",
+            "machineTranslated": false,
+            "provider": "VIATOR",
+            "helpfulVotes": 0
+        },
+        {
+            "reviewReference": "REV-b06u+0bKQeNJS9SAFbCtNYXU/a48chrbfdax19evxL8=",
+            "language": "en",
+            "publishedDate": "2020-03-06T22:32:16Z",
+            "userName": "Melvin_B",
+            "rating": 4,
+            "text": "The actual hop on hop off bus tour was very good we got to visit loads of sights. We purchased the Deluxe ticket with 4 attractions and went to them all in one day because of the rain. The only thing was I purchased a Deluxe ticket which was buy 2 days and get 3rd day free but when we tried to go on the bus on the 3 rd day we was told our ticket had expired and we had to pay an additional 10$.  ",
+            "title": "Hop on Hop off",
+            "machineTranslated": false,
+            "provider": "VIATOR",
+            "helpfulVotes": 0
+        },
+        {
+            "reviewReference": "REV-32MWc9U0c6OHfjakSmZcGYXU/a48chrbfdax19evxL8=",
+            "language": "en",
+            "publishedDate": "2020-03-05T22:14:54Z",
+            "userName": "ProfessorMelody",
+            "rating": 4,
+            "text": "Served its purpose of getting to see a lot of the city. We took it purposefully to go to Bondi Beach. Unfortunately weather was a but cool but we made the best of it. Sit on top for best views.",
+            "title": "Good transport",
+            "machineTranslated": false,
+            "provider": "VIATOR",
+            "helpfulVotes": 0
+        },
+        {
+            "reviewReference": "REV-M9Ksf45s4emPQnjnc1kuqIXU/a48chrbfdax19evxL8=",
+            "language": "en",
+            "publishedDate": "2020-03-04T17:23:34Z",
+            "userName": "Nettie-Mara",
+            "rating": 2,
+            "text": "The trip was very long, but you did to see many great sights in Sydney. The Zoo stop was our extra sight. It was really not a \"real\" Zoo but one of several events in a strip mall. Our ticket expired there and the driver said it would be $5.00 more each to finish out trip. My payment slip shows $10.00 but my credit cards shows I was charged $59.00!  That's a BIG problem.",
+            "title": "Sydney Sights",
+            "machineTranslated": false,
+            "provider": "VIATOR",
+            "helpfulVotes": 0
+        },
+        {
+            "reviewReference": "REV-lZ22U8ipGy1NxA1R+FTm24XU/a48chrbfdax19evxL8=",
+            "language": "en",
+            "publishedDate": "2020-02-28T04:23:37Z",
+            "userName": "Michelle_O",
+            "rating": 5,
+            "text": "Great value, great service and an excellent way to see the Sydney sights. Would definitely recommend to visitors.",
+            "title": "Excellent experience ",
+            "machineTranslated": false,
+            "provider": "VIATOR",
+            "helpfulVotes": 0
+        },
+        {
+            "reviewReference": "REV-0912zPYQk/ljwgedbeKuWoXU/a48chrbfdax19evxL8=",
+            "language": "en",
+            "publishedDate": "2020-02-28T00:00:01Z",
+            "userName": "Ken_B",
+            "rating": 2,
+            "text": "2/25/20 in Sydney.  Had seen the concept elsewhere and it seemed to be a good way to see the city.  Waited 45 minutes for a bus to appear.  Due to overwhelming volume they put an extra bus on the route so we actually were able to get on.  Didn’t dare “hop off” because of the volume of people waiting at each stop (afraid we would not be able to get back on).\n\nThe commentary was informative, but the large number of riders (and the small number of busses) broke the system.  This was a pure miss.  Probably won’t try to use it in other locations in the future.",
+            "title": "“Missed it by that much...”",
+            "machineTranslated": false,
+            "provider": "VIATOR",
+            "helpfulVotes": 0
+        },
+        {
+            "reviewReference": "REV-wiu8sr4xzv6Ih7LXnI5o3oXU/a48chrbfdax19evxL8=",
+            "language": "en",
+            "publishedDate": "2018-03-28T09:27:33Z",
+            "userName": "Sheila T",
+            "rating": 5,
+            "text": "<p>Sydney owes my NOTHING!!! One of the most beautiful places I've been. And I've been around the world.</p>",
+            "title": "Sydney owes my NOTHING!!! One of the...",
+            "machineTranslated": false,
+            "provider": "VIATOR",
+            "helpfulVotes": 0,
+            "photosInfo": [
+                {
+                    "photoVersions": [
+                        {
+                            "height": 0,
+                            "width": 0,
+                            "url": "https://hare-dynamic-image-cutter.media.tamg.cloud/media/photo-o/1c/d9/84/ff/caption.jpg?w=100&h=100&s=1"
+                        },
+                        {
+                            "height": 50,
+                            "width": 50,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-t/1c/d9/84/ff/caption.jpg"
+                        },
+                        {
+                            "height": 150,
+                            "width": 150,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-l/1c/d9/84/ff/caption.jpg"
+                        },
+                        {
+                            "height": 200,
+                            "width": 180,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-i/1c/d9/84/ff/caption.jpg"
+                        },
+                        {
+                            "height": 188,
+                            "width": 250,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-f/1c/d9/84/ff/caption.jpg"
+                        },
+                        {
+                            "height": 412,
+                            "width": 550,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-s/1c/d9/84/ff/caption.jpg"
+                        },
+                        {
+                            "height": 768,
+                            "width": 1024,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-w/1c/d9/84/ff/caption.jpg"
+                        },
+                        {
+                            "height": 960,
+                            "width": 1280,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-m/1280/1c/d9/84/ff/caption.jpg"
+                        }
+                    ]
+                },
+                {
+                    "photoVersions": [
+                        {
+                            "height": 0,
+                            "width": 0,
+                            "url": "https://hare-dynamic-image-cutter.media.tamg.cloud/media/photo-o/1c/d9/85/02/caption.jpg?w=100&h=100&s=1"
+                        },
+                        {
+                            "height": 50,
+                            "width": 50,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-t/1c/d9/85/02/caption.jpg"
+                        },
+                        {
+                            "height": 150,
+                            "width": 150,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-l/1c/d9/85/02/caption.jpg"
+                        },
+                        {
+                            "height": 205,
+                            "width": 154,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-f/1c/d9/85/02/caption.jpg"
+                        },
+                        {
+                            "height": 200,
+                            "width": 180,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-i/1c/d9/85/02/caption.jpg"
+                        },
+                        {
+                            "height": 450,
+                            "width": 338,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-s/1c/d9/85/02/caption.jpg"
+                        },
+                        {
+                            "height": 733,
+                            "width": 550,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-p/1c/d9/85/02/caption.jpg"
+                        },
+                        {
+                            "height": 1280,
+                            "width": 960,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-m/1280/1c/d9/85/02/caption.jpg"
+                        },
+                        {
+                            "height": 1365,
+                            "width": 1024,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-w/1c/d9/85/02/caption.jpg"
+                        }
+                    ]
+                },
+                {
+                    "photoVersions": [
+                        {
+                            "height": 0,
+                            "width": 0,
+                            "url": "https://hare-dynamic-image-cutter.media.tamg.cloud/media/photo-o/1c/d9/85/01/caption.jpg?w=100&h=100&s=1"
+                        },
+                        {
+                            "height": 50,
+                            "width": 50,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-t/1c/d9/85/01/caption.jpg"
+                        },
+                        {
+                            "height": 150,
+                            "width": 150,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-l/1c/d9/85/01/caption.jpg"
+                        },
+                        {
+                            "height": 200,
+                            "width": 180,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-i/1c/d9/85/01/caption.jpg"
+                        },
+                        {
+                            "height": 205,
+                            "width": 244,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-f/1c/d9/85/01/caption.jpg"
+                        },
+                        {
+                            "height": 450,
+                            "width": 536,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-s/1c/d9/85/01/caption.jpg"
+                        },
+                        {
+                            "height": 859,
+                            "width": 1024,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-w/1c/d9/85/01/caption.jpg"
+                        },
+                        {
+                            "height": 906,
+                            "width": 1080,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-o/1c/d9/85/01/caption.jpg"
+                        }
+                    ]
+                },
+                {
+                    "photoVersions": [
+                        {
+                            "height": 0,
+                            "width": 0,
+                            "url": "https://hare-dynamic-image-cutter.media.tamg.cloud/media/photo-o/1c/d9/85/00/caption.jpg?w=100&h=100&s=1"
+                        },
+                        {
+                            "height": 50,
+                            "width": 50,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-t/1c/d9/85/00/caption.jpg"
+                        },
+                        {
+                            "height": 150,
+                            "width": 150,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-l/1c/d9/85/00/caption.jpg"
+                        },
+                        {
+                            "height": 200,
+                            "width": 180,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-i/1c/d9/85/00/caption.jpg"
+                        },
+                        {
+                            "height": 188,
+                            "width": 250,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-f/1c/d9/85/00/caption.jpg"
+                        },
+                        {
+                            "height": 412,
+                            "width": 550,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-s/1c/d9/85/00/caption.jpg"
+                        },
+                        {
+                            "height": 768,
+                            "width": 1024,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-w/1c/d9/85/00/caption.jpg"
+                        },
+                        {
+                            "height": 960,
+                            "width": 1280,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-m/1280/1c/d9/85/00/caption.jpg"
+                        }
+                    ]
+                },
+                {
+                    "photoVersions": [
+                        {
+                            "height": 0,
+                            "width": 0,
+                            "url": "https://hare-dynamic-image-cutter.media.tamg.cloud/media/photo-o/1c/d9/85/03/caption.jpg?w=100&h=100&s=1"
+                        },
+                        {
+                            "height": 50,
+                            "width": 50,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-t/1c/d9/85/03/caption.jpg"
+                        },
+                        {
+                            "height": 150,
+                            "width": 150,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-l/1c/d9/85/03/caption.jpg"
+                        },
+                        {
+                            "height": 205,
+                            "width": 154,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-f/1c/d9/85/03/caption.jpg"
+                        },
+                        {
+                            "height": 200,
+                            "width": 180,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-i/1c/d9/85/03/caption.jpg"
+                        },
+                        {
+                            "height": 450,
+                            "width": 338,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-s/1c/d9/85/03/caption.jpg"
+                        },
+                        {
+                            "height": 733,
+                            "width": 550,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-p/1c/d9/85/03/caption.jpg"
+                        },
+                        {
+                            "height": 1280,
+                            "width": 960,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-m/1280/1c/d9/85/03/caption.jpg"
+                        },
+                        {
+                            "height": 1365,
+                            "width": 1024,
+                            "url": "https://hare-media-cdn.tripadvisor.com/media/photo-w/1c/d9/85/03/caption.jpg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "reviewReference": "REV-iIz5tpQaoSMv8Fmp+rMVvoXU/a48chrbfdax19evxL8=",
+            "language": "en",
+            "publishedDate": "2018-03-26T08:11:03Z",
+            "userName": "Nancy S",
+            "rating": 1,
+            "text": "<p>There were not buses. At one stop we waited almost 30 minutes and then the bus was so crowded we had to stand. We had bought our tickets in advance to be sure to have a place on the bus but when we got on they were still selling tickets. Never again.</p>",
+            "title": "There were not buses. At one stop we...",
+            "machineTranslated": false,
+            "provider": "VIATOR",
+            "helpfulVotes": 0
+        }
+    ],
+    "totalReviewsSummary": {
+        "sources": [
+            {
+                "provider": "VIATOR",
+                "reviewCounts": [
+                    {
+                        "rating": 1.0,
+                        "count": 36
+                    },
+                    {
+                        "rating": 2.0,
+                        "count": 100
+                    },
+                    {
+                        "rating": 3.0,
+                        "count": 169
+                    },
+                    {
+                        "rating": 4.0,
+                        "count": 390
+                    },
+                    {
+                        "rating": 5.0,
+                        "count": 578
+                    }
+                ],
+                "totalCount": 1273
+            }
+        ],
+        "reviewCountTotals": [
+            {
+                "rating": 1.0,
+                "count": 36
+            },
+            {
+                "rating": 2.0,
+                "count": 100
+            },
+            {
+                "rating": 3.0,
+                "count": 169
+            },
+            {
+                "rating": 4.0,
+                "count": 390
+            },
+            {
+                "rating": 5.0,
+                "count": 578
+            }
+        ],
+        "totalReviews": 1273
+    },
+    "filteredReviewsSummary": {
+        "sources": [
+            {
+                "provider": "VIATOR",
+                "totalCount": 1273
+            }
+        ],
+        "totalReviews": 1273
+    }
+}

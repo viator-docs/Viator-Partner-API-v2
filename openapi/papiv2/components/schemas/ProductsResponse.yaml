@@ -1,0 +1,14 @@
+type: object
+required:
+  - products
+properties:
+  products:
+    type: array
+    description: Products that fall within the search/filter criteria
+    items:
+      $ref: ./Product.yaml
+  nextCursor:
+    type: string
+    description: |
+      Pagination cursor pointing to the next page of results
+      - Example: `"MTU3NDA0NDczOQ=="`

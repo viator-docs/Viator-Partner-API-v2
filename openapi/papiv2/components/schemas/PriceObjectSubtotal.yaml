@@ -1,0 +1,10 @@
+type: object
+description: Components of this price
+required:
+  - recommendedRetailPrice
+  - partnerNetPrice
+properties:
+  recommendedRetailPrice:
+    $ref: ./RecommendedRetailPrice.yaml
+  partnerNetPrice:
+    $ref: ./PartnerNetPrice.yaml

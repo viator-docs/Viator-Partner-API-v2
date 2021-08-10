@@ -1,0 +1,31 @@
+type: object
+description: Traveler pick-up details for this product
+required:
+  - pickupOptionType
+  - allowCustomTravelerPickup
+properties:
+  pickupOptionType:
+    $ref: ./PickupOptionType.yaml
+  allowCustomTravelerPickup:
+    type: boolean
+    description: >
+      Specifies whether travelers can choose a custom pick-up or meeting
+      location for this product
+
+        - **Note**: If 'false', answer to `"PICKUP_POINT"` booking question in request to [/bookings/book](../bookingsBook), `unit` must be `"LOCATION_REFERENCE"` and not `"FREETEXT"`
+  locations:
+    type: array
+    description: Pick-up and meeting points
+    items:
+      $ref: ./PickupLocation.yaml
+  minutesBeforeDepartureTimeForPickup:
+    type: integer
+    description: >-
+      How long prior to the product departure time will traveler-pickup occur
+      (in minutes)
+  additionalInfo:
+    type: string
+    description: |
+      Description of additional information regarding traveler pick-up
+
+        - **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter

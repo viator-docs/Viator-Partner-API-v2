@@ -1,0 +1,13 @@
+type: object
+required:
+  - rating
+  - count
+properties:
+  rating:
+    type: number
+    description: This object refers to reviews with this star-rating
+    format: float
+  count:
+    type: integer
+    description: Number of reviews for this product with a star-rating of `rating`
+    format: int64

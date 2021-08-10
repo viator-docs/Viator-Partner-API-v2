@@ -1,0 +1,8 @@
+type: string
+description: >
+  Machine-interpretable string indicating the cancellation status of this
+  itinerary item:
+
+    - `"CANCELLABLE"` - this booking is available to be cancelled
+    - `"CANCELLED"` - this booking has already been cancelled
+    - `"NOT_CANCELLABLE"` - this booking cannot be cancelled (because the product's start time was in the past)

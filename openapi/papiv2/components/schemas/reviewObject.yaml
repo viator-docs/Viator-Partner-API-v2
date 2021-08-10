@@ -1,0 +1,57 @@
+description: '**object** containing a single user review'
+type: object
+properties:
+  sortOrder:
+    type: integer
+    description: '**sort order** for *this* review'
+  ownerName:
+    type: string
+    description: '**name** of the user that submitted *this* review'
+  ownerCountry:
+    type: string
+    description: '**country** in which the reviewer is located'
+    nullable: true
+  productTitle:
+    type: string
+    description: '**title** of the product that *this* review is about'
+  productUrlName:
+    type: string
+    description: '**URL-formatted title** of the product that *this* review is about'
+  ownerAvatarURL:
+    type: string
+    description: '**URL** of the reviewer''s avatar image'
+    nullable: true
+  sslSupported:
+    type: boolean
+    description: ignore (Viator only)
+  productCode:
+    type: string
+    description: >-
+      **product code** of the product that *this* review is about; e.g.,
+      `5010SYDNEY`
+  viatorNotes:
+    type: string
+    description: ignore (Viator only)
+  submissionDate:
+    type: string
+    description: '**date** that *this* review was submitted'
+  rating:
+    type: integer
+    description: '**rating** given by the reviewer'
+  review:
+    type: string
+    description: |
+      **HTML-formatted content** of the review
+      - may contain basic HTML mark-up - e.g., br, li, b, u, p, i, ul and ol
+  publishedDate:
+    type: string
+    description: '**date** that *this* review was published'
+  ownerId:
+    type: integer
+    description: '**unique numeric identifier** of the user that submitted *this* review'
+  viatorFeedback:
+    type: string
+    description: ignore (Viator only)
+  reviewId:
+    type: integer
+    description: '**unique numeric identifier** of *this* review'

@@ -1,0 +1,22 @@
+type: object
+required:
+  - pointOfInterestLocation
+  - passByWithoutStopping
+properties:
+  pointOfInterestLocation:
+    $ref: ./ItineraryPoi.yaml
+  duration:
+    $ref: ./ItineraryDuration.yaml
+  passByWithoutStopping:
+    type: boolean
+    description: >-
+      **True** if this product only 'passes by' this point of interest (i.e.,
+      travelers remain in the vehicle)
+  admissionIncluded:
+    $ref: ./AdmissionInclusionType.yaml
+  description:
+    type: string
+    description: |
+      Description of this itinerary item
+
+        - **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter"

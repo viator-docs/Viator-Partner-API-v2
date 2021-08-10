@@ -1,0 +1,4 @@
+type: string
+description: >
+  **currency-formatted suggested sell ('from') price** for
+  this product in the currency set in the `currencyCode` parameter

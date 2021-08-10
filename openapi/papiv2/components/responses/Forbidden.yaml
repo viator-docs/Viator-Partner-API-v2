@@ -1,0 +1,26 @@
+description: "Forbidden"
+headers:
+  X-Unique-ID:
+    $ref: ../headers/XUniqueId.yaml
+content:
+  application/json:
+    schema:
+      allOf:
+        - $ref: ../schemas/ErrorResponse.yaml
+        - type: object
+          properties:
+            code:
+              description: |
+                Code for this error type
+
+                **Example**: `"FORBIDDEN"`
+            message:
+              description: |
+                Details of this error
+
+                **Example**: `"Request is forbidden"`
+          example: {
+            "code": "FORBIDDEN",
+            "message": "Request is forbidden",
+            "timestamp": "2019-09-17T03:20:45.737043Z"
+          }

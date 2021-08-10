@@ -1,0 +1,44 @@
+type: object
+description: >-
+  Structured description of fees pertaining to cancellations during various time
+  windows
+required:
+  - dayRangeMin
+  - percentageRefundable
+properties:
+  dayRangeMin:
+    type: integer
+    description: >-
+      Number of days prior to the product start time (relative to the time zone
+      in which the product operates) that this policy window ends.
+  dayRangeMax:
+    type: integer
+    description: >-
+      Number of days prior to the tour start time (relative to the time zone in
+      which the product operates) that this policy window begins. When this
+      field is absent, it signifies negative infintity; i.e., the beginning of
+      time.
+  percentageRefundable:
+    type: integer
+    description: >-
+      Percentage of total price refundable if a booking for this product is
+      cancelled within the period defined by `dayRangeMin` and `dayRangeMax`
+  startTimestamp:
+    type: string
+    format: date-time
+    description: >
+      Timestamp (UTC) indicating the **beginning** of the period during which
+      this cancellation policy applies; e.g. `2019-09-17T03:20:45.737043Z`
+
+      - Note: this element will appear in the response from
+      [/bookings/book](../bookingsBook) but will **not** be present in
+      responses from /products/* endpoints
+  endTimestamp:
+    type: string
+    format: date-time
+    description: >
+      Timestamp (UTC) indicating the **end** of the period during which this
+      cancellation policy applies; e.g. `2019-09-17T03:20:45.737043Z`
+
+      - Note: this element will appear in the response from /bookings/book but
+      will **not** be present in responses from /products/* endpoints

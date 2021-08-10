@@ -1,0 +1,6 @@
+type: string
+description: |
+  Name of the location services provider, one of:
+
+    - `"TRIPADVISOR"` – location details will be provided in this response
+    - `"GOOGLE"` – in order to retrieve details for these locations, you will need to use [Google's Places API](https://cloud.google.com/maps-platform/places).

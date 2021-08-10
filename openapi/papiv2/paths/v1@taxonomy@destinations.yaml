@@ -1,0 +1,100 @@
+get:
+  tags:
+    - V1-endpoints
+  summary: /v1/taxonomy/destinations
+  operationId: v1TaxonomyDestinations
+  description: >
+    Get details of all destinations supported by this API
+
+    - <mark>**Note**: This endpoint uses conventions from V1 of this API. See
+    [V1 endpoints](../../../../papiv2/key-concepts/v1-endpoints) for further
+    information</mark>
+
+    - Retrieves all the country taxonomy/city nodes as a flat list
+
+    - Returns a complete list of Viator destinations, including destination
+    names and parent identifiers
+
+    - Used to provide navigation through drill down lists or combo boxes
+
+    - Use the data received from this endpoint to resolve the destination
+    identifier(s) in the `destinations[].ref` element in the [product content
+    response](../../../../papiv2/key-concepts/content-ingestion-endpoints)
+  parameters:
+    - $ref: ../components/parameters/acceptLanguage.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: ../components/schemas/basicErrorModel.yaml
+              - type: object
+                properties:
+                  data:
+                    type: array
+                    description: '**array** of destination objects'
+                    items:
+                      type: object
+                      properties:
+                        sortOrder:
+                          type: integer
+                          description: '**sort order** for this response'
+                        selectable:
+                          type: boolean
+                          description: ignore - (Viator only)
+                        destinationUrlName:
+                          type: string
+                          description: ignore - (Viator only)
+                        defaultCurrencyCode:
+                          description: >-
+                            **currency code** for the currency in which pricing
+                            is displayed
+                          type: string
+                        lookupId:
+                          description: >
+                            **hierarchy location specifier** for the destination
+                            that is a concatenation of all `parentId` and
+                            `destinationId` codes
+
+                            - e.g. `'8.77.673'` for Chicago
+
+                            - format: [top level `parentId`].[any additional
+                            `parentId`].[`destinationId`]
+                          type: string
+                        parentId:
+                          type: integer
+                          description: >-
+                            **unique numeric identifier** of the destination's
+                            parent destination
+                        timeZone:
+                          type: string
+                          description: '**time zone** of the destination'
+                        iataCode:
+                          $ref: ../components/schemas/iataCode.yaml
+                        destinationId:
+                          type: integer
+                          description: >
+                            **unique numeric identifier** of the destination
+
+                            - use this value as the `destId` input field for
+                            other Viator API services
+                        destinationType:
+                          $ref: ../components/schemas/destinationType.yaml
+                        destinationName:
+                          type: string
+                          description: '**natural-language name** of the destination'
+                        latitude:
+                          type: number
+                          description: >-
+                            **latitude component** of the destination's
+                            geolocation
+                        longitude:
+                          type: number
+                          description: >-
+                            **longitude component** of the destination's
+                            geolocation
+          examples:
+            '1':
+              $ref: ../components/examples/taxonomy-destinations-example.yaml

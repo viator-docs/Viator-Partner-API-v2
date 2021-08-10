@@ -1,0 +1,12 @@
+type: object
+properties:
+  bookingId:
+    type: string
+    description: |
+      Booking reference code for this booking
+
+        - **Note**: For bookings made with v1 of this API, this code corresponds to `data.itemSummaries[].itemId` (in the response from v1's [/booking/book](https://docs.viator.com/partner-api/merchant/technical/#tag/Booking-services/paths/~1booking~1book/post) endpoint) but prepended with `BR-`. For example, if the `itemId` is `580669678`, this field should be `BR-580669678`.
+  reason:
+    $ref: ./CancellationResultItemReason.yaml
+  status:
+    $ref: ./CancellationBookingStatus.yaml
