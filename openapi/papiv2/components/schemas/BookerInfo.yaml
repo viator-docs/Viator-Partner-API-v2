@@ -3,7 +3,15 @@ description: Name details for the person making this booking
 properties:
   firstName:
     type: string
-    description: First name of the person making this booking
+    description: >
+      First name (given name) of the person making this booking
+
+
+      * **Note**: Emojis are not supported in this field; therefore, please ensure that only ordinary natural-language characters are included.
   lastName:
     type: string
-    description: Surname of the person making this booking
+    description: >
+      Surname of the person making this booking
+
+
+      * **Note**: Emojis are not supported in this field; therefore, please ensure that only ordinary natural-language characters are included.

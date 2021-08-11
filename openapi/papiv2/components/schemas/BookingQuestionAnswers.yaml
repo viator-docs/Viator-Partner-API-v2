@@ -45,7 +45,11 @@ properties:
         - `"TRANSFER_DEPARTURE_MODE"`
   answer:
     type: string
-    description: Answer to booking question
+    description: >
+      Answer to booking question
+
+
+      * **Note**: Emojis are not supported in this field; therefore, please ensure that only ordinary natural-language characters and numerals are included.
   unit:
     type: string
     description: >-
