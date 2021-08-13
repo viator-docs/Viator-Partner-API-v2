@@ -1,6 +1,6 @@
 get:
   tags:
-    - V1-endpoints
+    - V1-endpoints (affiliates only)
   summary: /v1/support/customercare
   operationId: v1SupportCustomercare
   description: >-

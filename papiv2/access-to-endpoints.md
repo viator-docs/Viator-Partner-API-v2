@@ -15,12 +15,14 @@ The following table describes which partner types have access to which endpoints
 | [/products/bulk](../../openapi/reference/operation/productsBulk) | ✅ | ✅ |
 | [/products/tags](../../openapi/reference/operation/productsTags) | ✅ | ✅ | 
 | [/products/search](../../openapi/reference/operation/productsSearch) | ✅ | ✅ |
+| [/products/booking-questions](../../openapi/reference/operation/productsSearch) | ❌ | ✅ |
 | [/availability/check](../../openapi/reference/operation/checkAvailability) | ✅ | ✅ |
 | [/availability/schedules/{product-code}](../../openapi/reference/operation/availabilitySchedules) | ✅ | ✅ |
 | [/availability/schedules/modified-since](../../openapi/reference/operation/availabilitySchedulesModifiedSince) | ✅ | ✅ |
 | [/availability/schedules/bulk](../../openapi/reference/operation/availabilitySchedulesBulk) | ✅ | ✅ |
 | [/bookings/hold](../../openapi/reference/operation/bookingsHold) | ❌ | ✅ |
 | [/bookings/book](../../openapi/reference/operation/bookingsBook) | ❌ | ✅ |
+| [/bookings/status](../../openapi/reference/operation/bookingsBook) | ❌ | ✅ |
 | [/bookings/cancel-reasons](../../openapi/reference/operation/bookingsCancelReasons) | ❌ | ✅ |
 | [/bookings/{booking-reference}/cancel-quote](../../openapi/reference/operation/bookingsCancelQuote) | ❌ | ✅ |
 | [/bookings/{booking-reference}/cancel](../../openapi/reference/operation/bookingsCancel) | ❌ | ✅ |

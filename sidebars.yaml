@@ -2,8 +2,10 @@ PAPIv2:
   - page: index.md
   - label: New features in this version
     page: papiv2/about/new-features-in-this-version.md
-  - group: Implementation guide
-    expanded: true
+  - label: Updates
+    page: papiv2/updates.md
+  - group: Merchant Implementation guide
+    expanded: false
     pages:
       - label: Access to endpoints
         page: papiv2/access-to-endpoints.md
@@ -80,7 +82,61 @@ PAPIv2:
           - label: Update log
             page: papiv2/appendices/update-log.md
 
+  - group: Affiliate implementation guide
+    expanded: false
+    pages:
+      - label: Access to endpoints
+        page: papiv2/access-to-endpoints.md
+      - label: Authentication
+        page: papiv2/authentication.md
+      - label: Localization
+        page: papiv2/localization.md
+      - group: Conventions
+        expanded: false
+        pages:
+          - label: API versioning strategy
+            page: papiv2/conventions/API-versioning-strategy.md
+          - label: Accept-Encoding
+            page: papiv2/conventions/accept-encoding.md
+          - label: V1-endpoint conventions
+            page: papiv2/conventions/v1-endpoint-conventions.md
+      - group: Key concepts
+        expanded: false
+        pages:
+          - label: Content-ingestion endpoints
+            page: papiv2/key-concepts/content-ingestion-endpoints.md
+          - label: V1 to V2 migration reference
+            page: papiv2/key-concepts/v1-to-v2-migration-reference.md
+          - label: Product options
+            page: papiv2/key-concepts/product-options.md
+          - label: Availability schedules
+            page: papiv2/key-concepts/availability-schedules.md
+          - label: Itineraries
+            page: papiv2/key-concepts/itineraries.md
+      - group: Testing
+        expanded: false
+        pages:
+          - label: Postman collectons for testing
+            page: papiv2/testing/postman-collections-for-testing.md
+      - group: Workflows
+        expanded: false
+        pages:
+          - label: Ingesting and updating the product catalogue
+            page: papiv2/workflows/ingesting-and-updating-the-product-catalogue.md
+          - label: Resolving references
+            page: papiv2/workflows/resolving-references.md
+          - label: Ingesting and updating availability schedules
+            page: papiv2/workflows/ingesting-and-updating-availability-schedules.md
+          - label: Update frequency
+            page: papiv2/workflows/update-frequency.md
+      - group: Appendices
+        expanded: false
+        pages:
+          - label: Inclusions and exclusions
+            page: papiv2/appendices/inclusions-and-exclusions.md
+          - label: Update log
+            page: papiv2/appendices/update-log.md
   - group: API Specification
-    expanded: true
+    expanded: false
     pages:
       - page: openapi/reference.page.yaml/*

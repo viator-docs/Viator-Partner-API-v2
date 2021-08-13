@@ -5,6 +5,7 @@ meta:
   keywords: redocly developer portal, api portal starter, api reference docs
 logo: ./images/viator-partners.png
 enableToc: true
+showNextButton: false
 oasDefinitions:
   papiv2: ./openapi/papiv2/openapi.yaml
   # add links to definitions in our API registry by using a fully qualified URL.
@@ -17,6 +18,7 @@ stylesheets:
 #  trackingId: UA-45997213-1
 #scripts:
 #  - ./static/intercom.js
+
 nav:
 
   # - label: Training exercises

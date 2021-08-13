@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/lib/node_modules/node/bin/node /usr/local/Cellar/yarn/1.22.10/libexec/bin/yarn.js start
+  /usr/local/lib/node_modules/node/bin/node /usr/local/Cellar/yarn/1.22.10/libexec/bin/yarn.js init
 
 PATH: 
   /Users/xirrad/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -14,12 +14,17 @@ Platform:
   darwin x64
 
 Trace: 
-  SyntaxError: /Users/xirrad/Library/Mobile Documents/com~apple~CloudDocs/x+d/viator/projects/github-test/github/Viator-Partner-API-v2/package.json: Unexpected token } in JSON at position 362
-      at JSON.parse (<anonymous>)
-      at /usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:1625:59
-      at Generator.next (<anonymous>)
-      at step (/usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:310:30)
-      at /usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:321:13
+  Error: canceled
+      at Interface.<anonymous> (/usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:137009:13)
+      at Interface.emit (node:events:394:28)
+      at Interface._ttyWrite (node:readline:1081:16)
+      at ReadStream.onkeypress (node:readline:288:10)
+      at ReadStream.emit (node:events:394:28)
+      at emitKeys (node:internal/readline/utils:358:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (node:internal/readline/emitKeypressEvents:61:36)
+      at ReadStream.emit (node:events:394:28)
+      at addChunk (node:internal/streams/readable:312:12)
 
 npm manifest: 
   {
@@ -35,7 +40,7 @@ npm manifest:
     },
     "dependencies": {
       "@redocly/developer-portal": "1.0.0-beta.142"
-    },
+    }
   }
 
 yarn manifest: 
