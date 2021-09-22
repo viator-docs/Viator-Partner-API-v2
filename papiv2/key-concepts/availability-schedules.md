@@ -139,7 +139,7 @@ Example response snippet from [/availability/schedules/10212P2](../../../openapi
 ```
 
 - Each item in the `bookableItems[]` array contains the availability and pricing data for one of the product's product-options (`productOptionCode`).
-- Each item in the `seasons[]` array describes the availability and pricing for the product-option during the 'season' (period of time) delimited by `startDate` and `endDate`. If `endDate` is not present, this means the season extends 384 days (approximately 12.5 months) into the future from the date given in `startDate`.
+- Each item in the `seasons[]` array describes the availability and pricing for the product-option during the 'season' (period of time) delimited by `startDate` and `endDate`. If `endDate` is not present, this means the season extends 384 days (approximately 12.5 months) into the future from the current date.
 - Each item in the `pricingRecords[]` array describes which days of the week (`daysOfWeek[]`) the availability and pricing data pertains to during the season, as well as which starting times are in operation (`timedEntries[]`) and on which dates (`unavailableDates[]`) each starting time is unavailable (e.g., due to being sold out).
 - Each item in the `pricingDetails[]` array describes the pricing that applies to each age-band during the season.
 
