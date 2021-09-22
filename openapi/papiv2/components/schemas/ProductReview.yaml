@@ -11,9 +11,11 @@ required:
 properties:
   reviewReference:
     type: string
+    pattern: '(?s).*[\S].*'
     description: Unique identification code for this review
   language:
     type: string
+    pattern: '(?s).*[\S].*'
     description: Language code for the language in which this review is written
   avatarUrl:
     type: string
@@ -34,12 +36,14 @@ properties:
     description: Star-rating for this product given by this reviewer in this review
   text:
     type: string
+    pattern: '(?s).*[\S].*'
     description: |
       Main text of this review
 
       - **Note**: This field contains natural language suitable for display to the user; content will be translated (if necessary) into the language specified in the Accept-Language header parameter.
   title:
     type: string
+    pattern: '(?s).*[\S].*'
     description: |
       Title of this review
 
@@ -53,6 +57,7 @@ properties:
       Provider for this review; one of:
 
         - `"VIATOR"`
+        - `"TRIPADVISOR"`
   ownerResponse:
     type: object
     description: Response to this review from the supplier of this product if available

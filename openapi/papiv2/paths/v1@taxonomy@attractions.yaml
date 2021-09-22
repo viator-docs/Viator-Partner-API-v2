@@ -34,23 +34,14 @@ post:
               $ref: ../components/schemas/topX.yaml
             sortOrder:
               type: string
-              enum:
-                - SEO_PUBLISHED_DATE_D
-                - SEO_PUBLISHED_DATE_A
-                - SEO_REVIEW_AVG_RATING_D
-                - SEO_REVIEW_AVG_RATING_A
-                - SEO_ALPHABETICAL
               description: |
-                **sort order** in which to return the results that is *one of*:
-                  * `"SEO_PUBLISHED_DATE_D"`: publish date (descending)
-                  * `"SEO_PUBLISHED_DATE_A"`: publish date (ascending)
-                  * `"SEO_REVIEW_AVG_RATING_D"`: traveler rating (high→low)
-                  * `"SEO_REVIEW_AVG_RATING_A"`: traveler rating (low→high)
-                  * `"SEO_ALPHABETICAL"`: alphabetical (A→Z)
+                Sort order for the results; one of:
+                - `'RECOMMENDED'` – sorted in order of recommendation
+                - `'SEO_ALPHABETICAL'` – Alphabetical (A->Z)
         example:
           destId: 684
           topX: 1-3
-          sortOrder: SEO_PUBLISHED_DATE_D
+          sortOrder: RECOMMENDED
   responses:
     '200':
       description: Success

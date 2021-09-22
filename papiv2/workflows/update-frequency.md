@@ -21,6 +21,7 @@ To ensure your systems reflect any removals of or changes to existing destinatio
 | [/products/booking-questions](../../../openapi/reference/operation/productsBookingQuestions) | Daily |
 | [/products/tags](../../../openapi/reference/operation/productsTags) | Daily | 
 | [/locations/bulk](../../../openapi/reference/operation/locationsBulk) | Weekly |
+| [/reviews/product](#operation/reviewsProduct) | Weekly |
 
 ## On-demand updates
 
@@ -34,3 +35,4 @@ When ingesting product content, in the event that you encounter an unknown refer
 | [/v1/taxonomy/destinations](../../../openapi/reference/operation/v1TaxonomyDestinations) | Whenever you encounter a destination id that you do not yet have the details for |
 | [/products/booking-questions](../../../openapi/reference/operation/productsBookingQuestions) | Whenever you encounter a booking question identifier that you do not yet have the details for |
 | [/v1/taxonomy/attractions](../../../openapi/reference/operation/v1TaxonomyAttractions) | Whenever you encounter an attraction identifier that you do not yet have the details for |
+| [/reviews/product](#operation/reviewsProduct) | If the number of reviews available for a product, which is reported in the `reviews.totalReviews` element in the [product content response](#section/Key-concepts/Content-ingestion-endpoints), has changed compared with its previous value, the reviews for that product should also be refreshed by calling the [/reviews/product](#operation/reviewsProduct) endpoint. We request that you rate-limit your use of this service to 30 requests per minute. |

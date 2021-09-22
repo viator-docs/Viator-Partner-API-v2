@@ -2,14 +2,12 @@ post:
   tags:
     - Bookings
   summary: /bookings/book
-  description: >
-    Requests a booking for an item that was previously the subject of a
-    booking-hold (with regard to availability, price, or both) via the
-    [/bookings/hold](../bookingHold) endpoint.
+  description: |
+    Requests a booking for a product.
 
+    The amount that you will be invoiced for the sale of this tour (in the specified currency) is given in the `totalPrice` element in the response from this endpoint.
 
     **Note**: This endpoint is only available to <u>merchant partners</u>.
-
 
     (Response sample generated on: 2020-08-25)
   operationId: bookingsBook

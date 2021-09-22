@@ -43,7 +43,8 @@ properties:
               type: string
               description: |
                 Provider for this set of reviews; one of:
-                - `"VIATOR"`'
+                - `"VIATOR"`
+                - `"TRIPDADVISOR"`
             totalCount:
               type: integer
               format: int64

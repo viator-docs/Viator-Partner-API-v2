@@ -4,7 +4,7 @@ description: |
 
   **Note**: 
     - Access to this information is only available if it is enabled for your account. Please speak to your account manager if you would like to take advantage of our unique content.
-    - You must ensure that your site is configured such that **no Viator Unique Content is indexed by any search engine**. This is a requirement for site certification.
+    - You must ensure that your site is configured such that **no Viator Unique Content is indexed by any search engine**. This is a requirement for site certification. For more information, see [Key concepts – Protecting unique content](../../../../papiv2/key-concepts/protecting-unique-content).
 properties: 
   title: 
     type: string

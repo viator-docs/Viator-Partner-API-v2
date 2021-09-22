@@ -6,7 +6,7 @@
 
 Broadly speaking, to book a product via this API, you must do the following:
 
-1. **Check availability**: Determine that a ticket for the desired tour or activity is available for a specific date, time and passenger mix using the [/availability/check](../../../openapi/reference/operation/availabilityCheck) endpoint.
+1. **Check availability and pricing**: Determine that a ticket for the desired tour or activity is available for a specific date, time and passenger mix combination using the [/availability/check]((../../../openapi/reference/operation/availabilityCheck)) endpoint. Accurate pricing details in the currency that you wish to be invoiced in (one of GBP, EUR, USD or AUD) are also returned in the response from this endpoint. This includes `recommendedRetailPrice` and `partnerNetPrice`.
 2. **Request a booking hold**: If a ticket is availabile, request a pricing/availability hold for the booking using the [/bookings/hold](../../../openapi/reference/operation/bookingsHold) endpoint.
 3. **Confirm the booking**: Confirm/finalize the held booking using the [/bookings/book](../../../openapi/reference/operation/bookingsBook) endpoint.
 

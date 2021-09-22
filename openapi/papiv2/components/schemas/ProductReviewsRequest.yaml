@@ -21,7 +21,9 @@ properties:
     description: |
       Limit the reviews returned in the response to those associated with this provider; one of:
 
-      - `"VIATOR"`
+      - `"VIATOR"` – only include reviews submitted on viator.com
+      - `"TRIPDADVISOR"` – only include reviews submitted on tripdavisor.com
+      - `"ALL"` - include reviews from all providers
 
   sortBy:
     type: string

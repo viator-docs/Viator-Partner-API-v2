@@ -3,6 +3,16 @@ post:
     - Auxiliary
   description: |
     Retrieves and filters reviews <u>for a **single** product</u>
+
+    **Non-indexing of reviews**
+
+    - Review content is protected proprietary information; therefore, you may not allow review content to be indexed by search engines. In order for your site to be certified, you will need to demonstrate that you have implemented systems to ensure that review content is non-indexed. For more information, see [Key concepts - Protecting unique content](../../../../papiv2/key-concepts/protecting-unique-content).
+    
+    **Availability of reviews**
+
+    - Occasionally, reviews are deleted due to inauthenticity, offensive language, etc. Furthermore, we cannot guarantee that non-Viator reviews (i.e., those for which the `provider` is not `"VIATOR"`) will remain available in future (however, you will receive a notification email to inform you should this occurr). As such, we require that you implement a mechanism by which locally-cached reviews are automatically deleted from your records (and are not displayed on your site) if they do not appear in the most recent response from this endpoint.  
+  
+    See [Update frequency](../../../../papiv2/workflows/update-frequency) for information about when and how often to call this endpoint.
   operationId: reviewsProduct
   summary: '/reviews/product'
   parameters:

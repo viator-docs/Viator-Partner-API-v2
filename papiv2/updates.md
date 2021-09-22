@@ -4,6 +4,11 @@
 
 | Date | Description |
 |------|-------------|
+| 16 Sep 2021 | Removed `topX` and modified options for `sortOrder` request parameters in [/attraction/reviews/](../../../openapi/reference/operation/v1AttractionReviews) endpoint |
+| 6 Sep 2021 | Modified available options for `sortOrder` request parameter in [/v1/taxonomy/attractions](../../../openapi/reference/operation/v1TaxonomyAttractions) and [/v1/search/attractions](../../../openapi/reference/operation/v1SearchAttractions) endpoints |
+| 26 Aug 2021 | Added [Key concepts – Protecting unique content](../key-concepts/protecting-unique-content) section |
+| 23 Aug 2021 | Added [Key concepts – v1 to v2 migration reference – Mapping categories to tags](../key-concepts/v1-to-v2-migration-reference) section |
+| 19 Aug 2021 | Added Tripadvisor as an additional reviews provider in [/reviews/product](#operation/reviewsProduct) endpoint |
 | 12 Aug 2021 | Updated [Access to endpoints](../Access-to-endpoints) section to include [/products/booking-questions](../../../openapi/reference/operation/productsBookingQuestions) and [/bookings/status](#operation/bookingsStatus) |
 | 10 Aug 2021 | Bugfix – `provider` element in request to [/reviews/product](../../../openapi/reference/operation/reviewsProduct) now listed as 'required' |
 | 5 August 2021 | Added new sorting options to [/reviews/product](../../../openapi/reference/operation/reviewsProduct) endpoint |

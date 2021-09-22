@@ -45,25 +45,13 @@ post:
               type: string
               description: |
                 Sort order for the results; one of:
-                - `'SEO_PUBLISHED_DATE_D'` - Publish Date (Descending)
-                  
-                - `'SEO_PUBLISHED_DATE_A'` - Publish Date (Ascending)
-                - `'SEO_EDITORS_PICK'` - Editors pick
-                - `'SEO_REVIEW_AVG_RATING_D'` - Traveler Rating (high->low)
-                - `'SEO_REVIEW_AVG_RATING_A'` - Traveler Rating (low->high)
-                - `'SEO_ALPHABETICAL'` - Alphabetical (A->Z)
-              enum:
-                - SEO_PUBLISHED_DATE_D
-                - SEO_PUBLISHED_DATE_A
-                - SEO_EDITORS_PICK
-                - SEO_REVIEW_AVG_RATING_D
-                - SEO_REVIEW_AVG_RATING_A
-                - SEO_ALPHABETICAL
+                - `'RECOMMENDED'` – sorted in order of recommendation
+                - `'SEO_ALPHABETICAL'` – Alphabetical (A->Z)
         example:
           destId: 684
           topX: 1-3
           seoType: ATTRACTION
-          sortOrder: SEO_PUBLISHED_DATE_D
+          sortOrder: RECOMMENDED
   responses:
     '200':
       description: Success

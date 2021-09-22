@@ -4,7 +4,6 @@ description: |
 
   **Note**: 
 
-    - At present, only reviews submitted on viator.com are included.
     - Review data is updated daily; i.e., all reviews received on a day will be added and averages re-calculated in a single event.
 required:
   - totalReviews

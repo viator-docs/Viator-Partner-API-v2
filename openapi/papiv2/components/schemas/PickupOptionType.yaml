@@ -3,6 +3,7 @@ description: >
   Machine-interpretable value encoding the type of traveler pick-up option; one
   of:
 
-    - `"PICKUP_EVERYONE"`
-    - `"PICKUP_AND_MEET_AT_START_POINT"`
-    - `"MEET_EVERYONE_AT_START_POINT"`
+    - `"PICKUP_EVERYONE"` (the supplier will pick up all customers from their respective locations)
+    - `"PICKUP_AND_MEET_AT_START_POINT"` (the supplier will pick up all customers from their respective locations; or, customers can make their own way to the start point)
+    - `"MEET_EVERYONE_AT_START_POINT"` (all customers must make their own way to and meet at the start point)
+

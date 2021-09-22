@@ -3,7 +3,9 @@ post:
     - Availability
   summary: /availability/check
   description: |
-    Check real-time availability for a product
+    Check real-time availability and pricing for a product depending on the date, pax-mix, start time and/or product option.
+
+    We recommend using the pricing information returned by this endpoint as the source of truth for the amount you will be invoiced by Viator for the sale of the product in question.
 
     **Note**: This service should only be used to determine the availability of a product immediately prior to booking. Bulk operations pertaining to product availability; e.g., generating a calendar of availability for a product, should use the [availability schedule endpoints](../../../../papiv2/key-concepts/content-ingestion-endpoints).
 

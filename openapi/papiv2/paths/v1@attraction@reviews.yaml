@@ -15,6 +15,7 @@ get:
     information</mark>
     - This endpoint is only available to <u>affiliate partners</u>
     - Pages generated using data from this endpoint are subject to a **strict no-index policy**. If you are unsure about whether you are correctly following this rule, please reach out to your account manager for advice.
+    - Response is limited to the first 100 results
 
   parameters:
     - $ref: ../components/parameters/acceptLanguage.yaml
@@ -22,22 +23,20 @@ get:
       name: seoId
       required: true
       description: >-
-        **unique numeric identifier** for the attraction to retrieve
-        recommmendation details for
+        **unique numeric identifier** of the attraction for which to retrieve reviews
       example: 14235
       schema:
         type: integer
-    - $ref: ../components/parameters/topX.yaml
     - in: query
       name: sortOrder
-      description: '**sort order** in which to return results'
-      example: SEO_REVIEW_RATING_A
+      description: |
+        Sort order for the results; one of:
+
+        - `'SEO_REVIEW_RATING_D'` - sort by traveler rating (descending)
+        - `'SEO_REVIEW_RATING_PUBLISHED_DATE_D'` - sort by date of publication (most recent first)
+      example: SEO_REVIEW_RATING_D
       schema:
         type: string
-        enum:
-          - SEO_REVIEW_RATING_A - Traveler Rating (low->high)
-          - SEO_REVIEW_RATING_D - Traveler Rating (high->low)
-          - SEO_REVIEW_RATING_PUBLISHED_DATE_D - Most recent review
   responses:
     '200':
       description: Success

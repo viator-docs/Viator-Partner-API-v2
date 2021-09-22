@@ -35,6 +35,8 @@ PAPIv2:
             page: papiv2/key-concepts/availability-schedules.md
           - label: Itineraries
             page: papiv2/key-concepts/itineraries.md
+          - label: Protecting unique content
+            page: papiv2/key-concepts/protecting-unique-content.md
       - group: Booking concepts
         expanded: false
         pages: 
@@ -113,6 +115,8 @@ PAPIv2:
             page: papiv2/key-concepts/availability-schedules.md
           - label: Itineraries
             page: papiv2/key-concepts/itineraries.md
+          - label: Protecting unique content
+            page: papiv2/key-concepts/protecting-unique-content.md
       - group: Testing
         expanded: false
         pages:

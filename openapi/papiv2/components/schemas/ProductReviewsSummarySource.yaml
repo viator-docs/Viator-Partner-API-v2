@@ -7,7 +7,8 @@ properties:
     type: string
     description: |
       Provider for this set of reviews; one of:
-      - `"VIATOR"`'
+      - `"VIATOR"`
+      - `"TRIPADVISOR"`
   reviewCounts:
     type: array
     description: Breakdown of number of reviews per rating for reviews sourced from this provider

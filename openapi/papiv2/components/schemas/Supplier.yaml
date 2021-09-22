@@ -2,8 +2,13 @@ type: object
 description: Supplier details
 required:
   - name
+  - reference
 properties:
   name:
     type: string
     pattern: '(?s).*[\S].*'
     description: Name of the supplier of this product
+  reference:
+    type: string
+    pattern: '(?s).*[\S].*'
+    description: Unique reference code for this supplier

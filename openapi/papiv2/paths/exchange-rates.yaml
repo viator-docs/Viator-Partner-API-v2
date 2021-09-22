@@ -7,12 +7,12 @@ post:
 
     In this API, all pricing is denominated in the currency of the supplier. For example, if a tour operates in Thailand, its prices will be given in Thai Baht (THB). 
 
-    Not all currencies are supported, but many are. They comprise:
+    Not all supplier currencies are supported, but many are. They comprise:
 
     - AED, AUD, BRL, CAD, CHF, CNY, DKK, EUR, FJD, GBP, HHL, 
     - HKD, IDR, INR, ISK, JPY, KRW, MXN, MYR, NOK, NZD, PLN, 
     - RUB, SEK, SGD, THB, TRY, TWD, USD, VND, ZAR
-    
+ 
     While pricing can be in any of the currencies listed above, payments for bookings can only be made using the following four currencies:
 
     - GBP (British Pound)
@@ -20,13 +20,17 @@ post:
     - USD (US Dollars)
     - AUD (Australian dollars)
 
-    If you attempt to use an unsupported currency when making a booking request, you will receive the following error:
+    In order that you display the correct price to the user and charge accordingly, it is important that you perform the currency conversion based on the exchange rates given in the response from this endpoint and that these conversion rates are valid at the time of conversion (as given in the `expiry` field).
+
+    In doing so, you ensure the amount that you, the merchant, will be invoiced by Viator for this product matches your records. Discrepancies are bound to occur if you perform the calculations using expired exchange rates or those from an alternative source.
+
+    An additional measure to ensure that you charge your customer accurately is to confirm that the pricing details returned by the [/availability/check](../availabilityCheck) endpoint (in the billing currency specified in the request) conform to your expectations. The information provided by this service is the definitive source of truth with regard to product pricing.
+
+    **Note:** If you attempt to use an unsupported currency when making a booking request, you will receive the following error:
 
     ```javascript
     Incorrect currency code provided
     ```
-
-    The exchange rates for conversions between the supplier and payment currencies that apply at any given moment are given in the response from this endpoint.
 
     **Note**: In order to reduce the number of calls made to this service, we recommend retrieving the exchange rate for the currency pair in question just once for the time period during which it is valid, and then applying that rate to all products with pricing denominated in that currency rather than calling this endpoint for each product requiring currency conversion.
 
