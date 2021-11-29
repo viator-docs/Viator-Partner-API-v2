@@ -15,4 +15,5 @@ properties:
       File format of the voucher; one of:
 
         - `"HTML"`
-        - `"PDF"`
+
+      **Note**: At present, we only support HTML vouchers. In future, other formats, such as PDF, may also be supported.

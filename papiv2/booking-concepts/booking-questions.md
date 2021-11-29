@@ -1,6 +1,6 @@
 # Booking questions
 
-**Note**: This section applies to merchant partners only.
+**Note**: This section applies to **merchant partners** only.
 
 The booking-questions functionality of this API allows vital information specified by the supplier about the individual travelers or the group as a whole to be sent to the supplier as part of the request when making a booking using the [/bookings/book](../../../openapi/reference/operation/bookingsBook) endpoint.
 
@@ -15,7 +15,7 @@ The booking questions available for a product are specified in the `bookingQuest
     "AGEBAND"
 ],
 ```
-Each key string ("FULL_NAMES_LAST", etc.) identifies a booking question, details about which can be found in the response from the [/products/booking-questions](../../../openapi/reference/operation/productsBookingQuestions) endpoint.
+Each key string (`"FULL_NAMES_LAST"`, etc.) identifies a booking question, details about which can be found in the response from the [/products/booking-questions](../../../openapi/reference/operation/productsBookingQuestions) endpoint.
 
 Relevant booking question details in example response snippet from [/products/booking-questions](../../../openapi/reference/operation/productsBookingQuestions):
 
@@ -271,17 +271,32 @@ The logic runs as follows:
 
 | For this booking question | if the user's answer is | these questions must also be answered |
 |--------------------|----------------|-------------------------------|
-| `"TRANSFER_ARRIVAL_MODE"` | `"AIR"` | `"TRANSFER_AIR_ARRIVAL_AIRLINE"`<br />`"TRANSFER_AIR_ARRIVAL_FLIGHT_NO"`<br />`"TRANSFER_ARRIVAL_TIME"` |
-| `"TRANSFER_ARRIVAL_MODE"` | `"RAIL"` | `"TRANSFER_RAIL_ARRIVAL_LINE"`<br />`"TRANSFER_RAIL_ARRIVAL_STATION"`<br />`"TRANSFER_ARRIVAL_TIME"` |
-| `"TRANSFER_ARRIVAL_MODE"` | `"SEA"` | `"TRANSFER_PORT_ARRIVAL_TIME"`<br />`"TRANSFER_PORT_CRUISE_SHIP"` |
-| `"TRANSFER_ARRIVAL_MODE"` | `"OTHER"` |  n/a |
+| `"TRANSFER_ARRIVAL_MODE"` | `"AIR"` | `"TRANSFER_AIR_ARRIVAL_AIRLINE"`<br />`"TRANSFER_AIR_ARRIVAL_FLIGHT_NO"`<br />`"TRANSFER_ARRIVAL_TIME"`<br />`"TRANSFER_ARRIVAL_DROP_OFF"` (see condition 1)<br />`"PICKUP_POINT"` (see condition 1) |
+| `"TRANSFER_ARRIVAL_MODE"` | `"RAIL"` | `"TRANSFER_RAIL_ARRIVAL_LINE"`<br />`"TRANSFER_RAIL_ARRIVAL_STATION"`<br />`"TRANSFER_ARRIVAL_TIME"`<br />`"TRANSFER_ARRIVAL_DROP_OFF"` |
+| `"TRANSFER_ARRIVAL_MODE"` | `"SEA"` | `"TRANSFER_PORT_ARRIVAL_TIME"`<br />`"TRANSFER_PORT_CRUISE_SHIP"`<br />`"TRANSFER_ARRIVAL_DROP_OFF"` (see condition 2) <br />`"PICKUP_POINT"` (see condition 2)|
+| `"TRANSFER_ARRIVAL_MODE"` | `"OTHER"` | `"PICKUP_POINT"` (see condition 3) |
 | `"TRANSFER_DEPARTURE_MODE"` | `"AIR"` | `"TRANSFER_AIR_DEPARTURE_AIRLINE"`<br />`"TRANSFER_AIR_DEPARTURE_FLIGHT_NO"`<br />`"TRANSFER_DEPARTURE_DATE"`<br />`"TRANSFER_DEPARTURE_TIME"`<br />`"TRANSFER_DEPARTURE_PICKUP"` |
-| `"TRANSFER_DEPARTURE_MODE"` | `"RAIL"` | `"TRANSFER_RAIL_DEPARTURE_LINE"`<br />`"TRANSFER_RAIL_DEPARTURE_STATION"`<br />`"TRANSFER_DEPARTURE_TIME"`<br />`"TRANSFER_DEPARTURE_PICKUP"` |
-| `"TRANSFER_DEPARTURE_MODE"` | `"SEA"` | `"TRANSFER_PORT_CRUISE_SHIP"`<br />`"TRANSFER_PORT_DEPARTURE_TIME"`<br />`"TRANSFER_DEPARTURE_PICKUP"`|
+| `"TRANSFER_DEPARTURE_MODE"` | `"RAIL"` | `"TRANSFER_RAIL_DEPARTURE_LINE"`<br />`"TRANSFER_RAIL_DEPARTURE_STATION"`<br />`"TRANSFER_DEPARTURE_DATE"`<br />`"TRANSFER_DEPARTURE_TIME"`<br />`"TRANSFER_DEPARTURE_PICKUP"` |
+| `"TRANSFER_DEPARTURE_MODE"` | `"SEA"` | `"TRANSFER_PORT_CRUISE_SHIP"`<br />`"TRANSFER_DEPARTURE_DATE"`<br />`"TRANSFER_PORT_DEPARTURE_TIME"`<br />`"TRANSFER_DEPARTURE_PICKUP"`|
+| `"TRANSFER_DEPARTURE_MODE"` | `"OTHER"` | n/a |
 
-## Pick-up point question
 
-The booking question that requests the location for pick-up is as follows:
+
+**Conditions**:
+
+1. Rule applies only if `logistics.travelerPickup.locations[]` includes an item with `pickupType`: `"AIRPORT"`; **or**, if `logistics.travelerPickup.allowCustomTravelerPickup` is **true**.
+2. Rule applies only if `logistics.travelerPickup.locations[]` includes an item with `pickupType`: `"PORT"`; **or**, if `logistics.travelerPickup.allowCustomTravelerPickup` is **true**.
+3. Rule applies only if `logistics.travelerPickup.locations[]` includes an item with `pickupType`: `"HOTEL"` or `pickupType`: `"LOCATION"`; **or**, if `logistics.travelerPickup.allowCustomTravelerPickup` is **true**.
+
+
+**Extra notes**:
+
+- All `"CONDITIONAL"` booking questions that depend on the answer given to either `"TRANSFER_ARRIVAL_MODE"` or `"TRANSFER_DEPARTURE_MODE"` (i.e., those questions in the right-hand column in the table above) should be considered `"MANDATORY"` if they are stipulated in the `"bookingQuestions"` array of the product content response, and the respective transfer mode question **is not** stipulated. That is to say, for example, if `"TRANSFER_AIR_ARRIVAL_AIRLINE"` is present, but `"TRANSFER_ARRIVAL_MODE"` is absent from `"bookingQuestions"`, then `"TRANSFER_AIR_ARRIVAL_AIRLINE"` should be considered `"MANDATORY"`.
+- The `"TRANSFER_PORT_CRUISE_SHIP"` question is required to be answered when the customer's response to either `"TRANSFER_ARRIVAL_MODE"` or `"TRANSFER_DEPARTURE_MODE"` is `"SEA"`; however, this question must only be answered **once** per booking. I.e., the answer for `"TRANSFER_PORT_CRUISE_SHIP"` pertains to both questions. There is no provision for the customer to specify different cruise ships for arrival and departure.
+
+## Pickup-point question
+
+The booking question that requests the location for pickup is as follows:
 
 ```javascript
 {
@@ -326,9 +341,9 @@ Example `"LOCATION_REFERENCE"` answer:
 ]
 ```
 
-### Special pick-up-point location references
+### Special pickup-point location references
 
-The `logistics.travelerPickup.locations[]` array in the response from the product content endpoints contains the location references for all available pick-up locations for a product.
+The `logistics.travelerPickup.locations[]` array in the response from the product content endpoints contains the location references for all available pickup locations for a product.
 
 As well as standard location reference codes; e.g., "LOC-6cb31b00-1fb4-4218-9b50-63f66531d735", there are two special codes that specify **instructions** rather than locations. 
 
@@ -337,9 +352,9 @@ These are:
 - `"MEET_AT_DEPARTURE_POINT"`
 - `"CONTACT_SUPPLIER_LATER"`
 
-When selecting available pick-up points, our suppliers also have the option of specifying one or both of these pseudo-locations. These instruct the customer to either meet at one of the locations specified in `logistics.start[]`, or to contact the supplier later to arrange a pick-up point, respectively.
+When selecting available pickup-points, our suppliers also have the option of specifying one or both of these pseudo-locations. These instruct the customer to either meet at one of the locations specified in `logistics.start[]`, or to contact the supplier later to arrange a pickup-point, respectively.
 
-When building a list of available pick-up locations for the customer to select at the time of booking, the descriptive text for these locations can be used. This is available from the [/locations/bulk](../../../openapi/reference/operation/locationsBulk) endpoint in the `name` field, as follows:
+When building a list of available pickup locations for the customer to select at the time of booking, the descriptive text for these locations can be used. This is available from the [/locations/bulk](../../../openapi/reference/operation/locationsBulk) endpoint in the `name` field, as follows:
 
 ```javascript
 {
@@ -366,6 +381,82 @@ Or, you can provide a selection button in your UI, as we have done on the [viato
 </figure>
 
 This button appears when the `"CONTACT_SUPPLIER_LATER"` location reference is included in the `logistics.travelerPickup.locations[]` array.
+
+## How to determine if a product option supports pickup
+
+When the value of `logistics.travelerPickup.pickupOptionType` in the product content response is `"PICKUP_AND_MEET_AT_START_POINT"`, it means that the product includes both 'hotel pickup' and 'meet at the departure point' variants in its product options; e.g., one product option may be for hotel pickup while another is for meeting at the start/departure point.
+
+To determine which product options offer what, it is necessary to inspect each product option's details in the `productOptions[]` array in the product content response.
+
+If pickup is included for a product option, the phrase `Pickup included` will be present in the `productOptions[].description` field, as well as any other comments provided by the supplier. For example, the following two product options from product [8374P24](https://www.viator.com/tours/Bangkok/Train-Market-and-Damnoensaduak-Floating-Market-with-small-group/d343-8374P24) both offer pickup:
+
+```javascript
+"productOptions": [
+  {
+      "productOptionCode": "TG5",
+      "description": "Private tour: Private tour only your group<br/>Pickup included",
+      "title": "Private tour",
+      "languageGuides": [
+          {
+              "type": "GUIDE",
+              "language": "en",
+              "legacyGuide": "en/SERVICE_GUIDE"
+          }
+      ]
+  },
+  {
+      "productOptionCode": "TG4",
+      "description": "Pickup included",
+      "title": "Hotel pick up included",
+      "languageGuides": [
+          {
+              "type": "GUIDE",
+              "language": "en",
+              "legacyGuide": "en/SERVICE_GUIDE"
+          }
+      ]
+  },
+  ...
+]
+```
+
+When booking a product option with pickup included, such as this, you must collect a pickup-point from the user that corresponds to one of the entries in the `logistics.travelerPickup.locations[]` array in the product content response.
+
+If the `productOptions[].description` field **does not** contain the phrase `Pickup included`, this indicates that this product option does not include pickup and should be considered to follow a `"MEET_AT_DEPARTURE_POINT"` arrangement. 
+
+For example, the following product option (also from product [8374P24](https://www.viator.com/tours/Bangkok/Train-Market-and-Damnoensaduak-Floating-Market-with-small-group/d343-8374P24)) requires meeting at the departure point and does not include pickup:
+
+```javascript
+"productOptions": [
+  {
+      "productOptionCode": "TG3",
+      "description": "",
+      "title": "Meeting point",
+      "languageGuides": [
+          {
+              "type": "GUIDE",
+              "language": "en",
+              "legacyGuide": "en/SERVICE_GUIDE"
+          }
+      ]
+  },
+  ...
+
+```
+
+For product options such as these, there is no need to collect the pickup-point from the user. When sending the booking request using the [/bookings/book](../../../openapi/reference/operation/bookingsBook) endpoint, simply use `"MEET_AT_DEPARTURE_POINT"` as the answer.
+
+
+```javascript
+"bookingQuestionAnswers": [  
+    {
+      "question": "PICKUP_POINT",
+      "answer": "MEET_AT_DEPARTURE_POINT",
+      "unit": "LOCATION_REFERENCE"
+    }
+]
+```
+
 
 ## Age-bands
 

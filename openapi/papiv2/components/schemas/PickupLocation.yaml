@@ -13,4 +13,5 @@ properties:
         - `"AIRPORT"`
         - `"HOTEL"`
         - `"PORT"`
+        - `"LOCATION"`
         - `"OTHER"`

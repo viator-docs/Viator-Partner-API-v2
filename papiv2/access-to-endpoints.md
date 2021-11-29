@@ -4,13 +4,13 @@ The API endpoints accessible to you depend on which kind of partner you are; aff
 
 **Basic-access Affiliate partners** have access to a limited subset of the non-transactional endpoints of the Viator Partner API. The basic-access tier allows affiliates to quickly get started building their site, allows them to launch as soon as possible.
 
-**Standard-access Affiliate partners** have access to all non-transactional endpoints; i.e., everything except booking, booking hold and booking cancellation endpoints. In addition, affiliates have access to additional legacy endpoints that provide functionality that helps to support attractions.
+**Full-access Affiliate partners** have access to all non-transactional endpoints; i.e., everything except booking, booking hold and booking cancellation endpoints. In addition, full-access affiliates have access to additional legacy endpoints that provide functionality that helps to support attractions.
 
 **Merchant partners** have access to all endpoints apart from the attraction endpoints designed for use by affiliate partners.
 
 The following table describes which partner types have access to which endpoints:
 
-| Endpoint | Basic-access Affiliate | Standard-access Affiliate | Merchant |
+| Endpoint | Basic-access Affiliate | Full-access Affiliate | Merchant |
 |----------|:-----------------:|:----------------:|:------------:|
 | [/products/{product-code}](#operation/products) | ❌ | ✅ | ✅ |
 | [/products/modified-since](#operation/productsModifiedSince) | ❌ | ✅ | ✅ |

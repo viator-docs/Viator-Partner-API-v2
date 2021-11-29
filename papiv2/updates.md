@@ -4,6 +4,15 @@
 
 | Date | Description |
 |------|-------------|
+| 15 Nov 2021 | Added Basic-access Affiliate postman collection to [Testing section](../testing) |
+| 5 Nov 2021 | Clarified description of exp-demo header parameter |
+| 2 Nov 2021 | Added `"LOCATION"` as option for `logistics.travelerPickup.locations[].pickupType` in product content response |
+| 28 Oct 2021 | Updated [Booking Concepts – Booking questions – Conditional booking questions](../booking-concepts/booking-questions#conditional-booking-questions) table |
+| 15 Oct 2021 | Modified PriceObject schema in response from /availabililty/* endpoints to include provision for commission-payment-model merchants. See [/availability/check](../../../openapi/reference/operation/availabilityCheck) for example |
+| 13 Oct 2021 | Added section: [How to determine if a product option supports pick-up](../booking-concepts/booking-questions) |
+| 7 Oct 2021 | Added `"TRANSFER_ARRIVAL_DROP_OFF"` booking question details in [Booking details – conditional booking concepts](../booking-concepts/booking-questions) section |
+| 1 Oct 2021 | Added note about `"TRANSFER_PORT_CRUISE_SHIP"` booking question to [Booking concepts – Booking questions section](../booking-concepts/booking-questions) |
+| 27 Sep 2021 | Added note about time-out recommendation to [/bookings/book](../../../openapi/reference/operation/bookingsBook) |
 | 16 Sep 2021 | Removed `topX` and modified options for `sortOrder` request parameters in [/attraction/reviews/](../../../openapi/reference/operation/v1AttractionReviews) endpoint |
 | 6 Sep 2021 | Modified available options for `sortOrder` request parameter in [/v1/taxonomy/attractions](../../../openapi/reference/operation/v1TaxonomyAttractions) and [/v1/search/attractions](../../../openapi/reference/operation/v1SearchAttractions) endpoints |
 | 26 Aug 2021 | Added [Key concepts – Protecting unique content](../key-concepts/protecting-unique-content) section |

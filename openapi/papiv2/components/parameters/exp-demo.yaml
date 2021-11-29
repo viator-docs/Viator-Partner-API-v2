@@ -1,7 +1,16 @@
 in: header
 name: exp-demo
 description: |
-  Specifies that this should be a test/demo booking
+  Specifies whether this request is a demo/test booking. Demo bookings do not send any notifications and are automatically confirmed. Also, manual-confirmation products behave as if they were instant-confirmation products. 
+
+  Set this value to **true** when:
+  - Making a test booking in the production environment
+  - Making a test booking of a manual-confirmation product in the sandbox environment and you wish to receive a booking status of `"CONFIRMED"` in the response
+
+  Set this value to **false** when:
+  - Making a real booking in the production environment
+  - Making a test booking of a manual-confirmation product in the sandbox environment and you wish to receive a booking status of `"PENDING"` in the response
 schema:
   type: boolean
-  example: true
+  example: "true"
+  default: "false"

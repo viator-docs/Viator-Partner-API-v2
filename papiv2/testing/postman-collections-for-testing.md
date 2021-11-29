@@ -3,7 +3,8 @@
 To facilitate your testing of the API's functionality in the sandbox environment, please use one of the following [Postman](https://www.getpostman.com/) collections, depending on which type of partner you are:
 
   - [Viator Merchant API Postman collection](Viator-Merchant-API-v2.postman_collection.json)
-  - [Viator Affiliate API Postman collection](Viator-Affiliate-API-v2.postman_collection.json)
+  - [Viator Basic-access Affiliate API Postman collection](Viator-Basic-Access-Affiliate-API-v2.postman_collection.json)
+  - [Viator Full-access Affiliate API Postman collection](Viator-Affiliate-API-v2.postman_collection.json)
 
 ## Set up the `your-api-key` environment variable
 

@@ -1,22 +1,34 @@
-summary: 265910P1
-value:
-  currency: USD
-  productCode: 265910P1
-  travelDate: '2020-11-30'
-  bookableItems:
-    - productOptionCode: TG1
-      startTime: '09:30'
-      available: true
-      lineItems:
-        - ageBand: ADULT
-          numberOfTravelers: 2
-          subtotalPrice:
-            price:
-              recommendedRetailPrice: 588.98
-              partnerNetPrice: 470.45
-      totalPrice:
-        price:
-          recommendedRetailPrice: 588.98
-          partnerNetPrice: 470.45
-          bookingFee: 28.23
-          partnerTotalPrice: 498.68
+summary: 265910P1 (commission payment model)
+value: {
+    "currency": "AUD",
+    "productCode": "265910P1",
+    "travelDate": "2021-11-30",
+    "bookableItems": [
+        {
+            "productOptionCode": "TG1",
+            "startTime": "09:30",
+            "available": true,
+            "lineItems": [
+                {
+                    "ageBand": "ADULT",
+                    "numberOfTravelers": 2,
+                    "subtotalPrice": {
+                        "price": {
+                            "recommendedRetailPrice": 800.00,
+                            "partnerNetPrice": 736.00
+                        }
+                    }
+                }
+            ],
+            "totalPrice": {
+                "price": {
+                    "recommendedRetailPrice": 800.00,
+                    "partnerNetPrice": 736.00,
+                    "bookingFee": 0.00,
+                    "commission": 64.00,
+                    "partnerTotalPrice": 736.00
+                }
+            }
+        }
+    ]
+}

@@ -11,10 +11,18 @@ properties:
     $ref: ./PartnerNetPrice.yaml
   bookingFee:
     type: number
-    description: >-
-      The booking fee component of the total amount that Viator invoices the
-      merchant for this item (the rate applied is given in the merchant's
-      contract with Viator)
+    description: |
+      The booking fee component of the total amount that Viator will invoice the merchant for the sale of this item
+
+      **Note**: 
+      - The rate applied is given in the merchant's contract with Viator
+      - This value will be zero for merchant partners using the commission-based pricing model
+  commission:
+    type: number
+    description: |
+      The amount the merchant will receive as a commission for the sale of this item 
+
+      **Note**: This element is only relevant and will only be returned to merchant partners using the commission-based pricing model
   partnerTotalPrice:
     type: number
-    description: The total amount that Viator will invoice the merchant for this item
+    description: The total amount that Viator will invoice the merchant for the sale of this item

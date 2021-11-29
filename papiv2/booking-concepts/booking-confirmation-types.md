@@ -134,6 +134,10 @@ If the supplier does not confirm the booking within 72 hours – or, if they hav
 
 ## Building in the sandbox environment
 
-Upgrading your booking platform to support manual confirmation products will require you to build and test this functionality in the sandbox environment. However, as no actual booking requests are made with the supplier when using a sandbox-only API-key, you will need to contact our API tech support team at [apitechsupport@viator.com](mailto:apitechsupport@viator.com) and request that the booking be confirmed or rejected as you require.
+Upgrading your booking platform to support manual confirmation products will require you to build and test this functionality in the sandbox environment. 
 
-While necessary, please note that this is a manual process. We'd genuinely appreciate your effort in keeping the number of these requests to a minimum.
+However, when using the sandbox environment, no actual booking request is sent to the supplier's system; rather, manual-confirmation products behave like instant-confirmation products, and you will receive a `bookingStatus` of `"CONFIRMED"` immediately on making the booking **unless** you set the `exp-demo` header parameter to `false` in the request to [/bookings/book](../../../openapi/reference/operation/bookingsBook). In this case, you will receive a `bookingStatus` of `"PENDING"` in the response, which is the expected behavior when making a booking request for a manual-confirmation product.
+
+In order to test the complete booking flow, you will need to contact our API tech support team at [apitechsupport@viator.com](mailto:apitechsupport@viator.com) and request that we change the status of the booking (specified by the `bookingRef`) to `"CONFIRMED"` or `"REJECTED"` as you require. 
+
+Please note that because this is a manual process, we'd genuinely appreciate your effort in keeping the number of these requests to a minimum.

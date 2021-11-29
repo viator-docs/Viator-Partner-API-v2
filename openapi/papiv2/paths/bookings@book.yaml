@@ -5,10 +5,16 @@ post:
   description: |
     Requests a booking for a product.
 
-    The amount that you will be invoiced for the sale of this tour (in the specified currency) is given in the `totalPrice` element in the response from this endpoint.
-
-    **Note**: This endpoint is only available to <u>merchant partners</u>.
-
+        **Note**: 
+    - This endpoint is only available to <u>merchant partners</u>.
+    - The amount that you will be invoiced for the sale of this tour (in the specified currency) is given in the `totalPrice` element in the response from this endpoint.
+    - As some products are booked on external supplier systems, it may take > 90s to receive a response from this endpoint. For this reason, <u>we recommend setting your internal time-out for this service to **120s**</u>. In the event that this service does time-out, or you receive a HTTP 500 error, you should check the status of the booking using the [/bookings/status](../bookingsStatus) endpoint to ensure the booking was not created before you attempt to make the booking again.
+    - The booking status will indicate if the booking:
+      - is still awaiting confirmation (`"PENDING"`); or,
+      - was `"CONFIRMED"` if it was eventually successful, or 
+      - was `"REJECTED"` if there are valid reasons why it could not be booked; such as, if it was booked-out or other changes to availability occurred; or,
+      - failed for an unknown reason if it did eventually fail. In this scenario, a new booking can be attempted using a new `"partnerBookingRef"`
+    
     (Response sample generated on: 2020-08-25)
   operationId: bookingsBook
   parameters:
