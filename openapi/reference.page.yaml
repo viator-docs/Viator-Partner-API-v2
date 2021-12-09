@@ -9,3 +9,4 @@ settings:
       - lang: JavaScript
       - lang: Node.js
       - lang: Java
+  corsProxyUrl: false
