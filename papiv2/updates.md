@@ -4,6 +4,7 @@
 
 | Date | Description |
 |------|-------------|
+| 5 Jan 2022 | Corrected response schema details in [/bookings/{booking-reference}/cancel](../../../openapi/reference/operation/bookingsCancel) and [/bookings/{booking-reference}/cancel-quote](../../../openapi/reference/operation/bookingsCancelQuote) to indicate that `status` and `bookingId` are required properties |
 | 15 Nov 2021 | Added Basic-access Affiliate postman collection to [Testing section](../testing) |
 | 5 Nov 2021 | Clarified description of exp-demo header parameter |
 | 2 Nov 2021 | Added `"LOCATION"` as option for `logistics.travelerPickup.locations[].pickupType` in product content response |
